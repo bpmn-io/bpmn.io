@@ -1,0 +1,102 @@
+---
+layout: base.hbs
+component: index
+---
+
+
+<!-- subhead -->
+
+<div class="bi-masterhead">
+  <div class="container">
+    <!--<h1>bpmn.io</h1>-->
+
+    <img class="logo" src="{{ assets }}/img/logo.png" />
+
+    <p class="lead">An open foundation to communicate your processes with BPMN 2.0</p>
+    
+    <p class="lead">Built with passion. Part of <a href="http://camunda.org" target="_blank">camunda BPM</a>.</p>
+
+
+    <div class="tab-content bi-register-news">
+      <div class="tab-pane fade in active">
+        <a href class="btn btn-lg btn-outline bi-toggle" data-toggle="tab" data-target=".bi-register-news .bi-register">Stay informed</a>
+      </div>
+
+      <div class="tab-pane bi-register">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Enter your mail address">
+          <span class="input-group-btn">
+            <button class="btn btn-outline-inverse" type="button">Register</button>
+          </span>
+        </div><!-- /input-group -->
+        
+        <p>Leave your mail address to receive our newsletter with the latest updates. You may cancel it at any time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- features -->
+
+<div class="bi-features">
+  <div class="container">
+    <h2>BPMN everywhere, for everyone</h2>
+    <p class="lead">
+      bpmn.io makes it simple to create and embed BPMN diagrams.
+      
+      Whether you want to model processes or embed processes diagrams into your application, we offer the tool for you.
+    </p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/model.png" alt="Model BPMN 2.0 diagrams" class="img-responsive">
+        <h3>Model</h3>
+        <p>
+          Easily create your own BPMN 2.0 diagrams using a web-based modeling component.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/embed.png" alt="Embed BPMN 2.0 diagrams into the application" class="img-responsive">
+        <h3>Embed and Annotate</h3>
+        <p>
+          Use our toolkit to embed BPMN 2.0 diagrams into your applications.
+          Enrich them with the data that is important for you and your business.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/extend.png" alt="Extend the framework" class="img-responsive">
+        <h3>Extend</h3>
+        <p>Integrate an in-browser process engine, token simulation, styling or enhanced interactivity. It is up to you because bpmn.io is an open framework.</p>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <!--
+    <p class="lead">
+      bpmn.io is open source and can be found on <a href="https://github.com/bpmn-io">GitHub</a>.
+    </p>
+
+    <hr class="half-rule">
+    -->
+    <a class="bi-camundabpm-link" href="http://camunda.org">
+      <img src="{{assets}}/img/camunda-logo-small.png" />
+    </a>
+  </div>
+</div>
+
+{{#script}}
+<!-- show the script on the page -->
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    var registerNews = $('.bi-register-news');
+    
+    registerNews.find('.bi-toggle').on('shown.bs.tab', function (e) {
+      registerNews.find('.bi-register input[type="text"]').focus();
+    });
+  });
+</script>
+{{/script}}

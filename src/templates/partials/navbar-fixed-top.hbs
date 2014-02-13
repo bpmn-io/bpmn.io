@@ -1,0 +1,56 @@
+---
+component: navbar
+---
+
+<!-- Navbar component
+================================================== -->
+
+<header class="navbar navbar-static-top bi-navbar" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bi-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="{{relative page.dest ""}}" class="navbar-brand">bpmn.io</a>
+    </div>
+    <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <!--
+        <li class="active">
+          <a href="../getting-started">Getting started</a>
+        </li>
+        <li>
+          <a href="../css">CSS</a>
+        </li>
+        <li>
+          <a href="../components">Components</a>
+        </li>
+        <li>
+          <a href="../javascript">JavaScript</a>
+        </li>
+        <li>
+          <a href="../customize">Customize</a>
+        </li>
+        -->
+      </ul>
+      <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
+        <li{{#is title "about"}} class="active"{{/is}}>
+          <a href="{{relative page.dest "dist/about/"}}">About</a>
+        </li>
+{{!--         <li{{#is title "blog"}} class="active"{{/is}}>
+          <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
+        </li> --}}
+        {{!-- <li>
+          <a href="https://github.com/bpmn-io/">GitHub Repo</a>
+        </li> --}}
+        <li>
+          <a href="http://camunda.org/">camunda BPM</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,154 @@
+/**
+ * app styles
+ */
+
+.input-xlarge {
+  .input-size(@input-height-large + 8; @padding-large-vertical; @padding-large-horizontal; @font-size-large + 2; @line-height-large + 0.3; @border-radius-large);
+}
+
+.button-xlarge {
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large + 2; @line-height-large + 0.3; @border-radius-large);  
+}
+
+.btn-outline {
+  .button-variant(white; @brand-primary; white);
+
+  &:hover {
+    background: white;
+    color: @brand-primary;
+  }
+}
+
+.btn-outline-inverse {
+  .button-variant(@brand-primary; white; @brand-primary);
+}
+
+.bi-front-page {
+
+  text-align: center;
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    margin: auto;
+  }
+}
+
+.bi-navbar {
+  margin-bottom: 0;
+
+  .navbar-toggle .icon-bar {
+    background-color: @brand-primary;
+  }
+}
+
+.bi-head, 
+.bi-masterhead {
+  background: @brand-primary;
+  color: #FFF;
+}
+
+.bi-head {
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    color: lighten(@brand-primary, 50%);
+    font-size: 28px;
+  }
+}
+
+
+.bi-masterhead {
+
+  .bi-front-page();
+
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .lead {
+    width: 80%;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    a {
+      color: white;
+      
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .bi-register-news {
+    margin: 60px auto 0 auto;
+    max-width: 500px;
+
+    padding: 0;
+
+    p {
+      margin: 10px 50px;
+    }
+
+    .bi-register-news .btn {
+      color: #52B415;
+    }
+  }
+
+  .btn-lg {
+    .button-xlarge();
+  }
+
+  .input-group-lg > .form-control,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .btn { .input-xlarge(); }
+
+  .input-group-lg > .form-control:not(:last-child) { .border-right-radius(0); }
+  .input-group-lg > .input-group-btn:last-child > .btn { .border-left-radius(0); }
+}
+
+.bi-features {
+  .bi-front-page();
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  h2 {
+    font-size: 36px;
+  }
+
+  .half-rule {
+    width: 100px;
+    margin: 40px auto;
+  }
+}
+
+.bi-camundabpm-link > img {
+  margin-top: 40px;
+}
+
+.bi-footer {
+  border-top: solid 1px #CCC;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  .footer-links {
+    padding: 0;
+
+    li {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+    
+    {{#if description}}
+    <p class="lead">
+      {{ description }}
+    </p>
+    {{/if}}
+  </div>
+</div>
+
+<div class="container">
+  {{> body }}
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{#if title}}{{title}} | {{/if}}{{site.title}}</title>
+    <link rel="stylesheet" href="{{assets}}/css/app.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+
+    {{> navbar-fixed-top }}
+
+    <!-- page content -->
+    {{> body }}
+
+    <!-- footer -->
+
+    {{> footer }}
+
+    <script src="{{assets}}/js/jquery.js"></script>
+    <script src="{{assets}}/js/bootstrap.js"></script>
+
+    {{ scripts }}
+  </body>
+</html>

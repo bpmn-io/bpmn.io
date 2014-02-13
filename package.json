@@ -1,0 +1,49 @@
+{
+  "name": "bpmn.io",
+  "description": "The bpmn.io website",
+  "version": "0.0.0",
+  "homepage": "http://bpmn.io",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "http://github.com/Nikku/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpmn-io/bpmn.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/bpmn.io/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "grunt build"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.33",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.2.7",
+    "assemble-contrib-anchors": "*",
+    "assemble-contrib-permalinks": "*",
+    "assemble-contrib-sitemap": "*",
+    "assemble-contrib-toc": "*",
+    "assemble-markdown-data": "*",
+    "assemble-related-pages": "*",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-less": "~0.9.0",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "keywords": [
+    "website",
+    "bpmn",
+    "modeler",
+    "process",
+    "grunt",
+    "assemble"
+  ]
+}
