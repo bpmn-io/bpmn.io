@@ -38,13 +38,19 @@ component: navbar
         -->
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
+        <li id="contact" href>
+          <a href="{{relative page.dest "dist/contact/"}}">Contact</a>
+        </li>
+        {{!--
         <li{{#is title "about"}} class="active"{{/is}}>
           <a href="{{relative page.dest "dist/about/"}}">About</a>
         </li>
-{{!--         <li{{#is title "blog"}} class="active"{{/is}}>
+        --}}
+        {{!--
+        <li{{#is title "blog"}} class="active"{{/is}}>
           <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
-        </li> --}}
-        {{!-- <li>
+        </li>
+        <li>
           <a href="https://github.com/bpmn-io/">GitHub Repo</a>
         </li> --}}
         <li>

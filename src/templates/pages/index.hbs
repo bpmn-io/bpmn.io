@@ -17,21 +17,17 @@ component: index
     <p class="lead">Built with passion. Part of <a href="http://camunda.org" target="_blank">camunda BPM</a>.</p>
 
 
-    <div class="tab-content bi-register-news">
-      <div class="tab-pane fade in active">
-        <a href class="btn btn-lg btn-outline bi-toggle" data-toggle="tab" data-target=".bi-register-news .bi-register">Stay informed</a>
-      </div>
-
-      <div class="tab-pane bi-register">
-        <div class="input-group input-group-lg">
-          <input type="text" class="form-control" placeholder="Enter your mail address">
+    <div class="bi-register-news">
+      <form action=".">
+        <div class="input-group input-group-xlg">
+          <input type="text" class="form-control" name="email" placeholder="Your email">
           <span class="input-group-btn">
-            <button class="btn btn-outline-inverse" type="button">Register</button>
+            <button class="btn btn-outline-inverse" type="submit" data-loading-text="Sending...">Submit</button>
           </span>
-        </div><!-- /input-group -->
-        
-        <p>Leave your mail address to receive our newsletter with the latest updates. You may cancel it at any time.</p>
-      </div>
+        </div>
+      </form>
+
+      <p class="note">Keep informed about bpmn.io. You may unsubscribe from this newsletter any time.</p>
     </div>
   </div>
 </div>
@@ -44,7 +40,7 @@ component: index
     <p class="lead">
       bpmn.io makes it simple to create and embed BPMN diagrams.
       
-      Whether you want to model processes or embed processes diagrams into your application, we offer the tool for you.
+      Whether you want to model processes or integrate process diagrams into your application, bpmn.io offers the tool for you.
     </p>
 
     <hr class="half-rule">
@@ -61,7 +57,7 @@ component: index
         <img src="{{assets}}/img/embed.png" alt="Embed BPMN 2.0 diagrams into the application" class="img-responsive">
         <h3>Embed and Annotate</h3>
         <p>
-          Use our toolkit to embed BPMN 2.0 diagrams into your applications.
+          Use the toolkit to embed BPMN 2.0 diagrams into your applications.
           Enrich them with the data that is important for you and your business.
         </p>
       </div>
@@ -74,29 +70,91 @@ component: index
 
     <hr class="half-rule">
 
-    <!--
     <p class="lead">
-      bpmn.io is open source and can be found on <a href="https://github.com/bpmn-io">GitHub</a>.
+      bpmn.io will be open source on <a href="https://github.com/bpmn-io">GitHub</a>.
     </p>
 
+    <p class="lead">
+      Demos and examples coming soon.
+    </p>
+
+    {{!--
     <hr class="half-rule">
-    -->
+
+    <p class="lead">
+      bpmn.io will be open source on <a href="https://github.com/bpmn-io">GitHub</a>, soon.
+    </p>
+    <hr class="half-rule">
     <a class="bi-camundabpm-link" href="http://camunda.org">
       <img src="{{assets}}/img/camunda-logo-small.png" />
     </a>
+    --}}
   </div>
 </div>
 
 {{#script}}
-<!-- show the script on the page -->
-<script type="text/javascript">
-  $(document).ready(function() {
+<!--[if IE 9]>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
+<![endif]-->
 
-    var registerNews = $('.bi-register-news');
-    
-    registerNews.find('.bi-toggle').on('shown.bs.tab', function (e) {
-      registerNews.find('.bi-register input[type="text"]').focus();
+{{#if app.newsletter }}
+<script>
+  $(function() {
+
+    var endpoint = '{{ app.newsletter }}';
+
+    var subscribeElement = $('.bi-register-news');
+    var form = $('form', subscribeElement);
+
+    var group = $('.input-group', form);
+    var emailInput = $('input[name=email]', form);
+    var button = $('button[type=submit]', form);
+
+    var note = $('.note', subscribeElement);
+
+    emailInput.on('focus', function() {
+      group.removeClass('has-error');
+    });
+
+    var loading = false;
+
+    form.on('submit', function(event) {
+
+      event.preventDefault();
+
+      if (loading) {
+        return;
+      }
+
+      var email = emailInput.val();
+
+      if (!email) {
+        group.addClass('has-error');
+        return;
+      }
+
+      loading = true;
+      button.button('loading');
+
+      $.post(endpoint, {
+        email: email
+      }).done(function() {
+        note.wrap('<div class="alert alert-success"></div>')
+            .html('<strong>Done!</strong> You subscribed to our newsletter and will receive the latest updates via email.');
+      }).fail(function() {
+        note.wrap('<div class="alert alert-danger"></div>')
+            .html('<strong>Oooops!</strong> We could not subscribe you to the newsletter right now. Please try again later.');
+      }).always(function() {
+        form.hide();
+        button.button('reset');
+        loading = false;
+      });
     });
   });
 </script>
+{{/if}}
+
 {{/script}}

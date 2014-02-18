@@ -1,0 +1,14 @@
+<script type="text/javascript" async src="//widget.uservoice.com/{{ app.uservoice }}.js"></script>
+
+<script type="text/javascript">
+  UserVoice = window.UserVoice || [];
+
+  // Set colors
+  UserVoice.push(['set', {
+    accent_color: '#6aba2e',
+    trigger_color: 'white',
+    trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+  }]);
+
+  UserVoice.push(['addTrigger', '#contact', { mode: 'contact' }]);
+</script>

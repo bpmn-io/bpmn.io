@@ -23,7 +23,10 @@ module.exports = function(grunt) {
       },
       jquery: {
         dist: 'bower_components/jquery'
-      }
+      },
+      uservoice: process.env.USER_VOICE_KEY || null,
+      ga: process.env.GA_KEY || null,
+      newsletter: process.env.NEWSLETTER_SUBSCRIBE_ENDPOINT || 'http://bpmn.io/newsletter'
     },
 
     watch: {
@@ -72,6 +75,7 @@ module.exports = function(grunt) {
     assemble: {
       pages: {
         options: {
+          app: '<%= config %>',
           flatten: true,
           assets: '<%= config.dist %>/assets',
           layoutdir: '<%= config.src %>/templates/layouts',
@@ -92,8 +96,7 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
-          '<%= config.dist %>/blog/': ['<%= config.src %>/templates/pages/blog/*.hbs'],
-          '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs'],
+          '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs']
         }
       }
     },
@@ -101,19 +104,12 @@ module.exports = function(grunt) {
     copy: {
       app: {
         files: [
-          // include fonts + images
+          // include fonts + images + js
           {
             expand: true,
             cwd: '<%= config.src %>/assets',
-            src: ['fonts/*', 'img/*'],
+            src: ['favicon.ico', 'fonts/*', 'img/*', 'js/*'],
             dest: '<%= config.dist %>/assets'
-          },
-          // include favicon
-          {
-            expand: true,
-            cwd: '<%= config.src %>',
-            src: ['favicon.ico'],
-            dest: '<%= config.dist %>'
           },
           // include jquery
           {

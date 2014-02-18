@@ -9,7 +9,7 @@
 
     <!-- navbar -->
 
-    {{> navbar-fixed-top }}
+    {{> navbar }}
 
     <!-- page content -->
     {{> body }}
@@ -18,9 +18,18 @@
 
     {{> footer }}
 
+    <!-- scripts -->
     <script src="{{assets}}/js/jquery.js"></script>
     <script src="{{assets}}/js/bootstrap.js"></script>
 
     {{ scripts }}
+
+    {{#if app.uservoice}}
+      {{> uservoice }}
+    {{/if}}
+
+    {{#if app.ga}}
+      {{> ga }}
+    {{/if}}
   </body>
 </html>
