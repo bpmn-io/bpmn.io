@@ -26,12 +26,12 @@ module.exports = function(grunt) {
       },
       uservoice: process.env.USER_VOICE_KEY || null,
       ga: process.env.GA_KEY || null,
-      newsletter: process.env.NEWSLETTER_SUBSCRIBE_ENDPOINT || 'http://bpmn.io/newsletter'
+      newsletter: process.env.NEWSLETTER_SUBSCRIBE_ENDPOINT || null
     },
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
+        files: ['<%= config.src %>/{content,data,templates}/{,*/,*/*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
       less: {
