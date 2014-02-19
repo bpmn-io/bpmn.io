@@ -115,14 +115,14 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.jquery.dist %>',
-            src: ['jquery.js'],
+            src: ['jquery.min.js'],
             dest: '<%= config.dist %>/assets/js'
           },
           // include bootstrap js
           {
             expand: true,
             cwd: '<%= config.bootstrap.dist %>',
-            src: ['js/bootstrap.js'],
+            src: ['js/bootstrap.min.js'],
             dest: '<%= config.dist %>/assets'
           }
         ]
