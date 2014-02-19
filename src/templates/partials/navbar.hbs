@@ -15,11 +15,11 @@ component: navbar
         <span class="icon-bar"></span>
       </button>
 
-      <a href="{{relative page.dest ""}}" class="navbar-brand">bpmn.io</a>
+      <a href="{{relative page.dest "dist/."}}" class="navbar-brand">bpmn.io</a>
     </div>
     <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <!--
+        {{!--
         <li class="active">
           <a href="../getting-started">Getting started</a>
         </li>
@@ -35,20 +35,20 @@ component: navbar
         <li>
           <a href="../customize">Customize</a>
         </li>
-        -->
+        --}}
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
-        <li id="contact" href>
-          <a href="{{relative page.dest "dist/contact/"}}">Contact</a>
+        <li id="contact">
+          <a href>Contact</a>
         </li>
         {{!--
-        <li{{#is title "about"}} class="active"{{/is}}>
-          <a href="{{relative page.dest "dist/about/"}}">About</a>
+        <li{{#contains title "Blog"}} class="active"{{/is}}>
+          <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
         </li>
         --}}
         {{!--
-        <li{{#is title "blog"}} class="active"{{/is}}>
-          <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
+        <li{{#contains title "About"}} class="active"{{/is}}>
+          <a href="{{relative page.dest "dist/about/"}}">About</a>
         </li>
         <li>
           <a href="https://github.com/bpmn-io/">GitHub Repo</a>
