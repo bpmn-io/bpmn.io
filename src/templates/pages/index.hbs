@@ -114,6 +114,27 @@ component: index
 
     var note = $('.note', subscribeElement);
 
+    function showStatus(type, status, message) {
+      if (!note.parent('.alert').length) {
+        note.wrap('<div></div>');
+      }
+
+      note.parent().attr('class', 'alert alert-' + type);
+
+      note
+        .empty()
+        .append($('<strong></strong>').text(status))
+        .append($('<span></span>').text(' ' + message));
+    }
+
+    function showSuccess(headline, message) {
+      showStatus('success', headline, message);
+    }
+
+    function showFailure(headline, message) {
+      showStatus('danger', headline, message);
+    }
+
     emailInput.on('focus', function() {
       group.removeClass('has-error');
     });
@@ -140,12 +161,15 @@ component: index
 
       $.post(endpoint, {
         email: email
-      }).done(function() {
-        note.wrap('<div class="alert alert-success"></div>')
-            .html('<strong>Done!</strong> You subscribed to our newsletter and will receive the latest updates via email.');
+      }).done(function(data) {
+
+        if (data.success) {
+          showSuccess('Done!', 'You subscribed to our newsletter and will receive the latest updates via email.');
+        } else {
+          showFailure('That did not work!', data.message);
+        }
       }).fail(function() {
-        note.wrap('<div class="alert alert-danger"></div>')
-            .html('<strong>Oooops!</strong> We could not subscribe you to the newsletter right now. Please try again later.');
+          showFailure('Sorry for that!', 'We cannot subscribe you to the newsletter at the moment. Please try again later.');
       }).always(function() {
         form.hide();
         button.button('reset');
