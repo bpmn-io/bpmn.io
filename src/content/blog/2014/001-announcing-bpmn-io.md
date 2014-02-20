@@ -25,7 +25,7 @@ published: 2014-02-20 16:00
 Through its well defined file format, it also enables you to exchange modeled diagrams freely across compliant modeling tools. In short: It is a great way to communicate processes.
 
 To leverage the full potential of BPMN the standard must be available to everyone.
-Everybody should have the possibility to model BPMN with a great useability and every developer should be able to use BPMN diagrams in his or her application.
+Everybody should have the possibility to model BPMN with a great usability and every developer should be able to use BPMN diagrams in his or her application.
 With bpmn.io we build a toolkit that aims accomplish nothing more than this. 
 
 Because we believe free and easily accessible tools can make the difference, bpmn.io will be open source and free to use for everyone.
