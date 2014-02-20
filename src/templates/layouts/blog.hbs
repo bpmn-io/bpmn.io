@@ -1,0 +1,30 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <div class="h1">Blog</div>
+    
+    <p class="lead">
+      News from the bpmn.io project
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      {{> body }}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 bi-blog-footer">
+      <a href="{{ relative page.dest 'dist/blog/' }}">Back to blog</a>.
+    </div>
+  </div>
+</div>

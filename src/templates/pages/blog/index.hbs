@@ -1,9 +1,35 @@
 ---
 title: Blog
-posts: ['README.md']
+description: 'News from the bpmn.io project'
 ---
 
-<h1>Posts</h1>
-{{#each posts}}
-  {{md this}}
-{{/each}}
+<div class="row">
+
+  <div class="col-md-10">
+
+    {{#compose src='*/*.md' cwd='src/content/blog' sortBy="published" sortOrder="desc"}}
+
+    <div class="bi-blogpost">
+
+      <div class="published">
+        {{ moment @published format="dddd, MMMM DD, YYYY" }}
+      </div>
+
+      <h1 class="page-header"><a href="posts/{{@slug}}.html">{{ @title }}</a></h1>
+      
+      <div class="content">
+        {{#exerpt @slug}}
+          {{{@content}}}
+        {{/exerpt}}
+      </div>
+
+      <div class="meta">
+        Posted by {{ author @author }} on <a href="posts/{{@slug}}.html">{{ moment @published format="DD MMMM YYYY HH:mm ZZ" }}</a>.
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    {{/compose}}
+  </div>
+</div>

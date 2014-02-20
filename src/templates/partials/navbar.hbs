@@ -41,13 +41,14 @@ component: navbar
         <li id="contact">
           <a href>Contact</a>
         </li>
-        {{!--
-        <li{{#contains title "Blog"}} class="active"{{/is}}>
+
+        <li{{#contains title "Blog"}} class="active"{{/contains}}>
           <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
         </li>
+        {{!--
         --}}
         {{!--
-        <li{{#contains title "About"}} class="active"{{/is}}>
+        <li{{#contains title "About"}} class="active"{{/contains}}>
           <a href="{{relative page.dest "dist/about/"}}">About</a>
         </li>
         <li>

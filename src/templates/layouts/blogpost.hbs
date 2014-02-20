@@ -1,0 +1,22 @@
+---
+layout: blog.hbs
+---
+
+<div class="bi-blogpost single">
+
+  <div class="published">
+    {{ moment published format="dddd, MMMM DD, YYYY" }}
+  </div>
+
+  <h1 class="page-header"><a href="./{{slug}}.html">{{ title }}</a></h1>
+  
+  <div class="content">
+    {{#markdown }}
+      {{> body}}
+    {{/markdown}}
+  </div>
+
+  <div class="meta">
+    Posted by {{ author author }} on <a href="posts/{{slug}}.html">{{ moment published format="DD MMMM YYYY HH:mm ZZ" }}</a>.
+  </div>
+</div>

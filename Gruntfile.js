@@ -73,30 +73,47 @@ module.exports = function(grunt) {
     },
 
     assemble: {
-      pages: {
-        options: {
-          app: '<%= config %>',
-          flatten: true,
-          assets: '<%= config.dist %>/assets',
-          layoutdir: '<%= config.src %>/templates/layouts',
-          layout: 'default.hbs',
-          data: '<%= config.src %>/data/*.{json,yml}',
-          partials: '<%= config.src %>/templates/partials/*.hbs',
-          plugins: [
-            'assemble-contrib-anchors',
-            'assemble-contrib-permalinks',
-            'assemble-contrib-sitemap',
-            'assemble-contrib-toc',
-            'assemble-markdown-data',
-            'assemble-related-pages'
-          ],
-          helpers: [
-            '<%= config.src %>/helpers/*.js'
-          ]
+      options: {
+        app: '<%= config %>',
+        flatten: true,
+        marked: {
+          process: true
         },
+        assets: '<%= config.dist %>/assets',
+        layoutdir: '<%= config.src %>/templates/layouts',
+        layout: 'default.hbs',
+        data: '<%= config.src %>/data/*.{json,yml}',
+        partials: '<%= config.src %>/templates/partials/*.hbs',
+        plugins: [
+          'assemble-contrib-permalinks',
+          'assemble-contrib-sitemap',
+          'assemble-contrib-toc',
+          'assemble-markdown-data',
+          'assemble-related-pages'
+        ],
+        helpers: [
+          '<%= config.src %>/helpers/*.js'
+        ]
+      },
+      main: {
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
           '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs']
+        }
+      },
+      blog: {
+        options: {
+          marked: {
+            process: true
+          },
+          helpers: [ 'handlebars-helper-compose', 'handlebars-helper-moment' ],
+          permalinks: {
+            structure: ':slug.html'
+          }
+        },
+        files: {
+          '<%= config.dist %>/blog/': [ '<%= config.src %>/templates/pages/blog/*.hbs' ],
+          '<%= config.dist %>/blog/posts/': [ '<%= config.src %>/content/blog/*/*.{md,hbs}' ]
         }
       }
     },
