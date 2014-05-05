@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports.register = function(Handlebars, options, params)  {
 
   function addScript(page, script) {
