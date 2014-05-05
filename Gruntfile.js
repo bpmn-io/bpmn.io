@@ -5,7 +5,7 @@
 // '<%= config.src %>/templates/pages/**/*.hbs'
 
 module.exports = function(grunt) {
-  
+
   'use strict';
 
   require('load-grunt-tasks')(grunt);
@@ -85,14 +85,10 @@ module.exports = function(grunt) {
         data: '<%= config.src %>/data/*.{json,yml}',
         partials: '<%= config.src %>/templates/partials/*.hbs',
         plugins: [
-          'assemble-contrib-permalinks',
-          'assemble-contrib-sitemap',
-          'assemble-contrib-toc',
-          'assemble-markdown-data',
-          'assemble-related-pages'
+          'assemble-contrib-permalinks'
         ],
         helpers: [
-          '<%= config.src %>/helpers/*.js'
+          '<%= config.src %>/helpers/**/*.js'
         ]
       },
       main: {
@@ -106,7 +102,10 @@ module.exports = function(grunt) {
           marked: {
             process: true
           },
-          helpers: [ 'handlebars-helper-compose', 'handlebars-helper-moment' ],
+          helpers: [
+            'handlebars-helper-compose',
+            'handlebars-helper-moment'
+          ],
           permalinks: {
             structure: ':slug.html'
           }
@@ -149,12 +148,12 @@ module.exports = function(grunt) {
     less: {
       app: {
         files: {
-          "<%= config.dist %>/assets/css/app.css": "<%= config.src %>/assets/less/app.less"
+          '<%= config.dist %>/assets/css/app.css': '<%= config.src %>/assets/less/app.less'
         }
       },
       dist: {
         files: {
-          "<%= config.dist %>/assets/css/app.css": "<%= config.src %>/assets/less/app.less"
+          '<%= config.dist %>/assets/css/app.css': '<%= config.src %>/assets/less/app.less'
         },
         options: {
           compress: true
