@@ -94,7 +94,8 @@ module.exports = function(grunt) {
       main: {
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
-          '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs']
+          '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs'],
+          '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs']
         }
       },
       blog: {
