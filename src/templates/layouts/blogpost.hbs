@@ -9,7 +9,7 @@ layout: blog.hbs
   </div>
 
   <h1 class="page-header"><a href="./{{slug}}.html">{{ title }}</a></h1>
-  
+
   <div class="content">
     {{#markdown }}
       {{> body}}
@@ -17,6 +17,6 @@ layout: blog.hbs
   </div>
 
   <div class="meta">
-    Posted by {{ author author }} on <a href="posts/{{slug}}.html">{{ moment published format="YYYY-MM-DD HH:mm ZZ" }}</a>.
+    Posted by {{ author author }} on <a href="{{slug}}.html">{{ moment published format="YYYY-MM-DD HH:mm ZZ" }}</a>.
   </div>
 </div>
