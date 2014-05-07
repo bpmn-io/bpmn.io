@@ -10,17 +10,13 @@
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large + 2; @line-height-large + 0.3; @border-radius-large);
 }
 
-.btn-outline {
+.btn-outline-inverse {
   .button-variant(white; @brand-primary; white);
 
   &:hover {
     background: white;
     color: @brand-primary;
   }
-}
-
-.btn-outline-inverse {
-  .button-variant(@brand-primary; white; #CCC);
 }
 
 .btn-xlg {
@@ -75,7 +71,7 @@
   p {
     margin-top: -10px;
     color: lighten(@brand-primary, 50%);
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
@@ -95,32 +91,22 @@
     font-size: 30px;
 
     margin-bottom: 10px;
-
-    a {
-      color: white;
-
-      &:hover {
-        color: white;
-      }
-    }
   }
 
-  .btn-outline-inverse {
-    border-left-color: @brand-primary;
-  }
-
-  .bi-register-news {
-    margin: 60px auto 0 auto;
+  .bi-action {
+    margin: 60px auto 40px auto;
     max-width: 400px;
+  }
 
-    padding: 0;
+  .bi-news-note {
+    font-size: 18px;
+  }
 
-    p {
-      margin: 10px 20px;
-    }
+  a:not(.btn) {
+    color: white;
 
-    .alert p {
-      margin: 10px;
+    &:hover {
+      color: white;
     }
   }
 }
@@ -143,6 +129,16 @@
 
 .bi-camundabpm-link > img {
   margin-top: 40px;
+}
+
+.bi-register-newsletter {
+  max-width: 400px;
+  margin: 30px auto;
+
+  .note {
+    margin-top: 10px;
+    color: #999;
+  }
 }
 
 .bi-footer {
@@ -198,7 +194,7 @@
     margin-top: 10px;
     margin-bottom: 30px;
 
-    a {
+    a:link {
       text-decoration: none;
       color: @text-color;
 

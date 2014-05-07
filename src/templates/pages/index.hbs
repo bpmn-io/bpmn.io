@@ -15,18 +15,11 @@ layout: base.hbs
 
     <p class="lead">Built with passion as part of <a href="http://camunda.org" target="_blank">camunda BPM</a>.</p>
 
-    <div class="bi-register-news">
-      <form action=".">
-        <div class="input-group input-group-xlg">
-          <input type="text" class="form-control" name="email" placeholder="Your email">
-          <span class="input-group-btn">
-            <button class="btn btn-outline-inverse" type="submit" data-loading-text="Sending...">Submit</button>
-          </span>
-        </div>
-      </form>
-
-      <p class="note">Keep informed about bpmn.io. You may unsubscribe from this newsletter any time.</p>
+    <div class="bi-action">
+      <a href="http://demo.bpmn.io" class="btn btn-xlg btn-outline-inverse">Try out the Demo</a>
     </div>
+
+    <p class="bi-news-note">You may subscribe to our <a href="#newsletter">newsletter</a> to keep informed about the project.</p>
   </div>
 </div>
 
@@ -65,27 +58,38 @@ layout: base.hbs
       </div>
     </div>
 
+
     <hr class="half-rule">
 
+
     <p class="lead">
-      bpmn.io will be open source on <a href="https://github.com/bpmn-io">GitHub</a>.
+      bpmn.io is open source on <a href="https://github.com/bpmn-io">GitHub</a>.
     </p>
 
     <p class="lead">
       Demos and examples coming soon.
     </p>
 
-    {{!--
+
     <hr class="half-rule">
 
-    <p class="lead">
-      bpmn.io will be open source on <a href="https://github.com/bpmn-io">GitHub</a>, soon.
+
+    <p class="lead" id="newsletter">
+      Keep informed by following us <a href="https://twitter.com/bpmn_io">@bpmn_io</a> or via our newsletter.
     </p>
-    <hr class="half-rule">
-    <a class="bi-camundabpm-link" href="http://camunda.org">
-      <img src="{{assets}}/img/camunda-logo-small.png" />
-    </a>
-    --}}
+
+    <div class="bi-register-newsletter">
+      <form action=".">
+        <div class="input-group">
+          <input type="text" class="form-control" name="email" placeholder="Your email">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit" data-loading-text="Sending...">Submit</button>
+          </span>
+        </div>
+      </form>
+
+      <p class="note">* You may unsubscribe from our newsletter any time.</p>
+    </div>
   </div>
 </div>
 
@@ -104,7 +108,7 @@ layout: base.hbs
 
     var endpoint = '{{ app.newsletter }}';
 
-    var subscribeElement = $('.bi-register-news');
+    var subscribeElement = $('.bi-register-newsletter');
     var form = $('form', subscribeElement);
 
     var group = $('.input-group', form);

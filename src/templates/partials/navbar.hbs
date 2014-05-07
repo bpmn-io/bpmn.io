@@ -19,23 +19,6 @@ component: navbar
     </div>
     <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        {{!--
-        <li class="active">
-          <a href="../getting-started">Getting started</a>
-        </li>
-        <li>
-          <a href="../css">CSS</a>
-        </li>
-        <li>
-          <a href="../components">Components</a>
-        </li>
-        <li>
-          <a href="../javascript">JavaScript</a>
-        </li>
-        <li>
-          <a href="../customize">Customize</a>
-        </li>
-        --}}
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
         <li id="contact">
@@ -45,15 +28,9 @@ component: navbar
         <li{{#contains title "Blog"}} class="active"{{/contains}}>
           <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
         </li>
-        {{!--
-        --}}
-        {{!--
-        <li{{#contains title "About"}} class="active"{{/contains}}>
-          <a href="{{relative page.dest "dist/about/"}}">About</a>
-        </li>
         <li>
-          <a href="https://github.com/bpmn-io/">GitHub Repo</a>
-        </li> --}}
+          <a href="https://github.com/bpmn-io">GitHub</a>
+        </li>
         <li>
           <a href="http://camunda.org/">camunda BPM</a>
         </li>
