@@ -26,7 +26,7 @@ You can check it out in a demo application that we have put together at <a href=
 
 <div style="margin: 30px 0; border-bottom: solid 1px #CCC; text-align: center">
   <a href="http://demo.bpmn.io">
-    <img src="{{ assets }}/img/blog/2014/002-demo.png" style="max-width: 747px; width: 100%; margin: auto" />
+    <img src="{{ assets }}/img/blog/2014/002-demo.png" style="max-width: 700px; width: 100%; margin: auto" />
   </a>
 </div>
 
