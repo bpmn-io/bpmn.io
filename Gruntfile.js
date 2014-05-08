@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/{,*/}*.html',
           '<%= config.dist %>/assets/{,*/}*.css',
           '<%= config.dist %>/assets/{,*/}*.js',
-          '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= config.dist %>/assets/**/*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
     },
@@ -77,7 +77,21 @@ module.exports = function(grunt) {
         app: '<%= config %>',
         flatten: true,
         marked: {
-          process: true
+          process: true,
+          highlight: function(code, lang, callback) {
+            var hjs = require('highlight.js');
+
+            console.log(arguments);
+
+            var result;
+            if (lang) {
+              result = hjs.highlight(lang, code);
+            } else {
+              result = hjs.highlightAuto(code);
+            }
+
+            callback(null, result.value);
+          }
         },
         assets: '<%= config.dist %>/assets',
         layoutdir: '<%= config.src %>/templates/layouts',
@@ -126,7 +140,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.src %>/assets',
-            src: ['favicon.ico', 'fonts/*', 'img/*', 'js/*'],
+            src: ['favicon.ico', 'fonts/*', 'img/**/*', 'js/**/*'],
             dest: '<%= config.dist %>/assets'
           },
           // include jquery
