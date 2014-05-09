@@ -110,6 +110,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
           '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs'],
           '<%= config.dist %>/license/': ['<%= config.src %>/templates/pages/license/*.hbs'],
+          '<%= config.dist %>/roadmap/': ['<%= config.src %>/templates/pages/roadmap/*.hbs'],
           '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs']
         }
       },
