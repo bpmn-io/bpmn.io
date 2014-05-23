@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         tasks: ['less:app']
       },
       copy: {
-        files: [ '<%= config.src %>/assets/{fonts,img}/*' ],
+        files: [ '<%= config.src %>/assets/{fonts,img,bpmn}/*' ],
         tasks: ['copy:app']
       },
       livereload: {
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.src %>/assets',
-            src: ['favicon.ico', 'fonts/*', 'img/**/*', 'js/**/*'],
+            src: ['favicon.ico', 'fonts/*', 'img/**/*', 'js/**/*', 'bpmn/**/*'],
             dest: '<%= config.dist %>/assets'
           },
           // include jquery
