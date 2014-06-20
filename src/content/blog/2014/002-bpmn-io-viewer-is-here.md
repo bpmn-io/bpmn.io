@@ -26,7 +26,7 @@ You can check it out in a demo application that we have put together at <a href=
 
 <div style="margin: 30px 0; border-bottom: solid 1px #CCC; text-align: center">
   <a href="http://demo.bpmn.io">
-    <img src="{{ assets }}/img/blog/2014/002-demo.png" style="max-width: 700px; width: 100%; margin: auto" />
+    <img src="{{ assets }}/attachments/blog/2014/002-demo.png" style="max-width: 700px; width: 100%; margin: auto" />
   </a>
 </div>
 
@@ -72,15 +72,3 @@ Feel free to look inside the projects. It is never to early to contribute bug re
 From now on we will gradually extend the features of bpmn-js into a full fledged modeler.
 On that road, we will pass by a number of important landmarks such as the context pad, direct editing, drag and drop as well as improved embeddability and diagram overlays.
 To learn more, check out our <a href="https://github.com/bpmn-io/bpmn-js/issues/milestones">preliminary schedule</a>, that may, of course, change any time.
-
-
-
-
-<link rel="stylesheet" href="{{ assets }}/js/highlight/css/sunburst.css" />
-
-{{#script}}
-<script src="{{ assets }}/js/highlight/highlight.pack.js"></script>
-<script type="text/javascript">
-  hljs.initHighlightingOnLoad();
-</script>
-{{/script}}

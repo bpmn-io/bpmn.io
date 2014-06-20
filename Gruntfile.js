@@ -42,6 +42,10 @@ module.exports = function(grunt) {
         files: [ '<%= config.src %>/assets/{fonts,img,bpmn}/*' ],
         tasks: ['copy:app']
       },
+      copy_attachments: {
+        files: [ '<%= config.src %>/assets/attachments/**/*' ],
+        tasks: [ 'copy:attachments' ]
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -57,8 +61,8 @@ module.exports = function(grunt) {
 
     connect: {
       options: {
-        port: 9000,
-        livereload: 35729,
+        port: 9012,
+        livereload: 19013,
         // change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
       },
@@ -77,21 +81,7 @@ module.exports = function(grunt) {
         app: '<%= config %>',
         flatten: true,
         marked: {
-          process: true,
-          highlight: function(code, lang, callback) {
-            var hjs = require('highlight.js');
-
-            console.log(arguments);
-
-            var result;
-            if (lang) {
-              result = hjs.highlight(lang, code);
-            } else {
-              result = hjs.highlightAuto(code);
-            }
-
-            callback(null, result.value);
-          }
+          process: true
         },
         assets: '<%= config.dist %>/assets',
         layoutdir: '<%= config.src %>/templates/layouts',
@@ -117,7 +107,22 @@ module.exports = function(grunt) {
       blog: {
         options: {
           marked: {
-            process: true
+            process: true,
+            langPrefix: 'hljs language-',
+            highlight: function(code, lang) {
+              var hjs = require('highlight.js');
+
+              console.log(arguments);
+
+              var result;
+              if (lang) {
+                result = hjs.highlight(lang, code);
+              } else {
+                result = hjs.highlightAuto(code);
+              }
+
+              return result.value;
+            }
           },
           helpers: [
             'handlebars-helper-compose',
@@ -135,6 +140,16 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      attachments: {
+        files: [
+        {
+            expand: true,
+            cwd: '<%= config.src %>/assets/attachments',
+            src: [ '**/*' ],
+            dest: '<%= config.dist %>/assets/attachments'
+          }
+        ]
+      },
       app: {
         files: [
           // include fonts + images + js
@@ -189,7 +204,7 @@ module.exports = function(grunt) {
   grunt.registerTask('serve', [
     'clean',
     'less:app',
-    'copy:app',
+    'copy',
     'assemble',
     'connect:livereload',
     'watch'
