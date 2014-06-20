@@ -112,8 +112,6 @@ module.exports = function(grunt) {
             highlight: function(code, lang) {
               var hjs = require('highlight.js');
 
-              console.log(arguments);
-
               var result;
               if (lang) {
                 result = hjs.highlight(lang, code);
@@ -213,7 +211,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'less:dist',
-    'copy:app',
+    'copy',
     'assemble'
   ]);
 
