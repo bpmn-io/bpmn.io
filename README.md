@@ -1,11 +1,16 @@
 # bpmn.io
 
-These are the sources of [bpmn.io](http://bpmn.io). Powered by [Assemble](http://assemble.io/).
+> See [bpmn-io/bpmn-js](https://github.com/bpmn-io/bpmn-js) for our BPMN 2.0 rendering + modeling toolkit.
+
+These are the sources our [project website](http://bpmn.io).
 
 
-## Setup Environment
+## Building the Website
 
 The site is built via [Grunt](http://gruntjs.com/) and requires a setup [Node.js](nodejs.org) environment.
+
+
+### Setup Environment
 
 To get started
 
@@ -25,12 +30,12 @@ To get started
     ```
 
 
-## Build the site
+### Generating the Site
 
 Make sure you have the environment properly set up.
 
 
-### Develop
+#### Develop
 
 Build and serve the site on [localhost:9000](http://localhost:9000) via
 
@@ -39,7 +44,7 @@ grunt serve
 ```
 
 
-### Publish
+#### Publish
 
 Create a distribution ready version of the site via
 
