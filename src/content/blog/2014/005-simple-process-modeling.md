@@ -30,7 +30,7 @@ Checkout the modeling workflow below:
        src="{{ assets }}/attachments/blog/2014/005-simple-process-modeling.gif">
 </div>
 
-You may try out the feature by creating your own process on [demo.bpmn.io](http://demo.bpmn.io).
+You may try out the feature by creating your own process on [demo.bpmn.io](http://demo.bpmn.io/new).
 
 The new version of bpmn-js is available via [npm](http://npmjs.org/bpmn-js) and [bower](https://github.com/bpmn-io/bower-bpmn-js).
 
@@ -107,4 +107,4 @@ To learn about everything that is inside have a look at the issues closed for [b
 
 In the next milestone we plan to ship drag and drop of process elements along with [other goodies](https://github.com/bpmn-io/bpmn-js/issues?milestone=3&state=open). Stay updated on what we do via [twitter](https://twitter.com/bpmn_io).
 
-For now, happy modeling on [demo.bpmn.io](http://demo.bpmn.io).
+For now, happy modeling on [demo.bpmn.io](http://demo.bpmn.io/new).
