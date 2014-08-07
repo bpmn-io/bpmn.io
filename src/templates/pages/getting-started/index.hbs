@@ -1,0 +1,139 @@
+---
+title: Getting Started
+description: 'An overview over our toolkit and how to download and use it'
+---
+
+<div class="row">
+  <div class="col-md-9">
+
+    <h2 class="page-header" id="overview">
+      Overview
+    </h2>
+
+    <p>
+      bpmn.io is a BPMN 2.0 rendering toolkit and web modeler.
+      It is powered by <a href="https://github.com/bpmn-io/bpmn-js">bpmn-js</a>, a client-side only library that embeds BPMN 2.0 into the browser. It runs in modern browsers and requires no server backend. This allows you to easily embed it into any web applications.
+    </p>
+
+    <p>
+      bpmn-js is built in a way that it can be both a viewer and web modeler.
+      Use the <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/url-viewer">viewer</a> to embed BPMN 2.0 into your applications and <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/overlays">enrich it with your data</a>.
+      Use the <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler">modeler</a> to create BPMN 2.0 diagrams on the web.
+    </p>
+
+
+    <h2 class="page-header" id="download">Download</h2>
+
+    <p class="lead">
+      There exist a few ways to use our toolkit (currently {{ site.bpmnjs.version }}). Choose an option based on your use case.
+    </p>
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h3>Quick Start</h3>
+        <p>
+          A bundle that embeds the viewer in a simple project.
+          Use it to quickly open the viewer locally in your web browser.
+        </p>
+        <p>
+          <a href="https://github.com/bpmn-io/bpmn-js-seed/archive/master.zip" target="_blank" class="btn btn-lg btn-outline">Download Seed</a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Source Code</h3>
+        <p>
+          Source code of bpmn-js.
+          Use it to have a look inside or build tooling around bpmn-js.
+          <strong>Requires <a href="#build-bpmn-js">additional tools</a></strong>.
+        </p>
+
+        <p>
+          <a href="https://github.com/bpmn-io/bpmn-js/archive/{{ site.bpmnjs.version }}.zip" target="_blank" class="btn btn-lg btn-outline">Download Source</a>
+        </p>
+      </div>
+    </div>
+
+
+    <h3>Install with Bower</h3>
+    <p>
+      Use <a href="http://bower.io">Bower</a> to download bpmn-js and all dependencies for you.
+    </p>
+
+    <div>
+      <pre><code class="bash"><span class="nv">$ </span>bower install bpmn-js</code></pre>
+    </div>
+
+    <p>
+      Checkout the <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-bower">simple-bower</a> example to learn more.
+    </p>
+
+
+    <h3>Install via npm</h3>
+    <p>
+      Install bpmn-js via <a href="http://npmjs.org">npm</a> to get access to the full project sources.
+    </p>
+
+    <div>
+      <pre><code>npm install bpmn-js</code></pre>
+    </div>
+
+    <p>
+      <strong>Note:</strong> This requires additional build steps, i.e. bundling for the browser.
+    </p>
+
+    <p>
+      Checkout the <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-commonjs">simple-commonjs</a> example to learn more.
+    </p>
+
+
+    <h2 class="page-header" id="examples">Learn by Examples</h2>
+
+    <p>
+      Have a look at our <a href="https://github.com/bpmn-io/bpmn-js-examples">example projects</a> to learn more about different usage scenarios for bpmn-js.
+    </p>
+
+
+    <h2 class="page-header" id="build-bpmn-js">Build the Toolkit</h2>
+
+    <p class="lead">
+      You can build the toolkit yourself to hack it and get access to all its features and extensibility points.
+    </p>
+
+    <p>
+      Ensure you have <a href="http://nodejs.org">Node.js</a> installed on your machine.
+    </p>
+
+    <p>
+      If you have not downloaded the projects source code already, create an empty folder an clone the project using <a href="http://www.git-scm.com/">git</a> via
+    </p>
+
+    <div>
+      <pre><code>git clone https://github.com/bpmn-io/bpmn-js.git -b {{ site.bpmnjs.version }} .</code></pre>
+    </div>
+
+    <p>
+      Execute the following commands to fetch all project dependencies
+    </p>
+
+    <div>
+      <pre><code>npm install -g grunt-cli
+npm install
+</code></pre>
+    </div>
+
+    <p>
+      Build / test the project via
+    </p>
+
+    <div>
+      <pre><code>grunt</code></pre>
+    </div>
+
+    <p>
+      Refer to the projects <a href="https://github.com/bpmn-io/bpmn-js">GitHub page</a> for more information.
+    </p>
+  </div>
+</div>

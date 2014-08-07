@@ -19,19 +19,23 @@
   }
 }
 
-.btn-xlg {
-  .button-xlarge();
+.btn-outline {
+  .button-variant(@brand-primary; transparent; @brand-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+  }
 }
 
-.input-group-xlg > .form-control,
-.input-group-xlg > .input-group-addon,
-.input-group-xlg > .input-group-btn > .btn { .input-xlarge(); }
 
-.input-group-xlg > .form-control:not(:last-child) { .border-right-radius(0); }
-.input-group-xlg > .input-group-btn:last-child > .btn { .border-left-radius(0); }
+.btn-xlg {
+  .button-xlarge();
 
-.has-error .input-group-btn .btn {
-  .button-variant(@state-danger-text; @state-danger-bg; @state-danger-text);
+  margin: 5px 10px;
 }
 
 .bi-front-page {
