@@ -20,7 +20,7 @@ component: navbar
     <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li{{#startsWith title "Getting started"}} class="active"{{/startsWith}}>
-          <a href="../getting-started">Getting started</a>
+          <a href="{{relative page.dest "dist/getting-started"}}">Getting started</a>
         </li>
         <!--
         <li{{#startsWith title "Toolkit"}} class="active"{{/startsWith}}>
