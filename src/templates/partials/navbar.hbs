@@ -5,7 +5,7 @@ component: navbar
 <!-- Navbar component
 ================================================== -->
 
-<header class="navbar navbar-static-top bi-navbar" role="banner">
+<header class="navbar navbar-default navbar-static-top bi-navbar" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bi-navbar-collapse">
@@ -19,13 +19,21 @@ component: navbar
     </div>
     <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
+        <li{{#startsWith title "Getting started"}} class="active"{{/startsWith}}>
+          <a href="../getting-started">Getting started</a>
+        </li>
+        <!--
+        <li{{#startsWith title "Toolkit"}} class="active"{{/startsWith}}>
+          <a href="../css">CSS</a>
+        </li>
+        -->
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
         <li id="contact">
           <a href>Contact</a>
         </li>
 
-        <li{{#contains title "Blog"}} class="active"{{/contains}}>
+        <li{{#startsWith title "Blog"}} class="active"{{/startsWith}}>
           <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
         </li>
         <li>
