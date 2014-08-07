@@ -1,1 +1,3 @@
 title: bpmn.io
+bpmnjs:
+  version: v0.4.1
