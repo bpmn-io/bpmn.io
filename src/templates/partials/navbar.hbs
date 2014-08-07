@@ -29,10 +29,6 @@ component: navbar
         -->
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">
-        <li id="contact">
-          <a href>Contact</a>
-        </li>
-
         <li{{#startsWith title "Blog"}} class="active"{{/startsWith}}>
           <a href="{{relative page.dest "dist/blog/"}}">Blog</a>
         </li>
