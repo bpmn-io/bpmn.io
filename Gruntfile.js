@@ -140,14 +140,12 @@ module.exports = function(grunt) {
 
     copy: {
       attachments: {
-        files: [
-        {
-            expand: true,
-            cwd: '<%= config.src %>/assets/attachments',
-            src: [ '**/*' ],
-            dest: '<%= config.dist %>/assets/attachments'
-          }
-        ]
+        files: [ {
+          expand: true,
+          cwd: '<%= config.src %>/assets/attachments',
+          src: [ '**/*' ],
+          dest: '<%= config.dist %>/assets/attachments'
+        }]
       },
       app: {
         files: [
