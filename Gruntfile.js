@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         dist: 'bower_components/bootstrap/dist'
       },
       jquery: {
-        dist: 'bower_components/jquery'
+        dist: 'bower_components/jquery/dist'
       },
       uservoice: process.env.USER_VOICE_KEY || null,
       ga: process.env.GA_KEY || null,
