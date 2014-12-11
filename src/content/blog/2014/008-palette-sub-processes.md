@@ -105,7 +105,7 @@ The internal SVG representation changed and now reflects the element hierarchy:
     </g>
   </g>
   <g class="djs-children">
-    <-- direct children -->
+    <!-- direct children -->
     <g class="djs-group"></g>
     <!-- ... -->
   </g>
