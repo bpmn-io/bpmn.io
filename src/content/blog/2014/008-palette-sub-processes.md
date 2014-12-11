@@ -77,7 +77,7 @@ Try it out and enjoy crisp BPMN 2.0 symbols in your applications.
 We have fixed various issues with the rendering of BPMN 2.0. As a result the bpmn-js viewer now displays the BPMN 2.0 timer in a spec compliant. Labels are positioned correctly (again), too, and the plus symbol on collapsed sub-processes / call activities returned.
 
 
-## Thinks may break
+## Things may break
 
 During our last release we performed a number of crucial refactorings and code cleanups.
 
