@@ -24,7 +24,6 @@ module.exports = function(grunt) {
       jquery: {
         dist: 'bower_components/jquery/dist'
       },
-      uservoice: process.env.USER_VOICE_KEY || null,
       ga: process.env.GA_KEY || null,
       newsletter: process.env.NEWSLETTER_SUBSCRIBE_ENDPOINT || null
     },
