@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="description" content="An open toolkit to model and embed BPMN 2.0 diagrams">
-    <meta name="keywords" content="camunda, camunda BPM, Zalando, open source, toolkit, BPMN 2.0, business process, embed, model, integrate, extend">
-    <meta name="author" content="bpmn.io, camunda BPM community">
+---
+layout: bare.hbs
+---
 
-    <title>{{#if title}}{{title}} | {{/if}}{{site.title}}</title>
-    <link rel="stylesheet" href="{{assets}}/css/app.css">
-    <link rel="icon" href="{{assets}}/favicon.ico">
-  </head>
-  <body>
+<!-- navbar -->
+{{> navbar }}
 
-    <!-- navbar -->
+<!-- page content -->
+{{> body }}
 
-    {{> navbar }}
-
-    <!-- page content -->
-    {{> body }}
-
-    <!-- footer -->
-
-    {{> footer }}
-
-    <!-- scripts -->
-    <script src="{{assets}}/js/jquery.min.js"></script>
-    <script src="{{assets}}/js/bootstrap.min.js"></script>
-
-    {{ scripts }}
-
-    {{#if app.ga}}
-      {{> ga }}
-    {{/if}}
-  </body>
-</html>
+<!-- footer -->
+{{> footer }}
