@@ -12,7 +12,7 @@ published: 2015-04-01 14:00
 
 
 <p class="introduction">
-  Good user interaction is a basis for a solid modeling experience. This post introduces a new way to model BPMN 2.0 with [bpmn-js](https://github.com/bpmn-io/bpmn-js). It unleashes the full power of the BPMN 2.0 specification onto users while going back to simplicity in the little things.
+  Good user interaction is a basis for a solid modeling experience. This post introduces a new way to model BPMN 2.0 with [bpmn-js](https://github.com/bpmn-io/bpmn-js). It unleashes the full complexity of the BPMN 2.0 specification onto users while going back to simplicity in the little things.
 </p>
 
 <!-- continue -->
@@ -68,7 +68,7 @@ We realised it is about simplification in the little details. That is why we got
 
 We are excited about the upcoming user interface changes and see them as a first step towards building a really awesome BPMN 2.0 modeling tool. How do you feel about them though? Is there anything you particularily like or dislike about the new UI?
 
-We are open to your feedback via [Twitter](https://twitter.com/bpmn_io) and [our forums](https://forums.bpmn.io).
+We are open to your feedback via [Twitter](https://twitter.com/bpmn_io) and [our forums](https://forum.bpmn.io).
 
 
 PS: You want to try out the new user interface yourself? It is [in our code base already](https://github.com/bpmn-io/bpmn-js/tree/new-ui).
