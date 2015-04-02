@@ -1,0 +1,37 @@
+---
+layout: blog.hbs
+---
+
+<div class="bi-blogpost single">
+
+  <div class="published">
+    {{ moment published format="dddd, MMMM DD, YYYY" }}
+  </div>
+
+  <h1 class="page-header"><a href="./{{slug}}.html">{{ title }}</a></h1>
+
+  <div class="content">
+
+    {{> fooled_notice }}
+
+    {{#markdown }}
+      {{> body}}
+    {{/markdown}}
+  </div>
+
+  <div class="meta">
+    Posted by {{ author author }} on <a href="{{slug}}.html">{{ moment published format="YYYY-MM-DD HH:mm ZZ" }}</a>.
+  </div>
+
+  <div class="share">
+    Share via <div class="shariff" data-lang="en" data-theme="white" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;googleplus&quot;]"></div>
+  </div>
+</div>
+
+{{#script}}
+  <link rel="stylesheet" href="{{ assets }}/js/shariff/shariff.min.css">
+  <script src="{{ assets }}/js/shariff/shariff.min.js"></script>
+{{/script}}
+
+
+

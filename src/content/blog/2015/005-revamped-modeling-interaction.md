@@ -1,7 +1,7 @@
 ---
 
 title: BPMN 2.0 Modeling Revamped
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 
 slug: 2015-modeling-revamped
 author: Nico Rehwaldt<https://github.com/nikku>
@@ -9,7 +9,6 @@ author: Nico Rehwaldt<https://github.com/nikku>
 published: 2015-04-01 14:00
 
 ---
-
 
 <p class="introduction">
   Good user interaction is a basis for a solid modeling experience. This post introduces a new way to model BPMN 2.0 with [bpmn-js](https://github.com/bpmn-io/bpmn-js). It unleashes the full complexity of the BPMN 2.0 specification onto users while going back to simplicity in the little things.
