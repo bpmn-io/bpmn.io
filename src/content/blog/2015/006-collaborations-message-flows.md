@@ -1,6 +1,6 @@
 ---
 
-title: Model BPMN collaboration diagrams
+title: Model BPMN Collaboration Diagrams
 layout: blogpost.hbs
 
 slug: 2015-bpmn-collaboration-diagrams

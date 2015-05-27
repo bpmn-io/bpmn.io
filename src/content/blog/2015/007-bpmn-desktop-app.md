@@ -1,6 +1,6 @@
 ---
 
-title: The bpmn.io desktop app is here
+title: The bpmn.io Desktop App is here
 layout: blogpost.hbs
 
 slug: 2015-bpmn-desktop-app
