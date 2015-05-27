@@ -18,3 +18,4 @@ node_modules
 *.sublime-*
 dist/
 bower_components/
+.DS_Store
