@@ -11,6 +11,18 @@ published: 2015-07-15 14:00
 ---
 
 
+<p class="introduction">
+  Last month Tim from Sparta Systems visited us in our Berlin office with requirements for a custom BPMN modeler. Sparta Systems, a Camunda customer, employs [bpmn-js](https://github.com/bpmn-io/bpmn-js) to provide customizable, predefined workflows to their very own customers.
+  In this post he talks about their specific requirements and how he effectively locked down our modeler to create a custom BPMN modeling tool on top of it.
+</p>
+
+<!-- continue -->
+
+<p class="thanks">
+  _A big thanks to [Tim Sneed](https://github.com/tsneed290) from [Sparta Systems](http://www.spartasystems.com) for writing this guest blog post._
+</p>
+
+
 Here at [Sparta Systems](http://www.spartasystems.com), we are working on a customized version of [bpmn-js](https://github.com/bpmn-io/bpmn-js), effectively called sparta-bpmn-js. Our main goal is to prototype a restricted version of the web modeler so that our users will only be able to edit certain areas of the workflow.
 
 In our first round of prototyping, we had two objectives. The first objective was to determine if there was a way to prevent users from modifying a workflow that has loaded in our web modeler. This would include preventing palette items from being dropped anywhere on the workflow, and removing any modifiable actions from the context pad of an element.
