@@ -230,7 +230,7 @@ eventBus.on([
     }
 });
 ```
-Then we listen to various “connection” events, as well as “bendpoint” events to re-style the connection when users are moving connections around. Click here to check out the rest of the source to see how we re-style the connections.
+Then we listen to various “connection” events, as well as “bendpoint” events to re-style the connection when users are moving connections around. [Click here](https://github.com/SpartaSystems/sparta-bpmn-js/blob/master/lib/features/connect/CustomConnect.js) to check out the rest of the source to see how we re-style the connections.
 
 Now, are "special" SequenceFlow went from looking like this
 
@@ -322,3 +322,5 @@ src="{{ assets }}/attachments/blog/2015/008-remove-element.gif">
 
 ###Conclusion
 This post showed how we built our very own customized BPMN 2.0 modeler using bpmn-js. Through the use of the Rules and CommandInterceptor APIs we discovered how to introduce custom rules and behaviors. Thanks to the feature-based pattern of bpmn-js, we could easily swap out the context pad and the palette with our own. This all proves that strong customization is possible with bpmn-js, and we are extremely happy to come out with a working prototype. A big thanks to the Camunda team for assisting us in this endeavor!
+
+We have open sourced an example project to our GitHub, feel free to [check it out](https://github.com/SpartaSystems/sparta-bpmn-js).
