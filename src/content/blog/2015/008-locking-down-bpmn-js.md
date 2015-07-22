@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2015-locking-down-bpmn-js
 author: Tim Sneed<https://github.com/tsneed290>
 
-published: 2015-07-15 14:00
+published: 2015-07-22 13:10
 
 ---
 
