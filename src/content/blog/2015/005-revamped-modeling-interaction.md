@@ -19,8 +19,8 @@ published: 2015-04-01 14:00
 
 We are proud to say we listened to our users. As a result we overhauled some of the basic mechanics behind our BPMN 2.0 modeling interaction. Have a look yourself:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/005-new-modeling.gif">
+<div class="figure">
+  <img  src="{{ assets }}/attachments/blog/2015/005-new-modeling.gif">
 </div>
 
 The new layout adresses two issues: access to BPMN 2.0 elements and confusion about the context pad.

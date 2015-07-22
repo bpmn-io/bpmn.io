@@ -1,0 +1,49 @@
+
+
+.bi-blogpost.single {
+
+  .thanks {
+    margin-bottom: 30px;
+  }
+
+  .figure {
+    text-align: center;
+    margin: 30px 0;
+
+    img {
+      max-width: 90%;
+      box-shadow: 0 0 2px #666;
+    }
+
+    &.no-border {
+      img {
+        box-shadow: none;
+      }
+    }
+  }
+
+  pre {
+    margin: 20px 0;
+
+    code {
+      padding: 10px;
+
+      border: solid 2px #EEE;
+      border-width: 4px 1px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .bi-blogpost.single {
+
+    .figure {
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

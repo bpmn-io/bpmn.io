@@ -20,8 +20,8 @@ published: 2015-05-27 14:00
 The bpmn.io desktop app is something we have been working on since last year's [BPMCon](http://www.bpmcon.de). It packages our BPMN modeler and can be installed onto your computer via the [chrome app store](https://chrome.google.com/webstore/detail/bpmnio/hhikcjnalmkhinbomccdibaolelcpjli). Today we are proud to release the first stable version.
 
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="max-width: 80%" src="{{ assets }}/attachments/blog/2015/007-desktop-app.png">
+<div class="figure no-border">
+  <img style="max-width: 80%;" src="{{ assets }}/attachments/blog/2015/007-desktop-app.png">
 </div>
 
 The app allows you to open multiple BPMN diagrams in paralell through multiple tabs. It integrates with the operating system allowing you to open and save diagram files right to your desktop. We've also added a XML tab that allows you to view and edit xml, with all the changes being reflected in the diagram.

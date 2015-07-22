@@ -21,19 +21,17 @@ published: 2015-01-22 18:00
 
 The major feature of our release is the ability manually layout connections. You can now customize the way points of connection and reconnect connections to different sources / targets.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-src="{{ assets }}/attachments/blog/2015/002-bendpoints.gif">
+    <img src="{{ assets }}/attachments/blog/2015/002-bendpoints.gif">
   </a>
 </div>
 
 To support the user creating clean diagrams, the connection snaps automatically at vertical and horizontal orientation. The start and end points of a connection can be moved and attached to another shape.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-  src="{{ assets }}/attachments/blog/2015/002-reconnect.gif">
+    <img   src="{{ assets }}/attachments/blog/2015/002-reconnect.gif">
   </a>
 </div>
 
@@ -46,10 +44,9 @@ Try out our the manual connection layouting on [demo.bpmn.io](http://demo.bpmn.i
 The modeler now support two selection modes. First one is by using our new lasso tool. It allows to draw a box around the elements you want to select.
 The other way allows adding individual elements to the selection.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-  src="{{ assets }}/attachments/blog/2015/002-lasso-tool.gif">
+    <img   src="{{ assets }}/attachments/blog/2015/002-lasso-tool.gif">
   </a>
 </div>
 

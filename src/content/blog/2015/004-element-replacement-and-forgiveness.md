@@ -20,10 +20,9 @@ published: 2015-03-13 14:00
 
 Todays [bpmn-js](https://github.com/bpmn-io/bpmn-js) release brings us one step closer to complete BPMN 2.0 support in our modeler. Via the context pad of an element it is now possible to change the type of activities, gateways and events. The replace action respects BPMN specific connection rules and is fully un- and redoable.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%"
-src="{{ assets }}/attachments/blog/2015/004-replace.gif">
+    <img src="{{ assets }}/attachments/blog/2015/004-replace.gif">
   </a>
 </div>
 
@@ -48,10 +47,9 @@ bpmnjs.importXML(someXML, function(err, warnings) {
 
 Our [demo application](http://demo.bpmn.io) shows graceful error handling in action. It displays an alert, notifying the users about possible import problems. Upon request it displays a detailed listing of all the problems that have been found during the import.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%"
-src="{{ assets }}/attachments/blog/2015/004-import-warnings.png">
+    <img src="{{ assets }}/attachments/blog/2015/004-import-warnings.png">
   </a>
 </div>
 
@@ -62,10 +60,9 @@ Feel free to report any BPMN diagram import issues in our [project forum](https:
 
 While implementing the replace feature we updated our [BPMN font](https://github.com/bpmn-io/bpmn-js) with lots of new BPMN glyphs.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="https://github.com/bpmn-io/bpmn-font">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%"
-src="{{ assets }}/attachments/blog/2015/004-bpmn-font.png">
+    <img src="{{ assets }}/attachments/blog/2015/004-bpmn-font.png">
   </a>
 </div>
 

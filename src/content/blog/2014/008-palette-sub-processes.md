@@ -22,10 +22,9 @@ published: 2014-12-11 13:00
 
 Todays release of [bpmn-js](https://github.com/bpmn-io/bpmn-js) contains a number of significant modeling improvements, first and foremost the palette.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-         src="{{ assets }}/attachments/blog/2014/008-palette.gif">
+    <img          src="{{ assets }}/attachments/blog/2014/008-palette.gif">
   </a>
 </div>
 
@@ -38,9 +37,8 @@ Create a process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out the new 
 
 Elements may be dragged from the context pad, too, to add them at a specific position.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/008-drag-from-context-pad.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/008-drag-from-context-pad.gif">
 </div>
 
 The diagram will snap to certain anchor points during move and create, allowing a faster and simpler creation of BPMN 2.0 process diagrams.
@@ -51,9 +49,8 @@ The diagram will snap to certain anchor points during move and create, allowing 
 The palette allows you to add collapsed and expanded sub-processes to BPMN 2.0 diagrams.
 Once added to the canvas, expanded sub-processes may be resized and child elements may be added or removed from them.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/008-sub-processes.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/008-sub-processes.gif">
 </div>
 
 Child elements of sub-processes will move with the container once the sub-process is moved.
@@ -63,9 +60,8 @@ Child elements of sub-processes will move with the container once the sub-proces
 
 The modeler is now using an icon font to render BPMN 2.0 symbols in the context pad and the palette.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/008-font.png">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/008-font.png">
 </div>
 
 The font is available under an open font license in its own [GitHub repository](https://github.com/bpmn-io/bpmn-font).
@@ -124,10 +120,9 @@ For our next release we will focus on making connecting elements (more) awesome.
 
 In the mean time, make sure to try out our new modeling features. A lot of things can be done using bpmn-js already:
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-         src="{{ assets }}/attachments/blog/2014/008-modeled.gif">
+    <img          src="{{ assets }}/attachments/blog/2014/008-modeled.gif">
   </a>
 </div>
 

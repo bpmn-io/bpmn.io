@@ -31,24 +31,24 @@ For the second objective, we wanted to introduce a palette that would allow an i
 
 For example, here is a simple workflow. Notice the "special" SequenceFlow decorated as a red dashed line.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-poc-step1.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-poc-step1.png">
 </div>
 
 A user is not allowed to place a palette item on a non-"special" SequenceFlow.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-poc-step2.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-poc-step2.png">
 </div>
 
 A user should be allowed, however, to place the palette item on the "special" SequenceFlow.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-poc-step3.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-poc-step3.png">
 </div>
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-poc-step4.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-poc-step4.png">
 </div>
 
 This post will describe the steps we took to achieve both objectives and come out with a demonstrable prototype.
@@ -188,8 +188,8 @@ SpartaRules.prototype.init = function() {
 
 > **NOTE:** Your custom rules module MUST be the first module in the `Modeler._modules` array, otherwise the custom rules would not be evaluated before other rule modules and thus cannot overrule them.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-no-drop.gif">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-no-drop.gif">
 </div>
 
 Since we want to allow users to eventually add custom palette items onto the workflow, we need to continue to allow users to move elements and connections around the diagram as they may see fit. But we do not want allow them modify a connection’s source and target elements. Using the `Rules` API this is easily achieved by adding rules for the `connection.reconnectStart` and `connection.reconnectEnd` events.
@@ -220,8 +220,8 @@ function canReconnectEnd(connection, target) {
 
 By validating the hover element’s id attribute against the connection’s source or target element `id` attribute, we can prevent users from modifying connection’s source/target element.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-no-reconnect.gif">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-no-reconnect.gif">
 </div>
 
 
@@ -269,14 +269,14 @@ Then we listen to various `connection` events, as well as `bendpoint` events to 
 
 Now, are "special" SequenceFlow went from looking like this
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-normal-connection.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-normal-connection.png">
 </div>
 
 to this
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-special-connection.png">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-special-connection.png">
 </div>
 
 Next, in our custom rule module, we modify our evaluation of the `shape.create` rule to allow specific palette items to be dropped on these "special" SequenceFlows.
@@ -309,8 +309,8 @@ Here the shape being dropped is checked to ensure that the `ssi:droppable` attri
 
 Because the palette item we added contains the attribute `ssi:droppable`, we can now drop the CallActivity onto the "special" SequenceFlow!
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-drop-on-special-connection.gif">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-drop-on-special-connection.gif">
 </div>
 
 
@@ -352,8 +352,8 @@ function RemoveDroppableBehavior(eventBus, modeling) {
 
 With the custom modeling behavior the delete interaction now looks like this:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/008-remove-element.gif">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/008-remove-element.gif">
 </div>
 
 

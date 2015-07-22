@@ -22,9 +22,8 @@ published: 2014-08-06 17:00
 Todays release of [bpmn-js](https://github.com/bpmn-io/bpmn-js) marks another big step towards a bpmn.io process modeler.
 We can now model intermediate events, text annotations and gateways. See yourself:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/006-bpmn-elements.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/006-bpmn-elements.gif">
 </div>
 
 Create your own process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out the new modeling features yourself.
@@ -35,9 +34,8 @@ Create your own process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out t
 On top of an extended modeling palette we added the ability to move elements.
 This comes with some handy gimmics such as relayouting incoming and outgoing connections as well as automatic connection cropping.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/006-move.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/006-move.gif">
 </div>
 
 All changes can be undone and exports to valid BPMN 2.0 XML.
@@ -53,9 +51,8 @@ The library will take care of all the positioning and scaling of overlays for yo
 
 The following screencast shows overlays that display each elements id in action during modeling and process navigation:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/006-overlays.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/006-overlays.gif">
 </div>
 
 

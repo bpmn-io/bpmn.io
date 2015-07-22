@@ -19,10 +19,9 @@ published: 2015-01-28 18:00
 
 The forum is available on [forum.bpmn.io](https://forum.bpmn.io). It provides users with a straight forward way to [file bug reports](https://forum.bpmn.io/t/report-problems) and will serve as a complementary knowledge base for [getting started guides](https://forum.bpmn.io/t/how-to-embed-the-modeler-into-my-applications) as well as [usage examples](https://forum.bpmn.io/t/example-applications-using-bpmn-js) regarding our project.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="https://forum.bpmn.io">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%"
-src="{{ assets }}/attachments/blog/2015/003-forum.png">
+    <img src="{{ assets }}/attachments/blog/2015/003-forum.png">
   </a>
 </div>
 

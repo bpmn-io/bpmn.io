@@ -21,10 +21,9 @@ published: 2015-01-02 12:00
 
 Todays release of [bpmn-js](https://github.com/bpmn-io/bpmn-js) stream-lines the creation of BPMN 2.0 processes.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/new">
-    <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-         src="{{ assets }}/attachments/blog/2015/001-interaction.gif">
+    <img          src="{{ assets }}/attachments/blog/2015/001-interaction.gif">
   </a>
 </div>
 
@@ -46,9 +45,8 @@ Give us feedback on how you feel about the [new modeling interaction](http://dem
 
 With this release we add modeling support for touch devices, including tablets and smart phones.
 
-<div style="margin: 30px 0; text-align: center">
-  <iframe style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-          src="//player.vimeo.com/video/115333037" width="700" height="401" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="figure">
+  <iframe           src="//player.vimeo.com/video/115333037" width="700" height="401" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 The [fat-finger](http://dictionary.reference.com/browse/fat-finger) problem applies and can be mitigated by zooming in or switching to a larger screen device.

@@ -21,17 +21,15 @@ published: 2014-09-23 13:00
 
 Todays release of [bpmn-js](https://github.com/bpmn-io/bpmn-js) comes with two big modeling features. Via the modeler you can now connect elements via the context pad.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/007-connect.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/007-connect.gif">
 </div>
 
 Also via the context pad you can delete individual elements. This removes incoming / outgoing connections, too.
 Both, connecting elements and deletion can be undone and result in valid BPMN 2.0 XML.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/007-delete.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/007-delete.gif">
 </div>
 
 Create your own process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out the new modeling features yourself.
@@ -43,9 +41,8 @@ On top of the added modeling functionality we worked on improving the existing m
 To ease modeling of well organized process diagrams we added element snapping.
 A feature well known from other modeling tools adjusts an elements position during move to be on line (horizontally or vertically) with related elements. See yourself:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/007-snapline.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/007-snapline.gif">
 </div>
 
 
@@ -57,9 +54,8 @@ Instead of relayouting connections on every change, we added a number of repair 
 
 Automatic layouting applies to both, new and existing sequence and message flows:
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 100%"
-       src="{{ assets }}/attachments/blog/2014/007-layout.gif">
+<div class="figure">
+  <img        src="{{ assets }}/attachments/blog/2014/007-layout.gif">
 </div>
 
 
@@ -99,7 +95,7 @@ We have a growing list of these examples. Two recently published once are a mode
 
 A visual BPMN 2.0 diagram comparison tool. Try it out at [demo.bpmn.io/diff](http://demo.bpmn.io/diff) now!
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="http://demo.bpmn.io/diff">
     <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 70%"
          src="{{ assets }}/attachments/blog/2014/007-diff.png">
@@ -114,7 +110,7 @@ The tool uses our BPMN 2.0 viewer, the [overlay](http://bpmn.io/blog/posts/2014-
 A new example application available on [GitHub](https://github.com/bpmn-io/bpmn-js-examples/tree/master/commenting).
 It shows how commenting on process diagrams may be integrated into bpmn-js.
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
   <a href="{{ assets }}/attachments/blog/2014/007-comments.png">
     <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 70%"
          src="{{ assets }}/attachments/blog/2014/007-comments.png">

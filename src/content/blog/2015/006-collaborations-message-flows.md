@@ -21,8 +21,8 @@ published: 2015-05-13 14:00
 
 The new version of [bpmn-js](https://github.com/bpmn-io/bpmn-js) released today allows you to create participants (pools) and message flows and thus allows you to build complex collaboration diagrams. It comes baked in with a number of convenient features including automatic process to participant conversion, participant alignment / snapping, message flow layouting and more.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 80%" src="{{ assets }}/attachments/blog/2015/006-participant-modeling.gif">
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2015/006-participant-modeling.gif">
 </div>
 
 On top of that we added new modeling tools and improved the modeling interaction, feedback and error handling of the BPMN modeler. Try out the changes [yourself](http://demo.bpmn.io).
@@ -37,8 +37,8 @@ We added two new tools to the modeler that help you creating and maintaining lar
 
 The space tool allows you to create or remove space both horizontally and vertically in a diagram. It can be activated via palette or by pressing `s` on the keyboard. If you would like to remove space instead of creating it use the `CTRL` modifier (`ALT` on Mac) during initialization.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/006-space-tool.gif">
+<div class="figure">
+  <img  src="{{ assets }}/attachments/blog/2015/006-space-tool.gif">
 </div>
 
 
@@ -46,8 +46,8 @@ The space tool allows you to create or remove space both horizontally and vertic
 
 The __lasso__ allows you to easily select a number of diagram elements. You can then proceed to move or delete (try `DEL` on your keyboard) the elements. Activate the lasso tool from the palette, by pressing `l` on your keyboard or via `CTRL` + drag using the mouse.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/006-multi-select-tool.gif">
+<div class="figure">
+  <img  src="{{ assets }}/attachments/blog/2015/006-multi-select-tool.gif">
 </div>
 
 
@@ -55,8 +55,8 @@ The __lasso__ allows you to easily select a number of diagram elements. You can 
 
 WIth collaborations we added a number of modeling rules. These are required to ensure that diagrams are semantically correct BPMN. To better transport these rules to the user the modeler now displays an explaination whenever he violates one of the more often forgotten rules.
 
-<div style="margin: 30px 0; text-align: center">
-  <img style="box-shadow: 0px 2px 6px 2px #C2C2C2; max-width: 90%" src="{{ assets }}/attachments/blog/2015/006-feedback.gif">
+<div class="figure">
+  <img  src="{{ assets }}/attachments/blog/2015/006-feedback.gif">
 </div>
 
 _Tip:_ Hover over the explaination and it will stay up longer.

@@ -23,7 +23,7 @@ All changes to labels can be undone and are persisted in the underlying BPMN 2.0
 Check out the direct editing screencast below or try out the feature yourself on [demo.bpmn.io](http://demo.bpmn.io).
 
 
-<div style="margin: 30px 0; text-align: center">
+<div class="figure">
 
   <object WIDTH="800" HEIGHT="473" style="box-shadow: 0px 2px 6px 2px #C2C2C2;">
     <param name="movie" value="{{ assets }}/attachments/blog/2014/004-label-editing.swf">
