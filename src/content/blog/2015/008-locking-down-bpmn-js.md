@@ -128,7 +128,7 @@ assign(actions, {
 > Take note of the `ssi:droppable` moddle attribute defined for the `create.call-activity` palette item, that will be explained later in this post.
 
 
-### Controlling the Palette
+### Controlling the Context Pad
 
 Like the `Palette`, we needed to customize the context pad completely. Therefore we added our own `ContextPadProvider` without actions that would modify an element.
 
