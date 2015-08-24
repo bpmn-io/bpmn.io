@@ -21,12 +21,12 @@ published: 2014-02-20 16:00
 
 ## A Brief Introduction
 
-<a href="http://www.bpmn.org/">BPMN 2.0</a> is an established global standard for modelling business processes. It <a href="http://camunda.org/bpmn/tutorial.html">allows you to visualize business processes</a>, thereby making them easier to capture, discuss and change. 
+<a href="http://www.bpmn.org/">BPMN 2.0</a> is an established global standard for modelling business processes. It <a href="http://camunda.org/bpmn/tutorial.html">allows you to visualize business processes</a>, thereby making them easier to capture, discuss and change.
 Through its well defined file format, it also enables you to exchange modeled diagrams freely across compliant modeling tools. In short: It is a great way to communicate processes.
 
 To leverage the full potential of BPMN the standard must be available to everyone.
 Everybody should have the possibility to model BPMN with a great usability and every developer should be able to use BPMN diagrams in his or her application.
-With bpmn.io we build a toolkit that aims accomplish nothing more than this. 
+With bpmn.io we build a toolkit that aims accomplish nothing more than this.
 
 Because we believe free and easily accessible tools can make the difference, bpmn.io will be open source and free to use for everyone.
 
@@ -65,7 +65,7 @@ Give us feedback and make sure to follow us on [Twitter](https://twitter.com/bpm
 
 <br/>
 
-bpmn.io is a joint project of [camunda](http://www.camunda.com) and [Zalando](http://tech.zalando.com) and part of [camundaBPM](http://camunda.org). Learn more about [us]({{ relative page.dest 'dist/about/' }}).
+bpmn.io is a joint project of [Camunda](http://www.camunda.com) and [Zalando](http://tech.zalando.com) and part of [Camunda BPM](http://camunda.org). Learn more about [us]({{ relative page.dest 'dist/about/' }}).
 
 
 

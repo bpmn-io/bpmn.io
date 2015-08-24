@@ -78,7 +78,7 @@ Have a look into our [examples repository](https://github.com/bpmn-io/bpmn-js-ex
 
 ## Wrapping up
 
-The community hero of this release is [Sebastian](https://github.com/SebastianStamm), a friend over at [camunda BPM](https://camunda.org). He reported and fixed quite a number of bugs and verified that our bpmn viewer actually runs on Internet Explorer 9, too. Cheerio to him!
+The community hero of this release is [Sebastian](https://github.com/SebastianStamm), a friend over at [Camunda BPM](https://camunda.org). He reported and fixed quite a number of bugs and verified that our bpmn viewer actually runs on Internet Explorer 9, too. Cheerio to him!
 
 As always, fetch the latest version of bpmn-js via [npm](https://www.npmjs.org/package/bpmn-js) or [bower](https://github.com/bpmn-io/bower-bpmn-js). Make sure to try out our new modeling and toolkit changes.
 
