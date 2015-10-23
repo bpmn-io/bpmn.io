@@ -12,7 +12,7 @@ published: 2015-10-23 15:10
 
 
 <p class="introduction">
-  Today we release the best [bpmn-js](https://github.com/bpmn-io/bpmn-js) version as of yet. We added tons of new changes such as modeling lanes, event sub-processes, data objects and default flows. On top of that you can now move connection segments in parallel. Under the hood some significant improvements make the BPMN toolkit feel noticeably faster and allow users to totally customize element rendering.
+  Today we released the best [bpmn-js](https://github.com/bpmn-io/bpmn-js) version as of yet. We added tons of new changes such as modeling lanes, event sub-processes, data objects and default flows. On top of that you can now move connection segments in parallel. Under the hood some significant improvements make the BPMN toolkit feel noticeably faster and allow users to totally customize element rendering.
 </p>
 
 <!-- continue -->
@@ -53,7 +53,7 @@ Keep in mind you can undo whatever change you did at any time. Just in case the 
 
 ## A better Multi-Selection Move
 
-A new multi selection move allows you to move elements that do not share the same paren.
+A new multi selection move allows you to move elements that do not share the same parent.
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2015/012-multi-selection-move-2.gif">
@@ -64,7 +64,7 @@ Together with auto expand, this feature makes it much easier to restructure proc
 
 ## Conditional and Default Flows
 
-Conditional and default flows can now be modeled via a sequence flows context pad.
+Conditional and default flows can now be modeled via a sequence flow's context pad.
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2015/012-conditional-flow.gif">
@@ -85,7 +85,7 @@ We added support for modeling event sub-processes, cancel boundary events and da
 Some details on the elements:
 
 * Create [event sub-processes]({{ assets }}/attachments/blog/2015/012-event-sub-process.gif) by transforming a sub-process or transaction.
-* Create [cancel boundary events]({{ assets }}/attachments/blog/2015/012-cancel-boundary.gif) can be created from empty boundary events via the context pad, too.
+* Create [cancel boundary events]({{ assets }}/attachments/blog/2015/012-cancel-boundary.gif) from empty boundary events via context pad.
 * Create [data objects]({{ assets }}/attachments/blog/2015/012-data-object.gif) from the palette and connect them to activities or events via the context pad.
 
 
@@ -110,7 +110,7 @@ This opens areas for a lot of advanced use-cases such as displaying and editing 
   <img src="{{ assets }}/attachments/blog/2015/012-custom-elements.png">
 </div>
 
-We created an [example for this](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements). Check it out if you love custom elements, too.
+We created an [example for this](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements). Check it out if you also love custom elements.
 
 
 ## Breaking Changes
