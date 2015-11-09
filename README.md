@@ -19,14 +19,13 @@ To get started
 *   Get [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/)
 
     ```
-    npm install -g grunt-cli bower
+    npm install -g grunt-cli
     ```
 
 *   Install project dependencies
-    
+
     ```
     npm install
-    bower install
     ```
 
 
