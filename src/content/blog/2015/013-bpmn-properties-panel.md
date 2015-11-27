@@ -26,7 +26,7 @@ The [bpmn-js-properties-panel](https://github.com/bpmn-js-properties-panel) rele
 </div>
 
 
-The properties panel integrates tightly with [bpmn-js](https://github.com/bpmn-io/bpmn-js). By pluggin into the modeler's editing lifecycle it working with both should give users a unified editing experience.
+The properties panel integrates tightly with [bpmn-js](https://github.com/bpmn-io/bpmn-js). By pluggin into the modeler's editing lifecycle it should give users a unified editing experience.
 
 If you would like to checkout the properties panel in action, have a look at the [properties-panel example](https://github.com/bpmn-io/bpmn-js-examples/tree/properties-panel) we have put together.
 
