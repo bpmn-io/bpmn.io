@@ -1,0 +1,23 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <div class="h1"><a href="{{relative page.dest "dist/toolkit/dmn-js"}}">dmn-js</a></div>
+    
+    <ul class="nav nav-pills">
+      <li role="presentation" class="{{ isActive "dmn-js$" page }}">
+        <a href="{{relative page.dest "dist/toolkit/dmn-js"}}">Toolkit</a>
+      </li>
+      <li role="presentation" class="{{ isActive "download" page }}">
+        <a href="{{relative page.dest "dist/toolkit/dmn-js/download"}}">Download</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  {{> body }}
+</div>

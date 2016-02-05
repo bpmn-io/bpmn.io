@@ -1,93 +1,126 @@
 ---
-title: Web-based tooling for BPMN, DMN and CMMN
+title: "bpmn-js: BPMN 2.0 rendering toolkit and web modeler"
 layout: base.hbs
 ---
+
 
 <!-- subhead -->
 
 <div class="bi-masterhead">
   <div class="container">
 
-    <p>
-      <img class="logo" src="{{ assets }}/img/logo.png" />
+    <p class="h1">
+       bpmn-js
     </p>
 
-    <p class="lead">Web-based tooling for <a href="{{relative page.dest "dist/toolkit/bpmn-js"}}">BPMN</a>, <a href="{{relative page.dest "dist/toolkit/dmn-js"}}">DMN</a> and <a href="{{relative page.dest "dist/toolkit/cmmn-js"}}">CMMN</a>.</p>
+    <p class="lead">BPMN 2.0 rendering toolkit and web modeler.</p>
 
     <div class="actions">
       <a href="http://demo.bpmn.io" target="_blank" class="btn btn-xlg btn-outline">Try Online</a>
+      <a href="{{relative page.dest "dist/toolkit/bpmn-js/download"}}" class="btn btn-xlg btn-primary">Download</a>
     </div>
 
+    <p class="bi-note">
+      Currently {{ site.bpmnjs.version }}. <a href="https://github.com/bpmn-io/bpmn-js">View on GitHub</a>.
+    </p>
   </div>
 </div>
 
 <!-- features -->
 
-<div class="bi-features left-aligned">
+<div class="bi-features">
   <div class="container">
-
+    <h2>BPMN everywhere, for everyone</h2>
     <p class="lead">
-      <img src="{{ assets }}/img/toolkit/bpmn-js.gif" style="float: left;border: solid 1px #CCC;margin-right: 30px;margin-bottom:30px;" />
+      bpmn-js simplifies creating, embedding and extending BPMN diagrams.
+      It runs in modern browsers.
+      Use it standalone or integrate it into your applications.
     </p>
 
-    <h2>BPMN Viewer and Editor</h2>
+    <hr class="half-rule">
 
-    <p class="lead">
-      Use <a href="{{ relative page.dest "dist/toolkit/bpmn-js" }}">bpmn-js</a> to display BPMN 2.0 diagrams on your website.
-    </p>
-
-    <p class="lead">
-      Embed it as a BPMN 2.0 web modeler into your applications and customize it to suite your needs.
-    </p>
-
-    <p class="actions lead">
-      <a href="http://demo.bpmn.io" class="btn btn-default">Try Online</a>
-
-      <a href="{{ relative page.dest "dist/toolkit/bpmn-js" }}" class="btn btn-primary">Learn more</a>
-    </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/model.png" alt="Model BPMN 2.0 diagrams" class="img-responsive">
+        <h3>Model</h3>
+        <p>
+          Easily create your own BPMN 2.0 diagrams using a <a href="http://demo.bpmn.io">web-based modeling component</a>.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/embed.png" alt="Embed BPMN 2.0 diagrams into the application" class="img-responsive">
+        <h3>Embed and Annotate</h3>
+        <p>
+          Use the toolkit to embed BPMN 2.0 diagrams into your applications.
+          <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/commenting">Enrich them</a> with the data that is important for you and your business.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{assets}}/img/extend.png" alt="Extend the framework" class="img-responsive">
+        <h3>Extend</h3>
+        <p>Integrate an in-browser process engine, token simulation, <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/colors">styling</a> or <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules">enhanced interactivity</a>. It is up to you because bpmn-js is an open toolkit.</p>
+      </div>
+    </div>
 
     <hr class="half-rule">
   </div>
 </div>
 
-
-<div class="bi-features right-aligned">
+<div class="bi-features">
   <div class="container">
+    <h2>Add BPMN to your Application</h2>
 
     <p class="lead">
-      <img src="{{ assets }}/img/toolkit/dmn-js.gif" style="float: right;border: solid 1px #DDD; margin-left: 30px;margin-bottom:30px;padding: 10px;border-radius: 3px;" />
+      Embed BPMN diagrams in your application with a few lines of code.
     </p>
 
-    <h2>DMN Table Viewer and Editor</h2>
+    <pre style="text-align: left; margin: auto; padding: 0 25px; background: #F8F8F8; max-width: 500px;">{{#code 'no-pre:html'}}
+<script>
+  var viewer = new BpmnJS({ container: 'body' });
+
+  viewer.importXML(bpmnXML, function(err) {
+
+    if (err) {
+      console.log('error rendering', err);
+    } else {
+      console.log('we are good!');
+    }
+  });
+</script>
+{{/code}}</pre>
 
     <p class="lead">
-      Use <a href="{{ relative page.dest "dist/toolkit/dmn-js" }}">dmn-js</a> to display DMN decision tables in the browser.
-    </p>
+      Use the <a href="https://github.com/bpmn-io/bpmn-js-seed">seed project</a> to get started in no time.
 
-    <p class="lead">
-      Embed it as a DMN 1.1 table editor into your web application.
-    </p>
-
-    <p class="actions lead">
-      <a href="http://demo.bpmn.io/dmn" class="btn btn-default">Try Online</a>
-
-      <a href="{{ relative page.dest "dist/toolkit/dmn-js" }}" class="btn btn-primary">Learn more</a>
+      Check out some <a href="{{ relative page.dest "dist/toolkit/bpmn-js/examples" }}">examples</a> to learn more.
     </p>
 
     <hr class="half-rule">
+
   </div>
 </div>
-
-
 
 
 <div class="bi-features">
   <div class="container">
-
-    <h2>Built and battle tested by Camunda</h2>
+    <h2>Make it yours</h2>
 
     <p class="lead">
-      <a href="{{ relative page.dest "dist/about" }}">We</a> provide tooling for viewing and editing BPMN, <a href="{{ relative page.dest "dist/dmn" }}">DMN</a> and <a href="{{ relative page.dest "dist/cmmn" }}">CMMN</a> diagrams in your browser.
+      bpmn-js is built for extensibility. <a href="https://github.com/bpmn-io/bpmn-js-nyan">Customize</a> and <a href="https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements">extend</a> the toolkit to suite your needs.
+    </p>
+
+    <hr class="half-rule">
+
+  </div>
+</div>
+
+<div class="bi-features">
+  <div class="container">
+
+    <h2>About bpmn.io</h2>
+
+    <p class="lead">
+      <a href="{{ relative page.dest "dist/about" }}">We</a> provide tooling for viewing and editing <a href="{{ relative page.dest "dist/toolkit/bpmn-js" }}">BPMN</a>, <a href="{{ relative page.dest "dist/toolkit/dmn-js" }}">DMN</a> and <a href="{{ relative page.dest "dist/toolkit/cmmn-js" }}">CMMN</a> diagrams in your browser.
     </p>
 
     <p class="lead">
@@ -212,3 +245,5 @@ layout: base.hbs
 {{/if}}
 
 {{/script}}
+
+<link rel="stylesheet" href="{{ assets }}/js/highlight/css/github.css" />

@@ -1,0 +1,29 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <div class="h1"><a href="{{relative page.dest "dist/toolkit/bpmn-js"}}">bpmn-js</a></div>
+    
+    <ul class="nav nav-pills">
+      <li role="presentation" class="{{ isActive "bpmn-js$" page }}">
+        <a href="{{relative page.dest "dist/toolkit/bpmn-js"}}">Toolkit</a>
+      </li>
+      <li role="presentation" class="{{ isActive "download" page }}">
+        <a href="{{relative page.dest "dist/toolkit/bpmn-js/download"}}">Download</a>
+      </li>
+      <li role="presentation" class="{{ isActive "examples" page }}">
+        <a href="{{relative page.dest "dist/toolkit/bpmn-js/examples"}}">Examples</a>
+      </li>
+      <li role="presentation" class="{{ isActive "walkthrough" page }}">
+        <a href="{{relative page.dest "dist/toolkit/bpmn-js/walkthrough"}}">Walkthrough</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  {{> body }}
+</div>

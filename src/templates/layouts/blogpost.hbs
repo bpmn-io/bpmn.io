@@ -4,20 +4,16 @@ layout: blog.hbs
 
 <div class="bi-blogpost single">
 
-  <div class="published">
-    {{ moment published format="dddd, MMMM DD, YYYY" }}
-  </div>
-
-  <h1 class="page-header"><a href="./{{slug}}.html">{{ title }}</a></h1>
-
-  <div class="content">
-    {{#markdown }}
-      {{> body}}
-    {{/markdown}}
-  </div>
+  <h1><a href="./{{slug}}.html">{{ title }}</a></h1>
 
   <div class="meta">
-    Posted by {{ author author }} on <a href="{{slug}}.html">{{ moment published format="YYYY-MM-DD HH:mm ZZ" }}</a>.
+    Written by {{ author author }} on {{ moment published format="dddd, DD MMMM YYYY" }}.
+  </div>
+
+  <div class="content">
+    {{#markdown}}
+      {{> body}}
+    {{/markdown}}
   </div>
 
   <div class="share">

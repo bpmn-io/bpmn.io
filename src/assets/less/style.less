@@ -2,9 +2,6 @@
  * app styles
  */
 
-p {
-  line-height: 1.5em;
-}
 
 .list-group-item .label {
   margin-right: 5px;
@@ -45,7 +42,7 @@ p {
   }
 }
 
-.bash-snippet{
+.bash-snippet {
   margin: 0.2em 0
 }
 
@@ -75,6 +72,11 @@ p {
 
 .bi-navbar {
   margin-bottom: 0;
+  border-bottom: solid 5px @brand-primary;
+
+  .navbar-brand {
+    padding: 15px;
+  }
 
   .navbar-toggle .icon-bar {
     background-color: @brand-primary;
@@ -83,13 +85,21 @@ p {
 
 .bi-head,
 .bi-masterhead {
-  background: @brand-primary;
-  color: #FFF;
+  background: #FAFAFA;
+  color: #333;
+
+  border-bottom: double 3px #DDD;
+}
+
+.lead {
+  line-height: 1.5em;
+  
+  &:first-child {
+    margin-top: 40px;
+  }
 }
 
 .bi-product-head {
-  border-top: solid 5px @brand-primary;
-
   text-align: center;
 
   padding: 50px 0 5px 0;
@@ -113,28 +123,38 @@ p {
     font-size: 36px;
   }
 
-  p.lead {
+  .lead {
     font-size: 24px;
   }
 }
 
 .bi-head {
 
-  padding: 30px 0 5px 0;
-
   h1, .h1 {
-    font-size: 56px;
+    font-size: 40px;
+    margin: 35px 0 20px 0;
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .lead {
+    margin: -10px 0 20px 0;
+  }
+  
+  .nav {
     margin-bottom: 20px;
   }
+}
+  
+.nav-pills > li + li {
+  margin-left: 5px;
+}
 
-  p {
-    color: lighten(@brand-primary, 50%);
-  }
-
-  p.lead {
-    margin-top: -10px;
-    font-size: 30px;
-  }
+.nav-pills > li > a {
+  background: #F6F6F6;
 }
 
 .bi-product-details > div {
@@ -156,8 +176,9 @@ p {
   padding-top: 80px;
   padding-bottom: 50px;
 
-  h1 {
-    font-size: 64px;
+  h1, .h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
   }
 
   .lead {
@@ -167,21 +188,13 @@ p {
     margin-bottom: 10px;
   }
 
-  .bi-action {
-    margin: 60px auto 40px auto;
+  .actions {
+    margin: 50px auto 40px auto;
     max-width: 400px;
   }
 
   .bi-news-note {
     font-size: 18px;
-  }
-
-  a:not(.btn) {
-    color: white;
-
-    &:hover {
-      color: white;
-    }
   }
 }
 
@@ -193,11 +206,23 @@ p {
 .bi-features {
   .bi-front-page();
 
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
   h2 {
-    font-size: 36px;
+    font-size: 34px;
+  }
+
+  &.left-aligned {
+    text-align: left;
+  }
+
+  &.right-aligned {
+    text-align: right;
+  }
+
+  .actions {
+    margin-top: 30px;
   }
 }
 
@@ -233,6 +258,40 @@ p {
   }
 }
 
+.bi-example {
+
+  display: inline-block;
+  
+  border: solid 1px #EEE;
+  border-radius: 4px;
+  
+  padding: 0 20px;
+  color: inherit;
+  
+  margin: 20px auto;
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    border: solid 1px #EEE;
+  }
+  
+  .caption {
+    margin: 15px auto 20px;
+  }
+  
+  &:hover,
+  &:active {
+    border-color: @brand-primary;
+    color: #333;
+    text-decoration: none;
+  }
+}
+
 .bi-team {
 
   .team-member {
@@ -253,50 +312,12 @@ p {
   }
 }
 
-.bi-blogpost {
-  margin-top: 80px;
-
-  .content {
-    font-size: 1.2em;
-  }
-
-  h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 30px;
-  }
-
-  .page-header {
-    margin-top: 10px;
-    margin-bottom: 30px;
-
-    line-height: 1.3em;
-
-    a:link {
-      text-decoration: none;
-      color: @text-color;
-
-      &:hover {
-        color: @link-hover-color;
-      }
-    }
-  }
-
-  .published {
-    font-weight: bold;
-  }
-
-  .meta {
-    margin-top: 30px;
-    border-top: dotted 1px #CCC;
-    padding-top: 10px;
-  }
-}
-
 .bi-img {
   text-align: center;
   margin: 20px auto;
 
   img {
-    max-width: 300px;
+    max-width: 100%;
     margin: 20px auto 10px auto;
 
     display: inline-block;
@@ -305,14 +326,28 @@ p {
   .caption {
     margin-top: 10px;
   }
+
+  figcaption {
+    color: #555;
+    font-size: 0.9em;
+  }
 }
 
-.bi-blog-footer {
-  margin: 20px 0;
+.bi-walkthrough {
+  ul ul {
+    padding-left: 20px;
+  }
+  
+  font-size: 17px;
+  line-height: 28px;
+
+  margin: 25px auto;
 }
+
 
 .share {
-  margin: 10px 0;
+  border-top: dotted 1px #CCC;
+  padding: 10px 0;
 }
 
 .shariff {

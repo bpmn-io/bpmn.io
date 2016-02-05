@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/,*/*/}*.{md,hbs,yml}'],
+        files: ['<%= config.src %>/{content,data,templates}/**/*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
       less: {
@@ -81,7 +81,19 @@ module.exports = function(grunt) {
         flatten: true,
         marked: {
           process: true,
-          gfm: true
+          langPrefix: 'hljs language-',
+          highlight: function(code, lang) {
+            var hjs = require('highlight.js');
+
+            var result;
+            if (lang) {
+              result = hjs.highlight(lang, code);
+            } else {
+              result = hjs.highlightAuto(code);
+            }
+
+            return result.value;
+          }
         },
         assets: '<%= config.dist %>/assets',
         layoutdir: '<%= config.src %>/templates/layouts',
@@ -103,30 +115,18 @@ module.exports = function(grunt) {
           '<%= config.dist %>/jobs/': ['<%= config.src %>/templates/pages/jobs/*.hbs'],
           '<%= config.dist %>/license/': ['<%= config.src %>/templates/pages/license/*.hbs'],
           '<%= config.dist %>/roadmap/': ['<%= config.src %>/templates/pages/roadmap/*.hbs'],
-          '<%= config.dist %>/getting-started/': ['<%= config.src %>/templates/pages/getting-started/*.hbs'],
-          '<%= config.dist %>/walkthrough/': ['<%= config.src %>/templates/pages/walkthrough/*.hbs'],
           '<%= config.dist %>/status/': ['<%= config.src %>/templates/pages/status/*.hbs'],
-          '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs']
+          '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/download/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/download/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/examples/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/examples/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/walkthrough/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/walkthrough/*.hbs'],
+          '<%= config.dist %>/toolkit/dmn-js/': ['<%= config.src %>/templates/pages/toolkit/dmn-js/*.hbs'],
+          '<%= config.dist %>/toolkit/dmn-js/download/': ['<%= config.src %>/templates/pages/toolkit/dmn-js/download/*.hbs']
         }
       },
       blog: {
         options: {
-          marked: {
-            process: true,
-            langPrefix: 'hljs language-',
-            highlight: function(code, lang) {
-              var hjs = require('highlight.js');
-
-              var result;
-              if (lang) {
-                result = hjs.highlight(lang, code);
-              } else {
-                result = hjs.highlightAuto(code);
-              }
-
-              return result.value;
-            }
-          },
           helpers: [
             'handlebars-helper-compose',
             'handlebars-helper-moment'

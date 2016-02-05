@@ -9,7 +9,7 @@ module.exports.register = function(Handlebars, options, params)  {
     if (match) {
       result = '<a class="author" href="' + match[2] + '">' + match[1] + '</a>';
     } else {
-      result = '<span class="author">' + author + '</a>';
+      result = '<span class="author">' + author + '</span>';
     }
 
     return new Handlebars.SafeString(result);

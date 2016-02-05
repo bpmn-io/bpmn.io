@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "highlight.js": "^8.0.0",
+    "highlight.js": "^9.1.0",
     "jquery": "^2.2.0"
   }
 }

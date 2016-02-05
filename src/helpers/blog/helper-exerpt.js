@@ -9,7 +9,7 @@ module.exports.register = function(Handlebars, options, params)  {
     if (splitIdx !== -1) {
       result = result.substring(0, splitIdx);
 
-      result += '<p><a href="posts/' + url + '.html">Continue reading ...</a></p>';
+      result += '<p class="read-more"><a href="posts/' + url + '.html">Read more »</a></p>';
     }
 
     return new Handlebars.SafeString(result);

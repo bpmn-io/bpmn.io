@@ -5,26 +5,22 @@ description: 'News from the bpmn.io project'
 
 <div class="row">
 
-  <div class="col-md-10">
+  <div class="col-md-9">
 
     {{#compose src='*/*.md' cwd='src/content/blog' sortBy="published" sortOrder="desc"}}
 
     <div class="bi-blogpost">
 
-      <div class="published">
-        {{ moment @published format="dddd, MMMM DD, YYYY" }}
+      <h1><a href="posts/{{@slug}}.html">{{ @title }}</a></h1>
+
+      <div class="meta">
+        Written by {{ author @author }} on {{ moment @published format="dddd, DD MMMM YYYY" }}.
       </div>
 
-      <h1 class="page-header"><a href="posts/{{@slug}}.html">{{ @title }}</a></h1>
-      
       <div class="content">
         {{#exerpt @slug}}
           {{{@content}}}
         {{/exerpt}}
-      </div>
-
-      <div class="meta">
-        Posted by {{ author @author }} on <a href="posts/{{@slug}}.html">{{ moment @published format="DD MMMM YYYY HH:mm ZZ" }}</a>.
       </div>
     </div>
 
