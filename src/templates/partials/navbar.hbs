@@ -22,6 +22,9 @@ component: navbar
         <li{{#startsWith title "Getting started"}} class="active"{{/startsWith}}>
           <a href="{{relative page.dest "dist/getting-started"}}">Getting started</a>
         </li>
+        <li{{#startsWith title "Walkthrough"}} class="active"{{/startsWith}}>
+          <a href="{{relative page.dest "dist/walkthrough"}}">Walkthrough</a>
+        </li>
         <!--
         <li{{#startsWith title "Toolkit"}} class="active"{{/startsWith}}>
           <a href="../css">CSS</a>

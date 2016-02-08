@@ -80,7 +80,8 @@ module.exports = function(grunt) {
         app: '<%= config %>',
         flatten: true,
         marked: {
-          process: true
+          process: true,
+          gfm: true
         },
         assets: '<%= config.dist %>/assets',
         layoutdir: '<%= config.src %>/templates/layouts',
@@ -103,6 +104,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/license/': ['<%= config.src %>/templates/pages/license/*.hbs'],
           '<%= config.dist %>/roadmap/': ['<%= config.src %>/templates/pages/roadmap/*.hbs'],
           '<%= config.dist %>/getting-started/': ['<%= config.src %>/templates/pages/getting-started/*.hbs'],
+          '<%= config.dist %>/walkthrough/': ['<%= config.src %>/templates/pages/walkthrough/*.hbs'],
           '<%= config.dist %>/status/': ['<%= config.src %>/templates/pages/status/*.hbs'],
           '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs']
         }
