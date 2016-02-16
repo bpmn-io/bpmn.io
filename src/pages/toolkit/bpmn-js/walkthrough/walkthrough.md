@@ -30,7 +30,7 @@ This walkthrough will give you an introduction how to use the library and some i
 
 There are two approaches to use [bpmn-js](https://github.com/bpmn-io/bpmn-js) in your application.
 An all-in-one pre-packaged version of the library allows you to quickly add BPMN to any website.
-The [npm]() version is more complicated to set-up but gives you access to individual library components and allows for easier extensibility.
+The [npm](https://www.npmjs.com) version is more complicated to set-up but gives you access to individual library components and allows for easier extensibility.
 
 This section gives you an overview over both approaches.
 We start with an introduction how to embed the pre-packaged version of the BPMN viewer into a website.
@@ -42,7 +42,7 @@ Following that we will show how to create a BPMN modeler using the npm version o
 </div>
 
 The pre-packaged version of bpmn-js allows you to embed BPMN to your website with a simple script include. 
-Fetch bpmn-js via [Bower]() or downloading it yourself from the [bower-bpmn-js repository]().
+Fetch bpmn-js via [Bower](http://bower.io) or downloading it yourself from the [bower-bpmn-js repository](https://github.com/bpmn-io/bower-bpmn-js).
 
 Add a container element for the rendered diagram to your website and include the library into the page.
 
@@ -109,19 +109,19 @@ You may follow this example step by step in the [simple-bower example](https://g
   Roll your own Modeler (via npm)
 </div>
 
-Use bpmn-js via [npm]() if you would like to build customizations around the library.
+Use bpmn-js via [npm](https://www.npmjs.com) if you would like to build customizations around the library.
 This approach has various advantages such as access to individual library components.
 It also gives us more control over what to package as part of the viewer / modeler.
-However, it requires us to bundle the custom bpmn-js variant for the web using [Browserify]() or [Webpack]() ourselves.
+However, it requires us to bundle the custom bpmn-js variant for the web using [Browserify](http://browserify.org) or [Webpack](https://webpack.github.io) ourselves.
 
 Here we are loosely following the [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create a BPMN modeler using the library.
-In a first step we are going to install it into our project via [npm]():
+In a first step we are going to install it into our project via [npm](https://www.npmjs.com):
 
 ```bash
 npm install bpmn-js
 ```
 
-Following that we are able to access the BPMN modeler via [Node.js]()'s `require`:
+Following that we are able to access the BPMN modeler via [Node.js](https://nodejs.org/)'s `require`:
 
 ```javascript
 var Modeler = require('bpmn-js/lib/Modeler');
@@ -137,7 +137,7 @@ modeler.importXML(bpmnXML, function(err) {
 
 Again, this assumes you provide an element with the id `canvas` as part of your HTML for the modeler to render into.
 
-When embedding the modeler into a webpage include the [diagram-js stylesheet]() as well as the [BPMN icon font]() with it. This ensures that diagram elements receive proper styling and context pad as well as palette entries show BPMN symbols.
+When embedding the modeler into a webpage include the [diagram-js stylesheet](https://github.com/bpmn-io/diagram-js/blob/master/assets/diagram-js.css) as well as the [BPMN icon font](https://github.com/bpmn-io/bpmn-js/tree/master/assets/bpmn-font) with it. This ensures that diagram elements receive proper styling and context pad as well as palette entries show BPMN symbols.
 
 ```html
 <link rel="stylesheet" href="vendor/diagram-js/diagram-js.css" />
@@ -146,7 +146,7 @@ When embedding the modeler into a webpage include the [diagram-js stylesheet]() 
 
 ### Extending the Modeler
 
-The [`Modeler`]() constructor gives us the ability to pass in additional modules via the `additionalModules` option.
+The [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) constructor gives us the ability to pass in additional modules via the `additionalModules` option.
 
 ```javascript
 // create a modeler
@@ -166,9 +166,9 @@ Doing so you are able to limit the modeling operations allowed by the user. Or y
 
 Other examples for extensions are:
 
-* [Adding custom elements]()
-* [Custom palette / context pad]()
-* [Custom shape rendering]()
+* [Adding custom elements](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements)
+* [Custom palette / context pad](https://github.com/bpmn-io/bpmn-js-nyan)
+* [Custom shape rendering](https://github.com/bpmn-io/bpmn-js-nyan)
 
 
 ### Hooking into Life-Cycle Events
@@ -189,7 +189,7 @@ modeler.on('element.changed', function(event) {
 });
 ```
 
-Use [`Viewer#on`]() to register for events or the [`EventBus`]() inside extension modules.
+Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L365) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules.
 
 The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
 
@@ -209,9 +209,9 @@ As depicted bpmn-js builds on top of two libraries: diagram-js and bpmn-moddle.
   <figcaption>bpmn-js Architecture: Parts and Responsibilities</figcaption>
 </figure>
 
-We use [diagram-js]() to draw shapes and connections. It provides us with ways to interact with these graphical elements as well as additional tools such as overlays that help users to build powerful BPMN viewers. For advanced use cases such as modeling it contributes the context pad, palette and facilities like redo/undo.
+We use [diagram-js](https://github.com/bpmn-io/diagram-js) to draw shapes and connections. It provides us with ways to interact with these graphical elements as well as additional tools such as overlays that help users to build powerful BPMN viewers. For advanced use cases such as modeling it contributes the context pad, palette and facilities like redo/undo.
 
-[bpmn-moddle]() knows about the BPMN 2.0 meta-model defined in the [BPMN 2.0 standard](http://www.omg.org/spec/BPMN/2.0/). It allows us to read and write BPMN 2.0 schema compliant XML documents and access BPMN related information behind shapes and connections drawn on the diagram.
+[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) knows about the BPMN 2.0 meta-model defined in the [BPMN 2.0 standard](http://www.omg.org/spec/BPMN/2.0/). It allows us to read and write BPMN 2.0 schema compliant XML documents and access BPMN related information behind shapes and connections drawn on the diagram.
 
 On top of these two libraries bpmn-js defines the BPMN specifics such as look and feel, modeling rules and tooling (i.e. palette). We will go into detail about the individual components in the following paragraphs.
 
@@ -260,7 +260,7 @@ A _shape_ has a parent, a list of children as well as a list of incoming and out
 
 A _connection_ has a parent as well as a source and target, pointing to a _shape_.
 
-The [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) is responsible for creating shapes and connections [according to that model]().
+The [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) is responsible for creating shapes and connections [according to that model](https://github.com/bpmn-io/diagram-js/blob/master/lib/model/index.js).
 During modeling element relationships will be update according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
 
 
@@ -373,4 +373,4 @@ There exist a number of additional resources that allow you to progress further:
 * [Forum](https://forum.bpmn.io/c/developers) - a good place to get help for using and extending bpmn-js.
 
 
-Was there anything that we could have explained better / you got stuck with? [Propose an improvement]() to this document or tell us about it in our [forums](). 
+Was there anything that we could have explained better / you got stuck with? [Propose an improvement]() to this document or tell us about it in our [forums](https://forum.bpmn.io). 
