@@ -1,8 +1,8 @@
 // # Globbing
 // for performance reasons we're only matching one level down:
-// '<%= config.src %>/templates/pages/{,*/}*.hbs'
+// '<%= config.src %>/pages/{,*/}*.hbs'
 // use this if you want to match all subfolders:
-// '<%= config.src %>/templates/pages/**/*.hbs'
+// '<%= config.src %>/pages/**/*.hbs'
 
 module.exports = function(grunt) {
 
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/**/*.{md,hbs,yml}'],
+        files: ['<%= config.src %>/**/*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
       less: {
@@ -38,12 +38,12 @@ module.exports = function(grunt) {
         tasks: ['less:app']
       },
       copy: {
-        files: [ '<%= config.src %>/assets/{fonts,img,bpmn}/*' ],
+        files: ['<%= config.src %>/assets/{fonts,img,bpmn}/*'],
         tasks: ['copy:app']
       },
       copy_attachments: {
-        files: [ '<%= config.src %>/assets/attachments/**/*' ],
-        tasks: [ 'copy:attachments' ]
+        files: ['<%= config.src %>/assets/attachments/**/*'],
+        tasks: ['copy:attachments']
       },
       livereload: {
         options: {
@@ -109,20 +109,21 @@ module.exports = function(grunt) {
       },
       main: {
         files: {
-          '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
-          '<%= config.dist %>/about/': ['<%= config.src %>/templates/pages/about/*.hbs'],
-          '<%= config.dist %>/desktop/': ['<%= config.src %>/templates/pages/desktop/*.hbs'],
-          '<%= config.dist %>/jobs/': ['<%= config.src %>/templates/pages/jobs/*.hbs'],
-          '<%= config.dist %>/license/': ['<%= config.src %>/templates/pages/license/*.hbs'],
-          '<%= config.dist %>/roadmap/': ['<%= config.src %>/templates/pages/roadmap/*.hbs'],
-          '<%= config.dist %>/status/': ['<%= config.src %>/templates/pages/status/*.hbs'],
-          '<%= config.dist %>/legal/': ['<%= config.src %>/templates/pages/legal/*.hbs'],
-          '<%= config.dist %>/toolkit/bpmn-js/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/*.hbs'],
-          '<%= config.dist %>/toolkit/bpmn-js/download/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/download/*.hbs'],
-          '<%= config.dist %>/toolkit/bpmn-js/examples/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/examples/*.hbs'],
-          '<%= config.dist %>/toolkit/bpmn-js/walkthrough/': ['<%= config.src %>/templates/pages/toolkit/bpmn-js/walkthrough/*.hbs'],
-          '<%= config.dist %>/toolkit/dmn-js/': ['<%= config.src %>/templates/pages/toolkit/dmn-js/*.hbs'],
-          '<%= config.dist %>/toolkit/dmn-js/download/': ['<%= config.src %>/templates/pages/toolkit/dmn-js/download/*.hbs']
+          '<%= config.dist %>/': ['<%= config.src %>/pages/*.hbs'],
+          '<%= config.dist %>/about/': ['<%= config.src %>/pages/about/*.hbs'],
+          '<%= config.dist %>/desktop/': ['<%= config.src %>/pages/desktop/*.hbs'],
+          '<%= config.dist %>/jobs/': ['<%= config.src %>/pages/jobs/*.hbs'],
+          '<%= config.dist %>/license/': ['<%= config.src %>/pages/license/*.hbs'],
+          '<%= config.dist %>/roadmap/': ['<%= config.src %>/pages/roadmap/*.hbs'],
+          '<%= config.dist %>/status/': ['<%= config.src %>/pages/status/*.hbs'],
+          '<%= config.dist %>/legal/': ['<%= config.src %>/pages/legal/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/': ['<%= config.src %>/pages/toolkit/bpmn-js/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/download/': ['<%= config.src %>/pages/toolkit/bpmn-js/download/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/examples/': ['<%= config.src %>/pages/toolkit/bpmn-js/examples/*.hbs'],
+          '<%= config.dist %>/toolkit/bpmn-js/walkthrough/': ['<%= config.src %>/pages/toolkit/bpmn-js/walkthrough/*.hbs'],
+          '<%= config.dist %>/toolkit/dmn-js/': ['<%= config.src %>/pages/toolkit/dmn-js/*.hbs'],
+          '<%= config.dist %>/toolkit/dmn-js/download/': ['<%= config.src %>/pages/toolkit/dmn-js/download/*.hbs'],
+          '<%= config.dist %>/toolkit/cmmn-js/': ['<%= config.src %>/pages/toolkit/cmmn-js/*.hbs'],
         }
       },
       blog: {
@@ -136,8 +137,8 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          '<%= config.dist %>/blog/': [ '<%= config.src %>/templates/pages/blog/*.hbs' ],
-          '<%= config.dist %>/blog/posts/': [ '<%= config.src %>/content/blog/*/*.{md,hbs}' ]
+          '<%= config.dist %>/blog/': [ '<%= config.src %>/pages/blog/*.hbs' ],
+          '<%= config.dist %>/blog/posts/': [ '<%= config.src %>/blog/*/*.{md,hbs}' ]
         }
       }
     },
