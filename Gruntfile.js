@@ -19,10 +19,10 @@ module.exports = function(grunt) {
       src: 'src',
       dist: 'dist',
       bootstrap: {
-        dist: 'bower_components/bootstrap/dist'
+        dist: 'node_modules/bootstrap/dist'
       },
       jquery: {
-        dist: 'bower_components/jquery/dist'
+        dist: 'node_modules/jquery/dist'
       },
       ga: process.env.GA_KEY || null,
       newsletter: process.env.NEWSLETTER_SUBSCRIBE_ENDPOINT || null
@@ -179,6 +179,9 @@ module.exports = function(grunt) {
     },
 
     less: {
+      options: {
+        paths: [ 'node_modules' ]
+      },
       app: {
         files: {
           '<%= config.dist %>/assets/css/app.css': '<%= config.src %>/assets/less/app.less'

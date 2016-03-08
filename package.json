@@ -18,8 +18,7 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "grunt build",
-    "postinstall": "bower install -F"
+    "test": "grunt build"
   },
   "devDependencies": {
     "assemble": "~0.4.35",
@@ -46,6 +45,8 @@
     "assemble"
   ],
   "dependencies": {
-    "highlight.js": "^8.0.0"
+    "bootstrap": "^3.3.6",
+    "highlight.js": "^8.0.0",
+    "jquery": "^2.2.0"
   }
 }
