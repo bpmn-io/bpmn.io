@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2016-connections-cmmn-js
 author: Nico Rehwaldt<https://github.com/nrehwaldt>
 
-published: 2016-05-20 18:00
+published: 2016-06-06 17:00
 
 ---
 
