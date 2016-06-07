@@ -18,6 +18,8 @@
     "node": ">=0.8"
   },
   "scripts": {
+    "all": "grunt build",
+    "dev": "grunt serve",
     "test": "grunt build"
   },
   "devDependencies": {
