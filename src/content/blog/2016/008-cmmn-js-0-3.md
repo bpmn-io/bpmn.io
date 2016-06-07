@@ -13,6 +13,7 @@ published: 2016-05-20 18:00
 
 <p class="introduction">
   We are proud to announce the latest version of [cmmn-js](https://github.com/bpmn-io/cmmn-js). This is the first release with support for basic CMMN modeling. This means you can not only view but create, move, edit, replace and delete CMMN elements on the diagram canvas. [Try it out](http://demo.bpmn.io/cmmn) and give us feedback!
+</p>
 
 <!-- continue -->
 
