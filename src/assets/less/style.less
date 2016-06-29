@@ -88,12 +88,12 @@
   background: #FAFAFA;
   color: #333;
 
-  border-bottom: double 3px #DDD;
+  border-bottom: solid 1px #DDD;
 }
 
 .lead {
   line-height: 1.5em;
-  
+
   &:first-child {
     margin-top: 40px;
   }
@@ -133,7 +133,7 @@
   h1, .h1 {
     font-size: 40px;
     margin: 35px 0 20px 0;
-    
+
     a {
       text-decoration: none;
       color: inherit;
@@ -143,18 +143,10 @@
   .lead {
     margin: -10px 0 20px 0;
   }
-  
-  .nav {
-    margin-bottom: 20px;
-  }
-}
-  
-.nav-pills > li + li {
-  margin-left: 5px;
-}
 
-.nav-pills > li > a {
-  background: #F6F6F6;
+  .nav {
+    border-bottom: none;
+  }
 }
 
 .bi-product-details > div {
@@ -261,29 +253,29 @@
 .bi-example {
 
   display: inline-block;
-  
+
   border: solid 1px #EEE;
   border-radius: 4px;
-  
+
   padding: 0 20px;
   color: inherit;
-  
+
   margin: 20px auto;
-  
+
   h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
-  
+
   img {
     max-width: 100%;
     border: solid 1px #EEE;
   }
-  
+
   .caption {
     margin: 15px auto 20px;
   }
-  
+
   &:hover,
   &:active {
     border-color: @brand-primary;
@@ -337,7 +329,7 @@
   ul ul {
     padding-left: 20px;
   }
-  
+
   font-size: 17px;
   line-height: 28px;
 
