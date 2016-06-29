@@ -1,0 +1,105 @@
+---
+title: Download cmmn-js
+description: 'Get the version of cmmn-js suitable for you'
+layout: cmmnjs.hbs
+---
+
+<div class="row">
+  <div class="col-md-9">
+
+    <!--
+    <h1 class="page-header" id="download">Download</h1>
+    -->
+
+    <p class="lead">
+      Choose how to download cmmn-js (currently {{ site.cmmnjs.version }}) based on your use-case.
+      You can try it out via our <a href="http://demo.bpmn.io/dmn">online demo</a>, too.
+    </p>
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h3>Pre-Built</h3>
+        <p>
+          Get a pre-built version of cmmn-js from the <a href="https://github.com/bpmn-io/bower-cmmn-js">bower-cmmn-js</a> repository or let <a href="http://bower.io">Bower</a> download it for you.
+        </p>
+
+        <p>
+          <a href="https://github.com/bpmn-io/bower-cmmn-js/archive/{{ site.cmmnjs.version }}.zip" class="btn btn-lg btn-primary">Download Pre-Built</a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Source Code</h3>
+        <p>
+          Source code of cmmn-js.
+          Use it to have a look inside or build tooling around cmmn-js.
+          <strong>Requires <a href="#build-cmmn-js">additional tools</a></strong>.
+        </p>
+
+        <p>
+          <a href="https://github.com/bpmn-io/cmmn-js/archive/{{ site.cmmnjs.version }}.zip" target="_blank" class="btn btn-lg btn-outline">Download Source</a>
+        </p>
+      </div>
+    </div>
+
+
+    <h2 class="page-header" id="via-npm">Get via NPM</h2>
+
+    <p class="lead">
+      Get cmmn-js via <a href="http://npmjs.org">NPM</a> for full access to individual project components and easy customizability.
+    </p>
+
+    Choose this setup if you would like to extend and customize the library to your needs.
+
+    {{#code 'bash'}}
+npm install cmmn-js
+    {{/code}}
+
+    <p>
+      <strong>Note:</strong> This requires additional build steps such as bundling for the browser with <a href="http://browserify.org/">Browserify</a> or <a href="https://webpack.github.io/">Webpack</a>.
+    </p>
+
+
+    <h2 class="page-header" id="build-cmmn-js">Build it Yourself</h2>
+
+    <p class="lead">
+      Clone and hack the project sources yourself.
+    </p>
+
+    <p>
+      If you have not downloaded the projects source code already, create an empty folder an clone the project using <a href="http://www.git-scm.com/">git</a> via
+    </p>
+
+    {{#code 'bash'}}
+git clone https://github.com/bpmn-io/cmmn-js.git -b {{ site.cmmnjs.version }} .
+    {{/code}}
+
+    <p>
+      Ensure you have <a href="http://nodejs.org">Node.js</a> / <a href="http://npmjs.org">NPM</a>
+      installed. Execute the following command to install all required project dependencies
+    </p>
+
+    {{#code 'bash'}}
+npm install
+    {{/code}}
+
+    <p>
+      Build / test the project via
+    </p>
+
+
+    {{#code 'bash'}}
+npm run all
+    {{/code}}
+
+    <p>
+      Refer to the projects <a href="https://github.com/bpmn-io/cmmn-js">GitHub page</a> for more information.
+    </p>
+
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="{{ assets }}/js/highlight/css/github.css" />

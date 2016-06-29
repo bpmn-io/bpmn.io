@@ -124,6 +124,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/toolkit/dmn-js/': ['<%= config.src %>/pages/toolkit/dmn-js/*.hbs'],
           '<%= config.dist %>/toolkit/dmn-js/download/': ['<%= config.src %>/pages/toolkit/dmn-js/download/*.hbs'],
           '<%= config.dist %>/toolkit/cmmn-js/': ['<%= config.src %>/pages/toolkit/cmmn-js/*.hbs'],
+          '<%= config.dist %>/toolkit/cmmn-js/download/': ['<%= config.src %>/pages/toolkit/cmmn-js/download/*.hbs']
         }
       },
       blog: {

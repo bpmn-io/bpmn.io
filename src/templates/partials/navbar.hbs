@@ -21,7 +21,7 @@ component: navbar
     <nav class="collapse navbar-collapse bi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li class="dropdown {{ isActive "bpmn-js" page }}">
-          <a href="{{relative page.dest "dist/toolkit/bpmn-js"}}" 
+          <a href="{{relative page.dest "dist/toolkit/bpmn-js"}}"
              class="dropdown-toggle" data-toggle="dropdown" role="button">
              BPMN <span class="caret"></span>
           </a>
@@ -33,9 +33,9 @@ component: navbar
             <li><a href="{{relative page.dest "dist/toolkit/bpmn-js/walkthrough"}}">Walkthrough</a></li>
           </ul>
         </li>
-        
+
         <li class="dropdown {{ isActive "dmn-js" page }}">
-          <a href="{{relative page.dest "dist/toolkit/dmn-js"}}" 
+          <a href="{{relative page.dest "dist/toolkit/dmn-js"}}"
              class="dropdown-toggle" data-toggle="dropdown" role="button">
              DMN <span class="caret"></span>
           </a>
@@ -45,8 +45,15 @@ component: navbar
           </ul>
         </li>
 
-        <li class="{{ isActive "cmmn-js" page }}">
-          <a href="{{relative page.dest "dist/toolkit/cmmn-js"}}">CMMN</a>
+        <li class="dropdown {{ isActive "cmmn-js" page }}">
+          <a href="{{relative page.dest "dist/toolkit/cmmn-js"}}"
+             class="dropdown-toggle" data-toggle="dropdown" role="button">
+             CMMN <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{relative page.dest "dist/toolkit/cmmn-js"}}">Toolkit</a></li>
+            <li><a href="{{relative page.dest "dist/toolkit/cmmn-js/download"}}">Download</a></li>
+          </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav bi-navbar-collapse navbar-right">

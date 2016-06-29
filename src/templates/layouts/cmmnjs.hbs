@@ -1,0 +1,23 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <div class="h1"><a href="{{relative page.dest "dist/toolkit/cmmn-js"}}">cmmn-js</a></div>
+
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="{{ isActive "cmmn-js$" page }}">
+        <a href="{{relative page.dest "dist/toolkit/cmmn-js"}}">Toolkit</a>
+      </li>
+      <li role="presentation" class="{{ isActive "download" page }}">
+        <a href="{{relative page.dest "dist/toolkit/cmmn-js/download"}}">Download</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  {{> body }}
+</div>

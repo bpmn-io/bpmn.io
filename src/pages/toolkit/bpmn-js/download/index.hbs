@@ -10,7 +10,7 @@ layout: bpmnjs.hbs
     <!--
     <h1 class="page-header" id="download">Download</h1>
     -->
-    
+
     <p class="lead">
       Choose how to download bpmn-js (currently {{ site.bpmnjs.version }}) based on your use-case.
       You can try it out via our <a href="http://demo.bpmn.io">online demo</a>, too.
@@ -40,7 +40,7 @@ layout: bpmnjs.hbs
           <a href="https://github.com/bpmn-io/bower-bpmn-js/archive/{{ site.bpmnjs.version }}.zip" class="btn btn-lg btn-primary">Download Pre-Built</a>
         </p>
       </div>
-      
+
       <div class="col-md-4">
         <h3>Source Code</h3>
         <p>
@@ -57,11 +57,11 @@ layout: bpmnjs.hbs
 
 
     <h2 class="page-header" id="via-npm">Get via NPM</h2>
-     
+
     <p class="lead">
       Get bpmn-js via <a href="http://npmjs.org">NPM</a> for full access to individual project components and easy customizability.
     </p>
-    
+
     Choose this setup if you would like to extend and customize the library to your needs.
 
     {{#code 'bash'}}
@@ -93,11 +93,11 @@ git clone https://github.com/bpmn-io/bpmn-js.git -b {{ site.bpmnjs.version }} .
 
     <p>
       Ensure you have <a href="http://nodejs.org">Node.js</a> / <a href="http://npmjs.org">NPM</a>
-      installed. Execute the following command to install all required project dependencies 
+      installed. Execute the following command to install all required project dependencies
     </p>
 
     {{#code 'bash'}}
-npm install -g grunt-cli
+npm install
     {{/code}}
 
     <p>
@@ -106,7 +106,7 @@ npm install -g grunt-cli
 
 
     {{#code 'bash'}}
-grunt
+npm run all
     {{/code}}
 
     <p>
@@ -119,7 +119,7 @@ grunt
     <p>
       Have a look at our <a href="https://github.com/bpmn-io/bpmn-js-examples">example projects</a> to learn more about different usage scenarios for bpmn-js.
     </p>
-    
+
   </div>
 </div>
 

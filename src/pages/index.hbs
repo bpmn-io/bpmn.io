@@ -79,25 +79,42 @@ layout: base.hbs
 </div>
 
 
+<div class="bi-features left-aligned">
+  <div class="container">
+
+    <p class="lead">
+      <img src="{{ assets }}/img/toolkit/cmmn-js.png" style="float: left;border: solid 1px #CCC;margin-right: 30px;margin-bottom:30px;" />
+    </p>
+
+    <h2>CMMN Viewer and Editor</h2>
+
+    <p class="lead">
+      Use <a href="{{ relative page.dest "dist/toolkit/cmmn-js" }}">cmmn-js</a> to display CMMN 1.2 diagrams on your website.
+    </p>
+
+    <p class="lead">
+      Embed it as a CMMN 1.2 web modeler into your applications and customize it to suite your needs.
+    </p>
+
+    <p class="actions lead">
+      <a href="http://demo.bpmn.io/cmmn" class="btn btn-default">Try Online</a>
+
+      <a href="{{ relative page.dest "dist/toolkit/cmmn-js" }}" class="btn btn-primary">Learn more</a>
+    </p>
+
+    <hr class="half-rule">
+  </div>
+</div>
 
 
 <div class="bi-features">
   <div class="container">
-
-    <h2>Built and battle tested by Camunda</h2>
-
-    <p class="lead">
-      <a href="{{ relative page.dest "dist/about" }}">We</a> provide tooling for viewing and editing BPMN, <a href="{{ relative page.dest "dist/dmn" }}">DMN</a> and <a href="{{ relative page.dest "dist/cmmn" }}">CMMN</a> diagrams in your browser.
-    </p>
-
-    <p class="lead">
-      Our libraries are extensible, embeddable and open source on <a href="https://github.com/bpmn-io">GitHub</a>.
-    </p>
+    {{> about_teaser }}
 
     <hr class="half-rule">
-
   </div>
 </div>
+
 
 <div class="bi-features">
   <div class="container">

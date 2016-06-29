@@ -32,9 +32,8 @@ layout: base.hbs
   <div class="container">
     <h2>BPMN everywhere, for everyone</h2>
     <p class="lead">
-      bpmn-js simplifies creating, embedding and extending BPMN diagrams.
-      It runs in modern browsers.
-      Use it standalone or integrate it into your applications.
+      Create, embed and extend BPMN diagrams in your Browser.
+      Use it standalone or integrate it into your application.
     </p>
 
     <hr class="half-rule">
@@ -74,7 +73,7 @@ layout: base.hbs
       Embed BPMN diagrams in your application with a few lines of code.
     </p>
 
-    <pre style="text-align: left; margin: auto; padding: 0 25px; background: #F8F8F8; max-width: 500px;">{{#code 'no-pre:html'}}
+    <pre style="text-align: left; margin: 20px auto; padding: 0 25px; background: #F8F8F8; max-width: 500px;">{{#code 'no-pre:html'}}
 <script>
   var viewer = new BpmnJS({ container: 'body' });
 
@@ -91,8 +90,10 @@ layout: base.hbs
 
     <p class="lead">
       Use the <a href="https://github.com/bpmn-io/bpmn-js-seed">seed project</a> to get started in no time.
+    </p>
 
-      Check out some <a href="{{ relative page.dest "dist/toolkit/bpmn-js/examples" }}">examples</a> to learn more.
+    <p class="lead">
+      Read our <a href="{{ relative page.dest "dist/tookit/bpmn-js/walkthrough" }}">walkthrough</a> or check out some <a href="{{ relative page.dest "dist/toolkit/bpmn-js/examples" }}">examples</a> to learn more.
     </p>
 
     <hr class="half-rule">
@@ -114,136 +115,12 @@ layout: base.hbs
   </div>
 </div>
 
-<div class="bi-features">
-  <div class="container">
-
-    <h2>About bpmn.io</h2>
-
-    <p class="lead">
-      <a href="{{ relative page.dest "dist/about" }}">We</a> provide tooling for viewing and editing <a href="{{ relative page.dest "dist/toolkit/bpmn-js" }}">BPMN</a>, <a href="{{ relative page.dest "dist/toolkit/dmn-js" }}">DMN</a> and <a href="{{ relative page.dest "dist/toolkit/cmmn-js" }}">CMMN</a> diagrams in your browser.
-    </p>
-
-    <p class="lead">
-      Our libraries are extensible, embeddable and open source on <a href="https://github.com/bpmn-io">GitHub</a>.
-    </p>
-
-    <hr class="half-rule">
-
-  </div>
-</div>
 
 <div class="bi-features">
   <div class="container">
-
-    <p class="lead" id="newsletter">
-      Keep informed by following us <a href="https://twitter.com/bpmn_io">@bpmn_io</a> or via our newsletter.
-    </p>
-
-    <div class="bi-register-newsletter">
-      <form action=".">
-        <div class="input-group">
-          <input type="text" class="form-control" name="email" placeholder="Your email">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" data-loading-text="Sending...">Submit</button>
-          </span>
-        </div>
-      </form>
-
-      <p class="note">* You may unsubscribe from our newsletter any time.</p>
-    </div>
+    {{> about_teaser }}
   </div>
 </div>
 
-{{#script}}
-
-<!--[if IE 9]>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
-<![endif]-->
-
-{{#if app.newsletter }}
-<script>
-  $(function() {
-
-    var endpoint = '{{ app.newsletter }}';
-
-    var subscribeElement = $('.bi-register-newsletter');
-    var form = $('form', subscribeElement);
-
-    var group = $('.input-group', form);
-    var emailInput = $('input[name=email]', form);
-    var button = $('button[type=submit]', form);
-
-    var note = $('.note', subscribeElement);
-
-    function showStatus(type, status, message) {
-      if (!note.parent('.alert').length) {
-        note.wrap('<div></div>');
-      }
-
-      note.parent().attr('class', 'alert alert-' + type);
-
-      note
-        .empty()
-        .append($('<strong></strong>').text(status))
-        .append($('<span></span>').text(' ' + message));
-    }
-
-    function showSuccess(headline, message) {
-      showStatus('success', headline, message);
-    }
-
-    function showFailure(headline, message) {
-      showStatus('danger', headline, message);
-    }
-
-    emailInput.on('focus', function() {
-      group.removeClass('has-error');
-    });
-
-    var loading = false;
-
-    form.on('submit', function(event) {
-
-      event.preventDefault();
-
-      if (loading) {
-        return;
-      }
-
-      var email = emailInput.val();
-
-      if (!email) {
-        group.addClass('has-error');
-        return;
-      }
-
-      loading = true;
-      button.button('loading');
-
-      $.post(endpoint, {
-        email: email
-      }).done(function(data) {
-
-        if (data.success) {
-          showSuccess('Done!', 'You subscribed to our newsletter and will receive the latest updates via email.');
-        } else {
-          showFailure('That did not work!', data.message);
-        }
-      }).fail(function() {
-          showFailure('Sorry for that!', 'We cannot subscribe you to the newsletter at the moment. Please try again later.');
-      }).always(function() {
-        form.hide();
-        button.button('reset');
-        loading = false;
-      });
-    });
-  });
-</script>
-{{/if}}
-
-{{/script}}
 
 <link rel="stylesheet" href="{{ assets }}/js/highlight/css/github.css" />
