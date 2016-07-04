@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       less: {
-        files: ['<%= config.src %>/assets/less/*.less'],
+        files: ['<%= config.src %>/assets/less/**/*.less'],
         tasks: ['less:app']
       },
       copy: {
