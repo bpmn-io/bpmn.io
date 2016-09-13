@@ -52,7 +52,7 @@ The toolkit will offer an extensible plug-in API, too. Via that API you may enha
   <img src="{{assets}}/img/embed.png" alt="Embed BPMN 2.0 diagrams into the application" class="img-responsive">
   <img src="{{assets}}/img/extend.png" alt="Extend the framework" class="img-responsive">
 
-  <p class="caption">Embed and annotate BPMN 2.0 diagrams and extend the library to suite your use cases</p>
+  <p class="caption">Embed and annotate BPMN 2.0 diagrams and extend the library to suit your use cases</p>
 </div>
 
 
