@@ -11,7 +11,7 @@ published: 2015-05-27 14:00
 ---
 
 <p class="introduction">
-  Today we release the [bpmn.io desktop app](http://bpmn.io/desktop) to the public. It is a small application makes our BPMN modeling features available offline, on any computer. The app builds on the same foundations as our [web modeler](http://demo.bpmn.io) and adds multi-tabbing as well as a xml view.
+  Today we release the [bpmn.io desktop app](https://chrome.google.com/webstore/detail/bpmnio/hhikcjnalmkhinbomccdibaolelcpjli) to the public. It is a small application makes our BPMN modeling features available offline, on any computer. The app builds on the same foundations as our [web modeler](http://demo.bpmn.io) and adds multi-tabbing as well as a xml view.
 </p>
 
 <!-- continue -->
