@@ -1,12 +1,15 @@
 ---
 
-title: Configure Job Priorities and Retry Time Cycle Easily with Properties Panel v0.5.0
+title: Configure Job Priorities and Retry Time Cycle
 layout: blogpost.hbs
 
 slug: 2016-properties-panel-050
 author: Patrick Dehn<https://github.com/pedesen>
 
 published: 2016-01-14 17:00
+
+releases:
+  - 'bpmn-js-properties-panel@0.5.0'
 
 ---
 

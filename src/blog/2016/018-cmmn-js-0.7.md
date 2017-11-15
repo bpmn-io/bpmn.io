@@ -1,12 +1,15 @@
 ---
 
-title: Performance Improvements Shipped with cmmn-js v0.7.2
+title: Performance Improvements in cmmn-js
 layout: blogpost.hbs
 
 slug: 2016-performance-improvements-cmmn-js
 author: Philipp Fromme<https://github.com/philippfromme>
 
 published: 2016-11-15 15:00
+
+releases:
+  - 'cmmn-js@0.7.0'
 
 ---
 

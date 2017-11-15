@@ -1,12 +1,16 @@
 ---
 
-title: Improvements in bpmn-js-properties-panel 0.9.0 and cmmn-js-properties-panel 0.2.0
+title: Properties Panel Improvements
 layout: blogpost.hbs
 
 slug: 2016-improvements-bpmn-cmmn-properties-panels
 author: Patrick Dehn<https://github.com/pedesen>
 
 published: 2016-09-09 15:00
+
+releases:
+  - 'bpmn-js-properties-panel@0.9.0'
+  - 'cmmn-js-properties-panel@0.2.0'
 
 ---
 

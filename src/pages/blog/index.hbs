@@ -13,9 +13,17 @@ description: 'News from the bpmn.io project'
 
       <h1><a href="posts/{{@slug}}.html">{{ @title }}</a></h1>
 
-      <div class="meta">
-        Written by {{ author @author }} on {{ moment @published format="dddd, DD MMMM YYYY" }}.
-      </div>
+      <p class="meta">
+        Published by {{ author @author }} on {{ moment @published format="dddd, DD MMMM YYYY" }}.
+      </p>
+
+      {{#if @releases }}
+        <p class="releases">
+          {{#each @releases }}
+            {{ releaseBadge this }}
+          {{/each}}
+        </p>
+      {{/if}}
 
       <div class="content">
         {{#exerpt @slug}}

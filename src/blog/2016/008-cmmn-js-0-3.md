@@ -1,12 +1,15 @@
 ---
 
-title: Model CMMN with cmmn-js 0.3.0
+title: Model CMMN with cmmn-js
 layout: blogpost.hbs
 
 slug: 2016-model-cmmn-with-cmmn-js
 author: Patrick Dehn<https://github.com/pedesen>
 
 published: 2016-05-20 18:00
+
+releases:
+  - 'cmmn-js@0.3.0'
 
 ---
 

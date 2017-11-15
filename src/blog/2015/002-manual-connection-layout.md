@@ -8,6 +8,9 @@ author: Jörg Dotzki<https://github.com/ISO50>
 
 published: 2015-01-22 18:00
 
+releases:
+  - 'bpmn-js'
+
 ---
 
 

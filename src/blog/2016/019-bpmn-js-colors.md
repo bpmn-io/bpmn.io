@@ -1,12 +1,15 @@
 ---
 
-title: Colors Land in bpmn-js v0.19.0
+title: Colors are Here
 layout: blogpost.hbs
 
 slug: 2016-colors-bpmn-js
 author: Nico Rehwaldt<https://github.com/nikku>
 
 published: 2016-12-21 14:00
+
+releases:
+  - 'bpmn-js@0.19.0'
 
 ---
 

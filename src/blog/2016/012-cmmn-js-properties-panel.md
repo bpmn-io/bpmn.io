@@ -1,12 +1,15 @@
 ---
 
-title: Edit CMMN properties with cmmn-js-properties-panel v0.1.0
+title: Edit CMMN Technical Properties
 layout: blogpost.hbs
 
 slug: 2016-edit-cmmn-properties-with-cmmn-js-properties-panel
 author: Patrick Dehn <https://github.com/pedesen>
 
 published: 2016-07-14 15:00
+
+releases:
+  - 'cmmn-js-properties-panel@0.1.0'
 
 ---
 

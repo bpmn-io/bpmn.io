@@ -1,5 +1,5 @@
 module.exports.register = function(Handlebars, options, params)  {
-  
+
   var PATTERN = /^(.+)\s*<(.+)>$/;
 
   Handlebars.registerHelper('author', function(author, options) {

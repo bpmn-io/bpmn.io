@@ -8,6 +8,9 @@ author: Nico Rehwaldt<https://github.com/Nikku>
 
 published: 2015-01-02 12:00
 
+releases:
+  - 'bpmn-js'
+
 ---
 
 <p class="introduction">

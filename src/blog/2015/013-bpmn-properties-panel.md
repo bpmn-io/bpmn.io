@@ -8,6 +8,9 @@ author: Nico Rehwaldt<https://github.com/nikku>
 
 published: 2015-11-27 9:10
 
+releases:
+  - 'bpmn-js-properties-panel@0.1.0'
+
 ---
 
 

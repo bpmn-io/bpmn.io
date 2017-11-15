@@ -86,3 +86,43 @@
     }
   }
 }
+
+
+.releases {
+  margin-top: 15px;
+}
+
+.release-badge {
+
+  display: inline-block;
+  margin: -1px 0;
+
+  font-size: small;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .project,
+  .version {
+    padding: 2px 6px;
+  }
+
+  .project {
+    background: #489d12;
+    color: white;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .version {
+    background: #6d6363;
+    color: white;
+    border-radius: 0 3px 3px 0;
+  }
+
+  &:not(.with-version) {
+    .project {
+      border-radius: 3px;
+    }
+  }
+}

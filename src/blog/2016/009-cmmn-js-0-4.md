@@ -1,12 +1,15 @@
 ---
 
-title: Connections Arrive in cmmn-js 0.4.0
+title: Model Connections in CMMN
 layout: blogpost.hbs
 
 slug: 2016-connections-cmmn-js
 author: Nico Rehwaldt<https://github.com/nikku>
 
 published: 2016-06-06 17:00
+
+releases:
+  - 'cmmn-js@0.4.0'
 
 ---
 

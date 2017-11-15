@@ -8,6 +8,9 @@ author: Nico Rehwaldt<https://github.com/nikku>
 
 published: 2015-08-07 14:00
 
+releases:
+  - 'dmn-js@0.1.0'
+
 ---
 
 <p class="introduction">

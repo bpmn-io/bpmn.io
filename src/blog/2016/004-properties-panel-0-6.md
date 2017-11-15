@@ -1,12 +1,15 @@
 ---
 
-title: Camunda Properties Feature Complete with Properties Panel v0.6.0
+title: Camunda BPMN Properties Feature Complete
 layout: blogpost.hbs
 
 slug: 2016-camunda-properties-complete-properties-panel
 author: Patrick Dehn<https://github.com/pedesen>
 
 published: 2016-03-04 15:30
+
+releases:
+  - 'bpmn-js-properties-panel@0.6.0'
 
 ---
 
