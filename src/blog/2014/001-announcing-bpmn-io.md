@@ -4,9 +4,11 @@ title: Announcing bpmn.io - BPMN everywhere, for everyone
 layout: blogpost.hbs
 
 slug: 2014-announcing-bpmn-io
-author: Nico Rehwaldt<https://github.com/Nikku>
+author: Nico Rehwaldt<https://github.com/nikku>
 
 published: 2014-02-20 16:00
+
+releases:
 
 ---
 
