@@ -50,6 +50,6 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "highlight.js": "^9.1.0",
-    "jquery": "^2.2.0"
+    "jquery": "^3.3.1"
   }
 }
