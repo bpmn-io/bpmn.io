@@ -41,8 +41,12 @@ Following that we will show how to create a BPMN modeler using the npm version o
   Embed the Viewer (pre-packaged)
 </div>
 
+<<<<<<< HEAD
 The pre-packaged version of bpmn-js allows you to embed BPMN to your website with a simple script include.
 Fetch bpmn-js via [Bower](http://bower.io) or downloading it yourself from the [bower-bpmn-js repository](https://github.com/bpmn-io/bower-bpmn-js).
+=======
+The [pre-packaged version](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) of bpmn-js allows you to embed BPMN to your website with a simple script include.
+>>>>>>> d7b25ce... chore(toolkit/bpmn-js): remove bower from walkthrough
 
 Add a container element for the rendered diagram to your website and include the library into the page.
 
@@ -51,7 +55,7 @@ Add a container element for the rendered diagram to your website and include the
 <div id="canvas"></div>
 
 <!-- replace CDN url with local bpmn-js path -->
-<script src="https://cdn.rawgit.com/bpmn-io/bower-bpmn-js/{{ site.bpmnjs.version }}/dist/bpmn-viewer.js"></script>
+<script src="https://unpkg.com/bpmn-js@0.27.0-1/dist/bpmn-viewer.development.js"></script>
 ```
 
 The included script makes the viewer available via the `BpmnJS` variable. We may access it via JavaScript as seen below.
@@ -102,7 +106,7 @@ This can be accomplished using plain JavaScript (as seen below) or via utility l
 </script>
 ```
 
-You may follow this example step by step in the [simple-bower example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-bower).
+Checkout the [pre-packaged example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) as well as our [starter examples](https://github.com/bpmn-io/bpmn-js-examples/tree/master/starter) to learn more.
 
 
 <div class="h2" id="modeler-npm">
@@ -193,7 +197,7 @@ Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L
 
 The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
 
-If you would like to create your own pre-packaged version of your custom modeler refer to the [custom-bower-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bower-bundle) example.
+If you would like to create your own pre-packaged version of your custom modeler refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
 
 
 <div class="h1 page-header" id="bpmn-js-internals">
