@@ -41,7 +41,7 @@ Following that we will show how to create a BPMN modeler using the npm version o
   Embed the Viewer (pre-packaged)
 </div>
 
-The pre-packaged version of bpmn-js allows you to embed BPMN to your website with a simple script include. 
+The pre-packaged version of bpmn-js allows you to embed BPMN to your website with a simple script include.
 Fetch bpmn-js via [Bower](http://bower.io) or downloading it yourself from the [bower-bpmn-js repository](https://github.com/bpmn-io/bower-bpmn-js).
 
 Add a container element for the rendered diagram to your website and include the library into the page.
@@ -60,7 +60,7 @@ The included script makes the viewer available via the `BpmnJS` variable. We may
 <script>
   // the diagram we are going to display
   var bpmnXML;
-  
+
   // BpmnJS is the BPMN viewer instance
   var viewer = new BpmnJS({ container: '#canvas' });
 
@@ -70,7 +70,7 @@ The included script makes the viewer available via the `BpmnJS` variable. We may
       // import failed :-(
     } else {
       // we did well!
-      
+
       var canvas = viewer.get('canvas');
       canvas.zoom('fit-viewport');
     }
@@ -184,7 +184,7 @@ modeler.on('commandStack.changed', function() {
 
 modeler.on('element.changed', function(event) {
   var element = event.element;
-  
+
   // the element got changed by the users
 });
 ```
@@ -222,9 +222,9 @@ On top of these two libraries bpmn-js defines the BPMN specifics such as look an
 
 [diagram-js](https://github.com/bpmn-io/diagram-js) is a toolbox for displaying and modifying diagrams on the web. It allows us to render visual elements and build interactive experiences on top of them.
 
-It provides us with a very simple module system for building features and dependency injection for service discovery. As part of that system it provides a number of core services that implement the diagram essentials. 
+It provides us with a very simple module system for building features and dependency injection for service discovery. As part of that system it provides a number of core services that implement the diagram essentials.
 
-On top of that diagram-js defines a data model for graphical elements and their relationships. 
+On top of that diagram-js defines a data model for graphical elements and their relationships.
 
 
 ### Module System
@@ -281,7 +281,7 @@ Let's move on to the BPMN magic that is happening behind the scenes.
 
 ## BPMN Meta-Model (bpmn-moddle)
 
-[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) encapsulates the BPMN 2.0 meta-model and provides us with facilities to read and write BPMN 2.0 XML documents. 
+[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) encapsulates the BPMN 2.0 meta-model and provides us with facilities to read and write BPMN 2.0 XML documents.
 On import it parses the XML document into a JavaScript object tree.
 That tree is edited and validated during modeling and then exported back to BPMN 2.0 XML once the user wishes to save the diagram.
 Because bpmn-moddle encapsulates knowledge about BPMN we are able to validate during import and modeling. Based on the results we can constrain certain modeling actions and output helpful error messages and warnings to the user.
@@ -344,7 +344,7 @@ We base these rules on the BPMN 2.0 standard as defined by the [OMG](http://www.
 But as mentioned earlier others may hook up with the rule evaluation to contribute different behavior, too.
 
 The [modeling module](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) bundles BPMN 2.0 related modeling functionality.
-It adds BPMN 2.0 specific modeling behaviors and is responsible to update the BPMN 2.0 document tree with every modeling operation carried out by the user (cf. [`BpmnUpdater`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/modeling/BpmnUpdater.js)). 
+It adds BPMN 2.0 specific modeling behaviors and is responsible to update the BPMN 2.0 document tree with every modeling operation carried out by the user (cf. [`BpmnUpdater`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/modeling/BpmnUpdater.js)).
 Check it out to learn get a deeper insight into rules, behaviors and the BPMN update cycle.
 
 When looking at bpmn-js purely from the library perspective it is worth mentioning is that it can be used in three variants:
@@ -373,4 +373,4 @@ There exist a number of additional resources that allow you to progress further:
 * [Forum](https://forum.bpmn.io/c/developers) - a good place to get help for using and extending bpmn-js.
 
 
-Was there anything that we could have explained better / you got stuck with? [Propose an improvement]() to this document or tell us about it in our [forums](https://forum.bpmn.io). 
+Was there anything that we could have explained better / you got stuck with? [Propose an improvement](https://github.com/bpmn-io/bpmn.io/edit/master/src/pages/toolkit/bpmn-js/walkthrough/walkthrough.md) to this document or tell us about it in our [forums](https://forum.bpmn.io).
