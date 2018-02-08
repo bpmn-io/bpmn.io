@@ -4,4 +4,4 @@ bpmnjs:
 dmnjs:
   version: v0.11.0
 cmmnjs:
-  version: v0.9.2
+  version: v0.10.1
