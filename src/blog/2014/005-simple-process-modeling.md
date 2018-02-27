@@ -29,7 +29,7 @@ Modeling can be done by appending new process elements to existing ones via a si
 Checkout the modeling workflow below:
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/005-simple-process-modeling.gif">
+  <img src="{{ assets }}/attachments/blog/2014/005-simple-process-modeling.gif">
 </div>
 
 You may try out the feature by creating your own process on [demo.bpmn.io](http://demo.bpmn.io/new).
@@ -44,7 +44,7 @@ These actions include appending other nodes (just shipped) or removing the curre
 The context pad is designed to be easily extended and bpmn-js builds its modeling actions on top of it.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/005-context-pad.gif">
+  <img src="{{ assets }}/attachments/blog/2014/005-context-pad.gif">
 </div>
 
 

@@ -42,7 +42,7 @@ The component will allow you to create and modify BPMN 2.0 diagrams. With a stro
 The modeling component will understand BPMN 2.0 natively and will allow you to import/export diagrams from/to your favorite storage and any other BPMN 2.0 compliant modeling tool.
 
 <div class="bi-img">
-  <img src="/assets/img/model.png" alt="Model BPMN 2.0 diagrams" class="img-responsive">
+  <img src="{{assets}}/img/model.png" alt="Model BPMN 2.0 diagrams" class="img-responsive">
   <p class="caption">Model BPMN 2.0 diagrams</p>
 </div>
 

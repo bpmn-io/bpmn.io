@@ -25,14 +25,14 @@ releases:
 Todays release of [bpmn-js](https://github.com/bpmn-io/bpmn-js) comes with two big modeling features. Via the modeler you can now connect elements via the context pad.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/007-connect.gif">
+  <img src="{{ assets }}/attachments/blog/2014/007-connect.gif">
 </div>
 
 Also via the context pad you can delete individual elements. This removes incoming / outgoing connections, too.
 Both, connecting elements and deletion can be undone and result in valid BPMN 2.0 XML.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/007-delete.gif">
+  <img src="{{ assets }}/attachments/blog/2014/007-delete.gif">
 </div>
 
 Create your own process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out the new modeling features yourself.
@@ -45,7 +45,7 @@ To ease modeling of well organized process diagrams we added element snapping.
 A feature well known from other modeling tools adjusts an elements position during move to be on line (horizontally or vertically) with related elements. See yourself:
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/007-snapline.gif">
+  <img src="{{ assets }}/attachments/blog/2014/007-snapline.gif">
 </div>
 
 
@@ -58,7 +58,7 @@ Instead of relayouting connections on every change, we added a number of repair 
 Automatic layouting applies to both, new and existing sequence and message flows:
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/007-layout.gif">
+  <img src="{{ assets }}/attachments/blog/2014/007-layout.gif">
 </div>
 
 

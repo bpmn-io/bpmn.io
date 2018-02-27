@@ -41,7 +41,7 @@ Create a process on [demo.bpmn.io](http://demo.bpmn.io/new) and try out the new 
 Elements may be dragged from the context pad, too, to add them at a specific position.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/008-drag-from-context-pad.gif">
+  <img src="{{ assets }}/attachments/blog/2014/008-drag-from-context-pad.gif">
 </div>
 
 The diagram will snap to certain anchor points during move and create, allowing a faster and simpler creation of BPMN 2.0 process diagrams.
@@ -53,7 +53,7 @@ The palette allows you to add collapsed and expanded sub-processes to BPMN 2.0 d
 Once added to the canvas, expanded sub-processes may be resized and child elements may be added or removed from them.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/008-sub-processes.gif">
+  <img src="{{ assets }}/attachments/blog/2014/008-sub-processes.gif">
 </div>
 
 Child elements of sub-processes will move with the container once the sub-process is moved.
@@ -64,7 +64,7 @@ Child elements of sub-processes will move with the container once the sub-proces
 The modeler is now using an icon font to render BPMN 2.0 symbols in the context pad and the palette.
 
 <div class="figure">
-  <img        src="{{ assets }}/attachments/blog/2014/008-font.png">
+  <img src="{{ assets }}/attachments/blog/2014/008-font.png">
 </div>
 
 The font is available under an open font license in its own [GitHub repository](https://github.com/bpmn-io/bpmn-font).
