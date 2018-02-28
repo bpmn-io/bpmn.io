@@ -20,12 +20,12 @@ releases:
 
 <!-- continue -->
 
-A few month ago we set out started to rebuild our DMN toolkit from the core with focus on both usability and performance. Today we've reached an important milestone towards stability and feature parity with the old [`0.x` version](https://github.com/bpmn-io/dmn-js/releases/tag/v0.11.0) of the toolkit.
+A few months ago we set out started to rebuild our DMN toolkit from the core with a focus on both usability and performance. Today we've reached an important milestone towards stability and feature parity with the old [`0.x` version](https://github.com/bpmn-io/dmn-js/releases/tag/v0.11.0) of the toolkit.
 
 
 ## Introducing Views
 
-Essentially, a DMN file contains many different parts that make up a decision. Each of these parts has its own representation: Decision requirement diagram, decision table and literal expression are some representations of parts that can potentially be viewed and edited.
+Essentially, a DMN file contains many different parts that make up a decision. Each of these parts has its own representation: Decision requirement diagram, decision table and literal expression are some of the parts that can potentially be viewed and edited.
 One of the improvements we wanted to tackle is to allow inspection into and navigation between these contents.
 
 The new version of our toolkit exposes the viewable contents and allows you to build rich navigation interactions around these views:
@@ -44,11 +44,11 @@ Refer to the updated [modeler example](https://rawgit.com/bpmn-io/dmn-js-example
 
 ## Bye Bye Simple Mode
 
-The simple mode for decision tables was born to hide technical complexity and provide editing assistance to certain, often non-technical, user groups.
+The simple mode for decision tables was introduced to hide technical complexity and provide editing assistance for certain, often non-technical, user groups.
 
 However, the presence of two editing modes caused frequent confusion about where to find and edit certain pieces of information. At the same time there is no clear separation between different personas using our DMN editor as we thought there would be. Technical adapt users, for instance, would sometimes use the simple mode for convenience. On the other hand, modeling beginners or none technical users would some times like to _just type_ once they've found their way around creating simple expressions.
 
-This release drops the simple mode in favor of a _Simple Edit menu_, accessible via a tiny handle next to the currently focussed cell:
+This release drops the simple mode in favor of a _Simple Edit menu_, accessible via a small handle next to the currently focussed cell:
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2018/004-table-cast.gif">
