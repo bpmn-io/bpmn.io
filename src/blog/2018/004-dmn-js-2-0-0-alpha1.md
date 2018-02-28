@@ -58,7 +58,7 @@ This release drops the simple mode in favor of a _Simple Edit menu_, accessible 
 </div>
 
 
-With the new modeless approach follows four general guidelines:
+The new modeless approach follows four general guidelines:
 
 * Always allow direct editing.
 * Offer help in an unobtrusive manner.
