@@ -50,7 +50,7 @@ However, the presence of two editing modes caused frequent confusion about where
 
 This release drops the simple mode in favor of a _Simple Edit menu_, accessible via a tiny handle next to the currently focussed cell:
 
-<div class="figure full-size">
+<div class="figure">
   <img src="{{ assets }}/attachments/blog/2018/004-table-cast.gif">
   <p class="caption">
     The simple mode got replaced by the _Simple Edit menu_.
@@ -64,6 +64,23 @@ With the new modeless approach follows four general guidelines:
 * Offer help in an unobtrusive manner.
 * Encourage learning `FEEL`.
 * Don't oversimplify and hide necessary meta-data.
+
+
+## Improved Script Visibility
+
+Better editing of complex scripts and improving their visibility in decision tables is an ongoing topic.
+Already, you may edit the expression language used for individual cells via the context menu.
+
+To improve visibility of scripts inside the table this release adds little badges which indicate the presence of a non-default expression languages, too:
+
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2018/004-script-cast.gif">
+  <p class="caption">
+    The presence of a non-default expression language, indicated by a badge.
+  </p>
+</div>
+
+Future releases may carry out additional improvements.
 
 
 ## New Pre-Packaged Distribution
