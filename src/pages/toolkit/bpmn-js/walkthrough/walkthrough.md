@@ -41,12 +41,7 @@ Following that we will show how to create a BPMN modeler using the npm version o
   Embed the Viewer (pre-packaged)
 </div>
 
-<<<<<<< HEAD
-The pre-packaged version of bpmn-js allows you to embed BPMN to your website with a simple script include.
-Fetch bpmn-js via [Bower](http://bower.io) or downloading it yourself from the [bower-bpmn-js repository](https://github.com/bpmn-io/bower-bpmn-js).
-=======
 The [pre-packaged version](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) of bpmn-js allows you to embed BPMN to your website with a simple script include.
->>>>>>> d7b25ce... chore(toolkit/bpmn-js): remove bower from walkthrough
 
 Add a container element for the rendered diagram to your website and include the library into the page.
 
