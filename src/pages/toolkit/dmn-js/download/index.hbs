@@ -10,7 +10,7 @@ layout: dmnjs.hbs
     <!--
     <h1 class="page-header" id="download">Download</h1>
     -->
-    
+
     <p class="lead">
       Choose how to download dmn-js (currently {{ site.dmnjs.version }}) based on your use-case.
       You can try it out via our <a href="http://demo.bpmn.io/dmn">online demo</a>, too.
@@ -20,37 +20,47 @@ layout: dmnjs.hbs
     <div class="row">
 
       <div class="col-md-4">
+        <h3>Examples</h3>
+        <p>
+          Explore a number of dmn-js usage examples, many ready to use right in your web browser.
+        </p>
+        <p>
+          <a href="https://github.com/bpmn-io/dmn-js-examples" target="_blank" class="btn btn-lg btn-outline">Explore Examples</a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
         <h3>Pre-Built</h3>
         <p>
-          Get a pre-built version of dmn-js from the <a href="https://github.com/bpmn-io/bower-dmn-js">bower-dmn-js</a> repository or let <a href="http://bower.io">Bower</a> download it for you.
+          Try out dmn-js in no time via starters, embedding pre-packaged versions of our CMMN toolkit.
         </p>
 
         <p>
-          <a href="https://github.com/bpmn-io/bower-dmn-js/archive/{{ site.dmnjs.version }}.zip" class="btn btn-lg btn-primary">Download Pre-Built</a>
+          <a href="https://github.com/bpmn-io/dmn-js-examples/tree/master/starter" target="_blank" class="btn btn-lg btn-primary">Checkout Starters</a>
         </p>
       </div>
-      
+
       <div class="col-md-4">
         <h3>Source Code</h3>
         <p>
-          Source code of dmn-js.
+          The dmn-js sources.
           Use it to have a look inside or build tooling around dmn-js.
           <strong>Requires <a href="#build-dmn-js">additional tools</a></strong>.
         </p>
 
         <p>
-          <a href="https://github.com/bpmn-io/dmn-js/archive/{{ site.dmnjs.version }}.zip" target="_blank" class="btn btn-lg btn-outline">Download Source</a>
+          <a href="https://github.com/bpmn-io/dmn-js/archive/{{ site.dmnjs.version }}.zip" target="_blank" class="btn btn-lg btn-outline">Download Sources</a>
         </p>
       </div>
     </div>
 
 
     <h2 class="page-header" id="via-npm">Get via NPM</h2>
-     
+
     <p class="lead">
       Get dmn-js via <a href="http://npmjs.org">NPM</a> for full access to individual project components and easy customizability.
     </p>
-    
+
     Choose this setup if you would like to extend and customize the library to your needs.
 
     {{#code 'bash'}}
@@ -78,11 +88,11 @@ git clone https://github.com/bpmn-io/dmn-js.git -b {{ site.dmnjs.version }} .
 
     <p>
       Ensure you have <a href="http://nodejs.org">Node.js</a> / <a href="http://npmjs.org">NPM</a>
-      installed. Execute the following command to install all required project dependencies 
+      installed. Execute the following command to install all required project dependencies
     </p>
 
     {{#code 'bash'}}
-npm install -g grunt-cli
+npm install
     {{/code}}
 
     <p>
@@ -91,13 +101,13 @@ npm install -g grunt-cli
 
 
     {{#code 'bash'}}
-grunt
+npm run all
     {{/code}}
 
     <p>
       Refer to the projects <a href="https://github.com/bpmn-io/dmn-js">GitHub page</a> for more information.
     </p>
-    
+
   </div>
 </div>
 
