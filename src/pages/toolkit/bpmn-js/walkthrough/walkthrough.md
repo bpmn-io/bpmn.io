@@ -18,7 +18,7 @@ This walkthrough will give you an introduction how to use the library and some i
   * [Embed the Viewer (pre-packaged)](#viewer-pre-packaged)
   * [Roll your own Modeler (via npm)](#modeler-npm)
 * [Understanding bpmn-js Internals](#bpmn-js-internals)
-  * [Diagram Interaction / Modeling (diagram-js)](diagram-js)
+  * [Diagram Interaction / Modeling (diagram-js)](#diagram-js)
   * [BPMN Meta-Model (bpmn-moddle)](#bpmn-moddle)
   * [Plugging Things together (bpmn-js)](#bpmn-js)
 * [Going Further](#going-further)
@@ -277,8 +277,9 @@ Around the data model as well as its core services diagram-js provides a rich to
 
 Let's move on to the BPMN magic that is happening behind the scenes.
 
-
-## BPMN Meta-Model (bpmn-moddle)
+<h2 id="bpmn-moddle">
+  BPMN Meta-Model (bpmn-moddle)
+</h2>
 
 [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) encapsulates the BPMN 2.0 meta-model and provides us with facilities to read and write BPMN 2.0 XML documents.
 On import it parses the XML document into a JavaScript object tree.
@@ -297,8 +298,9 @@ In essence [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) adds the BPMN s
 
 The BPMN meta-model is an essential for bpmn-js, as it allows us to validate BPMN 2.0 documents we consume, provide proper modeling rules and export valid BPMN documents that _all_ compliant BPMN modelers can understand.
 
-
-## Plugging Things together (bpmn-js)
+<h2 id="bpmn-js">
+  Plugging Things together (bpmn-js)
+</h2>
 
 We learned [bpmn-js](https://github.com/bpmn-io/bpmn-js) is build on top of [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). It ties both together and adds the BPMN look and feel. This includes a BPMN palette, BPMN context pad as well as BPMN 2.0 specific rules. In this section, we'll be explaining how that works in different phases of modeling.
 
