@@ -35,6 +35,6 @@ Being able to model data stores between participants is one of the [most request
 
 ## Other Improvements
 
-This release also ships with a small under-the-hood refactoring and improves the handling of incomplete label data. Read our [changelog](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md) for details on these improvements.
+This release also ships with a small under-the-hood refactoring and improves the handling of labels with incomplete graphical information. Read our [changelog](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md) for details on these improvements.
 
 Get the latest BPMN toolkit pre-packaged or as source code via [npm](https://www.npmjs.com/package/bpmn-js) or [unpkg](https://unpkg.com/bpmn-js/).
