@@ -154,29 +154,6 @@ layout: base.hbs
 </div>
 
 
-
-<div class="bi-features">
-  <div class="container">
-
-    <p class="lead" id="newsletter">
-      Stay informed by following us <a href="https://twitter.com/bpmn_io">@bpmn_io</a> or via our newsletter.
-    </p>
-
-    <div class="bi-register-newsletter">
-      <form action=".">
-        <div class="input-group">
-          <input type="text" class="form-control" name="email" placeholder="Your email">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" data-loading-text="Sending...">Submit</button>
-          </span>
-        </div>
-      </form>
-
-      <p class="note">* You may unsubscribe from our newsletter any time.</p>
-    </div>
-  </div>
-</div>
-
 {{#script}}
 
 <!--[if IE 9]>
@@ -185,86 +162,5 @@ layout: base.hbs
 <!--[if lt IE 9]>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
 <![endif]-->
-
-{{#if app.newsletter }}
-<script>
-  $(function() {
-
-    var endpoint = '{{ app.newsletter }}';
-
-    var subscribeElement = $('.bi-register-newsletter');
-    var form = $('form', subscribeElement);
-
-    var group = $('.input-group', form);
-    var emailInput = $('input[name=email]', form);
-    var button = $('button[type=submit]', form);
-
-    var note = $('.note', subscribeElement);
-
-    function showStatus(type, status, message) {
-      if (!note.parent('.alert').length) {
-        note.wrap('<div></div>');
-      }
-
-      note.parent().attr('class', 'alert alert-' + type);
-
-      note
-        .empty()
-        .append($('<strong></strong>').text(status))
-        .append($('<span></span>').text(' ' + message));
-    }
-
-    function showSuccess(headline, message) {
-      showStatus('success', headline, message);
-    }
-
-    function showFailure(headline, message) {
-      showStatus('danger', headline, message);
-    }
-
-    emailInput.on('focus', function() {
-      group.removeClass('has-error');
-    });
-
-    var loading = false;
-
-    form.on('submit', function(event) {
-
-      event.preventDefault();
-
-      if (loading) {
-        return;
-      }
-
-      var email = emailInput.val();
-
-      if (!email) {
-        group.addClass('has-error');
-        return;
-      }
-
-      loading = true;
-      button.button('loading');
-
-      $.post(endpoint, {
-        email: email
-      }).done(function(data) {
-
-        if (data.success) {
-          showSuccess('Done!', 'You subscribed to our newsletter and will receive the latest updates via email.');
-        } else {
-          showFailure('That did not work!', data.message);
-        }
-      }).fail(function() {
-          showFailure('Sorry for that!', 'We cannot subscribe you to the newsletter at the moment. Please try again later.');
-      }).always(function() {
-        form.hide();
-        button.button('reset');
-        loading = false;
-      });
-    });
-  });
-</script>
-{{/if}}
 
 {{/script}}
