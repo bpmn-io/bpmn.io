@@ -235,7 +235,7 @@ On top of that diagram-js defines a data model for graphical elements and their 
 
 The [diagram-js core](https://github.com/bpmn-io/diagram-js/tree/master/lib/core) is built around a number of essential services:
 
-* [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js) - provides APIs for adding and removing graphical elements; deals with element life cycle and provides APIs to zoom and scroll scrolling.
+* [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js) - provides APIs for adding and removing graphical elements; deals with element life cycle and provides APIs to zoom and scroll.
 
 * [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) - the libraries global communication channel with a *fire and forget* policy. Interested parties can subscribe to various events and act upon them once they are emitted. The event bus helps us to decouple concerns and to modularize functionality so that new features can hook up easily with existing behavior.
 
@@ -260,7 +260,7 @@ A _shape_ has a parent, a list of children as well as a list of incoming and out
 A _connection_ has a parent as well as a source and target, pointing to a _shape_.
 
 The [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) is responsible for creating shapes and connections [according to that model](https://github.com/bpmn-io/diagram-js/blob/master/lib/model/index.js).
-During modeling element relationships will be update according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
+During modeling element relationships will be updated according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
 
 
 ### Auxilary Services (i.e. the Toolbox)
@@ -302,7 +302,7 @@ The BPMN meta-model is an essential for bpmn-js, as it allows us to validate BPM
   Plugging Things together (bpmn-js)
 </h2>
 
-We learned [bpmn-js](https://github.com/bpmn-io/bpmn-js) is build on top of [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). It ties both together and adds the BPMN look and feel. This includes a BPMN palette, BPMN context pad as well as BPMN 2.0 specific rules. In this section, we'll be explaining how that works in different phases of modeling.
+We learned [bpmn-js](https://github.com/bpmn-io/bpmn-js) is built on top of [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). It ties both together and adds the BPMN look and feel. This includes a BPMN palette, BPMN context pad as well as BPMN 2.0 specific rules. In this section, we'll be explaining how that works in different phases of modeling.
 
 
 When we import a BPMN 2.0 document, it is parsed by [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) from XML into an object tree. bpmn-js renders all visible elements of that tree, i.e. it creates the respective shapes and connections on the canvas. Thereby it ties both the BPMN elements and the graphical elements together.
@@ -362,12 +362,12 @@ The [`NavigatedViewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Navig
   Going Further
 </div>
 
-The first part of this walkthrough we focused on using bpmn-js as a BPMN viewer as well as modeler.
+In the first part of this walkthrough we focused on using bpmn-js as a BPMN viewer as well as modeler.
 This should have given you a good understanding of the toolkit from the library perspective.
 
 In the second part, we focused on bpmn-js internals. We presented diagram-js as well as bpmn-moddle, the two foundations bpmn-js is built upon and gave you an overview how bpmn-js plugs all these together.
 
-There exist a number of additional resources that allow you to progress further:
+There exists a number of additional resources that allow you to progress further:
 
 * [Examples](https://github.com/bpmn-io/bpmn-js-examples) - a few example projects that showcase various ways to embed and extend bpmn-js.
 * Source Code ([bpmn-js](https://github.com/bpmn-io/bpmn-js), [diagram-js](https://github.com/bpmn-io/diagram-js)) - mostly well documented; should give you great insights in the library internals.
