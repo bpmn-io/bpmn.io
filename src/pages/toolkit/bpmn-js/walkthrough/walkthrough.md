@@ -192,9 +192,9 @@ var modeler = new Modeler({
 ```
 
 A _module_ (cf. [Module System section](#module-system)) is a unit that defines one or more named _services_.
-These services contribte functionality to bpmn-js, i.e. by hooking into the diagram life-cycle.
+These services configure bpmn-js or provide additional functionality, i.e. by hooking into the diagram life-cycle.
 
-Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap) contribute generic user interface extensions to the diagram.
+Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap) provide generic user interface additions.
 Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) provide highly BPMN specific functionality.
 
 One common way to extend the BPMN modeler is to add [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
