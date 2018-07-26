@@ -143,31 +143,41 @@ When embedding the modeler into a webpage include the [diagram-js stylesheet](ht
 <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
 ```
 
+
 ### Extending the Modeler
 
-The [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) constructor gives us the ability to pass in additional modules via the `additionalModules` option.
+You may use the `additionalModules` option to extend the `Viewer` and [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) on creation. This allows you to pass custom _modules_ that amend or replace exising functionality.
 
 ```javascript
+import OriginModule from 'diagram-js-origin';
+
 // create a modeler
 var modeler = new Modeler({
   container: '#canvas',
   additionalModules: [
+    OriginModule,
     require('./custom-rules'),
     require('./custom-context-pad')
   ]
 });
 ```
 
-Simply speaking modules are units of functionality (cf. [Module System](#module-system)). They hook into the diagrams life cycle and contribute functionality encapsulated in named services to bpmn-js. As an example the [bpmn rules module](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) provides BPMN specific modeling rules.
+A _module_ (cf. [Module System section](#module-system)) is a unit that defines one or more named _services_.
+These services contribte functionality to bpmn-js, i.e. by hooking into the diagram life-cycle.
 
-One obvious way of exploiting this is to define [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
-Doing so you are able to limit the modeling operations allowed by the user. Or you allow more to implement a less restrictive variant of the BPMN 2.0 standard.
+Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap) contribute generic user interface extensions to the diagram.
+Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) provide highly BPMN specific functionality.
+
+One common way to extend the BPMN modeler is to add [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
+Doing so you are able to limit or extend the modeling operations allowed by the user.
 
 Other examples for extensions are:
 
 * [Adding custom elements](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements)
 * [Custom palette / context pad](https://github.com/bpmn-io/bpmn-js-nyan)
 * [Custom shape rendering](https://github.com/bpmn-io/bpmn-js-nyan)
+
+Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-examples) for many more toolkit extension show cases.
 
 
 ### Hooking into Life-Cycle Events
@@ -228,7 +238,52 @@ On top of that diagram-js defines a data model for graphical elements and their 
 
 ### Module System
 
-*To be documented*
+Under the hood, [diagram-js](https://github.com/bpmn-io/diagram-js) employs dependency injection (DI) to wire and discover diagram components. This mechanism is built on top of [didi](https://github.com/nikku/didi).
+
+When talking about _modules_ in the context of diagram-js we refer to units that provide named services to along with their implementation. A _service_ in that sense is a function or instance that may consume other services to do stuff in the context of the diagram.
+
+The following shows a service that [hooks into life-cycle events](#hooking-into-life-cycle-events).
+It does so by registering an event via the `eventBus`, another well-known service:
+
+```javascript
+function MyLoggingPlugin(eventBus) {
+  eventBus.on('element.changed', function(event) {
+    console.log('element ', event.element, ' changed');
+  });
+}
+
+// ensure the dependency names are still available after minification
+MyLoggingPlugin.$inject = [ 'eventBus' ];
+```
+
+We must publish the service under a unique name using a module definition:
+
+```javascript
+import CoreModule from 'diagram-js/lib/core';
+
+// export as module
+export default {
+  __depends__: [ CoreModule ], // {2}
+  __init__: [ 'myLoggingPlugin' ], // {3}
+  myLoggingPlugin: [ 'type', MyLoggingPlugin ] // {1}
+};
+```
+
+The definition tells the DI infrastructure that the service is called `myLoggingPlugin` `{1}`, that it depends on the diagram-js core module `{2}` and that the service should be initialized upon diagram creation `{3}`.
+
+We may now bootstrap diagram-js, passing the our custom module:
+
+```javascript
+import MyLoggingModule from 'path-to-my-logging-module';
+
+var diagram = new Diagram({
+  modules: [
+    MyLoggingModule
+  ]
+});
+```
+
+To plug-in the module into [bpmn-js](https://github.com/bpmn-io/bpmn-js) you would use the `additionalModules` option as shown in the [Extending the Modeler section](#extending-the-modeler).
 
 
 ### Core Services
