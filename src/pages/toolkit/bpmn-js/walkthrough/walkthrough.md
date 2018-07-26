@@ -1,3 +1,9 @@
+<style>
+  h3, .h3 {
+    margin-top: 30px;
+  }
+</style>
+
 <div class="h1 page-header" id="introduction">
   A Quick Introduction
 </div>
