@@ -150,6 +150,31 @@ When embedding the modeler into a webpage include the [diagram-js stylesheet](ht
 ```
 
 
+### Hooking into Life-Cycle Events
+
+Events allow you to hook into the life-cycle of the modeler as well as diagram interaction.
+The following snipped shows how changed elements and modeling operations in general can be captured.
+
+```javascript
+modeler.on('commandStack.changed', function() {
+  // user modeled something or
+  // performed a undo/redo operation
+});
+
+modeler.on('element.changed', function(event) {
+  var element = event.element;
+
+  // the element got changed by the users
+});
+```
+
+Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L365) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules.
+
+The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
+
+If you would like to create your own pre-packaged version of your custom modeler refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
+
+
 ### Extending the Modeler
 
 You may use the `additionalModules` option to extend the `Viewer` and [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) on creation. This allows you to pass custom _modules_ that amend or replace exising functionality.
@@ -184,31 +209,6 @@ Other examples for extensions are:
 * [Custom shape rendering](https://github.com/bpmn-io/bpmn-js-nyan)
 
 Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-examples) for many more toolkit extension show cases.
-
-
-### Hooking into Life-Cycle Events
-
-Events allow you to hook into the life-cycle of the modeler as well as diagram interaction.
-The following snipped shows how changed elements and modeling operations in general can be captured.
-
-```javascript
-modeler.on('commandStack.changed', function() {
-  // user modeled something or
-  // performed a undo/redo operation
-});
-
-modeler.on('element.changed', function(event) {
-  var element = event.element;
-
-  // the element got changed by the users
-});
-```
-
-Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L365) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules.
-
-The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
-
-If you would like to create your own pre-packaged version of your custom modeler refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
 
 
 <div class="h1 page-header" id="bpmn-js-internals">
