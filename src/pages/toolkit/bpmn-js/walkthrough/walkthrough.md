@@ -172,8 +172,6 @@ Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L
 
 The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
 
-If you would like to create your own pre-packaged version of your custom modeler refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
-
 
 ### Extending the Modeler
 
@@ -209,6 +207,13 @@ Other examples for extensions are:
 * [Custom shape rendering](https://github.com/bpmn-io/bpmn-js-nyan)
 
 Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-examples) for many more toolkit extension show cases.
+
+
+### Building a Custom Distribution
+
+If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
+
+This may make sense if you carried out heavy customizations that you would like to ship to your users in simple way.
 
 
 <div class="h1 page-header" id="bpmn-js-internals">
