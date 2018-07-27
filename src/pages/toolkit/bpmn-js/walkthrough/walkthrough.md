@@ -153,7 +153,7 @@ When embedding the modeler into a webpage include the [diagram-js stylesheet](ht
 ### Hooking into Life-Cycle Events
 
 Events allow you to hook into the life-cycle of the modeler as well as diagram interaction.
-The following snipped shows how changed elements and modeling operations in general can be captured.
+The following snippet shows how changed elements and modeling operations in general can be captured.
 
 ```javascript
 modeler.on('commandStack.changed', function() {
@@ -168,10 +168,7 @@ modeler.on('element.changed', function(event) {
 });
 ```
 
-Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L365) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules.
-
-The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) covers all necessary steps needed to consume bpmn-js via npm and create a BPMN editor application around it. This includes additional steps needed for bundling the application for the browser.
-
+Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L403) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Viewer#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L413) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
 
 ### Extending the Modeler
 
@@ -280,7 +277,7 @@ export default {
 };
 ```
 
-The definition tells the DI infrastructure that the service is called `myLoggingPlugin` `{1}`, that it depends on the diagram-js core module `{2}` and that the service should be initialized upon diagram creation `{3}`.
+The definition tells the DI infrastructure that the service is called `myLoggingPlugin` `{1}`, that it depends on the diagram-js core module `{2}` and that the service should be initialized upon diagram creation `{3}`. For more details have a look at the [didi documentation](https://github.com/nikku/didi/blob/master/README.md).
 
 We may now bootstrap diagram-js, passing the our custom module:
 
