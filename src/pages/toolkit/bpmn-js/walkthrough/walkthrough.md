@@ -208,9 +208,8 @@ Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-exam
 
 ### Building a Custom Distribution
 
-If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
-
-This may make sense if you carried out heavy customizations that you would like to ship to your users in simple way.
+If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example. 
+This could make sense if you carried out heavy customizations that you would like to ship to your users in simple way.
 
 
 <div class="h1 page-header" id="bpmn-js-internals">
