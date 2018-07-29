@@ -44,7 +44,7 @@ Following that we will show how to create a BPMN modeler using the npm version o
 
 
 <div class="h2" id="viewer-pre-packaged">
-  Embed the Viewer (pre-packaged)
+  Embed the Pre-Packaged Viewer
 </div>
 
 The [pre-packaged version](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) of bpmn-js allows you to embed BPMN to your website with a simple script include.
@@ -63,7 +63,7 @@ The included script makes the viewer available via the `BpmnJS` variable. We may
 
 ```html
 <script>
-  // the diagram we are going to display
+  // the diagram you are going to display
   var bpmnXML;
 
   // BpmnJS is the BPMN viewer instance
@@ -111,25 +111,29 @@ Checkout the [pre-packaged example](https://github.com/bpmn-io/bpmn-js-examples/
 
 
 <div class="h2" id="modeler-npm">
-  Roll your own Modeler (via npm)
+  Roll Your Own Modeler
 </div>
 
 Use bpmn-js via [npm](https://www.npmjs.com) if you would like to build customizations around the library.
 This approach has various advantages such as access to individual library components.
 It also gives us more control over what to package as part of the viewer / modeler.
-However, it requires us to bundle the custom bpmn-js variant for the web using [Browserify](http://browserify.org) or [Webpack](https://webpack.github.io) ourselves.
+However, it requires us to bundle bpmn-js with our application using an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org).
 
-Here we are loosely following the [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create a BPMN modeler using the library.
-In a first step we are going to install it into our project via [npm](https://www.npmjs.com):
+This section loosely follows the [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create a BPMN modeler using the library.
+
+
+### Include the Library
+
+As a first step install bpmn-js via [npm](https://www.npmjs.com):
 
 ```bash
 npm install bpmn-js
 ```
 
-Following that we are able to access the BPMN modeler via [Node.js](https://nodejs.org/)'s `require`:
+Following that access the BPMN modeler via an ES `import`:
 
 ```javascript
-var Modeler = require('bpmn-js/lib/Modeler');
+import Modeler from 'bpmn-js/lib/Modeler';
 
 // create a modeler
 var modeler = new Modeler({ container: '#canvas' });
@@ -142,15 +146,26 @@ modeler.importXML(bpmnXML, function(err) {
 
 Again, this assumes you provide an element with the id `canvas` as part of your HTML for the modeler to render into.
 
-When embedding the modeler into a webpage include the [diagram-js stylesheet](https://github.com/bpmn-io/diagram-js/blob/master/assets/diagram-js.css) as well as the [BPMN icon font](https://github.com/bpmn-io/bpmn-js/tree/master/assets/bpmn-font) with it. This ensures that diagram elements receive proper styling and context pad as well as palette entries show BPMN symbols.
+
+### Add Stylesheets
+
+When embedding the modeler into a webpage include the [diagram-js](https://github.com/bpmn-io/diagram-js) stylesheet as well as the [BPMN icon font](https://github.com/bpmn-io/bpmn-font) with it. Both are shipped with the bpmn-js distribution under the [`dist/assets` folder](https://unpkg.com/bpmn-js/dist/assets/).
 
 ```html
-<link rel="stylesheet" href="vendor/diagram-js/diagram-js.css" />
-<link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
+<link rel="stylesheet" href="bpmn-js/dist/assets/diagram-js.css" />
+<link rel="stylesheet" href="bpmn-js/dist/assets/bpmn-font/css/bpmn-.css" />
 ```
 
+Adding the stylesheets ensures that diagram elements receive proper styling and context pad as well as palette entries show BPMN symbols.
 
-### Hooking into Life-Cycle Events
+
+### Bundle for the Browser
+
+bpmn-js and its dependencies distribute [ES modules](http://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules).
+Use an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org) to bundle bpmn-js along with your application. Learn more by following along the [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
+
+
+### Hook into Life-Cycle Events
 
 Events allow you to hook into the life-cycle of the modeler as well as diagram interaction.
 The following snippet shows how changed elements and modeling operations in general can be captured.
@@ -170,9 +185,10 @@ modeler.on('element.changed', function(event) {
 
 Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L403) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Viewer#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L413) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
 
-### Extending the Modeler
 
-You may use the `additionalModules` option to extend the `Viewer` and [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) on creation. This allows you to pass custom _modules_ that amend or replace exising functionality.
+### Extend the Modeler
+
+You may use the `additionalModules` option to extend the `Viewer` and [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) on creation. This allows you to pass custom _modules_ that amend or replace existing functionality.
 
 ```javascript
 import OriginModule from 'diagram-js-origin';
@@ -206,9 +222,9 @@ Other examples for extensions are:
 Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-examples) for many more toolkit extension show cases.
 
 
-### Building a Custom Distribution
+### Build a Custom Distribution
 
-If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example. 
+If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
 This could make sense if you carried out heavy customizations that you would like to ship to your users in simple way.
 
 
@@ -325,7 +341,7 @@ The [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/co
 During modeling element relationships will be updated according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
 
 
-### Auxilary Services (i.e. the Toolbox)
+### Auxiliary Services (i.e. the Toolbox)
 
 Around the data model as well as its core services diagram-js provides a rich toolbox of additional helpers.
 
