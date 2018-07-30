@@ -233,8 +233,8 @@ This could make sense if you carried out heavy customizations that you would lik
 </div>
 
 This section explores some [bpmn-js](https://github.com/bpmn-io/bpmn-js) internals.
-Have a look at the improvised architecture diagram shown below.
-As depicted bpmn-js builds on top of two libraries: diagram-js and bpmn-moddle.
+
+As depicted in the architecture diagram below bpmn-js builds on top of two important libraries: [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle).
 
 <figure class="bi-img">
   <img src="{{ assets }}/img/toolkit/bpmn-js/walkthrough/overview.svg" alt="bpmn-js architecture: parts and responsibilities" />
