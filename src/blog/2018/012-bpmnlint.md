@@ -190,7 +190,7 @@ npm install emoji-regex
 ```
 
 Then, we need to adjust our configuration to use the `emoji-label-required` rule.
-Since is not a built-in rule, we prefix it with it's plugin name (in this case `playground`):
+Since is not a built-in rule, we prefix it with its plugin name (in this case `playground`):
 
 ```json
 {
@@ -212,7 +212,7 @@ Going back to the playground app the linter will now report an error for labels 
 
 This completes our quick walk through bpmnlint's extensibility.
 
-Checkout the playgrounds [emoji-label-required branch](https://github.com/bpmn-io/bpmnlint-playground/tree/emoji-label-required) that contains the implementation described in this blog post.
+Check out the playgrounds [emoji-label-required branch](https://github.com/bpmn-io/bpmnlint-playground/tree/emoji-label-required) that contains the implementation described in this blog post.
 To learn more about rule packaging and testing have look at the [example plug-in](https://github.com/bpmn-io/bpmn-js-bpmnlint).
 
 
@@ -222,4 +222,4 @@ bpmnlint is a BPMN diagram validator that can be used as command line tool or in
 
 Try out the tool and help us to improve it by [reporting](https://github.com/bpmn-io/bpmnlint/issues/new?template=NEW_RULE.md) rules you'd like to see supported.
 
-Go forth and start validating your diagrams today <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f916.svg" />!
+Go ahead and start validating your diagrams today <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f916.svg" />!
