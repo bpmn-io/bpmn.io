@@ -1,6 +1,6 @@
 ---
 
-title: Announcing BPMNLint, a validator for BPMN diagrams
+title: Validate and Improve your BPMN Diagrams with bpmnlint
 layout: blogpost.hbs
 
 slug: 2018-bpmnlint
@@ -8,73 +8,157 @@ author: Seif Ghezala<https://github.com/siffogh>
 
 published: 2018-10-11 16:00
 
+releases:
+  - 'bpmnlint@5.0.0'
+
 ---
 
 
 <p class="introduction">
-  Today we are very excited to finally reveal BPMNLint, an open source tool for validating BPMN diagrams. 
+  Today we are excited to reveal [bpmnlint](https://github.com/bpmn-io/bpmnlint), a linting and validation tool which helps you to check and improve your BPMN diagrams based on configurable rules.
 </p>
 
 <!-- continue -->
 
+BPMN is a powerful language for visualizing processes and collaboration.
+Often, it allows you to express a certain interaction in a number of ways, one way harder to understand than the other.
+Sometimes the same modeling pattern is expressed in different ways, making it harder to recognize across your diagrams.
+Ever so often you may even end up creating BPMN diagrams that are syntactically incorrect, incomplete or completely not understandable for the uninitiated reader.
+
+In this context, [bpmnlint](https://github.com/bpmn-io/bpmnlint) steps in.
+It validates your diagram against a defined set of rules and reports these as errors or warnings.
+It may check your BPMN diagrams from the command line or run integrated into our [BPMN modeler](https://bpmn.io/toolkit/bpmn-js/) via [bpmn-js-bpmnlint](https://github.com/bpmn-io/bpmn-js-bpmnlint):
+
 <div class="figure">
-  <img src="{{ assets }}/attachments/blog/2018/012-bpmnlint.gif">
+  <img src="{{ assets }}/attachments/blog/2018/012-bpmnlint.gif" />
+  <figcaption>
+    [bpmnlint](https://github.com/bpmn-io/bpmnlint) validating a diagram as you model.
+  </figcaption>
 </div>
 
-BPMN provides a powerful language for modeling diagrams. Often, one process can be modeled in various ways. Unfortunately, one can easily end up making a BPMN diagram either syntactically incorrect, unreadable or simply over-complicated. In this context, BPMNLint comes in very handy. By providing a way to enforce validation rules, BPMNLint makes it fairly easy to report errors and warnings in the model.
+
+## Rules at the Core
+
+Rules to detect certain patterns in BPMN diagrams are at the core of the library.
+Each rule is defined by a piece of code that may detect and report anything from label missing to the fact that a specific error prone modeling pattern got detected.
+
+To give you a better taste of what a rule may be, here is the [list of rules](https://github.com/bpmn-io/bpmnlint/tree/master/rules) built into the library as of today:
+
+<style>
+  table {
+    margin: 20px 0;
+  }
+
+  th, td {
+    padding: 5px;
+    vertical-align: top;
+    border-bottom: solid 1px #CCC;
+    border-collapse: collapse;
+  }
+
+  th:first-child,
+  td:first-child {
+    white-space: nowrap;
+    padding-left: 0;
+  }
+</style>
+
+| Rule Name | Description |
+|:--- | :---|
+| `conditional-flows` | Reports outgoing flows with missing conditions. |
+| `end-event-required` | Reports missing end events. |
+| `fake-join` | Reports an implicit join that actually is none. |
+| `label-required` | Reports missing labels. |
+| `no-complex-gateway` | Reports complex gateways. |
+| `no-disconnected` | Reports unconnected elements. |
+| `no-gateway-join-fork` | Reports gateways that fork and join at the same time. |
+| `no-implicit-split` | Reports implicit splits. |
+| `no-inclusive-gateway` | Reports inclusive gateways. |
+| `single-blank-start-event` | Reports multiple blank start events in a scope. |
+| `single-event-definition` | Reports events with multiple definitions. |
+| `start-event-required` | Reports missing start events. |
+
+In addition to these rules, we got [a few ones](https://github.com/bpmn-io/bpmnlint/issues?q=is%3Aissue+is%3Aopen+label%3Arules) we intend to implement.
+
+Are there common modeling errors that you experienced?
+Could these errors be avoided with bpmnlint?
+Propose a [new bpmnlint rule](https://github.com/bpmn-io/bpmnlint/issues/new?template=NEW_RULE.md) and help us to build a strong foundation for BPMN diagram validation.
 
 
-## From 0 to BPMNLint
-There is nothing better than an example to explore BPMNLint. To do so, let's clone [this](https://github.com/bpmn-io/bpmn-js-bpmnlint) demo.  Let's install the demo's dependencies, then navigate to the `/example` directory and run the following:
+## From Zero to bpmnlint
+
+Let us get a better understanding of bpmnlint's configuration and extensibility.
+To get started, checkout and run the [bpmnlint-playground](https://github.com/bpmn-io/bpmnlint-playground), a project designed specificly to play around with the model validation project.
+
 ```sh
+git clone git@github.com:bpmn-io/bpmnlint-playground.git
+
+cd bpmnlint-playground
+
 npm install
-npm run dev
+npm start
 ```
 
-We should by now have a running application on [http://localhost:8080/index.html](http://localhost:8080/index.html).
+Executing `npm start` opens a browser window with the playground app that has linting support baked in.
 
-We can then press the button on the top right corner of the page to start the linting experience.
 
-## Configurable: turning on/off rules
-`example/.bpmnlintrc` holds the current BPMNLint configuration:
+## Configure Available Rules
+
+A `.bpmnlintrc` file placed in your current working directory defines which rules to apply and whether to treat them as errors or warnings. The playground holds a [`.bpmnlintrc`](https://github.com/bpmn-io/bpmnlint-playground/blob/master/.bpmnlintrc) that looks like this:
 
 ```json
 {
   "extends": [
     "bpmnlint:recommended",
-    "plugin:camunda/recommended"
-  ]
-}
-```
-
-The current configuration is pretty straightforward and we can use it if we don't want to bother about configuration overhead. In fact, we are simply telling BPMNLint to extend two sets of rules: `bpmnlint:recommended` and `camunda/recommended`.   
-
-However, you don't have to fully comply with these rules. BPMNLint makes it possible to make certain rules only report warnings or even turn them off. To illustrate this, let's pick two rules from the [list of built-in rules](https://github.com/bpmn-io/bpmnlint/tree/master/rules) and customize their reporting in the `rules` object of the `.bpmnlintrc` configuration file:
-
-```json
-{
-  "extends": [
-    "bpmnlint:recommended",
-    "plugin:camunda/recommended"
+    "plugin:playground/recommended"
   ],
   "rules": {
-    "bpmnlint/no-implicit-split": "off",
-    "bpmnlint/label-required": "warn"
+    "playground/no-manual-task": "warn"
   }
 }
 ```
 
-If we open the demo page again, we will see that BPMNLint only shows warnings now when there are missing labels. Moreover, the linter doesn't report anything when using an implicit split.
+The `extends` block tells bpmnlint to inherit the configuration from two pre-defined rule sets: `bpmnlint:recommended` and `playground/recommended`, the later provided by the playground plug-in.
 
-## Extensibility
-Customizing the reporting of built-in rules is great, but it does not satisfy every use case. Sometimes, a user or an organization wants to have custom rules that are relevant to their issues or style of modeling. BPMNLint solves this issue by being extremely extensible and making it easy to build plugins holding custom rules. For instance, what if we want to have a rule that enforces having an emoji in the label of every flow node? To quickly bootstrap our plugin, we can simply clone [this](https://github.com/bpmn-io/bpmnlint-plugin-example) BPMNLint plugin template. Let's then create an `emoji-label-required` rule in the rules module. To do so, we can simply copy the [label-required](https://github.com/bpmn-io/bpmnlint/blob/master/rules/label-required.js) built-in rule and replace a part of it's `check` function:
+The `rules` block overrides reporting for a specific rule.
+The example configures the `playground/no-manual-task` as a warning (rather than an error).
+We could pick any rule, e.g. a [built-in one](https://github.com/bpmn-io/bpmnlint/tree/master/rules), and turn it off entirely, too:
+
+```json
+{
+  ...
+  "rules": {
+    ...
+    "bpmnlint/label-required": "off"
+  }
+}
+```
+
+In the playground app, we can see that the linter won't report start events without labels anymore.
+
+
+## Create Custom Rules
+
+Customizing reporting of existing rules is great, but it does not satisfy every use case.
+Sometimes, a user or an organization wants to identify domain specific patterns, relevant to their particular style of modeling.
+bpmnlint solves this issue by allowing you to contribute custom own rules and rule sets.
+
+For instance, what if we want to have a rule that enforces having an emoji in the label of every flow node?
+Let us jump into the playgrounds [`plugin` folder](https://github.com/bpmn-io/bpmnlint-playground/tree/master/plugin) and create the `emoji-label-required` rule in the `rules/emoji-label-required.js` file:
 
 ```js
-    // bpmnlint-plugin-example/rules/emoji-label-required
+const {
+  isAny
+} = require('bpmnlint-utils');
 
-    const emojiRegex = require('emoji-regex');
+const emojiRegex = require('emoji-regex');
 
-    function check(node, reporter) {
+/**
+ * Detect and report missing emojis in element names.
+ */
+module.exports = function() {
+
+  function check(node, reporter) {
     if (isAny(node, [
       'bpmn:FlowNode',
       'bpmn:SequenceFlow',
@@ -88,34 +172,54 @@ Customizing the reporting of built-in rules is great, but it does not satisfy ev
         reporter.report(node.id, 'Element must have an emoji');
       }
     }
+  }
 
-    }
+  return {
+    check
+  };
+};
 ```
 
-The function simply reports whenever [this](https://www.npmjs.com/package/emoji-regex) emoji regular expressions does not match the flow node name.
+The rule exposes a `check(node, reporter)` function that simply reports whenever a BPMN label is missing an emoji.
+The [emoji-regex](https://www.npmjs.com/package/emoji-regex) utility carries out the check for us.
+We must install it as a dependency inside the plug-in directory to get the rule running:
 
-To consume the plugin in our demo, we can either publish it or simply [link](https://docs.npmjs.com/cli/link) it to the demo project.  
+```sh
+cd plugin
+npm install emoji-regex
+```
 
-Then, we need to adjust our configuration to use the emoji rule:
+Then, we need to adjust our configuration to use the `emoji-label-required` rule.
+Since is not a built-in rule, we prefix it with it's plugin name (in this case `playground`):
 
 ```json
 {
   "rules": {
-    "example/emoji-label-required": "error"
+    ...
+    "playground/emoji-label-required": "error"
   }
 }
 ```
 
-> **Notice**: since `emoji-label-required` is not a built-in rule, we prefix it with it's plugin name (in this case `example`).
-
-BPMNLint should then report an error whenever a flow node does not have an emoji in its label:
+Going back to the playground app the linter will now report an error for labels without emojis:
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2018/012-bpmnlint-emoji.gif">
+  <figcaption>
+    Validating the presence of emojis in labels.
+  </figcaption>
 </div>
 
-## What's Next?
+This completes our quick walk through bpmnlint's extensibility.
 
-BPMNLint can now be used in a browser or a as command line tool. Furthermore, you can integrate it into [bpmn-js](https://github.com/bpmn-io/bpmn-js) using the [bpmn-js-bpmnlint extension](https://github.com/bpmn-io/bpmn-js-bpmnlint).
+Checkout the playgrounds [emoji-label-required branch](https://github.com/bpmn-io/bpmnlint-playground/tree/emoji-label-required) that contains the implementation described in this blog post.
+To learn more about rule packaging and testing have look at the [example plug-in](https://github.com/bpmn-io/bpmn-js-bpmnlint).
 
-In the future we are planning to also make it available as a [Camunda Modeler]() plugin.
+
+## Wrapping Up
+
+bpmnlint is a BPMN diagram validator that can be used as command line tool or integrated into [bpmn-js](https://github.com/bpmn-io/bpmn-js) using the [bpmn-js-bpmnlint extension](https://github.com/bpmn-io/bpmn-js-bpmnlint). In the future, we plan to also make it available as a [Camunda Modeler](https://github.com/camunda/camunda-modeler) plugin.
+
+Try out the tool and help us to improve it by [reporting](https://github.com/bpmn-io/bpmnlint/issues/new?template=NEW_RULE.md) rules you'd like to see supported.
+
+Go forth and start validating your diagrams today <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f916.svg" />!
