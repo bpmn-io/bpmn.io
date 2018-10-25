@@ -22,7 +22,7 @@ releases:
 
 BPMN is a powerful language for visualizing processes and collaboration.
 Often, it allows you to express a certain interaction in a number of ways, one way harder to understand than the other.
-Sometimes the same modeling pattern is expressed in different ways, making it harder to recognize across your diagrams.
+Sometimes the same modeling pattern is expressed in different ways, making it harder to recognize it across your diagrams.
 Ever so often you may even end up creating BPMN diagrams that are syntactically incorrect, incomplete or completely not understandable for the uninitiated reader.
 
 In this context, [bpmnlint](https://github.com/bpmn-io/bpmnlint) steps in.
@@ -141,7 +141,7 @@ In the playground app, we can see that the linter won't report start events with
 
 Customizing reporting of existing rules is great, but it does not satisfy every use case.
 Sometimes, a user or an organization wants to identify domain specific patterns, relevant to their particular style of modeling.
-bpmnlint solves this issue by allowing you to contribute custom own rules and rule sets.
+bpmnlint solves this issue by allowing you to contribute custom rules and rule sets.
 
 For instance, what if we want to have a rule that enforces having an emoji in the label of every flow node?
 Let us jump into the playgrounds [`plugin` folder](https://github.com/bpmn-io/bpmnlint-playground/tree/master/plugin) and create the `emoji-label-required` rule in the `rules/emoji-label-required.js` file:
