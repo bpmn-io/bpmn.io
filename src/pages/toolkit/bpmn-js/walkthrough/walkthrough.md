@@ -13,7 +13,7 @@ It is written in JavaScript, embeds BPMN 2.0 diagrams into modern browsers and r
 
 The library is built in a way that it can be both a viewer and web modeler. Use the [viewer](https://github.com/bpmn-io/bpmn-js-examples/tree/master/url-viewer) to embed BPMN 2.0 into your applications and [enrich it with your data](https://github.com/bpmn-io/bpmn-js-examples/tree/master/overlays). Use the [modeler](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create BPMN 2.0 diagrams inside your application.
 
-This walkthrough will give you an introduction how to use the library and some insights into its internals, i.e. the components that contribute to its highly modular and extensible structure.
+This walkthrough will give you an introduction on how to use the library as well as some insights into its internals, i.e. the components that contribute to its highly modular and extensible structure.
 
 
 <div class="h2 page-header">
@@ -38,9 +38,9 @@ There are two approaches to use [bpmn-js](https://github.com/bpmn-io/bpmn-js) in
 An all-in-one pre-packaged version of the library allows you to quickly add BPMN to any website.
 The [npm](https://www.npmjs.com) version is more complicated to set-up but gives you access to individual library components and allows for easier extensibility.
 
-This section gives you an overview over both approaches.
-We start with an introduction how to embed the pre-packaged version of the BPMN viewer into a website.
-Following that we will show how to create a BPMN modeler using the npm version of the library.
+This section gives you an overview of both approaches.
+We start with an introduction on how to embed the pre-packaged version of the BPMN viewer into a website.
+Following that, we show how to create a BPMN modeler using the npm version of the library.
 
 
 <div class="h2" id="viewer-pre-packaged">
@@ -59,7 +59,7 @@ Add a container element for the rendered diagram to your website and include the
 <script src="https://unpkg.com/bpmn-js@0.27.0-1/dist/bpmn-viewer.development.js"></script>
 ```
 
-The included script makes the viewer available via the `BpmnJS` variable. We may access it via JavaScript as seen below.
+The included script makes the viewer available via the `BpmnJS` variable. We may access it via JavaScript as shown below.
 
 ```html
 <script>
@@ -83,12 +83,12 @@ The included script makes the viewer available via the `BpmnJS` variable. We may
 </script>
 ```
 
-The snipped uses the [`Viewer#importXML`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L147) API to display a pre-loaded BPMN 2.0 diagram. Importing a diagram is asynchronous and, once finished, the viewer notifies us via a callback about the results.
+The snippet uses the [`Viewer#importXML`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L147) API to display a pre-loaded BPMN 2.0 diagram. Importing a diagram is asynchronous and, once finished, the viewer notifies us via a callback about the results.
 
-After import we may access various diagram services via [`Viewer#get`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L246). In the snippet above we interact with the [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js#L77) to fit the diagram to the currently available viewport size.
+After import, we may access various diagram services via [`Viewer#get`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L246). In the snippet above, we interact with the [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js#L77) to fit the diagram to the currently available viewport size.
 
 Often times it is more practical to load the BPMN 2.0 diagram dynamically via AJAX.
-This can be accomplished using plain JavaScript (as seen below) or via utility libraries such as [jQuery](https://api.jquery.com/jQuery.get) that provide more convenient APIs.
+This can be accomplished using plain JavaScript (as seen below) or via utility libraries such as [jQuery](https://api.jquery.com/jQuery.get), which provide more convenient APIs.
 
 ```html
 <script>
@@ -107,7 +107,7 @@ This can be accomplished using plain JavaScript (as seen below) or via utility l
 </script>
 ```
 
-Checkout the [pre-packaged example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) as well as our [starter examples](https://github.com/bpmn-io/bpmn-js-examples/tree/master/starter) to learn more.
+Check out the [pre-packaged example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged) as well as our [starter examples](https://github.com/bpmn-io/bpmn-js-examples/tree/master/starter) to learn more.
 
 
 <div class="h2" id="modeler-npm">
@@ -124,13 +124,13 @@ This section loosely follows the [modeler example](https://github.com/bpmn-io/bp
 
 ### Include the Library
 
-As a first step install bpmn-js via [npm](https://www.npmjs.com):
+First install bpmn-js via [npm](https://www.npmjs.com):
 
 ```bash
 npm install bpmn-js
 ```
 
-Following that access the BPMN modeler via an ES `import`:
+Then access the BPMN modeler via an ES `import`:
 
 ```javascript
 import Modeler from 'bpmn-js/lib/Modeler';
@@ -156,7 +156,7 @@ When embedding the modeler into a webpage include the [diagram-js](https://githu
 <link rel="stylesheet" href="bpmn-js/dist/assets/bpmn-font/css/bpmn-.css" />
 ```
 
-Adding the stylesheets ensures that diagram elements receive proper styling and context pad as well as palette entries show BPMN symbols.
+Adding the stylesheets ensures diagram elements receive proper styling as well as context pad and palette entries show BPMN symbols.
 
 
 ### Bundle for the Browser
@@ -173,13 +173,13 @@ The following snippet shows how changed elements and modeling operations in gene
 ```javascript
 modeler.on('commandStack.changed', function() {
   // user modeled something or
-  // performed a undo/redo operation
+  // performed an undo/redo operation
 });
 
 modeler.on('element.changed', function(event) {
   var element = event.element;
 
-  // the element got changed by the users
+  // the element was changed by the user
 });
 ```
 
@@ -211,7 +211,7 @@ Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-
 Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) provide highly BPMN specific functionality.
 
 One common way to extend the BPMN modeler is to add [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
-Doing so you are able to limit or extend the modeling operations allowed by the user.
+In doing so, you can limit or extend the modeling operations allowed by the user.
 
 Other examples for extensions are:
 
@@ -254,9 +254,9 @@ On top of these two libraries bpmn-js defines the BPMN specifics such as look an
 
 [diagram-js](https://github.com/bpmn-io/diagram-js) is a toolbox for displaying and modifying diagrams on the web. It allows us to render visual elements and build interactive experiences on top of them.
 
-It provides us with a very simple module system for building features and dependency injection for service discovery. As part of that system it provides a number of core services that implement the diagram essentials.
+It provides us with a very simple module system for building features and dependency injection for service discovery. This system also provides a number of core services that implement the diagram essentials.
 
-On top of that diagram-js defines a data model for graphical elements and their relationships.
+Additionally, diagram-js defines a data model for graphical elements and their relationships.
 
 
 ### Module System
@@ -321,7 +321,7 @@ The [diagram-js core](https://github.com/bpmn-io/diagram-js/tree/master/lib/core
 
 * [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) - knows all elements added to the diagram and provides APIs to retrieve the elements and their graphical representation by _id_.
 
-* [`GraphicsFactory`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/GraphicsFactory.js) - responsible to create graphical representations for shapes and connections. The actual look and feel is defined by renderers, i.e. the [`DefaultRenderer`](https://github.com/bpmn-io/diagram-js/blob/master/lib/draw/DefaultRenderer.js) inside the [draw module](https://github.com/bpmn-io/diagram-js/tree/master/lib/draw).
+* [`GraphicsFactory`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/GraphicsFactory.js) - responsible for creating graphical representations of shapes and connections. The actual look and feel is defined by renderers, i.e. the [`DefaultRenderer`](https://github.com/bpmn-io/diagram-js/blob/master/lib/draw/DefaultRenderer.js) inside the [draw module](https://github.com/bpmn-io/diagram-js/tree/master/lib/draw).
 
 
 ### Data Model
@@ -343,7 +343,7 @@ During modeling element relationships will be updated according to user operatio
 
 ### Auxiliary Services (i.e. the Toolbox)
 
-Around the data model as well as its core services diagram-js provides a rich toolbox of additional helpers.
+Aside from the data model and its core services, diagram-js provides a rich toolbox of additional helpers.
 
 * [`CommandStack`](https://github.com/bpmn-io/diagram-js/blob/master/lib/command/CommandStack.js) - responsible for redo and undo during modeling.
 * [`ContextPad`](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/context-pad/ContextPad.js) - provides contextual actions around an element.
