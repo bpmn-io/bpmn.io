@@ -326,7 +326,7 @@ The [diagram-js core](https://github.com/bpmn-io/diagram-js/tree/master/lib/core
 
 ### Data Model
 
-Underlying diagram-js is a simple data model consisting of shapes and connections.
+Under the hood, diagram-js implements a simple data model consisting of shapes and connections.
 
 <figure class="bi-img">
   <img src="{{ assets }}/img/toolkit/bpmn-js/walkthrough/data-model.png" alt="diagram-js data model: shapes and connections" style="max-width: 500px" />
@@ -364,7 +364,7 @@ On import, it parses the XML document into a JavaScript object tree.
 That tree is edited and validated during modeling and then exported back to BPMN 2.0 XML once the user wishes to save the diagram.
 Because bpmn-moddle encapsulates knowledge about BPMN, we are able to validate during import and modeling. Based on the results, we can constrain certain modeling actions and output helpful error messages and warnings to the user.
 
-Much like [bpmn-js](https://github.com/bpmn-io/bpmn-js), the foundations of [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) are based on top of two libraries:
+Much like [bpmn-js](https://github.com/bpmn-io/bpmn-js), the foundations of [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) are built on top of two libraries:
 
 * [moddle](https://github.com/bpmn-io/moddle) which offers a concise way to define [meta-models](https://en.wikipedia.org/wiki/Metamodeling) in JavaScript
 * [moddle-xml](https://github.com/bpmn-io/moddle-xml) which reads and writes XML documents based on [moddle](https://github.com/bpmn-io/moddle)
