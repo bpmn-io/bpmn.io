@@ -263,7 +263,7 @@ Additionally, diagram-js defines a data model for graphical elements and their r
 
 Under the hood, [diagram-js](https://github.com/bpmn-io/diagram-js) employs dependency injection (DI) to wire and discover diagram components. This mechanism is built on top of [didi](https://github.com/nikku/didi).
 
-When talking about _modules_ in the context of diagram-js, we refer to units that provide named services to along with their implementation. A _service_ in that sense is a function or instance that may consume other services to do stuff in the context of the diagram.
+When talking about _modules_ in the context of diagram-js, we refer to units that provide named services along with their implementation. A _service_ in that sense is a function or instance that may consume other services to do stuff in the context of the diagram.
 
 The following shows a service that [hooks into life-cycle events](#hooking-into-life-cycle-events).
 It does so by registering an event via the `eventBus`, another well-known service:
