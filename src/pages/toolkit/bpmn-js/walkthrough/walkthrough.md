@@ -317,7 +317,7 @@ The [diagram-js core](https://github.com/bpmn-io/diagram-js/tree/master/lib/core
 
 * [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) - the library's global communication channel with a *fire and forget* policy. Interested parties can subscribe to various events and act upon them once they are emitted. The event bus helps us to decouple concerns and to modularize functionality so that new features can hook up easily with existing behavior.
 
-* [`ElementFactory`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementFactory.js) - a factory for creating shapes and connections according to diagram-js internal data model.
+* [`ElementFactory`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementFactory.js) - a factory for creating shapes and connections according to diagram-js' internal data model.
 
 * [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) - knows all elements added to the diagram and provides APIs to retrieve the elements and their graphical representation by _id_.
 
