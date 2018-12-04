@@ -294,7 +294,7 @@ export default {
 
 The definition tells the DI infrastructure that the service is called `myLoggingPlugin` `{1}`, that it depends on the diagram-js core module `{2}` and that the service should be initialized upon diagram creation `{3}`. For more details have a look at the [didi documentation](https://github.com/nikku/didi/blob/master/README.md).
 
-We may now bootstrap diagram-js, passing the our custom module:
+We may now bootstrap diagram-js, passing our custom module:
 
 ```javascript
 import MyLoggingModule from 'path-to-my-logging-module';
@@ -306,7 +306,7 @@ var diagram = new Diagram({
 });
 ```
 
-To plug-in the module into [bpmn-js](https://github.com/bpmn-io/bpmn-js) you would use the `additionalModules` option as shown in the [Extending the Modeler section](#extending-the-modeler).
+To plug in the module into [bpmn-js](https://github.com/bpmn-io/bpmn-js), you would use the `additionalModules` option as shown in the [Extending the Modeler section](#extending-the-modeler).
 
 
 ### Core Services
@@ -315,7 +315,7 @@ The [diagram-js core](https://github.com/bpmn-io/diagram-js/tree/master/lib/core
 
 * [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js) - provides APIs for adding and removing graphical elements; deals with element life cycle and provides APIs to zoom and scroll.
 
-* [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) - the libraries global communication channel with a *fire and forget* policy. Interested parties can subscribe to various events and act upon them once they are emitted. The event bus helps us to decouple concerns and to modularize functionality so that new features can hook up easily with existing behavior.
+* [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) - the library's global communication channel with a *fire and forget* policy. Interested parties can subscribe to various events and act upon them once they are emitted. The event bus helps us to decouple concerns and to modularize functionality so that new features can hook up easily with existing behavior.
 
 * [`ElementFactory`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementFactory.js) - a factory for creating shapes and connections according to diagram-js internal data model.
 
@@ -338,7 +338,7 @@ A _shape_ has a parent, a list of children as well as a list of incoming and out
 A _connection_ has a parent as well as a source and target, pointing to a _shape_.
 
 The [`ElementRegistry`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/ElementRegistry.js) is responsible for creating shapes and connections [according to that model](https://github.com/bpmn-io/diagram-js/blob/master/lib/model/index.js).
-During modeling element relationships will be updated according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
+During modeling, element relationships will be updated according to user operations by the [`Modeling` service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/modeling/Modeling.js).
 
 
 ### Auxiliary Services (i.e. the Toolbox)
@@ -360,9 +360,9 @@ Let's move on to the BPMN magic that is happening behind the scenes.
 </h2>
 
 [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) encapsulates the BPMN 2.0 meta-model and provides us with facilities to read and write BPMN 2.0 XML documents.
-On import it parses the XML document into a JavaScript object tree.
+On import, it parses the XML document into a JavaScript object tree.
 That tree is edited and validated during modeling and then exported back to BPMN 2.0 XML once the user wishes to save the diagram.
-Because bpmn-moddle encapsulates knowledge about BPMN we are able to validate during import and modeling. Based on the results we can constrain certain modeling actions and output helpful error messages and warnings to the user.
+Because bpmn-moddle encapsulates knowledge about BPMN, we are able to validate during import and modeling. Based on the results, we can constrain certain modeling actions and output helpful error messages and warnings to the user.
 
 Much like [bpmn-js](https://github.com/bpmn-io/bpmn-js), the foundations of [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) are based on top of two libraries:
 
