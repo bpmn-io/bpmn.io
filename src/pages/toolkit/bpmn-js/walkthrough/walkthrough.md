@@ -383,8 +383,8 @@ The BPMN meta-model is essential for bpmn-js, as it allows us to validate BPMN 2
 We learned [bpmn-js](https://github.com/bpmn-io/bpmn-js) is built on top of [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). It ties both together and adds the BPMN look and feel. This includes a BPMN palette, BPMN context pad as well as BPMN 2.0 specific rules. In this section, we'll be explaining how that works in different phases of modeling.
 
 
-When we import a BPMN 2.0 document, it is parsed by [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) from XML into an object tree. bpmn-js renders all visible elements of that tree, i.e. it creates the respective shapes and connections on the canvas. Thereby it ties both the BPMN elements and the graphical elements together.
-This results into a structure as shown below for a start event shape.
+When we import a BPMN 2.0 document, it is parsed from XML into an object tree by [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). bpmn-js renders all visible elements of that tree, i.e. it creates the respective shapes and connections on the canvas. Thereby it ties both the BPMN elements and the graphical elements together.
+This results in a structure, as shown below, for a start event shape.
 
 ```javascript
 {
@@ -409,21 +409,21 @@ This results into a structure as shown below for a start event shape.
 }
 ```
 
-From each graphical element you may access the underlying BPMN type via the `businessObject` property.
+You may access the underlying BPMN type from each graphical element via the `businessObject` property.
 
 
-[bpmn-js](https://github.com/bpmn-io/bpmn-js) also knows how each BPMN element looks like and decides so through the [`BpmnRenderer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/draw/BpmnRenderer.js).
-By plugging into the render cycle you may define custom representations of individual BPMN elements, too.
+[bpmn-js](https://github.com/bpmn-io/bpmn-js) also knows how each BPMN element looks like thanks to the [`BpmnRenderer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/draw/BpmnRenderer.js).
+By plugging into the render cycle, you may also define custom representations of individual BPMN elements.
 
 
 We can start modeling once the importing is done.
 We use rules to allow or disallow certain modeling operations.
 These rules are defined by [`BpmnRules`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules/BpmnRules.js).
 We base these rules on the BPMN 2.0 standard as defined by the [OMG](http://www.omg.org/).
-But as mentioned earlier others may hook up with the rule evaluation to contribute different behavior, too.
+However as mentioned earlier, others may also hook up with the rule evaluation to contribute different behavior.
 
 The [modeling module](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) bundles BPMN 2.0 related modeling functionality.
-It adds BPMN 2.0 specific modeling behaviors and is responsible to update the BPMN 2.0 document tree with every modeling operation carried out by the user (cf. [`BpmnUpdater`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/modeling/BpmnUpdater.js)).
+It adds BPMN 2.0 specific modeling behaviors and is responsible for updating the BPMN 2.0 document tree with every modeling operation carried out by the user (cf. [`BpmnUpdater`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/modeling/BpmnUpdater.js)).
 Check it out to learn get a deeper insight into rules, behaviors and the BPMN update cycle.
 
 When looking at bpmn-js purely from the library perspective it is worth mentioning is that it can be used in three variants:
@@ -440,15 +440,15 @@ The [`NavigatedViewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Navig
   Going Further
 </div>
 
-In the first part of this walkthrough we focused on using bpmn-js as a BPMN viewer as well as modeler.
+In the first part of this walkthrough, we focused on using bpmn-js as a BPMN viewer as well as a modeler.
 This should have given you a good understanding of the toolkit from the library perspective.
 
-In the second part, we focused on bpmn-js internals. We presented diagram-js as well as bpmn-moddle, the two foundations bpmn-js is built upon and gave you an overview how bpmn-js plugs all these together.
+In the second part, we focused on bpmn-js internals. We presented diagram-js as well as bpmn-moddle, the two foundations bpmn-js is built upon and gave you an overview of how bpmn-js plugs all of these together.
 
 There exists a number of additional resources that allow you to progress further:
 
 * [Examples](https://github.com/bpmn-io/bpmn-js-examples) - a few example projects that showcase various ways to embed and extend bpmn-js.
-* Source Code ([bpmn-js](https://github.com/bpmn-io/bpmn-js), [diagram-js](https://github.com/bpmn-io/diagram-js)) - mostly well documented; should give you great insights in the library internals.
+* Source Code ([bpmn-js](https://github.com/bpmn-io/bpmn-js), [diagram-js](https://github.com/bpmn-io/diagram-js)) - mostly well documented; should give you great insights into the library's internals.
 * [Forum](https://forum.bpmn.io/c/developers) - a good place to get help for using and extending bpmn-js.
 
 
