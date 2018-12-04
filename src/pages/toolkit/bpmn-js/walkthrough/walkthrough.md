@@ -162,7 +162,7 @@ Adding the stylesheets ensures diagram elements receive proper styling as well a
 ### Bundle for the Browser
 
 bpmn-js and its dependencies distribute [ES modules](http://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules).
-Use an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org) to bundle bpmn-js along with your application. Learn more by following along the [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
+Use an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org) to bundle bpmn-js along with your application. Learn more by following along with the [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
 
 
 ### Hook into Life-Cycle Events
