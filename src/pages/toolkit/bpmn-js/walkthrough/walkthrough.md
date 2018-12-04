@@ -208,7 +208,7 @@ A _module_ (cf. [Module System section](#module-system)) is a unit that defines 
 These services configure bpmn-js or provide additional functionality, i.e. by hooking into the diagram life-cycle.
 
 Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap), provide generic user interface additions.
-Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling), provide highly BPMN specific functionality.
+Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling), provide highly BPMN-specific functionality.
 
 One common way to extend the BPMN modeler is to add [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
 In doing so, you can limit or extend the modeling operations allowed by the user.
@@ -243,7 +243,7 @@ As depicted in the architecture diagram below, bpmn-js builds on top of two impo
 
 We use [diagram-js](https://github.com/bpmn-io/diagram-js) to draw shapes and connections. It provides us with ways to interact with these graphical elements as well as additional tools such as overlays that help users to build powerful BPMN viewers. For advanced use cases such as modeling it contributes the context pad, palette and facilities like redo/undo.
 
-[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) knows about the BPMN 2.0 meta-model defined in the [BPMN 2.0 standard](http://www.omg.org/spec/BPMN/2.0/). It allows us to read and write BPMN 2.0 schema compliant XML documents and access BPMN related information behind shapes and connections drawn on the diagram.
+[bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) knows about the BPMN 2.0 meta-model defined in the [BPMN 2.0 standard](http://www.omg.org/spec/BPMN/2.0/). It allows us to read and write BPMN 2.0 schema-compliant XML documents and access BPMN-related information behind shapes and connections drawn on the diagram.
 
 On top of these two libraries, bpmn-js defines the BPMN specifics such as look and feel, modeling rules and tooling (i.e. palette). We will go into detail about the individual components in the following paragraphs.
 
