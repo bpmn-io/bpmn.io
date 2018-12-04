@@ -424,16 +424,16 @@ However as mentioned earlier, others may also hook up with the rule evaluation t
 
 The [modeling module](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) bundles BPMN 2.0 related modeling functionality.
 It adds BPMN 2.0 specific modeling behaviors and is responsible for updating the BPMN 2.0 document tree with every modeling operation carried out by the user (cf. [`BpmnUpdater`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/modeling/BpmnUpdater.js)).
-Check it out to learn get a deeper insight into rules, behaviors and the BPMN update cycle.
+Check it out to get a deeper insight into rules, behaviors and the BPMN update cycle.
 
-When looking at bpmn-js purely from the library perspective it is worth mentioning is that it can be used in three variants:
+When looking at bpmn-js purely from the library perspective, it's worth mentioning it can be used in three variants:
 
 * [`Viewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js) to display diagrams
 * [`NavigatedViewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/NavigatedViewer.js) to display and navigate BPMN diagrams
 * [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) to model BPMN diagrams
 
 The only difference between the versions is that they bundle a different set of functionality.
-The [`NavigatedViewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/NavigatedViewer.js) adds modules for navigating the canvas and the [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) adds a whole lot of functionality for creating, editing and interacting elements on the canvas.
+The [`NavigatedViewer`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/NavigatedViewer.js) adds modules for navigating the canvas and the [`Modeler`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Modeler.js) adds a whole lot of functionality for creating, editing and interacting with elements on the canvas.
 
 
 <div class="h1 page-header" id="going-further">
