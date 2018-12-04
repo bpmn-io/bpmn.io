@@ -374,7 +374,7 @@ In essence [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) adds the BPMN s
 * [`fromXML`](https://github.com/bpmn-io/bpmn-moddle/blob/master/lib/bpmn-moddle.js#L38) - create a BPMN tree from a given XML string
 * [`toXML`](https://github.com/bpmn-io/bpmn-moddle/blob/master/lib/bpmn-moddle.js#L65) - write a BPMN object tree to BPMN 2.0 XML
 
-The BPMN meta-model is an essential for bpmn-js, as it allows us to validate BPMN 2.0 documents we consume, provide proper modeling rules and export valid BPMN documents that _all_ compliant BPMN modelers can understand.
+The BPMN meta-model is essential for bpmn-js, as it allows us to validate BPMN 2.0 documents we consume, provide proper modeling rules and export valid BPMN documents that _all_ compliant BPMN modelers can understand.
 
 <h2 id="bpmn-js">
   Plugging Things together (bpmn-js)
