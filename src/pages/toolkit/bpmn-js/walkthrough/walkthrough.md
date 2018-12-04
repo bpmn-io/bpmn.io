@@ -377,7 +377,7 @@ In essence [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) adds the BPMN s
 The BPMN meta-model is essential for bpmn-js, as it allows us to validate BPMN 2.0 documents we consume, provide proper modeling rules and export valid BPMN documents that _all_ compliant BPMN modelers can understand.
 
 <h2 id="bpmn-js">
-  Plugging Things together (bpmn-js)
+  Plugging Things Together (bpmn-js)
 </h2>
 
 We learned [bpmn-js](https://github.com/bpmn-io/bpmn-js) is built on top of [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle). It ties both together and adds the BPMN look and feel. This includes a BPMN palette, BPMN context pad as well as BPMN 2.0 specific rules. In this section, we'll be explaining how that works in different phases of modeling.
