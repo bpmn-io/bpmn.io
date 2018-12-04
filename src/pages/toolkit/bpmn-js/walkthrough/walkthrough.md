@@ -149,7 +149,7 @@ Again, this assumes you provide an element with the id `canvas` as part of your 
 
 ### Add Stylesheets
 
-When embedding the modeler into a webpage include the [diagram-js](https://github.com/bpmn-io/diagram-js) stylesheet as well as the [BPMN icon font](https://github.com/bpmn-io/bpmn-font) with it. Both are shipped with the bpmn-js distribution under the [`dist/assets` folder](https://unpkg.com/bpmn-js/dist/assets/).
+When embedding the modeler into a webpage, include the [diagram-js](https://github.com/bpmn-io/diagram-js) stylesheet as well as the [BPMN icon font](https://github.com/bpmn-io/bpmn-font) with it. Both are shipped with the bpmn-js distribution under the [`dist/assets` folder](https://unpkg.com/bpmn-js/dist/assets/).
 
 ```html
 <link rel="stylesheet" href="bpmn-js/dist/assets/diagram-js.css" />
@@ -207,8 +207,8 @@ var modeler = new Modeler({
 A _module_ (cf. [Module System section](#module-system)) is a unit that defines one or more named _services_.
 These services configure bpmn-js or provide additional functionality, i.e. by hooking into the diagram life-cycle.
 
-Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap) provide generic user interface additions.
-Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling) provide highly BPMN specific functionality.
+Some modules, such as [diagram-js-origin](https://github.com/bpmn-io/diagram-js-origin) or [diagram-js-minimap](https://github.com/bpmn-io/diagram-js-minimap), provide generic user interface additions.
+Built-in bpmn-js modules, such as [bpmn rules](https://github.com/bpmn-io/bpmn-js/blob/master/lib/features/rules) or [modeling](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/modeling), provide highly BPMN specific functionality.
 
 One common way to extend the BPMN modeler is to add [custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
 In doing so, you can limit or extend the modeling operations allowed by the user.
@@ -224,7 +224,7 @@ Check out the [bpmn-js-examples project](https://github.com/bpmn-io/bpmn-js-exam
 
 ### Build a Custom Distribution
 
-If you would like to create your own pre-packaged version of your custom modeler or viewer refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
+If you would like to create your own pre-packaged version of your custom modeler or viewer, refer to the [custom-bundle](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-bundle) example.
 This could make sense if you carried out heavy customizations that you would like to ship to your users in simple way.
 
 
@@ -234,7 +234,7 @@ This could make sense if you carried out heavy customizations that you would lik
 
 This section explores some [bpmn-js](https://github.com/bpmn-io/bpmn-js) internals.
 
-As depicted in the architecture diagram below bpmn-js builds on top of two important libraries: [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle).
+As depicted in the architecture diagram below, bpmn-js builds on top of two important libraries: [diagram-js](https://github.com/bpmn-io/diagram-js) and [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle).
 
 <figure class="bi-img">
   <img src="{{ assets }}/img/toolkit/bpmn-js/walkthrough/overview.svg" alt="bpmn-js architecture: parts and responsibilities" />
@@ -245,7 +245,7 @@ We use [diagram-js](https://github.com/bpmn-io/diagram-js) to draw shapes and co
 
 [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle) knows about the BPMN 2.0 meta-model defined in the [BPMN 2.0 standard](http://www.omg.org/spec/BPMN/2.0/). It allows us to read and write BPMN 2.0 schema compliant XML documents and access BPMN related information behind shapes and connections drawn on the diagram.
 
-On top of these two libraries bpmn-js defines the BPMN specifics such as look and feel, modeling rules and tooling (i.e. palette). We will go into detail about the individual components in the following paragraphs.
+On top of these two libraries, bpmn-js defines the BPMN specifics such as look and feel, modeling rules and tooling (i.e. palette). We will go into detail about the individual components in the following paragraphs.
 
 
 <h2 id="diagram-js">
@@ -263,7 +263,7 @@ Additionally, diagram-js defines a data model for graphical elements and their r
 
 Under the hood, [diagram-js](https://github.com/bpmn-io/diagram-js) employs dependency injection (DI) to wire and discover diagram components. This mechanism is built on top of [didi](https://github.com/nikku/didi).
 
-When talking about _modules_ in the context of diagram-js we refer to units that provide named services to along with their implementation. A _service_ in that sense is a function or instance that may consume other services to do stuff in the context of the diagram.
+When talking about _modules_ in the context of diagram-js, we refer to units that provide named services to along with their implementation. A _service_ in that sense is a function or instance that may consume other services to do stuff in the context of the diagram.
 
 The following shows a service that [hooks into life-cycle events](#hooking-into-life-cycle-events).
 It does so by registering an event via the `eventBus`, another well-known service:
