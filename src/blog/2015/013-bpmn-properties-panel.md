@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2015-bpmn-properties-panel
 author: Nico Rehwaldt<https://github.com/nikku>
 
-published: 2015-11-27 9:10
+published: 2015-11-27 09:10
 
 releases:
   - 'bpmn-js-properties-panel@0.1.0'
