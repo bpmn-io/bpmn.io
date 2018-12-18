@@ -47,8 +47,8 @@
     "assemble"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "highlight.js": "^9.1.0",
+    "bootstrap": "^3.4.0",
+    "highlight.js": "^9.13.1",
     "jquery": "^3.3.1"
   }
 }
