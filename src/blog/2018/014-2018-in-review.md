@@ -70,7 +70,7 @@ Despite many features added over the year our BPMN modeler it is actually lighte
 
 ## The Year as a Collaborative Effort
 
-With two new people onboarded in 2018, we are now back at a respectable size of 3,5 full-time developers, dedicated to working on our toolkits as well as the [Camunda Modeler](https://github.com/camunda/camunda-modeler).
+With two new people onboarded in 2018, we are now back at a respectable size of 3.5 full-time developers, dedicated to working on our toolkits as well as the [Camunda Modeler](https://github.com/camunda/camunda-modeler).
 
 We realize that our libraries are in a good shape now. This, however, does not mean we completed our mission to offer great BPMN, CMMN and DMN tooling that is accessible to everyone. Your feedback helps us realize that there exists [significant room](https://github.com/bpmn-io/bpmn-js/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) for future improvements across all our tools.
 
