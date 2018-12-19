@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2018-year-in-review
 author: Nico Rehwaldt <https://github.com/nikku>
 
-published: 2018-12-20 11:00
+published: 2018-12-19 11:00
 
 releases:
 
