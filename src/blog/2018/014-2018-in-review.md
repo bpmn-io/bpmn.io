@@ -79,9 +79,9 @@ We realize that our libraries are in a good shape now. This, however, does not m
 
 So what is up in 2019? For the first quarter we set out to carry out the following:
 
-* [Support BPMN Groups](https://github.com/bpmn-io/bpmn-js/issues/343) and make it [even easier/more intuitive](https://github.com/bpmn-io/bpmn-js/issues/478) to model BPMN diagrams with intermediate / boundary events.
+* [Support BPMN Groups](https://github.com/bpmn-io/bpmn-js/issues/343) and make it [even easier/more intuitive](https://github.com/bpmn-io/bpmn-js/issues/478) to model BPMN diagrams with intermediate/boundary events.
 
-* Better understand the integrator/developer journey and give you improved guidance on how to integrate and extend our libraries.
+* Better understand the developer journey and give you improved guidance on how to integrate and extend our libraries.
 
 Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [@bpmn_io](https://twitter.com/bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2019.
 
