@@ -45,7 +45,7 @@ Looking at the year from the feature perspective a few aspects are worth highlig
 
 * [bpmnlint](https://github.com/bpmn-io/bpmnlint), a new side project, sketches our solution for configurable, extensible diagram validation that helps everyone to build even better, easier to understand diagrams. Give it a try via the [bpmnlint-playground](https://github.com/bpmn-io/bpmnlint-playground) and give us feedback, if you missed the opportunity until now!
 
-Often times significant work happend in one of the many underlying libraries supporting our diagram toolkits/editors. As an example we [published twelve releases](https://github.com/bpmn-io/bpmn-moddle/blob/master/CHANGELOG.md) in [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle), each improving the way our BPMN modeler consumes and exports BPMN 2.0 diagrams.
+Often times significant work happened in one of the many underlying libraries supporting our diagram toolkits/editors. As an example we [published twelve releases](https://github.com/bpmn-io/bpmn-moddle/blob/master/CHANGELOG.md) in [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle), each improving the way our BPMN modeler consumes and exports BPMN 2.0 diagrams.
 
 Altogether we cut more than 75 releases (40 being actual feature releases) in [over 20 libraries](https://github.com/bpmn-io) and wrote
 [twelve blog posts](https://bpmn.io/blog/) to communicate the new and note-worthy in our eco system.
