@@ -41,7 +41,7 @@ Looking at the year from the feature perspective a few aspects are worth highlig
 
 * We rolled out semantic change logs across all our libraries, making it easier to track which improvements (and breaking changes) new releases ship with.
 
-* [bpmn-js](https://github.com/bpmn-io/bpmn-js), our flagship BPMN modeling library, saw various improvements across the year, ranging from [much-requested modeling features](https://bpmn.io/blog/posts/2018-bpmn-js-2-0-0.html) to [theming support](https://bpmn.io/blog/posts/2018-bpmn-js-2-1-0.html), [diagram interaction, and modeling convenience enhancements](https://bpmn.io/blog/posts/2018-bpmn-js-0-26.html). Three major releases in 2018 overhauled many parts of the libraries inner workings, too.
+* [bpmn-js](https://github.com/bpmn-io/bpmn-js), our flagship BPMN modeling library, saw various improvements across the year. These improvements ranged from [much-requested modeling features](https://bpmn.io/blog/posts/2018-bpmn-js-2-0-0.html) to [theming support](https://bpmn.io/blog/posts/2018-bpmn-js-2-1-0.html), [diagram interaction, and modeling convenience enhancements](https://bpmn.io/blog/posts/2018-bpmn-js-0-26.html). Three major releases in 2018 overhauled many parts of the libraries inner workings, too.
 
 * [bpmnlint](https://github.com/bpmn-io/bpmnlint), a new side project, sketches our solution for configurable, extensible diagram validation that helps everyone to build even better, easier to understand diagrams. Give it a try via the [bpmnlint-playground](https://github.com/bpmn-io/bpmnlint-playground) and give us feedback, if you missed the opportunity until now!
 
