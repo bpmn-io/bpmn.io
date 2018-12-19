@@ -24,7 +24,7 @@ releases:
 <div class="figure condensed-size">
   <img src="{{ assets }}/attachments/blog/2018/014-christmas-tree.gif" alt="Merry Christmas to who it may concern!" style="border-color: #489d1273">
   <p class="caption">
-    It is this time of the year again!
+    It is that time of the year again!
   </p>
 </div>
 
