@@ -15,7 +15,7 @@ releases:
 
 <p class="introduction">
   For our project, 2018 was a year of significant modeling improvements, library rewrites, refactorings, and increased popularity.
-  With the end of the year quickly approaching, let us take a look at this year's accomplishments and the near future.
+  With the end of the year quickly approaching, let us take a look at our accomplishments and into the near future.
 </p>
 
 <!-- continue -->
