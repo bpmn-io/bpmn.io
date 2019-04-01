@@ -24,7 +24,7 @@ Most great ideas start with a hand-drawn sketch, and so do most great processes.
 
 Nearly a year ago we published [bpmn-js-sketchy](https://github.com/bpmn-io/bpmn-js-sketchy), an extension for [bpmn-js](https://github.com/bpmn-io/bpmn-js) that turns your BPMN 2.0 diagrams into delightful, hand-drawn sketches. Fully recognizing the benefits of hand-drawn, we go one step further today and make the sketchy render the default renderer for BPMN 2.0 diagrams.
 
-<div class="figure">
+<div class="figure full-size">
 
   <a href="https://demo.bpmn.io/s/start">
     <img src="{{ assets }}/attachments/blog/2019/001-screenshot.png">
