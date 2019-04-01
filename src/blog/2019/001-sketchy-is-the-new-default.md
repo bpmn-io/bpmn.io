@@ -3,7 +3,7 @@
 title: Sketchy is the new Default
 layout: blogpost.hbs
 
-slug: 2018-sketchy-is-the-new-default
+slug: 2019-sketchy-is-the-new-default
 author: Nico Rehwaldt <https://github.com/nikku>
 
 published: 2019-04-01 9:00
@@ -27,7 +27,7 @@ Nearly a year ago we published [bpmn-js-sketchy](https://github.com/bpmn-io/bpmn
 <div class="figure">
 
   <a href="https://demo.bpmn.io/s/start">
-    <img src="{{ assets }}/attachments/blog/2018/001-auto-place.gif">
+    <img src="{{ assets }}/attachments/blog/2019/001-screenshot.png">
   </a>
 
   <p class="caption">
@@ -45,7 +45,7 @@ Off course, prototypes mature with time and feedback. That is why the new versio
 <div class="figure">
 
   <a href="https://demo.bpmn.io/s/start">
-    <img src="{{ assets }}/attachments/blog/2018/001-auto-place.gif">
+    <img src="{{ assets }}/attachments/blog/2019/001-screencast.gif">
   </a>
 
   <p class="caption">
