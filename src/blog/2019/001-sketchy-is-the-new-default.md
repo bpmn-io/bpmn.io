@@ -1,7 +1,7 @@
 ---
 
 title: Sketchy is the new Default
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 
 slug: 2019-sketchy-is-the-new-default
 author: Nico Rehwaldt <https://github.com/nikku>
