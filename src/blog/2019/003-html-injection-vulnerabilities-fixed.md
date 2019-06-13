@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2019-html-injection-vulnerabilities-fixed
 author: Nico Rehwaldt<https://github.com/nikku>
 
-published: 2019-06-15 10:00
+published: 2019-06-13 12:00
 
 releases:
   - 'bpmn-js@3.4.2'
