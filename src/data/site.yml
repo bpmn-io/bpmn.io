@@ -1,7 +1,7 @@
 title: bpmn.io
 bpmnjs:
-  version: v3.3.1
+  version: v3.4.2
 dmnjs:
-  version: v6.3.2
+  version: v6.3.3
 cmmnjs:
-  version: v0.17.1
+  version: v0.18.1
