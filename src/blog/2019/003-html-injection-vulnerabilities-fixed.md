@@ -19,7 +19,7 @@ releases:
 ---
 
 <p class="introduction">
-  Patched versions of our BPMN, CMMN and DMN editors address two HTML injection / <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities. We recomment users to upgrade.
+  Patched versions of our BPMN, CMMN and DMN editors address two HTML injection / <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities. We recommend users to upgrade.
 </p>
 
 <!-- continue -->
