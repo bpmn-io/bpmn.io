@@ -2,7 +2,7 @@
   "name": "bpmn.io",
   "description": "The bpmn.io website",
   "version": "0.0.0",
-  "homepage": "http://bpmn.io",
+  "homepage": "https://bpmn.io",
   "author": {
     "name": "Nico Rehwaldt",
     "url": "http://github.com/nikku"
@@ -15,7 +15,7 @@
     "url": "https://github.com/bpmn-io/bpmn.io/issues"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=8"
   },
   "scripts": {
     "all": "grunt build",
