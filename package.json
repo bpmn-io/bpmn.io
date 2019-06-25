@@ -11,9 +11,6 @@
     "type": "git",
     "url": "git://github.com/bpmn-io/bpmn.io.git"
   },
-  "bugs": {
-    "url": "https://github.com/bpmn-io/bpmn.io/issues"
-  },
   "engines": {
     "node": ">=8"
   },
@@ -26,6 +23,7 @@
     "assemble": "~0.4.35",
     "assemble-contrib-anchors": "^0.1.1",
     "assemble-contrib-permalinks": "^0.3.4",
+    "bootstrap": "^3.4.1",
     "grunt": "^1.0.3",
     "grunt-cli": "^1.3.2",
     "grunt-contrib-clean": "^2.0.0",
@@ -35,6 +33,8 @@
     "grunt-contrib-watch": "^1.1.0",
     "handlebars-helper-compose": "^0.2.12",
     "handlebars-helper-moment": "^0.1.3",
+    "highlight.js": "^9.15.8",
+    "jquery": "^3.4.1",
     "load-grunt-tasks": "^4.0.0",
     "time-grunt": "^2.0.0"
   },
@@ -46,9 +46,5 @@
     "grunt",
     "assemble"
   ],
-  "dependencies": {
-    "bootstrap": "^3.4.0",
-    "highlight.js": "^9.13.1",
-    "jquery": "^3.3.1"
-  }
+  "dependencies": {}
 }
