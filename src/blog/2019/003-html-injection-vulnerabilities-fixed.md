@@ -1,6 +1,6 @@
 ---
 
-title: HTML Injection Vulnerabilities Fixed Across our Toolkits
+title: Updated Modeling Toolkits Fix HTML Injection Vulnerabilities
 layout: blogpost.hbs
 
 slug: 2019-html-injection-vulnerabilities-fixed
