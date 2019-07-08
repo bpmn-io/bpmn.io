@@ -1,6 +1,6 @@
 ---
 
-title: Sketchy is the new Default
+title: Sketchy Is the New Default
 layout: blogpost_fooled.hbs
 
 slug: 2019-sketchy-is-the-new-default
