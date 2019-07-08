@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2019-html-injection-vulnerabilities-properties-panels-fixed
 author: Nico Rehwaldt<https://github.com/nikku>
 
-published: 2019-07-10 12:00
+published: 2019-07-08 17:00
 
 releases:
   - 'bpmn-js-properties-panel@0.31.0'
