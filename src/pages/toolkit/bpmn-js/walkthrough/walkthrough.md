@@ -153,7 +153,7 @@ When embedding the modeler into a webpage, include the [diagram-js](https://gith
 
 ```html
 <link rel="stylesheet" href="bpmn-js/dist/assets/diagram-js.css" />
-<link rel="stylesheet" href="bpmn-js/dist/assets/bpmn-font/css/bpmn-.css" />
+<link rel="stylesheet" href="bpmn-js/dist/assets/bpmn-font/css/bpmn.css" />
 ```
 
 Adding the stylesheets ensures diagram elements receive proper styling as well as context pad and palette entries show BPMN symbols.
