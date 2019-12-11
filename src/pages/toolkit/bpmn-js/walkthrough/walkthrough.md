@@ -56,7 +56,7 @@ Add a container element for the rendered diagram to your website and include the
 <div id="canvas"></div>
 
 <!-- replace CDN url with local bpmn-js path -->
-<script src="https://unpkg.com/bpmn-js@0.27.0-1/dist/bpmn-viewer.development.js"></script>
+<script src="https://unpkg.com/bpmn-js/dist/bpmn-viewer.development.js"></script>
 ```
 
 The included script makes the viewer available via the `BpmnJS` variable. We may access it via JavaScript as shown below.
