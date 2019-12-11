@@ -2,6 +2,17 @@
   h3, .h3 {
     margin-top: 30px;
   }
+
+  h2, .h2 {
+    margin-top: 30px;
+  }
+
+  blockquote {
+    margin-top: 20px;
+    border-left-color: #FFB300;
+    background: #FFF8E1;
+    font-size: inherit;
+  }
 </style>
 
 <div class="h1 page-header" id="introduction">
@@ -40,7 +51,7 @@ The [npm](https://www.npmjs.com) version is more complicated to set-up but gives
 
 This section gives you an overview of both approaches.
 We start with an introduction on how to embed the pre-packaged version of the BPMN viewer into a website.
-Following that, we show how to create a BPMN modeler using the npm version of the library.
+Following that, we show how to bundle bpmn-js with your application to create a web-based BPMN editor.
 
 
 <div class="h2" id="viewer-pre-packaged">
@@ -117,9 +128,11 @@ Check out the [pre-packaged example](https://github.com/bpmn-io/bpmn-js-examples
 Use bpmn-js via [npm](https://www.npmjs.com) if you would like to build customizations around the library.
 This approach has various advantages such as access to individual library components.
 It also gives us more control over what to package as part of the viewer / modeler.
-However, it requires us to bundle bpmn-js with our application using an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org).
+However, it requires us to bundle bpmn-js with our application using an ES module aware bundler such as [Webpack](https://webpack.js.org/).
 
-This section loosely follows the [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create a BPMN modeler using the library.
+> If you are new to the world of JavaScript bundling follow along our [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
+
+In the remainder of this section we loosely follow the [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) to create a web-based BPMN editor.
 
 
 ### Include the Library
@@ -162,7 +175,7 @@ Adding the stylesheets ensures diagram elements receive proper styling as well a
 ### Bundle for the Browser
 
 bpmn-js and its dependencies distribute [ES modules](http://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules).
-Use an ES module aware bundler such as [Webpack](https://webpack.js.org/) (`>=2`) or [Rollup](https://rollupjs.org) to bundle bpmn-js along with your application. Learn more by following along with the [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
+Use an ES module aware bundler to pack bpmn-js along with your application. Learn more by following along with the [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
 
 
 ### Hook into Life-Cycle Events
@@ -447,7 +460,7 @@ In the second part, we focused on bpmn-js internals. We presented diagram-js as 
 
 There exists a number of additional resources that allow you to progress further:
 
-* [Examples](https://github.com/bpmn-io/bpmn-js-examples) - a few example projects that showcase various ways to embed and extend bpmn-js.
+* [Examples](https://github.com/bpmn-io/bpmn-js-examples) - numerous examples that showcase how to embed and extend bpmn-js.
 * Source Code ([bpmn-js](https://github.com/bpmn-io/bpmn-js), [diagram-js](https://github.com/bpmn-io/diagram-js)) - mostly well documented; should give you great insights into the library's internals.
 * [Forum](https://forum.bpmn.io/c/developers) - a good place to get help for using and extending bpmn-js.
 
