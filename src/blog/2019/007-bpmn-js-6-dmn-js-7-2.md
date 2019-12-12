@@ -4,9 +4,9 @@ title: Connect From and To Anywhere
 layout: blogpost.hbs
 
 slug: 2019-bpmn-js-6-dmn-js-7-2
-author: Philipp Fromme<https://github.com/philippfromme>
+author: Nico Rehwaldt<https://github.com/nikku>
 
-published: 2019-12-10 15:00
+published: 2019-12-12 10:00
 
 releases:
   - 'bpmn-js@6.0.0'
