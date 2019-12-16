@@ -6,7 +6,7 @@ layout: blogpost.hbs
 slug: 2019-year-in-review
 author: Nico Rehwaldt <https://github.com/nikku>
 
-published: 2019-12-19 11:00
+published: 2019-12-17 12:00
 
 releases:
 
@@ -53,7 +53,7 @@ We cut more than 90 releases (more than 35 being actual feature releases) in [ov
 Significantly more new people visited [our project website](https://bpmn.io/), asked for help, and contributed to [our forum](https://forum.bpmn.io/) and starred our projects on [GitHub](https://github.com/bpmn-io). Community work led to several contributions, too, such as [support for rendering multiple BPMN diagrams](./2019-bpmn-js-3-4-0.html#multiple-bpmn-diagrams-support) or [internationalization of our DMN decision table editor](https://github.com/bpmn-io/dmn-js/issues/434).
 
 <div class="figure no-border condensed-size" style="margin: 50px 0 40px 0; text-align: center">
-  <img src="{{ assets }}/attachments/blog/2019/009-stats.png" alt="Some project statistics" style="max-width: 500px">
+  <img src="{{ assets }}/attachments/blog/2019/009-stats.png" alt="Some project statistics" style="max-width: 720px">
   <p class="caption" style="margin-top: 10px">
     2019 in numbers (with percentages compared to 2018).
   </p>
@@ -66,17 +66,18 @@ Newly implemented features paid its toll on our toolkits bundle sizes. Grid snap
 
 With one more person on board in 2019, we are now at a respectable size of five full-time developers, dedicated to working on our toolkits as well as the core Camunda modeling apps. Head over to [our about page](https://bpmn.io/about/) to learn more about us.
 
-Our tooling is in good shape now. However, that does not mean we completed our mission to offer great BPMN, CMMN, and DMN tooling that is accessible to everyone. Look forward to substantial updates of our BPMN as well as DMN (all editors) toolkits.
-
 
 ## The Future is Now
 
-So what is up in 2020? In the first quarter, we focus on [dmn-js](https://github.com/bpmn-io/dmn-js), our DMN editor and rendering toolkit:
+Our tooling is in good shape now. However, that does not mean we completed our mission to offer great BPMN, CMMN, and DMN tooling that is accessible to everyone.
+
+So what is up next? In the first quarter of 2020, we focus on [dmn-js](https://github.com/bpmn-io/dmn-js), our DMN editor and rendering toolkit:
 
 * [Support the latest DMN standard](https://github.com/bpmn-io/dmn-js/issues/409).
 
 * Explore ways to make it easier to navigate and model complex DMN diagrams.
 
+Look forward to more, substantial updates of our BPMN as well as DMN (all editors) toolkits.
 
 Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [@bpmn_io](https://twitter.com/bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2020.
 
