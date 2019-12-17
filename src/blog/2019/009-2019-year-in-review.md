@@ -30,7 +30,7 @@ releases:
 
 ## The Year in Features
 
-Inspired by the [GitHub papercuts project](https://github.blog/2018-08-28-announcing-paper-cuts/), we sat down at the beginning of the year to review the small things our users report to us regularly. What are the issues that most people come across when they use our tools? Which little interaction nuances require you to learn more about our supported modeling standards that you should? What keeps you from freely changing your diagrams, as they evolve? Which bigger issues force you to work around our tools rather than work with them, intuitively?
+Inspired by the [GitHub papercuts project](https://github.blog/2018-08-28-announcing-paper-cuts/), we sat down at the beginning of the year to review the small things our users report to us regularly. What are the issues that most people come across when they use our tools? Which little interaction nuances require you to learn more about our supported modeling standards than you should? What keeps you from freely changing your diagrams, as they evolve? Which bigger issues force you to work around our tools rather than work with them, intuitively?
 
 Equipped with a plan, we reworked substantial parts of the core modeling experience over the year. Let us look into the features implemented, tracked along with the bigger releases we shipped:
 
