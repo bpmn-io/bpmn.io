@@ -111,7 +111,6 @@ module.exports = function(grunt) {
           '<%= config.dist %>/': ['<%= config.src %>/pages/*.hbs'],
           '<%= config.dist %>/about/': ['<%= config.src %>/pages/about/*.hbs'],
           '<%= config.dist %>/modeler/': ['<%= config.src %>/pages/modeler/*.hbs'],
-          '<%= config.dist %>/jobs/': ['<%= config.src %>/pages/jobs/*.hbs'],
           '<%= config.dist %>/license/': ['<%= config.src %>/pages/license/*.hbs'],
           '<%= config.dist %>/roadmap/': ['<%= config.src %>/pages/roadmap/*.hbs'],
           '<%= config.dist %>/status/': ['<%= config.src %>/pages/status/*.hbs'],
