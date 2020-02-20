@@ -96,7 +96,7 @@ The tool supports both single diagram and batch migration.
 Of course, one-off diagram migration will only work if you are in full control of the DMN diagrams fed into dmn-js.
 
 
-## Looking Forward.
+## Wrapping Up
 
 Read through the [full changelog](https://github.com/bpmn-io/dmn-js/blob/develop/packages/dmn-js/CHANGELOG.md) to learn about all issues that we addressed with `dmn-js@8` as well as breaking changes that may require your action during the upgrade.
 
