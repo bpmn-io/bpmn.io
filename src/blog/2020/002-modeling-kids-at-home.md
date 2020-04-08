@@ -1,7 +1,7 @@
 ---
 
 title: Modeling, Kids at Home Edition
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 
 slug: 2020-modeling-kids-at-home-edition
 author: Nico Rehwaldt<https://github.com/nikku>
