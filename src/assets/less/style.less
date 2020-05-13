@@ -19,27 +19,6 @@
   .button-size(@padding-large-vertical; @padding-large-horizontal + 10px; @font-size-large + 8; @line-height-large + 0.3; @border-radius-large);
 }
 
-.btn-outline-inverse {
-  .button-variant(white; @brand-primary; white);
-
-  &:hover {
-    background: white;
-    color: @brand-primary;
-  }
-}
-
-.btn-outline {
-  .button-variant(@brand-primary; transparent; @brand-primary);
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #fff;
-    background-color: @brand-primary;
-    border-color: @brand-primary;
-  }
-}
-
 .bash-snippet {
   margin: 0.2em 0
 }
@@ -55,13 +34,32 @@
   .button-xxlarge();
 }
 
+
+.bi-inverse {
+
+  color: @color-highlight-fg;
+
+  a:not(.btn) {
+    color: @color-highlight-fg;
+  }
+
+  .btn-default {
+    .button-variant(white; @brand-primary; white);
+
+    &:hover {
+      background: white;
+      color: @brand-primary;
+    }
+  }
+
+  .btn-primary {
+    .button-variant(@brand-primary; white; white);
+  }
+}
+
 .bi-front-page {
 
   text-align: center;
-
-  .logo {
-    margin-bottom: 20px;
-  }
 
   .lead {
     margin: 10px auto;
@@ -69,28 +67,71 @@
 }
 
 .bi-navbar {
-  margin-bottom: 0;
-  border-bottom: solid 5px @brand-primary;
 
-  .navbar-brand {
-    padding: 15px;
+  .navbar-brand svg {
+    margin: -10px 0;
+    height: 3.3rem;
+    width: auto;
+    fill: #fff;
   }
 
-  .navbar-toggle .icon-bar {
-    background-color: @brand-primary;
+  a {
+    font-weight: normal;
+  }
+
+}
+
+.bi-navbar .navbar-nav {
+  > li > a:hover,
+  > li > a:focus,
+  > li > a:active,
+  > li.active > a,
+  > li.active > a:hover,
+  > li.open > a,
+  > li.open > a:hover {
+    color: @navbar-default-link-color;
   }
 }
 
-.navbar-default .navbar-toggle:focus {
-  background-color: transparent;
+@media (min-width: 768px) {
+  .bi-navbar .navbar-nav {
+    > li {
+      margin: 25px 0;
+    }
+
+    > li > a {
+      margin: 5px 15px;
+      padding: 0;
+    }
+
+    > li > a {
+      border-bottom: solid .2em transparent;
+    }
+
+    > li > a:hover,
+    > li > a:focus,
+    > li > a:active,
+    > .active > a,
+    > .active > a:hover,
+    > .open > a,
+    > .open > a:hover {
+      border-bottom: solid .2em @navbar-default-link-color;
+    }
+
+  }
+
 }
 
-.bi-head,
-.bi-masterhead {
-  background: @color-lighter-gray;
-  color: #333;
+a {
+  font-weight: bold;
+}
 
-  border-bottom: solid 1px #DDD;
+a.btn {
+  font-weight: normal;
+}
+
+.bi-navbar + .bi-masterhead {
+  border-color: #DDD;
 }
 
 .lead {
@@ -109,7 +150,7 @@
   .teaser {
     max-height: 450px;
     overflow: hidden;
-    border-bottom: solid 1px #CCC;
+    border-bottom: solid 1px #DDD;
 
     img {
       max-width: 100%;
@@ -132,6 +173,8 @@
 
 .bi-head {
 
+  border-bottom: 1px solid #DDD;
+
   h1, .h1 {
     font-size: 40px;
     margin: 35px 0 20px 0;
@@ -143,7 +186,7 @@
   }
 
   .lead {
-    margin: -10px 0 20px 0;
+    margin: -10px 0 30px 0;
   }
 
   .nav {
@@ -163,28 +206,36 @@
   margin-top: 30px;
 }
 
+.bi-highlight,
 .bi-masterhead {
-
+  .bi-inverse();
   .bi-front-page();
+
+  background: @color-highlight-bg;
 
   padding-top: 80px;
   padding-bottom: 50px;
 
+  margin-bottom: 80px;
+
+  .actions {
+    margin: 50px auto 40px auto;
+    max-width: 400px;
+  }
+}
+
+.bi-masterhead {
+
   h1, .h1 {
-    font-size: 48px;
+    font-size: 38px;
     margin-bottom: 30px;
   }
 
   .lead {
     width: 80%;
-    font-size: 30px;
+    font-size: 28px;
 
     margin-bottom: 10px;
-  }
-
-  .actions {
-    margin: 50px auto 40px auto;
-    max-width: 400px;
   }
 
   .bi-news-note {
@@ -194,14 +245,11 @@
 
 .half-rule {
   width: 100px;
-  margin: 60px auto;
+  margin: 100px auto;
 }
 
 .bi-features {
   .bi-front-page();
-
-  margin-top: 80px;
-  margin-bottom: 80px;
 
   h2 {
     font-size: 34px;
@@ -251,25 +299,52 @@
 }
 
 .bi-footer {
-  border-top: solid 1px #eeeeee;
+  .bi-inverse();
 
-  margin-top: 50px;
+  background: @color-bpmnio-gray;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 100px;
 
-  color: #777;
+  padding: 40px 0;
 
-  text-align: center;
+  color: #eee;
 
   .footer-links {
     padding: 0;
 
     li {
       display: inline;
-      margin: 3px;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
     }
   }
+
+  .footer-links.muted {
+    a {
+      font-weight: normal;
+    }
+  }
+
+  .footer-contrib,
+  .footer-logo {
+    margin-top: 40px
+  }
+
+  .footer-notice {
+    margin-top: 15px;
+  }
+
+  .footer-logo {
+    svg {
+      margin: -10px 0;
+      height: 3.3rem;
+      width: auto;
+      fill: #fff;
+    }
+  }
+
 }
 
 .bi-example {

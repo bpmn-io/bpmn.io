@@ -158,16 +158,19 @@
 
   font-size: small;
 
+  text-decoration: none;
+  font-weight: normal;
+
   &:hover,
   &:active {
     text-decoration: none;
 
     .project {
-      background: #489d12;
+      background: @color-bpmnio-green;
     }
 
     .version {
-      background: #6d6363;
+      background: @color-bpmnio-gray;
     }
   }
 
@@ -177,13 +180,13 @@
   }
 
   .project {
-    background: lighten(desaturate(#489d12, 20%), 10%);
+    background: lighten(desaturate(@color-bpmnio-green, 20%), 10%);
     color: white;
     border-radius: 3px 0 0 3px;
   }
 
   .version {
-    background: lighten(desaturate(#6d6363, 20%), 10%);
+    background: lighten(desaturate(@color-bpmnio-gray, 20%), 10%);
     color: white;
     border-radius: 0 3px 3px 0;
   }

@@ -2,22 +2,32 @@
  * Variable overrides for bootstrap
  */
 
-@color-bpmnio: #52B415;
-@color-lighter-gray: #FCFCFC;
+@color-bpmnio-green: #10ad73;
+@color-bpmnio-gray: #404040;
+@color-bpmnio-lighter-gray: #FCFCFC;
 
-@brand-primary: @color-bpmnio;
+@color-highlight-fg: white;
+@color-highlight-bg: @color-bpmnio-green;
 
-@navbar-height: 60px;
-@navbar-default-bg: White;
-@navbar-default-color: #333;
-@navbar-default-border: @brand-primary;
-@navbar-default-link-color: #666;
+@brand-primary: @color-bpmnio-green;
 
-@border-radius-base: 3px;
-@border-radius-large: 3px;
+@navbar-height: 80px;
+@navbar-default-bg: @color-highlight-bg;
+@navbar-default-color: @color-highlight-fg;
+@navbar-default-border: none;
+@navbar-default-link-color: @color-highlight-fg;
+@navbar-default-link-active-bg: transparent;
+@navbar-margin-bottom: 0;
+
+@navbar-default-toggle-border-color: @color-highlight-fg;
+@navbar-default-toggle-icon-bar-bg: @color-highlight-fg;
+@navbar-default-toggle-hover-bg: lighten(@color-highlight-bg, 3%);
+
+@border-radius-base: 0;
+@border-radius-large: 0;
 
 @link-color: darken(@brand-primary, 5%);
 
-@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "IBM Plex Sans", sans-serif;
 
 @headings-font-weight: 400;

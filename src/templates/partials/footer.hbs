@@ -5,34 +5,37 @@ component: footer
 <footer class="bi-footer" role="contentinfo">
   <div class="container">
 
-    <ul class="footer-links muted">
+    <ul class="footer-links">
       <li><a href="{{relative page.dest "dist/blog"}}">Blog</a></li>
-      <li>·</li>
+      <li><a href="{{relative page.dest "dist/roadmap"}}">Roadmap</a></li>
       <li><a href="https://forum.bpmn.io">Forum</a></li>
-      <li>·</li>
       <li><a href="https://github.com/bpmn-io">GitHub</a></li>
-      <li>·</li>
       <li><a href="https://twitter.com/bpmn_io">Twitter</a></li>
+      <li><a href="http://demo.bpmn.io">Online Demo</a></li>
+      <li><a href="{{relative page.dest "dist/modeler"}}">Camunda Modeler</a></li>
     </ul>
 
     <ul class="footer-links muted">
       <li><a href="{{relative page.dest "dist/about"}}">About</a></li>
-      <li>·</li>
       <li><a href="https://camunda.com/career/">Work with us</a></li>
-      <li>·</li>
-      <li><a href="{{relative page.dest "dist/roadmap"}}">Roadmap</a></li>
-      <li>·</li>
-      <li><a href="http://demo.bpmn.io">Online Demo</a></li>
-      <li>·</li>
-      <li><a href="{{relative page.dest "dist/modeler"}}">Camunda Modeler</a></li>
-      <li>·</li>
       <li><a href="{{relative page.dest "dist/legal/imprint.html"}}">Imprint</a></li>
-      <li>·</li>
       <li><a href="{{relative page.dest "dist/legal/privacy.html"}}">Privacy Policy</a></li>
     </ul>
 
-    <p style="margin-top: 30px;">
-      <a href="https://bpmn.io">bpmn.io</a> is built by <a href="https://camunda.com">Camunda</a> and contributors.
+    <p class="footer-contrib">
+      <a href="https://bpmn.io">bpmn.io</a> is built and maintained by <a href="https://camunda.com">Camunda</a> and contributors.
     </p>
+
+    <div class="footer-logo">
+      <a href="https://camunda.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 885 303">
+          <path d="M49.63 216.28c32.59 0 49.51-19.27 49.54-53.07v-28.06H67.79v30.18c0 15.09-6.65 20.51-17.22 20.51s-17.19-5.45-17.18-20.54l.1-114.07c0-15.08 6.65-20.81 17.22-20.8s17.19 5.75 17.18 20.83V73.9h31.38V53.38C99.29 19.57 82.41.25 49.82.22S.31 19.49.28 53.29L.19 163.13c-.03 33.8 16.81 53.13 49.44 53.15zm97.2-40.65h40.74l5.7 38.33h33.5L193.15 2.76h-48.59l-34 211.2h30.47zm20.33-135.48L183.07 147h-32zm103.79 24.53l24.62 149.4 31.38.02 23.06-151.46-.13 151.49 31.39.02.18-211.23-46.17-.04-22.76 149.95L288.2 2.84l-46.17-.04-.18 211.23 28.97.03.13-149.38zm182.43 152.25c32.59 0 49.51-19.27 49.54-53.07L503.05 3h-31.38l-.14 163c0 15.09-6.65 20.52-17.22 20.51s-17.19-5.45-17.18-20.53l.14-163h-33.2l-.13 160.84c-.03 33.75 16.85 53.08 49.44 53.11zM555.21 61.3l41.21 153.03 34.1.03.18-211.23-29.58-.03-.1 126.44L567.03 3.07l-41.65-.03-.18 211.23 29.88.03.13-153zm201.18 100.96l.09-106.82c0-33.8-16.25-52.22-49.44-52.25h-52.51l-.18 211.23 52.51.05c33.19-.02 49.5-18.41 49.53-52.21zm-68.82 22l.13-150.89h18.71c10.56 0 16.89 5.45 16.88 20.53l-.09 109.84c0 15.09-6.36 20.52-16.92 20.51zM805 176.19h40.74l5.7 38.33h33.5L851.28 3.32H802.7l-34 211.21h30.48zm20.3-135.48l15.9 106.84h-32zM.19 247.31H884.9v55.96H.19z"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-notice">
+      Camunda Services GmbH © 2020
+    </div>
   </div>
 </footer>
