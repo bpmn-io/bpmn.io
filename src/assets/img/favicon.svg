@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:export-ydpi="39.77"
+   inkscape:export-xdpi="39.77"
+   inkscape:export-filename="/home/nikku/camunda/projects/bpmn-io/.other/bpmn-io-website/src/assets/img/favicon.png"
+   sodipodi:docname="favicon.svg"
+   id="svg6"
+   version="1.1"
+   viewBox="0 0 309 309"
+   data-name="Layer 1">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:window-maximized="0"
+     inkscape:window-y="1497"
+     inkscape:window-x="1280"
+     inkscape:cy="154.5"
+     inkscape:cx="73.418155"
+     inkscape:zoom="3.2621359"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="1379"
+     inkscape:window-width="1272"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <circle
+     id="circle2"
+     r="154.6"
+     cy="154.6"
+     cx="154.6"
+     fill="#10ad73" />
+  <path
+     id="path4"
+     d="M119 224h72v41h-72zM191 83v6c0 16-4 26-15 31 13 5 18 17 18 33v13c0 24-13 37-37 37h-39V47h37c26 0 36 12 36 36zm-48-13v41h9c9 0 15-4 15-17v-8c0-12-4-16-12-16zm0 63v48h14c8 0 13-4 13-16v-13c0-15-5-19-16-19z"
+     fill="#fff" />
+</svg>
