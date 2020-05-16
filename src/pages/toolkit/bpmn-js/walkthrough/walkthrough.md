@@ -319,7 +319,7 @@ var diagram = new Diagram({
 });
 ```
 
-To plug in the module into [bpmn-js](https://github.com/bpmn-io/bpmn-js), you would use the `additionalModules` option as shown in the [Extending the Modeler section](#extending-the-modeler).
+To plug in the module into [bpmn-js](https://github.com/bpmn-io/bpmn-js), you would use the `additionalModules` option as shown in the [Extend the Modeler section](#extend-the-modeler).
 
 
 ### Core Services
