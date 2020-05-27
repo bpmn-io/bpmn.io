@@ -1,12 +1,12 @@
 ---
 
-title: bpmn-js Promisified
+title: Awaitable APIs Land in bpmn-js
 layout: blogpost.hbs
 
-slug: 2020-bpmn-js-promisified
+slug: 2020-bpmn-js-7-0-awaitable-import-export-apis
 author: Oguz Eroglu<https://github.com/oguzeroglu>
 
-published: 2020-05-12 12:00
+published: 2020-05-28 12:00
 
 releases:
   - 'bpmn-js@7.0.0'
@@ -15,89 +15,91 @@ releases:
 
 
 <p class="introduction">
-We are happy to announce that the latest release of our [BPMN modeling toolkit](https://github.com/bpmn-io/bpmn-js) ships with Promise support. Starting from this version, the users can now `await` bpmn-js APIs. This means easier consumption for the users and better interaction with ES6 style codebases.
+We are happy to announce that the latest release of our [BPMN modeling toolkit](https://github.com/bpmn-io/bpmn-js) ships with Promise support for our async import and export APIs. Starting with this release users can benefit from async features available in modern, ES6-style JavaScript codebases as they await the API results.
+
+To align with our ongoing bpmn.io re-branding we ship an updated toolkit watermark, too.
 </p>
 
 <!-- continue -->
 
-Note that callbacks are still supported but will be dropped in a future release. We advise you to migrate to Promises. Refer to [this documentation](http://bpmn.io/l/moving-to-promises) to see with detailed examples how to achieve that quickly. Also, after switching to the latest release of bpmn-js, make sure that the Promise class is polyfilled if you're targeting [Internet Explorer and Opera Mini](https://caniuse.com/#feat=promises).
+This release brings promise support to our async toolkit APIs, allowing you to await the import or export results in a state-of-the-art manner:
+
+```javascript
+const modeler = new BpmnModeler();
+
+try {
+  await modeler.importXML(bpmnDiagramXML);
+} catch (err) {
+  // handle import error
+}
+```
+
+Callbacks style invocations are still supported but will be dropped in a future major release. We advise you to migrate to Promise-based API usage. Refer to [this documentation](http://bpmn.io/l/moving-to-promises) to see with detailed examples what needs migration and what not. If you are still targeting [Internet Explorer or Opera Mini](https://caniuse.com/#feat=promises), ensure you polyfill the global `Promise` object.
 
 
-## Promisified APIs
+## Promisified Import and Export APIs
 
 You can now `await` these bpmn-js APIs:
 
- 1. [importXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importXML)
- 2. [importDefinitions](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importDefinitions)
- 3. [open](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#open)
- 4. [saveXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveXML)
- 5. [saveSVG](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveSVG)
- 6. [createDiagram](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#createDiagram)
+* [BpmnJS#importXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importXML)
+* [BpmnJS#importDefinitions](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importDefinitions)
+* [BpmnJS#open](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#open)
+* [BpmnJS#saveXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveXML)
+* [BpmnJS#saveSVG](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveSVG)
+* [BpmnJS#createDiagram](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#createDiagram)
 
 
- Here's a small example of what it means for the users:
+Here's a small example of how to open a BPMN diagram in the _new way_.
 
 ```javascript
-const modeler = new BpmnJS();
+const modeler = new BpmnModeler();
+
 try {
+  const {
+    warnings
+  } = await modeler.importXML(bpmnDiagramXML);
 
-  // You can now await importXML API
-  const { warnings } = await modeler.importXML(myAwesomeXML);
-  console.log('Imported XML with warnings: ', warnings);
-} catch (err){
+  console.log('Imported BPMN 2.0 diagram', warnings);
+} catch (err) {
 
-  const { message, warnings } = err;
-  console.log('En error happened: ', err, message, warnings);
+  const {
+    warnings
+  } = err;
+
+  console.log('Failed to import BPMN 2.0 diagram', err, warnings);
 }
+```
 
+Here is a small example of how to export a diagrams SVG in the _new way_.
+
+```javascript
 try {
+  const {
+    svg
+  } = await modeler.saveSVG();
 
-  // saveSVG can be awaited as well
-  const { svg } = await modeler.saveSVG();
-  console.log('Here is my diagram in SVG format: ', svg);
+  console.log('Exported BPMN 2.0 diagram in SVG format', svg);
 } catch (err) {
 
   console.error(err);
 }
 ```
 
+For more examples, check by our [our example repository for bpmn-js](https://github.com/bpmn-io/bpmn-js-examples). It is already updated to feature the promisified APIs in action!
 
-## Examples
-
-Feel free to check [our example repository for bpmn-js](https://github.com/bpmn-io/bpmn-js-examples) out to see Promisified APIs in action!
-
-
-## Changes in `import.parse.complete` Event
-
-With the latest release of bpmn-js, `import.parse.complete` event is invoked with:
-
-```javascript
-// the new payload
-{
-	error,
-	definitions,
-	elementsById,
-	references,
-	warnings
-}
-```
-
-**instead of**:
-```javascript
-// the old payload
-{
-  error,
-  definitions,
-  context: { elementsById, references, warnings }
-}
-```
-
-Even though the old payload is still supported, we plan to get rid of it in a future release. So we advise you to adjust your codebase accordingly.
+Please approach us [via our forums](https://forum.bpmn.io) to share your feedback regarding these changes.
 
 
-## Feedback Welcome
+## New Project Logo / Toolkit Watermark
 
-As this release introduces significant changes in bpmn-js APIs, we encourage you to give it a try and [let us know how it feels for you](https://forum.bpmn.io/).
+Following our [project rebranding](https://bpmn.io/) this library release ships with a new project logo. Goodby old bpmn.io logo!
+
+<div class="figure no-border">
+  <img src="{{ assets }}/attachments/blog/2020/004-logo.png" alt="A BPMN diagram and shown with bpmn-js and our updated project watermark">
+  <p class="caption">
+    Hello new bpmn.io word mark!
+  </p>
+</div>
 
 
 ## Wrapping Up
