@@ -1,6 +1,6 @@
 ---
 
-title: Awaitable APIs Land in bpmn-js
+title: Awaitable Import and Export APIs Land in bpmn-js
 layout: blogpost.hbs
 
 slug: 2020-bpmn-js-7-0-awaitable-import-export-apis
