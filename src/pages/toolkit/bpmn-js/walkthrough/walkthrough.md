@@ -101,21 +101,22 @@ This can be accomplished using plain JavaScript (as seen below) or via utility l
 
 ```html
 <script>
-  const xhr = new XMLHttpRequest();
+function fetchDiagram(url) {
+  return fetch(url).then(response => response.text());
+}
 
-  xhr.onreadystatechange = async () => {
-    if (xhr.readyState === 4) {
-      try {
-        await viewer.importXML(xhr.response);
-        // ...
-      } catch (err) {
-        // ...
-      }
-    }
-  };
+async function run() {
+  const diagram = await fetchDiagram('path-to-diagram.bpmn');
 
-  xhr.open('GET', 'path-to-diagram.bpmn', true);
-  xhr.send(null);
+  try {
+    await viewer.importXML(diagram);
+    // ...
+  } catch (err) {
+    // ...
+  }
+}
+
+run();
 </script>
 ```
 
