@@ -75,41 +75,42 @@ The included script makes the viewer available via the `BpmnJS` variable. We may
 ```html
 <script>
   // the diagram you are going to display
-  var bpmnXML;
+  const bpmnXML;
 
   // BpmnJS is the BPMN viewer instance
-  var viewer = new BpmnJS({ container: '#canvas' });
+  const viewer = new BpmnJS({ container: '#canvas' });
 
   // import a BPMN 2.0 diagram
-  viewer.importXML(bpmnXML, function(err) {
-    if (err) {
-      // import failed :-(
-    } else {
-      // we did well!
+  try {
+    // we did well!
+    await viewer.importXML(bpmnXML);
+    viewer.get('canvas').zoom('fit-viewport');
 
-      var canvas = viewer.get('canvas');
-      canvas.zoom('fit-viewport');
-    }
-  });
+  } catch (err) {
+    // import failed :-(
+  }
 </script>
 ```
 
-The snippet uses the [`Viewer#importXML`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L147) API to display a pre-loaded BPMN 2.0 diagram. Importing a diagram is asynchronous and, once finished, the viewer notifies us via a callback about the results.
+The snippet uses the [`Viewer#importXML`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L109) API to display a pre-loaded BPMN 2.0 diagram. Importing a diagram is asynchronous and, once finished, the viewer notifies us via a callback about the results.
 
-After import, we may access various diagram services via [`Viewer#get`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L246). In the snippet above, we interact with the [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js#L77) to fit the diagram to the currently available viewport size.
+After import, we may access various diagram services via [`Viewer#get`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L486). In the snippet above, we interact with the [`Canvas`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/Canvas.js) to fit the diagram to the currently available viewport size.
 
 Often times it is more practical to load the BPMN 2.0 diagram dynamically via AJAX.
 This can be accomplished using plain JavaScript (as seen below) or via utility libraries such as [jQuery](https://api.jquery.com/jQuery.get), which provide more convenient APIs.
 
 ```html
 <script>
-  var xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = async () => {
     if (xhr.readyState === 4) {
-      viewer.importXML(xhr.response, function(err) {
+      try {
+        await viewer.importXML(xhr.response);
         // ...
-      });
+      } catch (err) {
+        // ...
+      }
     }
   };
 
@@ -149,12 +150,15 @@ Then access the BPMN modeler via an ES `import`:
 import Modeler from 'bpmn-js/lib/Modeler';
 
 // create a modeler
-var modeler = new Modeler({ container: '#canvas' });
+const modeler = new Modeler({ container: '#canvas' });
 
 // import diagram
-modeler.importXML(bpmnXML, function(err) {
+try {
+  await modeler.importXML(bpmnXML);
   // ...
-});
+} catch (err) {
+  // err...
+}
 ```
 
 Again, this assumes you provide an element with the id `canvas` as part of your HTML for the modeler to render into.
@@ -184,19 +188,19 @@ Events allow you to hook into the life-cycle of the modeler as well as diagram i
 The following snippet shows how changed elements and modeling operations in general can be captured.
 
 ```javascript
-modeler.on('commandStack.changed', function() {
+modeler.on('commandStack.changed', () => {
   // user modeled something or
   // performed an undo/redo operation
 });
 
-modeler.on('element.changed', function(event) {
-  var element = event.element;
+modeler.on('element.changed', (event) => {
+  const element = event.element;
 
   // the element was changed by the user
 });
 ```
 
-Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L403) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Viewer#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/Viewer.js#L413) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
+Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L569) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Viewer#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L579) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
 
 
 ### Extend the Modeler
@@ -207,7 +211,7 @@ You may use the `additionalModules` option to extend the `Viewer` and [`Modeler`
 import OriginModule from 'diagram-js-origin';
 
 // create a modeler
-var modeler = new Modeler({
+const modeler = new Modeler({
   container: '#canvas',
   additionalModules: [
     OriginModule,
@@ -282,8 +286,8 @@ The following shows a service that [hooks into life-cycle events](#hooking-into-
 It does so by registering an event via the `eventBus`, another well-known service:
 
 ```javascript
-function MyLoggingPlugin(eventBus) {
-  eventBus.on('element.changed', function(event) {
+const MyLoggingPlugin = (eventBus) => {
+  eventBus.on('element.changed', (event) => {
     console.log('element ', event.element, ' changed');
   });
 }
@@ -312,7 +316,7 @@ We may now bootstrap diagram-js, passing our custom module:
 ```javascript
 import MyLoggingModule from 'path-to-my-logging-module';
 
-var diagram = new Diagram({
+const diagram = new Diagram({
   modules: [
     MyLoggingModule
   ]
