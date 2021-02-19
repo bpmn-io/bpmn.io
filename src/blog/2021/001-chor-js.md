@@ -10,15 +10,6 @@ published: 2021-02-19 12:00
 
 
 ---
-<style type="text/css">
-	#left {
-		float:left;
-        }
-    #right {
-    	float:right;
-    }
-
-</style>
 
 <p class="introduction">
   Let’s say you are craving your favorite pizza from that pizza place a ten-minute walk away. You call them up, place your order, and are then asked whether you would like to have the pizza delivered or pick it up yourself. In your mind, you think about how convenient it would be to have a delivery driver knock on your door and hand you the pizza within half an hour or so, but then again it is only a short walk, and some fresh air would really do you good…
@@ -60,6 +51,9 @@ The level of abstraction that can be achieved is significant: A process modeler 
 While chor-js inherits and adapts most of its editor tools directly from bpmn-js, choreography diagrams have some very distinct features that required us to build new ways of interacting with them. Most of these features concern the handling of participant bands, like moving them up or down and adding or removing messages.
 
 <div class="figure" id="left">
+	<style type="text/css" scoped>
+		#left { float: left; } 
+	</style>
   <img src="{{ assets }}/attachments/blog/2021/001_01-ordering-and-handling-participant-bands.gif" alt="Ordering and handeling participant bands">
   <p class="caption">
     ordering and handling participant bands
@@ -67,6 +61,9 @@ While chor-js inherits and adapts most of its editor tools directly from bpmn-js
 </div>
 
 <div class="figure" id="right">
+	<style type="text/css" scoped>
+		#right { float: right; } 
+	</style>
   <img src="{{ assets }}/attachments/blog/2021/001_02-creating-hiding-changing-messages.gif" alt="Creating, hiding and changing messages">
   <p class="caption">
     Creating, hiding and changing messages
@@ -78,6 +75,9 @@ One choreography model file can hold multiple diagrams and you can easily create
 Finally, we also created a validator plugin that helps you keep track of all the constraints choreographies bring with them. For example, much like you would not just go to your pizza place and grab the first pizza you see without having ordered one, there are certain rules as to how choreography tasks must be ordered. This leads to the infamous “the initiator of a choreography task needs to be involved in the previous task” constraint, which the validator helps you check.
 
 <div class="figure" id="left">
+	<style type="text/css" scoped>
+		#left { float: left; } 
+	</style>
   <img src="{{ assets }}/attachments/blog/2021/001_03-linking-call-choreography.gif" alt="Linking call choreography">
   <p class="caption">
     Linking call choreography
@@ -85,6 +85,9 @@ Finally, we also created a validator plugin that helps you keep track of all the
 </div>
 
 <div class="figure" id="right">
+	<style type="text/css" scoped>
+		#right { float: right; } 
+	</style>
   <img src="{{ assets }}/attachments/blog/2021/001_04-visual-validation-tool.gif" alt="Visual validation tool">
   <p class="caption">
     Visual validation toll
