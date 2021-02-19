@@ -196,7 +196,7 @@ Jan Ladleif is a research assistant and doctoral student at the Business Process
 
 Anton von Weltzien is currently finishing up his master’s degree in IT-Systems Engineering at the Hasso Plattner Institute, University of Potsdam. There, he met Jan while writing his bachelor’s thesis. Having made first contact with Camunda during his work on chor-js, he is now employed by Camunda as a working student. Get in touch at anton.weltzien@student.hpi.de
 
-###References
+### References
 
 [1] Jan Ladleif, Anton von Weltzien, Mathias Weske (2019) chor-js: A Modeling Framework for BPMN 2.0 Choreography Diagrams. Joint Proceedings of the ER Forum and Poster & Demos Session 2019 co-located with 38th International Conference on Conceptual Modeling (ER 2019). CEUR-WS.org. URL: http://ceur-ws.org/Vol-2469/ERDemo02.pdf
 
