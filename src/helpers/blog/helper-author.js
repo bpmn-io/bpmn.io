@@ -10,9 +10,9 @@ module.exports.register = function(Handlebars, options, params)  {
     const html = author.map(author => {
       var match = PATTERN.exec(author);
       if (match) {
-        return '<a class="author" href="' + match[2] + '">' + match[1] + '</a>';
+        return '<a class="author" href="' + match[2] + '">' + match[1].trim() + '</a>';
       } else {
-        return '<span class="author">' + author + '</span>';
+        return '<span class="author">' + author.trim() + '</span>';
       }
     }).join(', ');
 
