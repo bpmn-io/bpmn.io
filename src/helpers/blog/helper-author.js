@@ -3,15 +3,19 @@ module.exports.register = function(Handlebars, options, params)  {
   var PATTERN = /^(.+)\s*<(.+)>$/;
 
   Handlebars.registerHelper('author', function(author, options) {
-    var result;
+    if (!Array.isArray(author)) {
+      author = [ author ];
+    };
 
-    var match = PATTERN.exec(author);
-    if (match) {
-      result = '<a class="author" href="' + match[2] + '">' + match[1] + '</a>';
-    } else {
-      result = '<span class="author">' + author + '</span>';
-    }
+    const html = author.map(author => {
+      var match = PATTERN.exec(author);
+      if (match) {
+        return '<a class="author" href="' + match[2] + '">' + match[1] + '</a>';
+      } else {
+        return '<span class="author">' + author + '</span>';
+      }
+    }).join(', ');
 
-    return new Handlebars.SafeString(result);
+    return new Handlebars.SafeString(html);
   });
 };
