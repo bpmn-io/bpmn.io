@@ -23,9 +23,9 @@ releases:
 <!-- continue -->
 
 <p class="thanks">
-  _This post first appeared [on the Camunda blog](https://camunda.com/blog/2021/01/chor-js-an-editor-for-bpmn-choreography-diagrams/)._
+  _A big thanks to [Jan Ladleif](https://github.com/jan-ladleif) and [Anton von Weltzien](https://github.com/yT0n1), the authors of [chor-js](https://github.com/bptlab/chor-js), for contributing this guest blog post._
 
-  _A big thanks to [Jan Ladleif](https://github.com/jan-ladleif) and [Anton von Weltzien](https://github.com/yT0n1), the authors of [chor-js](https://github.com/bptlab/chor-js), for contributing it to the bpmn.io blog._
+  _This post first appeared [on the Camunda blog](https://camunda.com/blog/2021/01/chor-js-an-editor-for-bpmn-choreography-diagrams/)._
 </p>
 
 Let’s say you are craving your favorite pizza from that pizza place a ten-minute walk away. You call them up, place your order, and are then asked whether you would like to have the pizza delivered or pick it up yourself. In your mind, you think about how convenient it would be to have a delivery driver knock on your door and hand you the pizza within half an hour or so, but then again it is only a short walk, and some fresh air would really do you good…
