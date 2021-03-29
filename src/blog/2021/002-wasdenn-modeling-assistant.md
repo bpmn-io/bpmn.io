@@ -25,9 +25,11 @@ With WASDENN, we're revealing a first-of-a-kind tool that offers AI-powered mode
 Due to its intent-aware capabilities, it will quickly become your _personal_ assistant, pick up on what you are trying to achieve, and give you contextually, real-world advice.
 
 <div class="figure">
-  <a href="https://demo.bpmn.io">
-    <img src="https://via.placeholder.com/800x400" alt="WASDENN at work">
+
+  <a href="https://demo.bpmn.io/s/start">
+    <img src="{{ assets }}/attachments/blog/2021/002_wasdenn-1.gif">
   </a>
+
   <p class="caption">
     How does WASDENN know Mary?
   </p>
@@ -41,7 +43,11 @@ Try it out on [demo.bpmn.io](https://demo.bpmn.io).
 Behavioral analysis and its deep understanding of BPMN modeling and organizational contexts allows WASDENN to give contextual advice, depending on a users _intent_. This can mean modeling a complete, domain-specific process they may have in mind:
 
 <div class="figure">
-  <img src="https://via.placeholder.com/800x400" alt="WASDENN at work">
+
+  <a href="https://demo.bpmn.io/s/start">
+    <img src="{{ assets }}/attachments/blog/2021/002_wasdenn-2.gif">
+  </a>
+
   <p class="caption">
     Showcasing full end-to-end modeling capabilities.
   </p>
@@ -50,7 +56,11 @@ Behavioral analysis and its deep understanding of BPMN modeling and organization
 This can also mean providing help for BPMN newcomers, as they open the tool for the first time:
 
 <div class="figure">
-  <img src="https://via.placeholder.com/800x400" alt="WASDENN at work">
+
+  <a href="https://demo.bpmn.io/s/start">
+    <img src="{{ assets }}/attachments/blog/2021/002_wasdenn-3.gif">
+  </a>
+
   <p class="caption">
     Helping out during getting started.
   </p>
