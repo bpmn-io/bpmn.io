@@ -40,7 +40,7 @@ Try it out on [demo.bpmn.io](https://demo.bpmn.io/s/start).
 
 ## Intent-aware Suggestions
 
-Behavioral analysis and its deep understanding of BPMN modeling and organizational contexts allows WASDENN to give contextual advice, depending on a users _intent_. This can mean modeling a complete, domain-specific process they may have in mind:
+Behavioral analysis and its deep understanding of BPMN modeling and organizational contexts allow WASDENN to give contextual advice, depending on a user's _intent_. That can mean modeling a complete, domain-specific process they may have in mind:
 
 <div class="figure full-size">
 
@@ -53,7 +53,7 @@ Behavioral analysis and its deep understanding of BPMN modeling and organization
   </p>
 </div>
 
-This can also mean providing help for BPMN newcomers, as they open the tool for the first time:
+That can also mean providing help for BPMN newcomers, as they open the tool for the first time:
 
 <div class="figure full-size">
 
@@ -76,7 +76,7 @@ WASDENN works so well in its domain, as it is a [general (modeling) artificial i
 
 WASDENN is powered by seven specialized neural networks, each trained using [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning). Reinforcement learning allows us to find a balance between exploration (uncharted territory) and exploitation (current knowledge).
 
-To become the friendly helper it is today, WASDENN had to aquire understanding in different focus areas:
+To become the friendly helper it is today, WASDENN had to acquire understanding in different focus areas:
 
 * Modeling guidelines and best practices
 * Being able to create understandable diagrams
@@ -86,7 +86,7 @@ To become the friendly helper it is today, WASDENN had to aquire understanding i
 * General and situational awareness
 * Empathy and communication skills
 
-It continues to improve in all these areas, as you read this.
+It continues to improve in all these areas as you read this.
 
 
 ## Feedback to WASDENN
@@ -95,16 +95,16 @@ Some things are arguably hard for WASDENN to ever anticipate without your (human
 
 Being truly useful, WASDENN needs to adapt and account for even the slightest human _changes in plans_. It does so via two feedback channels:
 
-* It learns from users as they model. Modeling conventions and organizational patterns are not always written down, oftentimes even incredibly hard to put to paper. Better than us humans WASDENN can distill the common ground in institutional knowledge: By observing the diagrams your organization produces, WASDENN figures out patterns that you phase out before you know it. If WASDENN removes labels from your diagrams, trust it. It knows where your processes are heading.
+* It learns from users as they model. Modeling conventions and organizational patterns are often implicit, unwritten rules. Better than us humans WASDENN can distill the common ground in institutional knowledge: By observing the diagrams your organization produces, WASDENN figures out patterns that you phase out before you know it. If WASDENN removes labels from your diagrams, trust it. It knows where your processes are heading.
 
-* It learns from users as they interact with it. As an example, if your colleagues continuously reject its help, WASDENN will stop bothering them. It may start to communicate in [Haikus](https://en.wikipedia.org/wiki/Haiku), too if it feels that is what you desire.
+* It learns from users as they interact with it. As an example, if your colleagues continuously reject its help, WASDENN will stop bothering them. It may start to communicate in [Haikus](https://en.wikipedia.org/wiki/Haiku), too, if it feels that is what you desire.
 
 Feedback to WASDENN is opt-in. We highly recommend you enable it for maximum effect.
 
 
 ### Opt-in to WASDENN Feedback
 
-Human feedback to WASDENN has to be enabled on a per-editor level. To do it, pass a configuration, as you instantiate a [BPMN editor instance](https://bpmn.io/toolkit/bpmn-js/):
+Integrators have to enable human feedback to WASDENN on a per-editor level. To do it, pass a configuration, as you instantiate a [BPMN editor instance](https://bpmn.io/toolkit/bpmn-js/):
 
 ```javascript
 import BpmnModeler from 'bpmn-js/lib/Modeler';
@@ -123,10 +123,10 @@ Once enabled, you may approach WASDENN any time and mandate to not be tracked. T
 
 In this post, we presented WASDENN, a first-of-a-kind AI-powered modeling assistant that supports you wherever you are on your process journey.
 
-We showcased how [its intent-awareness](#intent-aware-suggestions) allows it to help in contexts that look arbitrary for an outsider. WASDENN simply knows what you'd like to do and loves to help you get it done.
+We showcased how [intent-awareness](#intent-aware-suggestions) allows WASDENN to help in contexts that look arbitrary for an outsider. WASDENN knows what you'd like to do and loves to help you get it done.
 
-With the first iteration of the WASDENN assistant we deliberately chose to ship a simple in-app character that interacts with you, text-based. For future versions, we are actively exploring voice recognition, giving you more freedom to interact with the assistant. You can look forward to vocally disagreeing with WASDENN's proposals, sharing your excitement, or command it to your desire on the voice line.
+With WASDENN's first iteration, we deliberately chose to ship a simple in-app character that interacts with you, text-based. We actively explore voice recognition for future versions, giving you more freedom to interact with the assistant. You can look forward to vocally disagreeing with WASDENN's proposals, sharing your excitement, or command it to your desire on the voice line.
 
 Give WASDENN a try and let it [support you on your BPMN journey](https://demo.bpmn.io/s/start) today!
 
-As always, share your feedback [@bpmn_io](https://twitter.com/bpmn_io) or [via our forum](https://forum.bpmn.io/).
+As always, please share your feedback [@bpmn_io](https://twitter.com/bpmn_io) or [via our forum](https://forum.bpmn.io/).
