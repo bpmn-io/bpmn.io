@@ -18,6 +18,12 @@ Today we are proud to reveal WASDENN, an AI-powered modeling assistant. Deeply i
 
 <!-- continue -->
 
+<style>
+  .bi-blogpost.single .figure {
+    margin: 40px auto;
+  }
+</style>
+
 Process modeling is a complex activity. No matter how good the BPMN editor of your choice is, no matter how well [it gets out of your way](https://github.com/bpmn-io/design-principles) as a tool, in the end, process discovery, optimization, and organizational alignment are deeply human activities - until now.
 
 With WASDENN, we're revealing a first-of-a-kind tool that offers AI-powered modeling assistance, directly integrated into our [BPMN modeling tooling](https://github.com/bpmn-io/bpmn-js). Powered by a highly sophisticated, intensely trained neural network and behavioral analytics, WASDENN can offer you solutions at any stage of your process journey.
