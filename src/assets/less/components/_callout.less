@@ -10,11 +10,16 @@
 
   h4 {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
   }
 
   &-danger {
-    border-left-color: @callout-danger-color;
+    border-color: @callout-danger-color;
+    background: lighten(@callout-danger-color, 45%);
 
     h4 {
       color: @callout-danger-color;
