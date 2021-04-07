@@ -4,7 +4,7 @@ title: Introducing WASDENN - An intent-aware, AI-powered, personal modeling assi
 description: Deeply integrated into our BPMN editor, WASDENN offers you help based on your personal needs. WASDENN is fed with actual processes and organizational structures and fine-tuned with years of deep self-learning. It is here to solve your issues, whether you are getting started with BPMN modeling or optimizing your companies procurement processes.
 preview_image: https://bpmn.io/assets/attachments/blog/2021/002_wasdenn-preview.png
 url: https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 slug: 2021-wasdenn-ai-modeling-assistant
 author:
 - Nico Rehwaldt<https://github.com/nikku>
