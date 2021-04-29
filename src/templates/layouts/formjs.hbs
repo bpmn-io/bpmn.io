@@ -1,0 +1,23 @@
+---
+layout: base.hbs
+---
+
+<div class="bi-head">
+  <div class="container">
+
+    <div class="h1"><a href="{{relative page.dest "dist/toolkit/form-js"}}">form-js</a></div>
+
+    <ul class="nav nav-underlined-tabs">
+      <li role="presentation" class="{{ isActive "form-js$" page }}">
+        <a href="{{relative page.dest "dist/toolkit/form-js"}}">Toolkit</a>
+      </li>
+      <li role="presentation" class="{{ isActive "download" page }}">
+        <a href="{{relative page.dest "dist/toolkit/form-js/download"}}">Download</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  {{> body }}
+</div>

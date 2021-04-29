@@ -1,0 +1,80 @@
+---
+title: "form-js: Form Builder and Viewer"
+layout: base.hbs
+---
+
+
+<!-- subhead -->
+
+<div class="bi-masterhead">
+  <div class="container">
+
+    <p class="h1">
+       form-js
+    </p>
+
+    <p class="lead">View and edit JSON-based forms.</p>
+
+    <div class="actions">
+      <a href="http://demo.bpmn.io/form" target="_blank" class="btn btn-xlg btn-primary">Try Online</a>
+      <a href="{{relative page.dest "dist/toolkit/form-js/download"}}" class="btn btn-xlg btn-default">Download</a>
+    </div>
+
+    <p class="bi-note">
+      Currently {{ site.formjs.version }}. <a href="https://github.com/bpmn-io/form-js">View on GitHub</a>.
+    </p>
+  </div>
+</div>
+
+<!-- features -->
+
+<div class="bi-features">
+  <div class="container">
+    <h2>Create forms visually</h2>
+    <p class="lead">
+      Assemble your forms using our intuitive <a href="https://github.com/bpmn-io/form-js#builder">form builder</a>.
+
+      Export the resulting form in a JSON-based format.
+    </p>
+
+    <hr class="half-rule">
+  </div>
+</div>
+
+<div class="bi-features">
+  <div class="container">
+    <h2>Render your forms anywhere</h2>
+
+    <p class="lead">
+      Embed our <a href="https://github.com/bpmn-io/form-js#viewer">form viewer</a> to render your JSON-based forms in any webpage.
+    </p>
+
+    <pre style="text-align: left; margin: 20px auto; padding: 0 25px; background: #F8F8F8; max-width: 500px;">{{#code 'no-pre:html'}}
+<script>
+  import { createForm } from '@bpmn-io/form-js';
+
+  const form = createForm({
+    schema,
+    data,
+    container: document.querySelector('#form')
+  });
+
+  form.on('submit', (event) => {
+    console.log(event.data, event.errors);
+  });
+</script>
+{{/code}}</pre>
+
+    <hr class="half-rule">
+
+  </div>
+</div>
+
+
+<div class="bi-features">
+  <div class="container">
+    {{> about_teaser }}
+  </div>
+</div>
+
+<link rel="stylesheet" href="{{ assets }}/js/highlight/css/github.css" />
