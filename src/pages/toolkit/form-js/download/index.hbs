@@ -1,0 +1,115 @@
+---
+title: Download form-js
+description: 'Get the distribution of form-js suitable for you'
+layout: formjs.hbs
+---
+
+<div class="row">
+  <div class="col-md-9">
+
+    <!--
+    <h1 class="page-header" id="download">Download</h1>
+    -->
+
+    <p class="lead">
+      Choose how to download form-js (currently {{ site.formjs.version }}) based on your use-case.
+      You can try it out via our <a href="http://demo.bpmn.io/form">online demo</a>, too.
+    </p>
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h3>Examples</h3>
+        <p>
+          Explore a number of form-js usage examples, many ready to use right in your web browser.
+        </p>
+        <p>
+          <a href="https://github.com/bpmn-io/form-js-examples" target="_blank" class="btn btn-lg btn-default">Explore Examples</a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Pre-Built</h3>
+        <p>
+          Try out form-js in no time via starters, embedding pre-packaged versions of our CMMN toolkit.
+        </p>
+
+        <p>
+          <a href="https://github.com/bpmn-io/form-js-examples/tree/master/starter" target="_blank" class="btn btn-lg btn-primary">Checkout Starters</a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Source Code</h3>
+        <p>
+          The form-js sources.
+          Use it to have a look inside or build tooling around form-js.
+          <strong>Requires <a href="#build-form-js">additional tools</a></strong>.
+        </p>
+
+        <p>
+          <a href="https://github.com/bpmn-io/form-js/archive/{{ site.formjs.version }}.zip" target="_blank" class="btn btn-lg btn-default">Download Sources</a>
+        </p>
+      </div>
+    </div>
+
+
+    <h2 class="page-header" id="via-npm">Get via NPM</h2>
+
+    <p class="lead">
+      Get form-js via <a href="http://npmjs.org">NPM</a> for full access to individual project components and easy customizability.
+    </p>
+
+    Choose this setup if you would like to extend and customize the library to your needs.
+
+    {{#code 'bash'}}
+npm install @bpmn-io/form-js
+    {{/code}}
+
+    <p>
+      <strong>Note:</strong> This requires additional build steps such as bundling for the browser with <a href="http://browserify.org/">Browserify</a> or <a href="https://webpack.github.io/">Webpack</a>.
+    </p>
+
+
+    <h2 class="page-header" id="build-form-js">Build it Yourself</h2>
+
+    <p class="lead">
+      Clone and hack the project sources yourself.
+    </p>
+
+    <p>
+      If you have not downloaded the projects source code already, create an empty folder an clone the project using <a href="http://www.git-scm.com/">git</a> via
+    </p>
+
+    {{#code 'bash'}}
+git clone https://github.com/bpmn-io/form-js.git -b {{ site.formjs.version }} .
+    {{/code}}
+
+    <p>
+      Ensure you have <a href="http://nodejs.org">Node.js</a> / <a href="http://npmjs.org">NPM</a>
+      installed. Execute the following command to install all required project dependencies
+    </p>
+
+    {{#code 'bash'}}
+npm install
+    {{/code}}
+
+    <p>
+      Build / test the project via
+    </p>
+
+
+    {{#code 'bash'}}
+npm run all
+    {{/code}}
+
+    <p>
+      Refer to the projects <a href="https://github.com/bpmn-io/form-js">GitHub page</a> for more information.
+    </p>
+
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="{{ assets }}/js/highlight/css/github.css" />

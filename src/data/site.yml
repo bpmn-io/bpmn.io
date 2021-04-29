@@ -5,3 +5,5 @@ dmnjs:
   version: v10.2.0
 cmmnjs:
   version: v0.19.2
+formjs:
+  version: v0.0.12

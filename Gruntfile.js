@@ -122,6 +122,8 @@ module.exports = function(grunt) {
           '<%= config.dist %>/toolkit/bpmn-js/walkthrough/': ['<%= config.src %>/pages/toolkit/bpmn-js/walkthrough/*.hbs'],
           '<%= config.dist %>/toolkit/dmn-js/': ['<%= config.src %>/pages/toolkit/dmn-js/*.hbs'],
           '<%= config.dist %>/toolkit/dmn-js/download/': ['<%= config.src %>/pages/toolkit/dmn-js/download/*.hbs'],
+          '<%= config.dist %>/toolkit/form-js/': ['<%= config.src %>/pages/toolkit/form-js/*.hbs'],
+          '<%= config.dist %>/toolkit/form-js/download/': ['<%= config.src %>/pages/toolkit/form-js/download/*.hbs'],
           '<%= config.dist %>/toolkit/cmmn-js/': ['<%= config.src %>/pages/toolkit/cmmn-js/*.hbs'],
           '<%= config.dist %>/toolkit/cmmn-js/download/': ['<%= config.src %>/pages/toolkit/cmmn-js/download/*.hbs']
         }
