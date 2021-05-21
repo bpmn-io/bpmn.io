@@ -3,7 +3,7 @@
 title: form-js - Visual Form Editing and Embedding
 description: This blog introduces form-js, a new library to help you build, share and embed forms.
 preview_image: https://bpmn.io/assets/attachments/blog/2021/003-preview.png
-url: https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html
+url: https://bpmn.io/blog/posts/2021-form-js-visual-form-editing-and-embedding.html
 layout: blogpost.hbs
 slug: 2021-form-js-visual-form-editing-and-embedding
 author:
