@@ -29,10 +29,12 @@ If you're using our tooling to draw or embed process or decision diagrams, you w
 
 ## A Form Editor
 
-The [form-js](https://bpmn.io/toolkit/form-js) editor is a full-fledged form builder. Use it to create your forms via drag and drop. Configure description, label, validation, and additional details via a simple properties panel. No software development experience is required as you build your forms in an all-visual manner.
+The [form-js](https://bpmn.io/toolkit/form-js) editor is a full-fledged form builder. Use it to create your forms via drag and drop. Configure description, label, validation, and additional details via a simple properties panel. No software development experience is required as you build your forms in an all-visual manner. [Try it out on our demo](https://demo.bpmn.io/form).
 
 <div class="figure">
-  <img src="{{ assets }}/attachments/blog/2021/003-editor.gif">
+  <a href="https://demo.bpmn.io/form">
+    <img src="{{ assets }}/attachments/blog/2021/003-editor.gif">
+  </a>
 
   <p class="caption">
     Design your forms in a visual manner.
@@ -87,12 +89,6 @@ form.on('submit', (event) => {
 });
 ```
 
-Sometime later, you may want to remove the form from your webpage. You may do that easily, too:
-
-```javascript
-// remove rendered form
-form.destroy();
-```
 
 ## Embeddable Building Blocks
 
