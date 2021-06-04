@@ -9,9 +9,9 @@ slug: 2021-form-js-visual-form-editing-and-embedding
 author:
 - Nico Rehwaldt<https://github.com/nikku>
 
-published_time: "2021-05-18T13:17:09+01:00"
-modified_time: "2021-05-18T13:17:09+01:00"
-published: 2021-05-18 13:17
+published_time: "2021-06-03T13:17:09+01:00"
+modified_time: "2021-06-03T13:17:09+01:00"
+published: 2021-06-03 13:17
 
 releases:
   - form-js@0.1.0
