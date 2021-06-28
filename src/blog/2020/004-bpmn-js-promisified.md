@@ -41,12 +41,12 @@ Callbacks style invocations are still supported but will be dropped in a future 
 
 You can now `await` these bpmn-js APIs:
 
-* [BpmnJS#importXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importXML)
-* [BpmnJS#importDefinitions](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importDefinitions)
-* [BpmnJS#open](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#open)
-* [BpmnJS#saveXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveXML)
-* [BpmnJS#saveSVG](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveSVG)
-* [BpmnJS#createDiagram](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#createDiagram)
+* [BpmnJS#importXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importXML-bpmn-js)
+* [BpmnJS#importDefinitions](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#importDefinitions-bpmn-js)
+* [BpmnJS#open](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#open-bpmn-js)
+* [BpmnJS#saveXML](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveXML-bpmn-js)
+* [BpmnJS#saveSVG](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#saveSVG-bpmn-js)
+* [BpmnJS#createDiagram](https://github.com/bpmn-io/bpmn-js-callbacks-to-promises#createDiagram-bpmn-js)
 
 
 Here's a small example of how to open a BPMN diagram in the _new way_.
