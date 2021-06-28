@@ -6,21 +6,21 @@ component: footer
   <div class="container">
 
     <ul class="footer-links">
-      <li><a href="{{relative page.dest "dist/blog"}}">Blog</a></li>
-      <li><a href="{{relative page.dest "dist/roadmap"}}">Roadmap</a></li>
+      <li><a href="{{ ref '/blog' }}">Blog</a></li>
+      <li><a href="{{ ref '/roadmap' }}">Roadmap</a></li>
       <li><a href="https://forum.bpmn.io">Forum</a></li>
       <li><a href="https://github.com/bpmn-io">GitHub</a></li>
       <li><a href="https://twitter.com/bpmn_io">Twitter</a></li>
       <li><a href="http://demo.bpmn.io">Online Demo</a></li>
-      <li><a href="{{relative page.dest "dist/modeler"}}">Camunda Modeler</a></li>
+      <li><a href="{{ ref '/modeler' }}">Camunda Modeler</a></li>
     </ul>
 
     <ul class="footer-links muted">
-      <li><a href="{{relative page.dest "dist/about"}}">About</a></li>
+      <li><a href="{{ ref '/about' }}">About</a></li>
       <li><a href="https://camunda.com/career/">Work with us</a></li>
-      <li><a href="{{relative page.dest "dist/license/"}}">License</a></li>
-      <li><a href="{{relative page.dest "dist/legal/imprint.html"}}">Imprint</a></li>
-      <li><a href="{{relative page.dest "dist/legal/privacy.html"}}">Privacy Policy</a></li>
+      <li><a href="{{ ref '/license/' }}">License</a></li>
+      <li><a href="{{ ref '/legal/imprint.html' }}">Imprint</a></li>
+      <li><a href="{{ ref '/legal/privacy.html' }}">Privacy Policy</a></li>
     </ul>
 
     <p class="footer-contrib">

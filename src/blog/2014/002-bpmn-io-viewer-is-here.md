@@ -65,7 +65,7 @@ We plan to provide a downloadable distribution of the library soon.
 ## It is Open-Source
 
 <a href="https://github.com/bpmn-io/bpmn-js">bpmn-js</a> and a number of projects it is built with are published on <a href="https://github.com/bpmn-io">GitHub</a>.
-We have licensed bpmn-js as <a href="{{ relative page.dest "dist/license" }}">do whatever you want but keep the project logo in the viewer</a> and released all other projects under the MIT license.
+We have licensed bpmn-js as <a href="{{ ref '/license' }}">do whatever you want but keep the project logo in the viewer</a> and released all other projects under the MIT license.
 
 Feel free to look inside the projects. It is never to early to contribute bug reports and feature requests! Note however that we are still in alpha stage. Because of that documentation may be lacking and APIs might break with future releases.
 
