@@ -44,7 +44,7 @@ module.exports.createServer = createServer;
 
 // helpers ////////////////////////
 function loggingMiddleware() {
-  var logger = require('morgan');
+  const logger = require('morgan');
 
   return logger('dev');
 }

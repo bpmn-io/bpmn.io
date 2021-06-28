@@ -5,14 +5,14 @@ layout: base.hbs
 <div class="bi-head">
   <div class="container">
 
-    <div class="h1"><a href="{{relative page.dest "dist/toolkit/dmn-js"}}">dmn-js</a></div>
+    <div class="h1"><a href="{{ ref '/toolkit/dmn-js' }}">dmn-js</a></div>
 
     <ul class="nav nav-underlined-tabs">
       <li role="presentation" class="{{ isActive "dmn-js$" page }}">
-        <a href="{{relative page.dest "dist/toolkit/dmn-js"}}">Toolkit</a>
+        <a href="{{ ref '/toolkit/dmn-js' }}">Toolkit</a>
       </li>
       <li role="presentation" class="{{ isActive "download" page }}">
-        <a href="{{relative page.dest "dist/toolkit/dmn-js/download"}}">Download</a>
+        <a href="{{ ref '/toolkit/dmn-js/download' }}">Download</a>
       </li>
     </ul>
   </div>
