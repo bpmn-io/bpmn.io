@@ -48,7 +48,7 @@ function getEnv(name, defaultValue) {
 function getConfig() {
 
   const env = getEnv('NODE_ENV', 'production');
-  const port = getEnv('PORT', 8080);
+  const port = getEnv('PORT', 9012);
   const hostname = getEnv('HOST', '0.0.0.0');
 
   return {
