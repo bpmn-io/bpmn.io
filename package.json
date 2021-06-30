@@ -19,7 +19,7 @@
     "start": "node server.js",
     "build": "grunt build",
     "all": "grunt build",
-    "dev": "grunt serve",
+    "dev": "nodemon",
     "test": "grunt build"
   },
   "devDependencies": {
@@ -40,6 +40,7 @@
     "jquery": "^3.4.1",
     "load-grunt-tasks": "^4.0.0",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.8",
     "open": "^8.2.1",
     "time-grunt": "^2.0.0"
   },
@@ -55,5 +56,16 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "st": "^3.0.0"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src/",
+      "app.js",
+      "server.js"
+    ],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "exec": "grunt build && node server.js"
   }
 }
