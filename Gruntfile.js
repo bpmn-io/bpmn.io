@@ -27,6 +27,31 @@ module.exports = function(grunt) {
       ga: process.env.GA_KEY || null
     },
 
+    watch: {
+      assemble: {
+        files: ['<%= config.src %>/**/*.{md,hbs,yml}'],
+        tasks: ['assemble']
+      },
+      less: {
+        files: ['<%= config.src %>/assets/less/**/*.less'],
+        tasks: ['less:app']
+      },
+      copy: {
+        files: ['<%= config.src %>/assets/{fonts,img,bpmn}/*'],
+        tasks: ['copy:app']
+      },
+      copy_attachments: {
+        files: ['<%= config.src %>/assets/attachments/**/*'],
+        tasks: ['copy:attachments']
+      },
+      livereload: {
+        options: {
+          livereload: true
+        },
+        files: [ '<%= config.dist %>/**/*'],
+      }
+    },
+
     assemble: {
       options: {
         app: '<%= config %>',
@@ -166,6 +191,14 @@ module.exports = function(grunt) {
     'less:dist',
     'copy',
     'assemble'
+  ]);
+
+  grunt.registerTask('serve', [
+    'clean',
+    'less:app',
+    'copy',
+    'assemble',
+    'watch'
   ]);
 
   grunt.registerTask('default', [
