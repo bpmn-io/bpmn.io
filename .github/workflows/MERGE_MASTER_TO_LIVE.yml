@@ -1,0 +1,26 @@
+name: MERGE_MASTER_TO_LIVE
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create pull request to live
+      uses: repo-sync/pull-request@65194d8015be7624d231796ddee1cd52a5023cb3
+      with:
+        source_branch: ""                                   # If blank, default: triggered branch
+        destination_branch: "live"                          # If blank, default: master
+        pr_title: "Pull ${{ github.ref }} to live"          # Title of pull request
+        pr_body: "This pulls ${{ github.ref }} to live."    # Full markdown support, requires pr_title to be set
+        pr_reviewer: "bpmn-io/modeling-dev"                # Comma-separated list (no spaces)
+        github_token: ${{ secrets.GITHUB_TOKEN }}
