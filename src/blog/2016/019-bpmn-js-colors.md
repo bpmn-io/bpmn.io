@@ -10,6 +10,7 @@ published: 2016-12-21 14:00
 
 releases:
   - 'bpmn-js@0.19.0'
+  - 'bpmn-js@8.7.0'
 
 ---
 
@@ -36,7 +37,7 @@ Download an <a href="{{ assets }}/attachments/blog/2016/colors.bpmn" download>ex
 
 ### Built-in Color Support
 
-Colors work in both modeler and viewer and get read from / persisted to the BPMN 2.0 XML.
+Colors work in both modeler and viewer and get read from / persisted to the BPMN 2.0 XML using a vendor extension.
 To set colors in the modeler, do that programatically:
 
 ```javascript
@@ -51,6 +52,7 @@ modeling.setColor(elementsToColor, {
 });
 ```
 
+Starting with `bpmn-js@8.7` the toolkit persists colors according to the [BPMN in color specification](https://github.com/bpmn-miwg/bpmn-in-color).
 
 ### Color Pickers?
 
