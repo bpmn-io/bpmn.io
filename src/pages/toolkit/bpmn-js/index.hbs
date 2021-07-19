@@ -17,7 +17,7 @@ layout: base.hbs
 
     <div class="actions">
       <a href="http://demo.bpmn.io" target="_blank" class="btn btn-xlg btn-primary">Try Online</a>
-      <a href="{{relative page.dest "dist/toolkit/bpmn-js/download"}}" class="btn btn-xlg btn-default">Download</a>
+      <a href="{{ ref '/toolkit/bpmn-js/download' }}" class="btn btn-xlg btn-default">Download</a>
     </div>
 
     <p class="bi-note">
@@ -93,7 +93,7 @@ layout: base.hbs
     </p>
 
     <p class="lead">
-      Read our <a href="{{ relative page.dest "dist/toolkit/bpmn-js/walkthrough" }}">walkthrough</a> or check out some <a href="{{ relative page.dest "dist/toolkit/bpmn-js/examples" }}">examples</a> to learn more.
+      Read our <a href="{{ ref '/toolkit/bpmn-js/walkthrough' }}">walkthrough</a> or check out some <a href="{{ ref '/toolkit/bpmn-js/examples' }}">examples</a> to learn more.
     </p>
 
     <hr class="half-rule">

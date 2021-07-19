@@ -46,31 +46,9 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          livereload: '<%= connect.options.livereload %>'
+          livereload: true
         },
-        files: [
-          '<%= config.dist %>/{,*/}*.html',
-          '<%= config.dist %>/assets/{,*/}*.css',
-          '<%= config.dist %>/assets/{,*/}*.js',
-          '<%= config.dist %>/assets/**/*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
-      }
-    },
-
-    connect: {
-      options: {
-        port: 9012,
-        livereload: 19013,
-        // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
-      },
-      livereload: {
-        options: {
-          open: true,
-          base: [
-            '<%= config.dist %>'
-          ]
-        }
+        files: [ '<%= config.dist %>/**/*'],
       }
     },
 
@@ -208,20 +186,19 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('assemble');
 
-  grunt.registerTask('serve', [
-    'clean',
-    'less:app',
-    'copy',
-    'assemble',
-    'connect:livereload',
-    'watch'
-  ]);
-
   grunt.registerTask('build', [
     'clean',
     'less:dist',
     'copy',
     'assemble'
+  ]);
+
+  grunt.registerTask('serve', [
+    'clean',
+    'less:app',
+    'copy',
+    'assemble',
+    'watch'
   ]);
 
   grunt.registerTask('default', [

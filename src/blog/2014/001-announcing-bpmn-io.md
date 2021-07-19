@@ -67,7 +67,7 @@ Give us feedback and make sure to follow us on [Twitter](https://twitter.com/bpm
 
 <br/>
 
-bpmn.io is a joint project of [Camunda](http://www.camunda.com) and [Zalando](http://tech.zalando.com) and part of [Camunda BPM](http://camunda.org). Learn more about [us]({{ relative page.dest 'dist/about/' }}).
+bpmn.io is a joint project of [Camunda](http://www.camunda.com) and [Zalando](http://tech.zalando.com) and part of [Camunda BPM](http://camunda.org). Learn more about [us]({{ ref '/about/' }}).
 
 
 
