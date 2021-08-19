@@ -56,12 +56,14 @@ Starting with `bpmn-js@8.7` the toolkit persists colors according to the [BPMN i
 
 ### Color Pickers?
 
-We deliberately decided to not include any color picker. This is because the usage of colors (and the variety of colors to offer) is highly domain specific. Adding a color picker will probably not be complicated for you, too. How it could look like in your application? Check the following screenshot taken from the soon to be released [Camunda Modeler](https://github.com/camunda/camunda-modeler):
+We deliberately decided to not include any color picker in the core. This is because the usage of colors (and the variety of colors to offer) is highly domain specific. Adding a color picker will probably not be complicated for you, too. How it could look like in your application? Check the following screenshot taken from the [Camunda Modeler](https://github.com/camunda/camunda-modeler):
 
 <div class="figure no-border">
   <img src="{{ assets }}/attachments/blog/2016/019-color-picker.png">
   <p class="caption">Picking Colors in the [Camunda Modeler](https://github.com/camunda/camunda-modeler).</p>
 </div>
+
+Check out the [bpmn-js-color-picker extension](https://github.com/bpmn-io/bpmn-js-color-picker) for a simple color picker integrated into an elements context pad.
 
 
 ## What's Next?
