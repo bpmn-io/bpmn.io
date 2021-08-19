@@ -63,7 +63,7 @@ We deliberately decided to not include any color picker in the core. This is bec
   <p class="caption">Picking Colors in the [Camunda Modeler](https://github.com/camunda/camunda-modeler).</p>
 </div>
 
-Check out the [bpmn-js-color-picker extension](https://github.com/bpmn-io/bpmn-js-color-picker) for a simple color picker integrated into an elements context pad.
+Check out the [bpmn-js-color-picker extension](https://github.com/bpmn-io/bpmn-js-color-picker) for a simple color picker integrated into an element's context pad.
 
 
 ## What's Next?
