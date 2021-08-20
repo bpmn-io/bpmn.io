@@ -1,0 +1,40 @@
+name: STAGING
+on:
+  push:
+    branches:
+    - "master"
+jobs:
+  Build_and_deploy:
+    runs-on: ubuntu-latest
+    environment: bpmn-io-website-staging
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - name: Cache Node.js modules
+      uses: actions/cache@v2
+      with:
+        # npm cache files are stored in `~/.npm` on Linux/macOS
+        path: ~/.npm
+        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-node-
+          ${{ runner.OS }}-
+    - name: Install dependencies
+      run: npm ci
+    - name: Build
+      run: npm run all
+    - name: Deploy
+      env:
+        HOST: ${{ secrets.BPMN_IO_HOST }}
+        USER: ${{ secrets.BPMN_IO_USER }}
+        SSHPASS: ${{ secrets.BPMN_IO_PASSWORD }}
+        SITE_PATH: ${{ secrets.BPMN_IO_SITE_PATH }}
+        GA_KEY: ${{ secrets.GA_KEY }}
+      run: |
+        sshpass -e ssh -oStrictHostKeyChecking=no "$USER@$HOST" "rm -rf $SITE_PATH/*"
+        sshpass -e scp -r dist/* "$USER@$HOST:$SITE_PATH"
