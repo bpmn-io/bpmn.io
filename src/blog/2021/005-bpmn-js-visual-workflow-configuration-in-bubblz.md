@@ -8,9 +8,9 @@ layout: blogpost.hbs
 slug: 2021-bpmn-js-visual-workflow-configuration-in-bubblz
 author:
   - Anis Zane<https://github.com/mzane42>
-published_time: "2021-09-16T13:17:09+01:00"
-modified_time: "2021-09-16T13:17:09+01:00"
-published: 2021-09-16 13:17
+published_time: "2021-09-20T13:17:09+01:00"
+modified_time: "2021-09-20T13:17:09+01:00"
+published: 2021-09-20 13:17
 releases:
   - 'bpmn-js'
 
