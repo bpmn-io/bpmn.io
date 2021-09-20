@@ -57,7 +57,7 @@ Each transition to a next step is backed by a user task form:
 
 ## How bpmn-js Gives us Superpowers
 
-To configure the Kanban board, we had an edit mode also in the form of Kanban board. The main problem with that edit mode was was that we could not quickly realize a project's <em>workflow</em> aspect.
+To configure the Kanban board, we had an edit mode also in the form of Kanban board. The main problem with that edit mode was that we could not quickly realize a project's <em>workflow</em> aspect.
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2021/005-config-steps.png">
