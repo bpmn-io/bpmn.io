@@ -17,8 +17,8 @@ releases:
 ---
 
 <p class="introduction">
-  [Bubblz](https://bubblz.net) is a no-code SaaS platform that allows users to build user centric workflows. Each workflow is represented by and configured through a Kanban board.
-  In this post Anis from Bubblz shares how they embedded [bpmn-js](https://github.com/bpmn-io/bpmn-js) to offer users a BPMN view onto their workflows and which benefits he has seen by doing so.
+  [Bubblz](https://bubblz.net) is a no-code SaaS platform that allows users to build user-centric workflows. Each workflow is represented by and configured through a Kanban board.
+  In this post, Anis from Bubblz shares how they embedded [bpmn-js](https://github.com/bpmn-io/bpmn-js) to offer users a BPMN view onto their workflows and which benefits he has seen by doing so.
 </p>
 
 <!-- continue -->
@@ -30,7 +30,7 @@ releases:
 
 ## Kanban as a Representation for our Workflows
 
-The principle of our no-code SaaS platform is to have a super-kanban with a form at each step to make recurring project management more fluid, with emailing, automation of decision scenarios etc...
+The principle of our no-code SaaS platform is to have a super-kanban with a form at each step to make recurring project management more fluid, with emailing, automation of decision scenarios, etc.
 
 <div class="figure">
   <a href="https://bubblz.net">
@@ -57,7 +57,7 @@ Each transition to a next step is backed by a user task form:
 
 ## How bpmn-js Gives us Superpowers
 
-To configure the Kanban board, we had an edition mode also in the form of Kanban board. The main problem was that it did not allow us to quickly realize the <em>workflow</em> aspect of the thing we were configuring.
+To configure the Kanban board, we had an edit mode also in the form of Kanban board. The main problem with that edit mode was was that we could not quickly realize a project's <em>workflow</em> aspect.
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2021/005-config-steps.png">
@@ -67,14 +67,16 @@ To configure the Kanban board, we had an edition mode also in the form of Kanban
   </p>
 </div>
 
-Our way of working is to create the workflow as a BPMN diagram on [Cawemo](https://Cawemo.com), let our customers validate them and then configure it using this interface. For our customers that meant going from a BPMN view to a not so sexy configuration view.
+Our way of working is to create the workflow as a BPMN diagram on [Cawemo](https://Cawemo.com), let our customers validate them, and then configure it using this interface. For our customers, that meant going from a BPMN view to a not-so-sexy configuration view.
 
 
 ### Configuring Things as a Workflow
 
-To solve this problem, we decided to use [bpmn-js](https://github.com/bpmn-io/bpmn-js) and embed its BPMN display abilities directly into our application. The first step was to build an algorithm to transform a proprietary process json into a bpmn file in Camunda format. This was a lot of work and the performance of the algorithm (8ms to translate a process of about 20 steps) allows us to propose an approach in quasi real-time.
+To solve this problem, we decided to use [bpmn-js](https://github.com/bpmn-io/bpmn-js) and embed its BPMN display and edit capabilities directly into our application. The first step was to build an algorithm to transform a proprietary process description into a BPMN file in Camunda format. We tuned the performance of that algorithm to translate between both formats in quasi-real-time (8ms to transform a process of about 20 steps).
 
-Once the algorithm was done, we integrated [bpmn-js](https://github.com/bpmn-io/bpmn-js) on the front end. The modularity of the framework allowed us to use it in an ultra-flexible way. We removed the drag & drop (our algorithm has an auto-positioning feature of the elements so we didn't need it), we customized the left panel as well as all the context pads of the different elements. And look, for the workflow shown above, this is what the BPMN representation looks like:
+Once we finished the algorithm, we integrated [bpmn-js](https://github.com/bpmn-io/bpmn-js) on the front end. The modularity of the framework allowed us to use it in an ultra-flexible way. Our algorithm had an auto-positioning feature of the elements. So we removed drag & drop. Our users are used to our very own way of editing things. So we customized the left panel as well as all the context pads of the different elements.
+
+With everything set and done, this is what the BPMN representation looks like for the workflow shown above:
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2021/005-config-bpmn.png">
@@ -87,10 +89,10 @@ Once the algorithm was done, we integrated [bpmn-js](https://github.com/bpmn-io/
 
 ## Benefits
 
-[bpmn-js](https://github.com/bpmn-io/bpmn-js), through its modularity, allowed us to integrate it and customize it to suite our needs.
+[bpmn-js](https://github.com/bpmn-io/bpmn-js) allowed us to integrate it and customize it to suit our needs.
 As a result, it tightly integrates into our application and the existing way of editing things.
 
-In business terms, this integration has allowed us to greatly improve the understanding of the process by the users but also to facilitate the configuration of the processes. We estimated that this reduced the configuration time by at least 50%.
+In business terms, this integration has greatly improved the understanding of the process by the users. It also made configuring projects quicker and more intuitive. We estimated that this reduced the configuration time by at least 50%.
 
 ---
 
