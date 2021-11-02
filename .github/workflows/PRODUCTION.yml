@@ -27,6 +27,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Build
+      env:
+        GA_KEY: ${{ secrets.GA_KEY }}
       run: npm run all
     - name: Deploy
       env:
@@ -34,7 +36,6 @@ jobs:
         USER: ${{ secrets.BPMN_IO_USER }}
         SSHPASS: ${{ secrets.BPMN_IO_PASSWORD }}
         SITE_PATH: ${{ secrets.BPMN_IO_SITE_PATH }}
-        GA_KEY: ${{ secrets.GA_KEY }}
       run: |
         sshpass -e ssh -oStrictHostKeyChecking=no "$USER@$HOST" "rm -rf $SITE_PATH/*"
         sshpass -e scp -r dist/* "$USER@$HOST:$SITE_PATH"
