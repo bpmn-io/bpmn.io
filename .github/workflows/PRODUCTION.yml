@@ -28,7 +28,7 @@ jobs:
       run: npm ci
     - name: Build
       env:
-        GA_KEY: ${{ secrets.GA_KEY }}
+        GTM_KEY: ${{ secrets.GTM_KEY }}
       run: npm run all
     - name: Deploy
       env:
