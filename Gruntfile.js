@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       jquery: {
         dist: 'node_modules/jquery/dist'
       },
-      ga: process.env.GA_KEY || null
+      gtm: process.env.GTM_KEY || null
     },
 
     watch: {

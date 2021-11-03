@@ -9,6 +9,10 @@
     <meta name="keywords" content="BPMN, CMMN, DMN, bpmn.io, open source, toolkit, DMN, BPMN 2.0, business process, embed, model, integrate, extend, Camunda">
     <meta name="author" content="bpmn.io">
 
+    {{#if app.gtm}}
+      {{> gtm_header }}
+    {{/if}}
+
     <title>{{#if title}}{{title}} | {{/if}}{{site.title}}</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,700,700i%7CIBM+Plex+Mono:400,400i,700,700i" rel='stylesheet' type='text/css'>
     {{#if canonical}}
@@ -45,6 +49,10 @@
   </head>
   <body>
 
+    {{#if app.gtm}}
+      {{> gtm_body }}
+    {{/if}}
+
     {{> body }}
 
     <!-- scripts -->
@@ -52,9 +60,5 @@
     <script src="{{assets}}/js/bootstrap.min.js"></script>
 
     {{ scripts }}
-
-    {{#if app.ga}}
-      {{> ga }}
-    {{/if}}
   </body>
 </html>
