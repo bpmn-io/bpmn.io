@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0074447"
-     inkscape:cx="469.5047"
-     inkscape:cy="271.47893"
+     inkscape:zoom="1.3602017"
+     inkscape:cx="327.89254"
+     inkscape:cy="219.45274"
      inkscape:document-units="mm"
      inkscape:current-layer="g902"
      showgrid="false"
@@ -38,7 +38,7 @@
      inkscape:window-height="1375"
      inkscape:window-x="0"
      inkscape:window-y="61"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata5">
@@ -61,7 +61,7 @@
        inkscape:export-xdpi="132.64"
        inkscape:export-ydpi="132.64">
       <rect
-         style="fill:none;fill-opacity:0.0646067;stroke:#10ad73;stroke-width:1.80763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:none;fill-opacity:0.0646067;stroke:#808080;stroke-width:1.80763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect815-3-44"
          width="91.212303"
          height="57.950405"
@@ -92,7 +92,7 @@
            id="tspan827-2-1">↑1%</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#10ad73;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="118.80317"
          y="217.16112"
          id="text836-6-7"><tspan
@@ -100,7 +100,7 @@
            id="tspan834-4-5"
            x="118.80317"
            y="217.16112"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#10ad73;fill-opacity:1;stroke-width:0.264583">478kB</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke-width:0.264583">478kB</tspan></text>
     </g>
     <g
        id="g10411">
@@ -228,14 +228,14 @@
       <text
          id="text836-6-9"
          y="151.8495"
-         x="137.38242"
+         x="126.79908"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#10ad73;fill-opacity:1;stroke:none;stroke-width:0.264583"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.6333px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#10ad73;fill-opacity:1;stroke-width:0.264583"
            y="151.8495"
-           x="137.38242"
+           x="126.79908"
            id="tspan834-4-3"
-           sodipodi:role="line">547</tspan></text>
+           sodipodi:role="line">2874</tspan></text>
     </g>
   </g>
 </svg>
