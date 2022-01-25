@@ -2,7 +2,7 @@ title: bpmn.io
 bpmnjs:
   version: v8.9.1
 dmnjs:
-  version: v11.1.1
+  version: v11.1.2
 cmmnjs:
   version: v0.19.2
 formjs:
