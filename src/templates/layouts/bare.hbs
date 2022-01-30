@@ -42,9 +42,12 @@
       <meta property="article:modified_time" content="{{ modified_time }}" />
       <meta property="og:updated_time" content="{{ modified_time }}" />
       {{/if}}
-      {{#if preview_image}}
-      <meta property="og:image" content="{{ preview_image }}" />
-      {{/if}}
+    {{/if}}
+
+    {{#if preview_image}}
+    <meta property="og:image" content="{{ preview_image }}" />
+    {{else}}
+    <meta property="og:image" content="https://bpmn.io/assets/img/preview.png" />
     {{/if}}
   </head>
   <body>
