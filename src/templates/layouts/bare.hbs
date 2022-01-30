@@ -22,16 +22,16 @@
     <link rel="icon" type="image/png" href="{{assets}}/img/favicon.png">
 
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="blog" />
+    <meta property="og:type" content="{{#if slug}}article{{else}}website{{/if}}" />
     <meta property="og:site_name" content="bpmn.io" />
     <meta property="og:title" content="{{ title }}" />
-    <meta property="article:publisher" content="https://bpmn.io" />
 
     {{#if slug}}
       {{#if url}}
       <meta property="og:url" content="{{ url }}" />
       {{/if}}
       <meta property="article:section" content="Blog" />
+      <meta property="article:publisher" content="https://bpmn.io" />
       {{#if description}}
       <meta property="og:description" content="{{ description }}" />
       {{/if}}
