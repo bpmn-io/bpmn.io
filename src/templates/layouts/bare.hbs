@@ -29,15 +29,16 @@
     <meta property="og:site_name" content="bpmn.io" />
     <meta property="og:title" content="{{ title }}" />
 
-    {{#if slug}}
-      {{#if url}}
+    {{#if url}}
       <meta property="og:url" content="{{ url }}" />
-      {{/if}}
+    {{/if}}
+    {{#if description}}
+      <meta property="og:description" content="{{ description }}" />
+    {{/if}}
+
+    {{#if slug}}
       <meta property="article:section" content="Blog" />
       <meta property="article:publisher" content="https://bpmn.io" />
-      {{#if description}}
-      <meta property="og:description" content="{{ description }}" />
-      {{/if}}
       {{#if published_time}}
       <meta property="article:published_time" content="{{ published_time }}" />
       {{/if}}
@@ -48,9 +49,9 @@
     {{/if}}
 
     {{#if preview_image}}
-    <meta property="og:image" content="{{ preview_image }}" />
+      <meta property="og:image" content="{{ preview_image }}" />
     {{else}}
-    <meta property="og:image" content="https://bpmn.io/assets/img/preview.png" />
+      <meta property="og:image" content="https://bpmn.io/assets/img/preview.png" />
     {{/if}}
   </head>
   <body>
