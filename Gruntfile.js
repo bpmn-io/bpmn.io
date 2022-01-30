@@ -114,7 +114,6 @@ module.exports = function(grunt) {
           '<%= config.dist %>/modeler/': ['<%= config.src %>/pages/modeler/*.hbs'],
           '<%= config.dist %>/license/': ['<%= config.src %>/pages/license/*.hbs'],
           '<%= config.dist %>/roadmap/': ['<%= config.src %>/pages/roadmap/*.hbs'],
-          '<%= config.dist %>/status/': ['<%= config.src %>/pages/status/*.hbs'],
           '<%= config.dist %>/legal/': ['<%= config.src %>/pages/legal/*.hbs'],
           '<%= config.dist %>/toolkit/bpmn-js/': ['<%= config.src %>/pages/toolkit/bpmn-js/*.hbs'],
           '<%= config.dist %>/toolkit/bpmn-js/download/': ['<%= config.src %>/pages/toolkit/bpmn-js/download/*.hbs'],
