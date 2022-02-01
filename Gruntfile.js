@@ -24,6 +24,9 @@ module.exports = function(grunt) {
       jquery: {
         dist: 'node_modules/jquery/dist'
       },
+      plex: {
+        dist: 'node_modules/@ibm/plex'
+      },
       gtm: process.env.GTM_KEY || null
     },
 
@@ -175,6 +178,13 @@ module.exports = function(grunt) {
             cwd: '<%= config.bootstrap.dist %>',
             src: ['js/bootstrap.min.js'],
             dest: '<%= config.dist %>/assets'
+          },
+          // include ibm plex
+          {
+            expand: true,
+            cwd: '<%= config.plex.dist %>',
+            src: ['IBM-Plex-Sans/fonts/complete/**/*'],
+            dest: '<%= config.dist %>/assets/fonts/plex'
           }
         ]
       }
