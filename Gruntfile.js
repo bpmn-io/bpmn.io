@@ -183,7 +183,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.plex.dist %>',
-            src: ['**/*'],
+            src: ['IBM-Plex-Sans/fonts/complete/**/*'],
             dest: '<%= config.dist %>/assets/fonts/plex'
           }
         ]
