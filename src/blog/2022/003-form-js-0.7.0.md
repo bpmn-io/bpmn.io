@@ -4,10 +4,10 @@ title: Custom Properties in form-js
 description: This blog post introduces form-js@0.7.0. This release introduces custom properties for form fields.
 preview_image: https://bpmn.io/assets/attachments/blog/2022/003-preview.png
 layout: blogpost.hbs
-slug: 2022-form-js-custom-properties
+slug: 2022-form-js-070-custom-properties
 author:
 - Beatriz Mendes <https://github.com/smbea>
-published: 2022-02-02 12:00
+published: 2022-03-11 15:35
 
 releases:
   - 'form-js@0.7.0'
@@ -15,18 +15,16 @@ releases:
 ---
 
 <p class="introduction">
- We're happy to announce the latest release of [form-js](https://github.com/bpmn-io/form-js), our form builder and renderer. This release introduces custom properties for form fields.
+  We're happy to announce the latest release of [form-js](https://github.com/bpmn-io/form-js), our form builder and renderer. This release introduces custom properties for form fields.
 </p>
 
 <!-- continue -->
 
 
-# Custom Properties in form-js
-
-This release adds the ability to specify custom properties for form fields. These properties can be defined through the properties panel and are persisted in the `json` form file.
+With this form-js release, you can specify custom properties for form fields. You define these properties through the properties panel, and the form editor will export them with the form definition file.
 
 <div class="figure full-size">
-  <a href="https://demo.bpmn.io/">
+  <a href="https://demo.bpmn.io/form">
     <img src="{{ assets }}/attachments/blog/2022/003-custom-properties.gif">
   </a>
 
@@ -35,15 +33,18 @@ This release adds the ability to specify custom properties for form fields. Thes
   </p>
 </div>
 
-## Using custom properties with select fields
 
-Custom properties can be used to customize the form viewer in many ways. Here is an example on how to populate the options of a select field based on an external API defined as a custom property.
+## Using Custom Properties
+
+You can use custom properties to extend forms in several ways; the classic example is to enrich the form schema before rendering the form.
+
+The following shows how to pre-populate the options of a select field dynamically based on a custom property called `externalData`:
 
 ```javascript
 const { components } = schema;
 
 for (let i = 0; i < components.length; i++) {
-     
+
   const field = components[i];
   const {
     properties,
@@ -64,10 +65,10 @@ for (let i = 0; i < components.length; i++) {
     }))
 
   }
-	
+
 }
-    
-// re-render form with updated schema
+
+// render form with enriched schema
 form.importSchema(schema);
 ```
 
@@ -84,7 +85,7 @@ Let's say we want to populate the options of a "Customer" select field with acti
         key: "costumer",
         values: [],
         properties: {
-          externalData: "https://endpoint.com/customer"
+          externalData: "https://mycompany/active-customers"
         }
       }
     ]
@@ -92,9 +93,10 @@ Let's say we want to populate the options of a "Customer" select field with acti
 };
 ```
 
-You can see the full example [here](https://github.com/bpmn-io/form-js-examples/tree/master/custom-properties).
+Checkout the full example [here](https://github.com/bpmn-io/form-js-examples/tree/master/custom-properties).
 
 Try out the new feature [on our demo](https://demo.bpmn.io/form) or using the [form-js playground](https://github.com/bpmn-io/form-js/tree/master/packages/form-js-playground).
+
 
 ## Wrapping Up
 
