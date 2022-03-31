@@ -38,7 +38,7 @@ Using the built-in NFT integration, you can:
 
 * [Connect your wallet](#connect-wallet) (OpenSea currently supported)
 * Browse published NFTs, remix the underlying BPMN diagrams in your processes
-* Publish your own BPMN diagram as an NFT
+* Publish your own BPMN diagram to create ("mint") an NFT from it
 
 Will you be the first one to mint your company's invoice process?
 
