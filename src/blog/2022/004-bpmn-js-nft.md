@@ -13,13 +13,14 @@ releases:
   - 'bpmn-js@9.0.3-nft'
 
 ---
+
 <p class="introduction">
   We're excited to announce native NFT support in [bpmn-js](https://bpmn.io/toolkits/bpmn-js): Create NFTs from your BPMN diagrams, marvel at others' BPMN creations, and incorporate what works for you into your own BPM story. Integrating NFTs directly into our tooling will do wonders for the BPM ecosystem we envision.
 </p>
 
 <!-- continue -->
 
-[Non-fungible tokens (NFTs)](https://www.forbes.com/advisor/investing/nft-non-fungible-token/) represent digital assets and get published and sold via online marketplaces. Own an NFT and claim that you own the underlying digital asset, own the NFT of your company's invoice process, and claim you own the process itself.
+[Non-fungible tokens (NFTs)](https://www.forbes.com/advisor/investing/nft-non-fungible-token/) represent digital assets and get published and sold via online marketplaces. Own an NFT and claim that you own the underlying digital asset. Own the NFT of your company's invoice process, and claim you own the process itself.
 
 With the new version of [bpmn-js](https://bpmn.io/toolkits/bpmn-js) we ship a native integration of NTFs into the core modeling experience:
 
@@ -98,7 +99,7 @@ But what else is possible once you connect your wallet?
 Two exciting things immediately come to mind:
 
 * __You build it, you profit:__ Next-generation monetization of your processes (usage-based and enforced via smart contracts).
-* __The classic:__ Mine Bitcoins as you model BPMN and see who finished first.
+* __The classic:__ Mine Bitcoins as you model BPMN and see who finished first (you or the friendly miner in the background).
 
 We hope you'll follow along on our crypto journey.
 
