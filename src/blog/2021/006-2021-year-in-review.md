@@ -6,8 +6,8 @@ layout: blogpost.hbs
 slug: 2021-year-in-review
 author: Nico Rehwaldt <https://github.com/nikku>
 description: From form-js over token-simulation to the things we usually do, 2021 was a good, busy year for bpmn.io.
-preview_image: https://bpmn.io/assets/attachments/blog/2021/006-preview.png
-url: https://bpmn.io/blog/posts/2021-year-in-review.html
+preview_image: assets/attachments/blog/2021/006-preview.png
+url: blog/posts/2021-year-in-review.html
 published: 2021-12-21 13:17
 published_time: "2021-12-21T13:17:09+01:00"
 modified_time: "2021-12-21T13:17:09+01:00"

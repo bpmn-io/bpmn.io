@@ -2,7 +2,7 @@
 
 title: Custom Properties in form-js
 description: This blog post introduces form-js@0.7.0. This release introduces custom properties for form fields.
-preview_image: https://bpmn.io/assets/attachments/blog/2022/003-preview.png
+preview_image: assets/attachments/blog/2022/003-preview.png
 layout: blogpost.hbs
 slug: 2022-form-js-070-custom-properties
 author:

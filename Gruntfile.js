@@ -27,7 +27,8 @@ module.exports = function(grunt) {
       plex: {
         dist: 'node_modules/@ibm/plex'
       },
-      gtm: process.env.GTM_KEY || null
+      gtm: process.env.GTM_KEY || null,
+      base_url: process.env.BASE_URL || 'http://localhost:9012'
     },
 
     watch: {

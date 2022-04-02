@@ -2,8 +2,8 @@
 
 title: How Bubblz Integrates bpmn-js to Improve Workflow Configuration
 description: This blog post explains how Bubblz integrates bpmn-js to provide a visual workflow configuration to their customers.
-preview_image: https://bpmn.io/assets/attachments/blog/2021/005-config-bpmn.png
-url: https://bpmn.io/blog/posts/2021-bpmn-js-visual-workflow-configuration-in-bubblz.html
+preview_image: assets/attachments/blog/2021/005-config-bpmn.png
+url: blog/posts/2021-bpmn-js-visual-workflow-configuration-in-bubblz.html
 layout: blogpost.hbs
 slug: 2021-bpmn-js-visual-workflow-configuration-in-bubblz
 author:
