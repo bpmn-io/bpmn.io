@@ -112,7 +112,7 @@ module.exports = function(grunt) {
       },
       main: {
         files: {
-          '<%= config.dist %>/': ['<%= config.src %>/pages/*.hbs'],
+          '<%= config.dist %>/': ['<%= config.src %>/pages/index.hbs'],
           '<%= config.dist %>/l/': ['<%= config.src %>/links/*.html'],
           '<%= config.dist %>/about/': ['<%= config.src %>/pages/about/*.hbs'],
           '<%= config.dist %>/modeler/': ['<%= config.src %>/pages/modeler/*.hbs'],
@@ -144,6 +144,19 @@ module.exports = function(grunt) {
         files: {
           '<%= config.dist %>/blog/': [ '<%= config.src %>/pages/blog/*.hbs' ],
           '<%= config.dist %>/blog/posts/': [ '<%= config.src %>/blog/*/*.{md,hbs}' ]
+        }
+      },
+      feed: {
+        options: {
+          ext: '.xml',
+          layout: 'none',
+          helpers: [
+            'handlebars-helper-compose',
+            'handlebars-helper-moment'
+          ]
+        },
+        files: {
+          '<%= config.dist %>/': ['<%= config.src %>/pages/feed.hbs'],
         }
       }
     },

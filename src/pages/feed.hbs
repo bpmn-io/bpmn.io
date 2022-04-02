@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="{{ appUrl "feed.xml" }}" rel="self" type="application/rss+xml" />
+    <title>bpmn.io Blog</title>
+    <description>News from the bpmn.io project</description>
+    <link>{{ appUrl "blog" }}</link>
+    <copyright>2022 bpmn.io and contributors. All rights reserved</copyright>
+    <lastBuildDate>{{ rssDate }}</lastBuildDate>
+    <language>en-US</language>
+    <ttl>1800</ttl>
+    <image>
+      <url>{{ appUrl "assets/img/favicon.png" }}</url>
+      <title>bpmn.io Blog</title>
+      <link>{{ appUrl "blog" }}</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+
+    {{#compose src='*/*.md' cwd='src/blog' sortBy="published" sortOrder="desc"}}
+      {{#rssPost }}
+        {{{@content}}}
+      {{/rssPost}}
+    {{/compose}}
+  </channel>
+</rss>
