@@ -3,7 +3,7 @@
 title: NFT Integration Lands in bpmn-js
 description: This blog post unveils the bpmn-js NFT integration.
 preview_image: https://bpmn.io/assets/attachments/blog/2022/004-preview.png
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 slug: 2022-bpmn-js-nft-integration
 author:
 - Nico Rehwaldt <https://github.com/nikku>
