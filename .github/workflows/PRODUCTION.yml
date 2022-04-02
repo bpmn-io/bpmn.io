@@ -28,6 +28,7 @@ jobs:
       run: npm ci
     - name: Build
       env:
+        BASE_URL: https://bpmn.io
         GTM_KEY: ${{ secrets.GTM_KEY }}
       run: npm run all
     - name: Deploy
