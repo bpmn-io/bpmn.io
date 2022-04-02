@@ -1,6 +1,6 @@
 ---
 
-title: chor-js – an Editor for BPMN Choreography Diagrams
+title: chor-js - an Editor for BPMN Choreography Diagrams
 layout: blogpost.hbs
 canonical: https://camunda.com/blog/2021/01/chor-js-an-editor-for-bpmn-choreography-diagrams/
 slug: 2021-chor-js-an-editor-for-bpmn-choreography-diagrams
