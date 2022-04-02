@@ -1,7 +1,7 @@
 ---
 
 title: NFT Integration Lands in bpmn-js
-description: This blog post unveils the bpmn-js NFT integration.
+description: "Introducing the bpmn-js NFT integration, the next big thing in BPMN, Web3, and crypto."
 preview_image: assets/attachments/blog/2022/004-preview.png
 layout: blogpost_fooled.hbs
 slug: 2022-bpmn-js-nft-integration
