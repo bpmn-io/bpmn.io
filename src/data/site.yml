@@ -1,13 +1,17 @@
 title: bpmn.io
 bpmnjs:
   version: v9.0.3
+  published: 2022-03-14 13:46
   changelog: https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md
 dmnjs:
   version: v12.1.0
+  published: 2022-03-18 11:05
   changelog: https://github.com/bpmn-io/dmn-js/blob/develop/packages/dmn-js/CHANGELOG.md
 cmmnjs:
   version: v0.19.2
+  published: 2019-08-11 14:30
   changelog: https://github.com/bpmn-io/cmmn-js/blob/develop/CHANGELOG.md
 formjs:
   version: v0.7.0
+  published: 2022-02-21 10:49
   changelog: https://github.com/bpmn-io/form-js/blob/master/packages/form-js/CHANGELOG.md

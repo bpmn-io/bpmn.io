@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="{{ appUrl "releases.xml" }}" rel="self" type="application/rss+xml" />
+    <title>bpmn.io Library Releases</title>
+    <description>Latest library releases</description>
+    <link>{{ appUrl }}</link>
+    <lastBuildDate>{{ rssDate }}</lastBuildDate>
+    <language>en-US</language>
+    <ttl>1800</ttl>
+    <image>
+      <url>{{ appUrl "assets/img/favicon.png" }}</url>
+      <title>bpmn.io Library Releases</title>
+      <link>{{ appUrl }}</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+
+    <item>
+      <title>bpmn-js</title>
+      <dc:creator>bpmn.io and Contributors</dc:creator>
+      <description>bpmn-js {{ site.bpmnjs.version }} release</description>
+      <link>{{ appUrl "toolkit/bpmn-js" }}</link>
+      <pubDate>{{ rssDate site.bpmnjs.published }}</pubDate>
+      <guid isPermaLink="false">bpmn-js-{{ site.bpmnjs.version }}</guid>
+    </item>
+
+    <item>
+      <title>dmn-js</title>
+      <dc:creator>bpmn.io and Contributors</dc:creator>
+      <description>dmn-js {{ site.dmnjs.version }} release</description>
+      <link>{{ appUrl "toolkit/dmn-js" }}</link>
+      <pubDate>{{ rssDate site.dmnjs.published }}</pubDate>
+      <guid isPermaLink="false">dmn-js-{{ site.dmnjs.version }}</guid>
+    </item>
+
+    <item>
+      <title>form-js</title>
+      <dc:creator>bpmn.io and Contributors</dc:creator>
+      <description>form-js {{ site.formjs.version }} release</description>
+      <link>{{ appUrl "toolkit/form-js" }}</link>
+      <pubDate>{{ rssDate site.formjs.published }}</pubDate>
+      <guid isPermaLink="false">form-js-{{ site.formjs.version }}</guid>
+    </item>
+
+    <item>
+      <title>cmmn-js</title>
+      <dc:creator>bpmn.io and Contributors</dc:creator>
+      <description>cmmn-js {{ site.cmmnjs.version }} release</description>
+      <link>{{ appUrl "toolkit/cmmn-js" }}</link>
+      <pubDate>{{ rssDate site.cmmnjs.published }}</pubDate>
+      <guid isPermaLink="false">cmmn-js-{{ site.cmmnjs.version }}</guid>
+    </item>
+  </channel>
+</rss>

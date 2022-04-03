@@ -156,7 +156,7 @@ module.exports = function(grunt) {
           ]
         },
         files: {
-          '<%= config.dist %>/': ['<%= config.src %>/pages/feed.hbs'],
+          '<%= config.dist %>/': ['<%= config.src %>/pages/{feed,releases}.hbs']
         }
       }
     },
