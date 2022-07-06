@@ -19,7 +19,12 @@ releases:
 Applications build with Drupal get customized and extended by an extensive eco-system of open source modules, or with custom modules developed in PHP. [ECA](https://www.drupal.org/project/eca) is one of those modules and allows you to automate all aspects of Drupal.
 
 This post describes how bpmn.io, specifically [bpmn-js](https://github.com/bpmn-io/bpmn-js), integrates as UI to create, review, and maintain the configured automations.
+</p>
 
+<!-- continue -->
+
+<p class="thanks">
+  _A big thanks to [Jürgen Haas](https://www.drupal.org/u/jurgenhaas) from [LakeDrops](https://www.lakedrops.com) for writing this guest blog post._
 </p>
 
 ## ECA Architecture in Drupal
