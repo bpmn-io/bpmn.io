@@ -1,5 +1,5 @@
 ---
-title: Drupal ECA integrates with bpmn.io
+title: Drupal ECA integrates bpmn.io
 description: This blog post explains how Drupal integrates bpmn.io as a graphical UI for its rules engine to expose all its automation capabilities to site builders without coding requirements.
 preview_image: http://bpmn.io/assets/attachments/blog/2022/008-drupal-eca-integration.png
 url: https://bpmn.io/blog/posts/2022-drupal-eca-integration.html
