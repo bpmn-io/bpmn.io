@@ -3,13 +3,12 @@ title: Powerful rules engine in Drupal integrates with BPMN.iO
 description: This blog post explains how Drupal integrates BPMN.iO as a graphical UI for its rules engine to expose all its automation capabilities to site builders without coding requirements.
 url: blog/posts/...
 preview_image: http://bpmn.io/assets/attachments/blog/2022/008-drupal-eca-integration.png
+url: https://bpmn.io/blog/posts/2022-drupal-eca-integration.html
 layout: blogpost.hbs
-slug: ...
+slug: 2022-drupal-eca-integration
 author:
   - Jürgen Haas<https://www.drupal.org/u/jurgenhaas>
-published_time: "..."
-modified_time: "..."
-published: ...
+published: 2022-07-07 13:12
 releases:
   - 'bpmn-js'
 ---
