@@ -1,8 +1,8 @@
 ---
 title: Powerful rules engine in Drupal integrates with BPMN.iO
 description: This blog post explains how Drupal integrates BPMN.iO as a graphical UI for its rules engine to expose all its automation capabilities to site builders without coding requirements.
-preview_image: https://www.drupal.org/files/project-images/bpmn_io_02.png
 url: blog/posts/...
+preview_image: http://bpmn.io/assets/attachments/blog/2022/008-drupal-eca-integration.png
 layout: blogpost.hbs
 slug: ...
 author:
@@ -37,7 +37,7 @@ Like ECA as well, the [BPMN.iO](https://www.drupal.org/project/bpmn_io) module c
 Once enabled, site builders with appropriate permissions can start building their models without any configuration necessary:
 
 <div class="figure">
-  <img src="https://www.drupal.org/files/project-images/bpmn_io_02.png">
+  <img src="{{ assets }}/attachments/blog/2022/008-drupal-eca-integration.png" alt="An ECA (Event-Condition-Action) automation modeled as a BPMN diagram with bpmn.io">
 
   <p class="caption">
     BPMN.iO integrated into Drupal's admin UI.
@@ -47,7 +47,7 @@ Once enabled, site builders with appropriate permissions can start building thei
 The integration with ECA takes care of all the available templates - they are called plugins in the Drupal world - and makes them dynamically available to the BPMN.iO ui, also without any configuration or other pre-processing steps:
 
 <div class="figure">
-  <img src="https://www.drupal.org/files/project-images/bpmn_io_08.png">
+  <img src="{{ assets }}/attachments/blog/2022/008-drupal-actions.png" alt="bpmn.io Element template chooser to select from actions available in Drupal site">
 
   <p class="caption">
     Choosing from templates dynamically provided by the current Drupal site.
