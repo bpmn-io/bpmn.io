@@ -52,17 +52,21 @@ layout: toolkit.hbs
 
     <pre style="text-align: left; margin: 20px auto; max-width: 500px;">{{#code 'no-pre:html'}}
 <script>
-  import { createForm } from '@bpmn-io/form-js';
+  import { Form } from '@bpmn-io/form-js';
 
-  const form = createForm({
-    schema,
-    data,
+  const form = new Form({
     container: document.querySelector('#form')
   });
 
   form.on('submit', (event) => {
     console.log(event.data, event.errors);
   });
+
+  try {
+    await form.importSchema(schema, data);
+  } catch (err) {
+    console.error('failed to import form', err);
+  }
 </script>
 {{/code}}</pre>
 

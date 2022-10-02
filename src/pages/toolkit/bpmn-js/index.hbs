@@ -76,15 +76,12 @@ layout: toolkit.hbs
 
     <pre style="text-align: left; margin: 20px auto; max-width: 500px;">{{#code 'no-pre:html'}}
 <script>
-  var viewer = new BpmnJS({ container: 'body' });
+  const viewer = new BpmnJS({ container: 'body' });
 
-  viewer.importXML(bpmnXML, function(err) {
-
-    if (err) {
-      console.log('error rendering', err);
-    } else {
-      console.log('we are good!');
-    }
+  try {
+    await viewer.importXML(bpmnXML);
+  } catch (err) {
+    console.error('error loading BPMN 2.0 XML', err);
   });
 </script>
 {{/code}}</pre>

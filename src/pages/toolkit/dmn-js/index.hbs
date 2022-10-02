@@ -14,7 +14,7 @@ layout: toolkit.hbs
        dmn-js
     </p>
 
-    <p class="lead">DMN viewer and editor.</p>
+    <p class="lead">DMN 1.3 viewer and editor.</p>
 
     <div class="actions">
       <a href="http://demo.bpmn.io/dmn" target="_blank" class="btn btn-xlg btn-primary">Try Online</a>
@@ -51,15 +51,12 @@ layout: toolkit.hbs
 
     <pre style="text-align: left; margin: 20px auto; max-width: 500px;">{{#code 'no-pre:html'}}
 <script>
-  var viewer = new DmnJS({ container: 'body' });
+  const viewer = new DmnJS({ container: 'body' });
 
-  viewer.importXML(dmnXML, function(err) {
-
-    if (err) {
-      console.log('error rendering', err);
-    } else {
-      console.log('rendered');
-    }
+  try {
+    await viewer.importXML(bpmnXML);
+  } catch (err) {
+    console.error('error loading DMN 1.3 XML', err);
   });
 </script>
 {{/code}}</pre>
