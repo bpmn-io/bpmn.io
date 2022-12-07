@@ -17,6 +17,7 @@
   "scripts": {
     "all": "grunt build",
     "dev": "grunt serve",
+    "start": "npm run dev",
     "test": "grunt build"
   },
   "devDependencies": {
