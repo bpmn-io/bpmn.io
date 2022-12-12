@@ -1,6 +1,6 @@
 ---
 
-title: Reworked Popup Menu lands in diagram-js
+title: Reworked Popup Menu Lands in diagram-js
 description: "Introducing diagram-js@11: The release reworks the popup menu improving scalability and accessibility and adding a fresh new look."
 layout: blogpost.hbs
 slug: 2022-reworked-popup-menu
@@ -13,11 +13,12 @@ published: 2022-12-07 12:00
 releases:
   - 'bpmn-js@11.0.0'
   - 'diagram-js@11.0.0'
+  - 'dmn-js@14.0.0'
 
 ---
 
 <p class="introduction">
-  We are happy to announce new major releases of our [core diagramming](https://github.com/bpmn-io/diagram-js) and [BPMN](https://github.com/bpmn-io/bpmn-js) toolkits. The new releases ship a powerful new popup menu that is keyboard accessible, versatile, and scalable across many different use cases.
+  We are happy to announce new major releases of our [core diagramming](https://github.com/bpmn-io/diagram-js) and editor toolkits. The new releases ship a powerful new popup menu that is keyboard accessible, versatile, and scalable across many different use cases.
 </p>
 
 <!-- continue -->
@@ -54,7 +55,17 @@ You can drive many parts of the core editor using your keyboard, so why not the 
 Another noteworthy improvement in the accessibility realm is that you can now attach a title to your menu. Use it wisely to establish additional context.
 
 
-## Rich Actions
+## Versatile
+
+As before the menu is versatile enough to be used in a number of different scenarios. Decide per entry whether you want to display icon only, labels, or both.
+
+<div class="figure">
+  <img src="{{ assets }}/attachments/blog/2022/010-color-picker.png" alt="New diagram-js popup menu integrated in bpmn-js-color-picker">
+
+  <p class="caption">
+    Icon only popup menu added via the [color picker](https://github.com/bpmn-io/bpmn-js-color-picker) extension.
+  </p>
+</div>
 
 The new popup menu considers additional meta-data provided through entries:
 
@@ -72,10 +83,9 @@ Use that meta-data to make actions more meaningful to your users.
   </p>
 </div>
 
+## How to Migrate
 
-## Migration
-
-As expected in a rework, the HTML structure and CSS classes changed in the restructuring process. Because of that, we advise you to double-check your style customizations as you upgrade to `diagram-js@11` / `bpmn-js@11`.
+As expected in a rework, the HTML structure and CSS classes changed in the restructuring process. Because of that, we advise you to double-check your style customizations as you upgrade to `diagram-js@11` or one of our latest editor toolkit major releases.
 
 API-wise this release is backward compatible. That means popup menu entry providers continue to work as expected, as do your custom popup menus.
 
