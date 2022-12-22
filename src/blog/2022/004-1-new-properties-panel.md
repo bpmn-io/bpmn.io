@@ -55,9 +55,9 @@ A group is the main building block a properties panel is composed of, and they g
 * Dirty markers indicate whether a group has changed contents inside
 * The group can naturally host different contents: As an item list container, it conveniently allows you to add new entries. As a header-only group, it contains a single call to action. As a plain group, it serves as a simple container for standard inputs.
 
-### Contextual header
+### Contextual headers
 
-Always know what you're doing. The reworked header shows a preview along with the element type and name.
+Always know what you're doing. The reworked header shows a preview along with the element type and name. Group headers are adaptive and support their (optional) contents.
 
 ### Stateful components
 
