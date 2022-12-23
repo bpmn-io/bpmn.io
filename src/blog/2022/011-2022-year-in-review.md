@@ -5,7 +5,7 @@ layout: blogpost.hbs
 
 slug: 2022-year-in-review
 author: Nico Rehwaldt <https://github.com/nikku>
-description: From properties panel rewrite over drill down into collapsed sub-processes and form-js improvements to significant UX improvements at the modeling core. This post recaps another busy year at bpmn.io.
+description: From properties panel rewrite over drill down into collapsed sub-processes, between form-js improvements and significant UX improvements at the modeling core: This post recaps another busy year at bpmn.io.
 preview_image: assets/attachments/blog/2022/011-preview.png
 url: blog/posts/2022-year-in-review.html
 published: 2022-12-22 13:17
