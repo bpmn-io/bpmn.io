@@ -53,7 +53,7 @@ We cut more than 90 releases (more than 35 being actual feature releases) in [ov
 Significantly more new people visited [our project website](https://bpmn.io/), asked for help, and contributed to [our forum](https://forum.bpmn.io/) and starred our projects on [GitHub](https://github.com/bpmn-io). Community work led to several contributions, too, such as [support for rendering multiple BPMN diagrams](./2019-bpmn-js-3-4-0.html#multiple-bpmn-diagrams-support) or [internationalization of our DMN decision table editor](https://github.com/bpmn-io/dmn-js/issues/434).
 
 <div class="figure no-border condensed-size" style="margin: 50px 0 40px 0; text-align: center">
-  <img src="{{ assets }}/attachments/blog/2019/009-stats.png" alt="Some project statistics" style="max-width: 90%">
+  <img src="{{ assets }}/attachments/blog/2019/009-stats.png" alt="Some project statistics" >
   <p class="caption" style="margin-top: 10px">
     2019 in numbers (with percentages compared to 2018).
   </p>

@@ -64,7 +64,7 @@ Similar to [previous](./2020-year-in-review.html) [years](./2021-year-in-review.
 More people visited [our project website](https://bpmn.io/) and starred our projects on [GitHub](https://github.com/bpmn-io). Interestingly, we saw a little drop in [forum questions](https://forum.bpmn.io/).
 
 <div class="figure no-border condensed-size" style="margin: 50px 0 40px 0; text-align: center">
-  <img src="{{ assets }}/attachments/blog/2022/011-stats.png" alt="Some project statistics" style="max-width: 90%">
+  <img src="{{ assets }}/attachments/blog/2022/011-stats.png" alt="Some project statistics" >
   <p class="caption" style="margin-top: 10px">
     2022 in numbers (with percentages compared to 2021).
   </p>

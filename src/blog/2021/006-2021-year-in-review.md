@@ -64,7 +64,7 @@ Similar to [previous](./2018-year-in-review.html) [years](./2019-year-in-review.
 More people visited [our project website](https://bpmn.io/), asked for help, contributed to [our forum](https://forum.bpmn.io/), and starred our projects on [GitHub](https://github.com/bpmn-io). Community work led to several contributions, too, such as [Spanish translations for bpmn-js](https://github.com/bpmn-io/bpmn-js-i18n/pull/11) and [improved](https://github.com/bpmn-io/diagram-js/pull/484) [keyboard accessibility](https://github.com/bpmn-io/diagram-js/pull/493) of our editors.
 
 <div class="figure no-border condensed-size" style="margin: 50px 0 40px 0; text-align: center">
-  <img src="{{ assets }}/attachments/blog/2021/006-stats.png" alt="Some project statistics" style="max-width: 90%">
+  <img src="{{ assets }}/attachments/blog/2021/006-stats.png" alt="Some project statistics" >
   <p class="caption" style="margin-top: 10px">
     2021 in numbers (with percentages compared to 2020).
   </p>
