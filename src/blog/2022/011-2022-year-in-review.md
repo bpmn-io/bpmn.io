@@ -18,7 +18,7 @@ releases:
 
 
 <p class="introduction">
-  From properties panel rewrites to drill down into collapsed BPMN sub-processes, between new form-js features and significant UX improvements at the modeling core: 2022 was a feature-packed, busy year at [bpmn.io](https://bpmn.io/). A great time to look back at what we have accomplished and a good time to take a small glimpse into the near 2023 future.
+  From properties panel rewrites to drill down into collapsed BPMN sub-processes, between new form-js features and significant UX improvements at the modeling core: 2022 was a feature-packed, busy year at [bpmn.io](https://bpmn.io/). A great time to look back at what we have accomplished and a good time to take a small glimpse into the near future.
 </p>
 
 <!-- continue -->
