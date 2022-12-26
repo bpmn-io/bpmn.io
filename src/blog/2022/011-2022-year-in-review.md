@@ -5,7 +5,7 @@ layout: blogpost.hbs
 
 slug: 2022-year-in-review
 author: Nico Rehwaldt <https://github.com/nikku>
-description: "From properties panel rewrite over drill down into collapsed sub-processes, between form-js improvements and significant UX improvements at the modeling core: This post recaps another busy year at bpmn.io."
+description: "From properties panel rewrite over drill down into collapsed sub-processes, between new form-js features and significant UX improvements at the modeling core: This post recaps another busy year at bpmn.io."
 preview_image: assets/attachments/blog/2022/011-preview.png
 url: blog/posts/2022-year-in-review.html
 published: 2022-12-22 13:17
@@ -18,7 +18,7 @@ releases:
 
 
 <p class="introduction">
-  From properties panel rewrites to drill down into collapsed BPMN sub-processes, between form-js improvements and significant UX improvements at the modeling core: 2022 was a feature-packed, busy year at [bpmn.io](https://bpmn.io/). A great time to look back at what we have accomplished and a good time to take a small glimpse into the near 2023 future.
+  From properties panel rewrites to drill down into collapsed BPMN sub-processes, between new form-js features and significant UX improvements at the modeling core: 2022 was a feature-packed, busy year at [bpmn.io](https://bpmn.io/). A great time to look back at what we have accomplished and a good time to take a small glimpse into the near 2023 future.
 </p>
 
 <!-- continue -->
@@ -47,7 +47,7 @@ Other focus areas across our eco-system were code-base modernization (our target
 * Released in July [bpmn-js@9.3](https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md#930) adds actions to align and distribute elements on the modeling canvas.
 * September releases of our toolkits lift our libraries targets to [ES2018](./2022-migration-to-es2018.html).
 * Also released in September [form-js@0.8](https://github.com/bpmn-io/form-js/blob/develop/packages/form-js/CHANGELOG.md#080) ships with a taglist and checklist component, and the ability to provide selection values dynamically.
-* Shipped in November [bpmn-js@10.3.0](https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md#1030) ships with an improved BPMN space tool.
+* Shipped in November [bpmn-js@10.3.0](https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md#1030) improves the BPMN space tool significantly.
 * December releases of our toolkits integrate a [reworked popup menu](./2022-reworked-popup-menu.html), the foundation for [create/append anything](https://github.com/bpmn-io/bpmn-js-connectors-extension).
 
 In the larger eco-system, we made significant investments in two areas:
@@ -75,7 +75,7 @@ Newly implemented features, such as the reworked popup menu and drill down into 
 
 ## The Year as a Collaborative Effort
 
-The community contributed several contributions such as improved support for [international keyboard layouts](https://github.com/bpmn-io/diagram-js/pull/681), support for [strict content security policies](https://github.com/bpmn-io/bpmn-js/issues/1625), let alone fixes for various bugs.
+The community contributed several contributions such as improved support for [international keyboard layouts](https://github.com/bpmn-io/diagram-js/pull/681), [full internationalization in dmn-js](https://github.com/bpmn-io/dmn-js/pull/710), and support for [strict content security policies](https://github.com/bpmn-io/bpmn-js/issues/1625). Let us not forget numerous smalelr fixes for various bugs.
 
 With a stable group of seven developers split across two teams, we are set up to improve our toolkits and support the community in the upcoming year. Head to [our about page](https://bpmn.io/about/) to learn more about us.
 
