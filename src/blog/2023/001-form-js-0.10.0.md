@@ -2,12 +2,12 @@
 
 title: Conditional Rendering, New Components & Expression Properties in form-js
 description: "Introducing form-js@0.10.0: This release introduces conditional rendering, new form components & FEEL expression properties."
-preview_image: assets/attachments/blog/2022/003-preview.png
+preview_image: assets/attachments/blog/2023/001-preview.png
 layout: blogpost.hbs
-slug: 2022-form-js-0-10-0-new-components-and-conditional-rendering
+slug: 2023-form-js-0-10-0-new-components-and-conditional-rendering
 author:
 - Roman Kostka <https://github.com/RomanKostka>
-published: 2022-12-23 18:00
+published: 2023-01-04 18:00
 
 releases:
   - 'form-js@0.10.0'
@@ -37,7 +37,7 @@ The new image view components lets you display images based on a link, data URI 
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-image-view.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-image-view.gif">
   </a>
 
   <p class="caption">
@@ -51,7 +51,7 @@ The text view component now supports FEEL expressions to display additional cont
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-text-view.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-text-view.gif">
   </a>
 
   <p class="caption">
@@ -65,7 +65,7 @@ The date and time component allows your users to display and select a date, time
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-date-time.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-date-time.gif">
   </a>
 
   <p class="caption">
@@ -79,7 +79,7 @@ With the new prefix and suffix adornments you are able to enrich your components
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-adornments.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-adornments.gif">
   </a>
 
   <p class="caption">
@@ -93,7 +93,7 @@ The number component now supports decimals. You are able to define the maximum a
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-decimals.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-decimals.gif">
   </a>
 
   <p class="caption">
@@ -108,7 +108,7 @@ This allows you to build forms which are truly flexible and adaptive.
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-conditional-rendering.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-conditional-rendering.gif">
   </a>
 
   <p class="caption">
@@ -122,7 +122,7 @@ With the new validate and preview mode you are provided with a live preview of y
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2022/011-playground.gif">
+    <img src="{{ assets }}/attachments/blog/2023/001-playground.gif">
   </a>
 
   <p class="caption">
