@@ -52,7 +52,7 @@ Other focus areas across our eco-system were code-base modernization (our target
 
 In the larger eco-system, we made significant investments in two areas:
 
-* Acknowledging FEEL as the script language of choice in current and upcoming OMG standards, we put significant work into FEEL editor tooling. One important building block is [`feel-editor`](https://github.com/bpmn-io/feel-editor), an embeddable editor for DMN FEEL expressions built on top of [CodeMirror](https://codemirror.net/). It includes syntax highlighting, validation, and auto-completion.
+* Acknowledging FEEL as the expression language of choice in current and upcoming OMG standards, we put significant work into FEEL editor tooling. One important building block is [`feel-editor`](https://github.com/bpmn-io/feel-editor), an embeddable editor for DMN FEEL expressions built on top of [CodeMirror](https://codemirror.net/). It includes syntax highlighting, validation, and auto-completion.
 * With [create/append anything](https://github.com/bpmn-io/bpmn-js-connectors-extension) we built an extension to [show the future](https://bpmn-io.github.io/bpmn-js-connectors-extension/?aa=1) of BPMN modeling. Save valuable clicks by appending or creating any applicable element on the canvas. Deeply integrated with [element templates](https://github.com/bpmn-io/element-templates) this becomes a powerful tool to model in reusable, domain-specific building blocks.
 
 We cut more than 120 releases (more than 50 being actual feature releases) in [over 37 libraries](https://github.com/bpmn-io). To communicate the new and noteworthy in our eco-system, we published [eleven blog posts](https://bpmn.io/blog/) and sent out [numerous tweets](https://twitter.com/bpmn_io).
