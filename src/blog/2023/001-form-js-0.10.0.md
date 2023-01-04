@@ -22,18 +22,18 @@ releases:
 <!-- continue -->
 
 
-The release introduces new form components such as ‘image view’, ‘multiline text’, and ‘date time’, in order to support all basic data types and form needs. 
-It also adds the ability to add a prefix and/or suffix adornment to selected components.
-Form-js now also supports decimal numbers.
+The release introduces new form components such as an [image view](#image-view), multiline text, and [date time](#date-and-time), in order to support all basic data types and form needs. 
+It also adds the ability to add a [prefix and/or suffix adornment](#prefix-and-suffix-adornments) to selected components.
+Form-js now also supports [decimal numbers](#decimal-numbers).
 
-Another highlight is that you are now able to hide components based on conditions and get a live preview of your form with the ability to validate it.
+Another highlight is that you are now able to [hide components based on conditions](#hiding-components-based-on-feel-expressions). If you use the [Camunda form playground](https://github.com/camunda/form-playground), you get a [live preview](#validate-and-preview-mode) of your form with the ability to validate it.
 
 The whole release is dedicated to helping you to build more flexible forms with awesome usability.
 Try out the new features on https://demo.bpmn.io/form/s/start.
 
 ## Image View
 
-The new image view components lets you display images based on a link, data URI or variables.
+The new image view component lets you display images based on a link, data URI or variables.
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
@@ -42,20 +42,6 @@ The new image view components lets you display images based on a link, data URI 
 
   <p class="caption">
     Display an image from any source using the image view component.
-  </p>
-</div>
-
-## Text View
-
-The text view component now supports FEEL expressions to display additional context via form variables and other form fields. Format your text using markdown or basic HTML.
-
-<div class="figure full-size">
-  <a href="https://demo.bpmn.io/form">
-    <img src="{{ assets }}/attachments/blog/2023/001-text-view.gif">
-  </a>
-
-  <p class="caption">
-    You can reference the value of other form components to display in the text view component.
   </p>
 </div>
 
@@ -89,7 +75,7 @@ With the new prefix and suffix adornments you are able to enrich your components
 
 ## Decimal Numbers
 
-The number component now supports decimals. You are able to define the maximum allowed decimal digit and also the increment.
+The number component now supports decimals. You are able to define the maximum precision and valid increments of your number values.
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
@@ -103,8 +89,7 @@ The number component now supports decimals. You are able to define the maximum a
 
 ## Hiding Components Based on FEEL Expressions
 
-With this feature you are able to hide components based on variables and conditions.
-This allows you to build forms which are truly flexible and adaptive.
+You are now able to hide form components based on variables and conditions. This means you can create forms that are truly dynamic and adapt to your specific needs. Plus, we've made sure to use FEEL—the expression language [standardized by the OMG](http://www.omg.org/spec/DMN/)—so your form's expressions are easy to read and write, and fully interoperable. We've also invested in the [feel-editor](https://github.com/bpmn-io/feel-editor), a tool that helps you create and edit FEEL expressions with syntax highlighting, validation, and auto-completion, built on top of [CodeMirror](https://codemirror.net/). Get ready to create forms that are truly flexible and adaptable!
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/form">
@@ -113,6 +98,20 @@ This allows you to build forms which are truly flexible and adaptive.
 
   <p class="caption">
     FEEL & Conditional Rendering makes it easy to hide components based on easy-to-write, yet powerful rules.
+  </p>
+</div>
+
+## FEEL Expressions for Text Views
+
+The text view component now supports FEEL expressions to display additional context via form variables and other form fields. Format your text using markdown or basic HTML.
+
+<div class="figure full-size">
+  <a href="https://demo.bpmn.io/form">
+    <img src="{{ assets }}/attachments/blog/2023/001-text-view.gif">
+  </a>
+
+  <p class="caption">
+    You can reference the value of other form components to display in the text view component.
   </p>
 </div>
 
@@ -130,7 +129,7 @@ With the new validate and preview mode you are provided with a live preview of y
   </p>
 </div>
 
-Try out the new features [on our demo](https://demo.bpmn.io/form) or using the [form-js playground](https://github.com/bpmn-io/form-js/tree/master/packages/form-js-playground).
+Try out the new features [on our demo](https://demo.bpmn.io/form) or using the [Camunda form playground](https://github.com/camunda/form-playground).
 
 ## Wrapping Up
 
