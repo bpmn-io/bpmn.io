@@ -75,7 +75,7 @@ Newly implemented features, such as the reworked popup menu and drill down into 
 
 ## The Year as a Collaborative Effort
 
-The community contributed several contributions such as improved support for [international keyboard layouts](https://github.com/bpmn-io/diagram-js/pull/681), [full internationalization in dmn-js](https://github.com/bpmn-io/dmn-js/pull/710), and support for [strict content security policies](https://github.com/bpmn-io/bpmn-js/issues/1625). Let us not forget numerous smalelr fixes for various bugs.
+The community contributed several contributions such as improved support for [international keyboard layouts](https://github.com/bpmn-io/diagram-js/pull/681), [full internationalization in dmn-js](https://github.com/bpmn-io/dmn-js/pull/710), and support for [strict content security policies](https://github.com/bpmn-io/bpmn-js/issues/1625). Let us not forget numerous smaller fixes for various bugs.
 
 With a stable group of seven developers split across two teams, we are set up to improve our toolkits and support the community in the upcoming year. Head to [our about page](https://bpmn.io/about/) to learn more about us.
 
