@@ -1,7 +1,7 @@
 ---
 
-title: Improved BPMN Rendering and Create/Append Anything Tools land in bpmn-js
-description: "Introducing bpmn-js@11.3: The release reworks BPMN element rendering and adds create/append anything tools to the BPMN editor."
+title: Create/Append Anything Tools and Reworked BPMN Rendering Ship with bpmn-js
+description: "Introducing bpmn-js@11.3: The release adds create/append anything tools to the BPMN editor and reworks BPMN element rendering."
 layout: blogpost.hbs
 slug: 2023-bpmn-js-11-3-0-improved-rendering-create-append-anything
 preview_image: http://bpmn.io/assets/attachments/blog/2023/002-preview.png
