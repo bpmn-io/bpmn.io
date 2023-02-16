@@ -1,7 +1,7 @@
 title: bpmn.io
 bpmnjs:
-  version: v11.4.0
-  published: 2023-02-16 09:38
+  version: v11.4.1
+  published: 2023-02-16 11:03
   changelog: https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md
 dmnjs:
   version: v14.1.0
