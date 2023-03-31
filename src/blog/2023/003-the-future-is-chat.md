@@ -16,19 +16,19 @@ releases: []
 ---
 
 <p class="introduction">
-  We always strive to innovate and find new ways to make process management more accessible and user-friendly. That is why we are excited to share one of the most significant updates in the [bpmn.io eco-system](https://bpmn.io/) to date: We are replacing our graphical toolkits with modern chat-based solutions. By being completely conversational the new tools will revolutionize diagram modeling and embedding as we know it.
+  We always strive to innovate and find new ways to make process management more accessible and user-friendly. That is why we are excited to share one of the most significant updates in the [bpmn.io eco-system](https://bpmn.io/) to date: We are replacing our graphical toolkits with modern chat-based solutions. By being completely conversational, the new tools will revolutionize diagram modeling and embedding as we know it.
 </p>
 
 
 <!-- continue -->
 
-Imagine a future where you don't have to know BPMN or some BPMN tool to be successful at process orchestration. Imagine a future where you don't need to know exclusive gateways, interrupting boundary events or conditional flows to define the crucial, not-so-happy path. Imagine a future where you create your critical processes as casually as texting or voicing your friends via WhatsApp. That future is here, and it is conversational, AI-powered chat, coming to you at [bpmn.io](https://bpmn.io/).
+Imagine a future where you don't have to know BPMN or some BPMN tool to be successful at process orchestration. Imagine a future where you don't need to know exclusive gateways, interrupting boundary events or conditional flows to define the crucial, not-so-happy path. Imagine a future where you create your critical processes as casually as texting or voicing your friends via WhatsApp. That future is here, and it is conversational, AI-powered chat brought to you by [bpmn.io](https://bpmn.io/).
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/003-initial-process-modeling.gif" alt="Create your process, conversational">
 
   <p class="caption">
-    Design your processes is going to get simple, and conversational.
+    Designing your processes is going to be simple, and conversational.
   </p>
 </div>
 
@@ -81,7 +81,7 @@ Our [eco-system of graphical tools](https://github.com/bpmn-io) is enormous, cou
 
 Today it is not feasible to execute large language models (LLM) such as [GPT](https://openai.com/blog/chatgpt) on regular computers or mobile devices, let alone client-side inside the browser. Conversational AIs rely on these language models. So the burning question is: Will future bpmn.io still be embeddable? The answer is **yes**.
 
-We worked hard to provide optimized, pre-trained versions of our LLM plus conversational modeling helper. It is suitable for use in many different environments, including browsers. Building on top of [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), [Rust](https://www.rust-lang.org/) and WASM, you only have to lazy load 90MB of binary blobs to get our new toolkits running on your web page. For comparison, that is barely more than what you'll load as you browse your favorite news site.
+We worked hard to provide optimized, pre-trained versions of our LLM plus conversational modeling helper. It is suitable for use in many different environments, including browsers. Building on top of [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), [Rust](https://www.rust-lang.org/), and WASM, you only have to lazy load 90MB of binary blobs to get our new toolkits running on your web page. For comparison, that is barely more than what you'll load as you browse your favorite news site.
 
 
 ## Wrapping up
