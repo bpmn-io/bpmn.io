@@ -2,7 +2,7 @@
 
 title: The Future is Chat
 description: "We are phasing out our graphical toolkits for BPMN, DMN, and Forms in favor of a chat-based, conversational AI solution. This post describes how we get there and the exciting times that lie ahead for our users."
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 slug: 2023-the-future-is-chat
 preview_image: http://bpmn.io/assets/attachments/blog/2023/003-preview.png
 url: https://bpmn.io/blog/posts/2023-the-future-is-chat.html
