@@ -8,9 +8,6 @@
   }
 
   blockquote {
-    margin-top: 20px;
-    border-left-color: #FFB300;
-    background: #FFF8E1;
     font-size: inherit;
   }
 </style>
