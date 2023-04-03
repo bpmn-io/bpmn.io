@@ -12,6 +12,7 @@ published: 2023-02-10 12:00
 
 releases:
   - 'bpmn-js@11.3.0'
+  - 'bpmn-js@12'
 
 ---
 
@@ -58,6 +59,8 @@ Whether or not you notice these changes, these will contribute to a more pleasan
 
 
 ## Create/Append Anything
+
+> **Heads up!** Following further user feedback [`bpmn-js@12`](https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md#1200) extracts these tools into a [separate library](https://github.com/bpmn-io/bpmn-js-create-append-anything).
 
 Following our reworked [replace menu](./2022-reworked-popup-menu.html) and to no surprise for users of our [demo](https://demo.bpmn.io/) this release adds create and append anything tools to the core editor. Through palette and context pad, both tools give you access to any BPMN element, no matter where you are on the diagram:
 
