@@ -198,7 +198,7 @@ modeler.on('element.changed', (event) => {
 });
 ```
 
-Use [`Viewer#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L569) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Viewer#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseViewer.js#L579) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
+Use [`Modeler#on`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseModeler.js#L569) to register for events or the [`EventBus`](https://github.com/bpmn-io/diagram-js/blob/master/lib/core/EventBus.js) inside extension modules. Stop listening for events using the [`Modeler#off`](https://github.com/bpmn-io/bpmn-js/blob/master/lib/BaseModeler.js#L579) method. Check out the [interaction example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/interaction) to see listening for events in action.
 
 
 ### Extend the Modeler
