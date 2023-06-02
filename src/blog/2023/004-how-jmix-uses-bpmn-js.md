@@ -7,7 +7,7 @@ slug: 2023-how-jmix-uses-bpmn-js
 preview_image: http://bpmn.io/assets/attachments/blog/2023/004-image9.png
 url: https://bpmn.io/blog/posts/2023-how-jmix-uses-bpmn-js.html
 author:
-- Maxim Gorbunkov <https://github.com/gorbunkov>
+- Viktor Fadeev <https://www.linkedin.com/in/viktor-fadeev-platform>
 published: 2023-06-03 11:24
 
 releases: [ "bpmn-js" ]
@@ -22,7 +22,7 @@ This post looks into how we introduced workflow support into the platform, embed
 <!-- continue -->
 
 <p class="thanks">
-  _A big thanks to [Maxim Gorbunkov](https://github.com/gorbunkov) from [Haulmont](https://haulmont.tech/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article) for writing this guest blog post._
+  _A big thanks to [Viktor Fadeev](https://www.linkedin.com/in/viktor-fadeev-platform) from [Haulmont](https://haulmont.tech/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article) for writing this guest blog post._
 </p>
 
 ## First steps with BPMN
@@ -183,4 +183,4 @@ Thanks to the [bpmn.io project](http://bpmn.io/), developers can address diverse
 
 ## About the Author
 
-[Maxim Gorbunkov](https://github.com/gorbunkov) is a Jmix developer and works at [Haulmont](https://haulmont.tech/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article), where we’re focused on developing tools and platforms that enhance developers’ productivity by automating coding routines and bringing ready-to-use application components into a single development environment — IntelliJ IDEA. Established in 2008 as a custom development software house, we understand what productivity means for technical leaders. When time and resources are limited, selecting the right tools for the job and capitalising on framework strengths rather than fighting against them is essential. This led to the creation of a high-productivity platform for Java enterprise applications. In 2016 our team introduced the CUBA Platform as open-source, and in 2020, we released the CUBA Platform successor — [Jmix](http://jmix.io/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article).
+[Viktor Fadeev](https://www.linkedin.com/in/viktor-fadeev-platform) is a Jmix product marketing manager and works at [Haulmont](https://haulmont.tech/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article), where we’re focused on developing tools and platforms that enhance developers’ productivity by automating coding routines and bringing ready-to-use application components into a single development environment — IntelliJ IDEA. Established in 2008 as a custom development software house, we understand what productivity means for technical leaders. When time and resources are limited, selecting the right tools for the job and capitalising on framework strengths rather than fighting against them is essential. This led to the creation of a high-productivity platform for Java enterprise applications. In 2016 our team introduced the CUBA Platform as open-source, and in 2020, we released the CUBA Platform successor — [Jmix](http://jmix.io/?utm_source=bpmn&utm_medium=referral&utm_campaign=bpnmio-article).
