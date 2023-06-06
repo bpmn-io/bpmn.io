@@ -1,10 +1,10 @@
 ---
 
 title: How Jmix integrates bpmn-js to boost process centric application development
-description: "This guest blog explains how Jmix introduced workflow support into the platform, embedded bpmn-js, and how Jmix users benefit from the integration."
+description: "This post explains how Jmix introduced workflow support into the platform, embedded bpmn-js, and how their users benefit from the integration."
 layout: blogpost.hbs
 slug: 2023-how-jmix-uses-bpmn-js
-preview_image: http://bpmn.io/assets/attachments/blog/2023/004-image9.png
+preview_image: http://bpmn.io/assets/attachments/blog/2023/004-preview.png
 url: https://bpmn.io/blog/posts/2023-how-jmix-uses-bpmn-js.html
 author:
 - Viktor Fadeev <https://www.linkedin.com/in/viktor-fadeev-platform>
