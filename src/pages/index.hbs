@@ -5,151 +5,88 @@ layout: base.hbs
 ---
 
 <style>
-.cc-banner-outer {
-  background-color: black;
-  padding: 30px;
+.cc-banner {
+  background-color: #404040;
+  color: white;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
-.cc-banner-inner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  max-width: 1000px;
-  border: solid 2px #D0B081;
-}
-
-.cc-banner-section {
-  display: flex;
-  flex-direction: column;
+.cc-banner-left {
   flex-basis: 0;
   flex-grow: 1;
-  justify-content: space-between;
-  margin: 30px;
-}
-
-.cc-banner-section-2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
-.cc-banner-logo {
-  width: 65%;
-  margin-bottom: 30px;
-}
-
-.cc-banner-heading-1 {
+.cc-banner-left h3 {
   margin: 0;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.cc-banner-heading-2 {
-  margin: 0;
-  margin-bottom: 30px;
-  color: white;
-  font-size: 48px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.cc-banner-paragraph {
-  margin-bottom: 30px;
-  color: #007E89;
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.cc-banner-anchor,
-.cc-banner-anchor:focus,
-.cc-banner-anchor:visited {
-  padding: 20px 20px;
-  border-radius: 30px;
-  color: white;
-  background-color: #FC5D0D;
   font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
+  font-weight: bold;
 }
 
-.cc-banner-anchor:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-}
-
-.cc-banner-corner {
-  position: absolute;
+.cc-banner-left a {
   display: block;
-  width: 120px;
+  background-color: white;
+  color: #404040;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
-.cc-banner-corner-top-left {
-  top: 10px;
-  left: 10px;
-}
-
-.cc-banner-corner-top-right {
-  top: 10px;
-  right: 10px;
-  transform: rotate(90deg);
-}
-
-.cc-banner-corner-bottom-right {
-  bottom: 10px;
-  right: 10px;
-  transform: rotate(180deg);
-}
-
-.cc-banner-corner-bottom-left {
-  bottom: 10px;
-  left: 10px;
-  transform: rotate(270deg);
-}
-
-@media screen and (max-width: 768px) {
-  .cc-banner-inner {
-    flex-direction: column;
-  }
-
-  .cc-banner-section {
-    align-items: center;
-    text-align: center;
-  }
+.cc-banner-right button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  fill: white;
 }
 </style>
 
-<!-- CamundaCon banner -->
+<script>
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
 
-<div class="cc-banner-outer">
-  <div class="cc-banner-inner">
-    <div class="cc-banner-section cc-banner-section-1">
-      <img class="cc-banner-logo" src="{{ assets }}/img/camundacon/CamundaCon2023-Logo-Gold-1.svg" />
-      <h1 class="cc-banner-heading-1">The Process Orchestration Conference of the Year</h1>
-    </div>
-    <div class="cc-banner-section cc-banner-section-2">
-      <h1 class="cc-banner-heading-2">
-        Learn. Meet. Grow.
-      </h1>
-      <p class="cc-banner-paragraph">
-        Join us September 27-28
-      </p>
-      <a class="cc-banner-anchor" href="https://www.camundacon.com/tickets/?utm_medium=referral&amp;utm_source=camunda.com&amp;utm_content=homepage" target="_blank">
-        Register Free Now
-      </a>
-    </div>
-    <img class="cc-banner-corner cc-banner-corner-top-left" src="{{ assets }}/img/camundacon/border-left-top-ccon2023.svg" />
-    <img class="cc-banner-corner cc-banner-corner-top-right" src="{{ assets }}/img/camundacon/border-left-top-ccon2023.svg" />
-    <img class="cc-banner-corner cc-banner-corner-bottom-right" src="{{ assets }}/img/camundacon/border-left-top-ccon2023.svg" />
-    <img class="cc-banner-corner cc-banner-corner-bottom-left" src="{{ assets }}/img/camundacon/border-left-top-ccon2023.svg" />
-  </div>
-</div>
+    console.log('get cookie', matches ? decodeURIComponent(matches[1]) : undefined);
+
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+
+  function setCookie() {
+    console.log('set cookie')
+    document.cookie = "hideCCBanner=true; expires=Fri, 29 Sep 2023 00:00:00 GMT";
+  }
+
+  function hideBanner() {
+    console.log('hide banner')
+    document.querySelector('.cc-banner').style.display = 'none';
+  }
+
+  function dismissBanner() {
+    console.log('dismiss banner')
+    hideBanner();
+
+    setCookie();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (getCookie('hideCCBanner')) {
+      hideBanner();
+    }
+  });
+</script>
 
 <!-- subhead -->
 
