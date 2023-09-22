@@ -1,0 +1,115 @@
+
+<style>
+.cc-banner {
+  background-color: #404040;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cc-banner-left {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cc-banner .heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cc-banner .register-link {
+  display: block;
+  background-color: white;
+  color: #10ad73;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+.cc-banner .register-link:hover {
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+
+.cc-banner .close {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  .cc-banner-left {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .cc-banner .register-link {
+    margin: 1em 0;
+  }
+
+  .cc-banner .heading {
+    margin-top: 1em;
+  }
+}
+</style>
+
+<script>
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+
+  function setCookie() {
+    document.cookie = "hideCCBanner=true;path=/;expires=Fri, 29 Sep 2023 00:00:00 GMT";
+  }
+
+  function hideBanner() {
+    document.querySelector('.cc-banner').style.display = 'none';
+  }
+
+  function dismissBanner() {
+    hideBanner();
+
+    setCookie();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (getCookie('hideCCBanner')) {
+      hideBanner();
+    }
+  });
+</script>
+
+<!-- CamundaCon banner -->
+
+<div class="cc-banner">
+  <div class="cc-banner-left">
+    <h3 class="heading">CamundaCon 2023 ― The Process Orchestration Conference of the Year on Sep 27-28</h3>
+    <a class="register-link" rel="noopener noreferrer" href="https://www.camundacon.com/tickets/?utm_medium=referral&amp;utm_source=bpmn.io" target="_blank">
+      Save your Seat
+    </a>
+  </div>
+  <div class="cc-banner-right">
+    <button class="close" onclick="dismissBanner()">
+      <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+    </button>
+  </div>
+</div>
