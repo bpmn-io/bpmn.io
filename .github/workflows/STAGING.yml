@@ -2,7 +2,7 @@ name: STAGING
 on:
   push:
     branches:
-    - "master"
+    - "main"
 jobs:
   Build_and_deploy:
     runs-on: ubuntu-latest
