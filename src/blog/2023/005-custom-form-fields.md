@@ -1,13 +1,13 @@
 ---
 
-title: Create custom form components
+title: Create Custom Form Components
 description: "Introducing newest form-js extension capabilities to create custom form components."
 preview_image: http://bpmn.io/assets/attachments/blog/2023/005-range-validate.png
 layout: blogpost.hbs
 slug: 2023-custom-form-components
 author:
 - Niklas Kiefer <https://github.com/pinussilvestrus>
-published: 2023-11-01 18:00
+published: 2023-11-07 10:00
 
 releases:
   - 'form-js@1.4.0'
