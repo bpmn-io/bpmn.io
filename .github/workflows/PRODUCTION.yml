@@ -24,11 +24,9 @@ jobs:
         GTM_KEY: ${{ secrets.GTM_KEY }}
       run: npm run all
     - name: Deploy
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --dir=./dist --prod
       env:
-        HOST: ${{ secrets.BPMN_IO_HOST }}
-        USER: ${{ secrets.BPMN_IO_USER }}
-        SSHPASS: ${{ secrets.BPMN_IO_PASSWORD }}
-        SITE_PATH: ${{ secrets.BPMN_IO_SITE_PATH }}
-      run: |
-        sshpass -e ssh -oStrictHostKeyChecking=no "$USER@$HOST" "rm -rf $SITE_PATH/*"
-        sshpass -e scp -r dist/* "$USER@$HOST:$SITE_PATH"
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
