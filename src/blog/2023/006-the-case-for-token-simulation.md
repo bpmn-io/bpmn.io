@@ -2,14 +2,14 @@
 
 title: The Case for BPMN Token Simulation
 description: In this blog we make the case for BPMN token simulation and how it contributes to the overall bpmn.io project vision.
-preview_image: https://bpmn.io/assets/attachments/blog/2022/006-bpmn-js-token-simulation.png
+preview_image: https://bpmn.io/assets/attachments/blog/2023/006-bpmn-js-token-simulation.png
 url: https://bpmn.io/blog/posts/2023-the-case-for-bpmn-token-simulation.html
 layout: blogpost.hbs
 slug: 2023-the-case-for-bpmn-token-simulation
 author:
   - Nico Rehwaldt<https://github.com/nikku>
 published_time: "2023-12-01T13:17:09+01:00"
-modified_time: "2021-12-01T13:17:09+01:00"
+modified_time: "2023-12-01T13:17:09+01:00"
 published: 2023-12-01 13:17
 releases:
   - 'bpmn-js-token-simulation@0.32.0'
