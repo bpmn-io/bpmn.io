@@ -1,7 +1,7 @@
 ---
 
 title: The Case for BPMN Token Simulation
-description: In this blog we make the case for BPMN token simulation and how it contributes to the overall bpmn.io project vision.
+description: How token simulation contributes to the bpmn.io project vision.
 preview_image: https://bpmn.io/assets/attachments/blog/2023/006-bpmn-js-token-simulation.png
 url: https://bpmn.io/blog/posts/2023-the-case-for-bpmn-token-simulation.html
 layout: blogpost.hbs
