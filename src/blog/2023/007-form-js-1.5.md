@@ -17,16 +17,16 @@ releases:
 ---
 
 <p class="introduction">
-  Hey folks, it's been a while since our last formal form-js updates blog post, so we'd like to take this opportunity to bring everybody up to speed with all the powerful developments and features we've brought to our form builder.
+  Hey folks, it's been a while since our last formal form-js update blog post, so we'd like to take this opportunity to bring everybody up to speed with all the powerful developments and features we've brought to our form builder.
 </p>
 
 <!-- continue -->
 
-Our focus these past few quarters have been to enable more complex use-cases for form-js via more flexible customizations, and broader adoption of FEEL expressions, new components and entirely new capabilities like layouting. As always, you may try out the new features [on our demo](https://demo.bpmn.io/form) or using the [Camunda form playground](https://github.com/camunda/form-playground).
+Our focus these past few quarters has been to enable more complex use cases for form-js via more flexible customizations, broader adoption of FEEL expressions, new components, and entirely new capabilities like layouting. Try out the new features [on our demo](https://demo.bpmn.io/form) or using the [Camunda form playground](https://github.com/camunda/form-playground).
 
 ## Form layouting
 
-Resizable form fields allow you to adjust the horizontal size of your components, as well as bringing multiple components into the same row.
+Resizable form fields allow you to adjust the horizontal size of your components, and bring multiple components into the same row.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-resize-field.gif">
@@ -36,7 +36,7 @@ Resizable form fields allow you to adjust the horizontal size of your components
   </p>
 </div>
 
-With the addition of groups, you can now organize form components both visually and logically. In combination with component resizing, this gives you a lot of control over where your fields end up and allows you to create visually appealing form layouts
+With groups, you can now visually and logically organize form components. Combined with component resizing, this gives you much control over where your fields end up and allows you to create visually appealing form layouts.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-group.png">
@@ -46,7 +46,7 @@ With the addition of groups, you can now organize form components both visually 
   </p>
 </div>
 
-The spacer component enables you to create white space between form components, making it possible to place them more freely. They may also be used as placeholders for conditionally hidden fields to maintain your form structure.
+The spacer component enables you to create white space between form components, making it possible to place them more freely. They may also be placeholders for conditionally hidden fields to maintain your form structure.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-spacer.png">
@@ -62,7 +62,7 @@ And just for good measure, we also added a separator component that makes it pos
   <img src="{{ assets }}/attachments/blog/2023/007-separator.png">
 
   <p class="caption">
-    Use separators to visually distinguish form components.
+    Use separators to distinguish form components visually.
   </p>
 </div>
 
@@ -78,7 +78,7 @@ We significantly enhanced the data binding capabilities of form-js. You can now 
   </p>
 </div>
 
-You can also specify a data path on the group component, which will route all of the child components down a certain binding path.
+You can also specify a data path on the group component, which will route all of the child components down a specific binding path.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-group-path.png">
@@ -90,9 +90,9 @@ You can also specify a data path on the group component, which will route all of
 
 ## Controllable and reusable forms via FEEL expression properties
 
-Most real world use cases aren't as simple as just data entry. We see the need for more fine-grained control over the form's behaviours and interaction, as well as being able to re-use the same form based on slight differences in input data.
+Most real-world use cases are more complex than just data entry. We see the need for more fine-grained control over the form's behaviors and interaction, as well as being able to reuse the same form based on slight differences in input data.
 
-Our direction with this is leveraging FEEL, the expression language [standardized by the OMG](http://www.omg.org/spec/DMN/)  and [feelers](https://github.com/bpmn-io/feelers), our own templating language built on top of it. Read-only settings, labels, descriptions, field options, validations, and most of our new component properties will now be configurable via expressions for a dynamic and powerful form building experience.
+Our direction with this is leveraging FEEL, the expression language [standardized by the OMG](http://www.omg.org/spec/DMN/), and [feelers](https://github.com/bpmn-io/feelers), our templating language built on top of it. Read-only settings, labels, descriptions, field options, validations, and most of our new component properties will now be configurable via expressions for a dynamic and powerful form-building experience.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-expressions.gif">
@@ -104,19 +104,19 @@ Our direction with this is leveraging FEEL, the expression language [standardize
 
 ## More components, more use cases
 
-You should have already noticed that we made some changes to our component palette, in exchange for a scalable and searchable alternative. This highlights the direction where we are taking the library. We want to offer a toolkit which is sufficient for the majority of use-cases out of the box.
+You should have already noticed that we made changes to our component palette to achieve a scalable and searchable alternative. This highlights the direction where we are taking the library. We want to offer a toolkit that is sufficient for the majority of use cases out of the box.
 
-There are certain limitations to this however, we understand that we cannot provide everybody with the flexibility they need, and hence in a true bpmn-io fashion we've opened up the library to component extensions, which are outlined in the following [blog post](https://bpmn.io/blog/posts/2023-custom-form-components).
+There are certain limitations to this. However, we understand that we cannot provide everybody with the flexibility they need, and hence, in a true bpmn.io fashion, we've opened up the library to component extensions, which we outlined in the following [blog post](https://bpmn.io/blog/posts/2023-custom-form-components).
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-flexible-component-library.png">
 
   <p class="caption">
-    Find the component you want easily.
+    Find the component you want quickly.
   </p>
 </div>
 
-Aside from the visual polishing, selects have received a new configuration which allows them to be searchable. It works similarly to our taglist, but handles single-selection cases.
+Aside from the visual polishing, selects have received a new configuration, which allows them to be searchable. It works similarly to our taglist but handles single-selection cases.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-searchable-select.png">
@@ -126,7 +126,7 @@ Aside from the visual polishing, selects have received a new configuration which
   </p>
 </div>
 
-A fresh new arrival to our component suite with 1.5 is the iframe component, allowing you to embed other webpages inside of your forms, be it portfolios, documents, ect.. We have decided to ship these with restricted access for now, but do plan to allow you to configure security parameters in the future to grant the iframes more permissions.
+A fresh new arrival to our component suite with 1.5 is the iframe component, allowing you to embed other webpages inside your forms, be it portfolios, documents, etc. We have decided to ship these with restricted access for now, but we plan to allow you to configure security parameters in the future to grant the iframes more permissions.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/007-iframe.png">
@@ -138,7 +138,7 @@ A fresh new arrival to our component suite with 1.5 is the iframe component, all
 
 ## Wrapping Up
 
-This is just the tip of the iceberg, if you want to have a full overview of the changes, feel free to browse through our [full changelog](https://github.com/bpmn-io/form-js/blob/master/packages/form-js/CHANGELOG.md#140).
+This blog post is just the tip of the iceberg. If you want a complete overview of the changes, feel free to browse through our [full changelog](https://github.com/bpmn-io/form-js/blob/master/packages/form-js/CHANGELOG.md#140).
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io), or file an issue you found in [the form-js issue tracker](https://github.com/bpmn-io/form-js/issues).
 
