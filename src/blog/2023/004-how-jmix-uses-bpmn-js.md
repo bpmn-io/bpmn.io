@@ -1,6 +1,6 @@
 ---
 
-title: How Jmix integrates bpmn-js to boost process centric application development
+title: How Jmix Integrates bpmn-js to Boost Process Centric Application Development
 description: "This post explains how Jmix introduced workflow support into the platform, embedded bpmn-js, and how their users benefit from the integration."
 layout: blogpost.hbs
 slug: 2023-how-jmix-uses-bpmn-js
