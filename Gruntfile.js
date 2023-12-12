@@ -202,6 +202,15 @@ module.exports = function(grunt) {
               'IBM-Plex-Mono/fonts/complete/**/*'
             ],
             dest: '<%= config.dist %>/assets/fonts/plex'
+          },
+          // copy redirects file
+          {
+            expand: true,
+            cwd: '<%= config.src %>',
+            src: [
+              '_redirects',
+            ],
+            dest: '<%= config.dist %>'
           }
         ]
       }
