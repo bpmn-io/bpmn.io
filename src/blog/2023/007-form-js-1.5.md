@@ -16,7 +16,7 @@ releases:
 ---
 
 <p class="introduction">
-  Hey folks, it's been a while since our last formal form-js update blog post, so we'd like to take this opportunity to bring everybody up to speed with all the powerful developments and features we've brought to our form builder.
+  We are happy to announce the release of [form-js@1.5](https://github.com/bpmn-io/form-js) and want to take that opportunity to bring everybody up to speed with all the powerful developments and features we've brought to our form builder.
 </p>
 
 <!-- continue -->
