@@ -1,17 +1,16 @@
 ---
 
-title: Empowering complex forms with form-js@1.x
-description: "Recapping our recent form-js releases: form layouting, flexible data binding, and FEEL expression properties to simplify complex form development"
+title: Building Complex Forms
+description: "Recapping our recent form-js releases: Form layouting, flexible data binding, and FEEL expression properties to simplify complex form development"
 preview_image: http://bpmn.io/assets/attachments/blog/2023/007-group-path.png
 layout: blogpost.hbs
-slug: 2023-form-js-1.5-recent-developments
+slug: 2023-form-js-1-5-0-building-complex-forms
 author:
 - Niklas Kiefer <https://github.com/pinussilvestrus>
 - Valentin Serra  <https://github.com/skaiir>
 published: 2023-12-11 12:00
 
 releases:
-  - 'form-js@1.0.0'
   - 'form-js@1.5.0'
 
 ---
