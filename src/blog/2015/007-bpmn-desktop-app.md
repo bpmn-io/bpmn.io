@@ -28,6 +28,6 @@ The app allows you to open multiple BPMN diagrams in paralell through multiple t
 The app runs on Windows, Linux and Mac OS X. [Give it a try](https://chrome.google.com/webstore/detail/bpmnio/hhikcjnalmkhinbomccdibaolelcpjli).
 
 
-Got some feedback on it? We would like to hear from you via [our forums](https://forum.bpmn.io) or [Twitter](https://twitter.com/bpmn_io).
+Got some feedback on it? We would like to hear from you via [our forums](https://forum.bpmn.io) or [Mastodon](https://fosstodon.org/@bpmn_io).
 
 __PS:__ The app is open-source and on [GitHub](https://github.com/bpmn-io/bpmn-io-chrome).

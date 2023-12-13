@@ -31,6 +31,6 @@ Snap.svg has been an integral part of both diagram-js and cmmn-js for a long tim
 
 We are looking for your feedback regarding the performance and the API changes.
 
-Make sure to [follow us on Twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere and tell us what you think about this release [on our forums](https://forum.bpmn.io).
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere and tell us what you think about this release [on our forums](https://forum.bpmn.io).
 
 Get the latest cmmn-js release via [npm](https://www.npmjs.com/package/cmmn-js) or [bower](https://github.com/bpmn-io/bower-cmmn-js).

@@ -41,6 +41,6 @@ releases:
 
 All features from this cmmn-js release are also part of the brand new major version of the [Camunda Modeler](https://camunda.org/bpmn/tool/). If you have feedback or questions regarding cmmn-js let us know! Get in touch with us via our [forums](https://forum.bpmn.io) and tell us what you think.
 
-Make sure to follow us on [Twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
 
 Get the latest cmmn-js release via [npm](https://www.npmjs.com/package/cmmn-js) or [bower](https://github.com/bpmn-io/bower-cmmn-js).

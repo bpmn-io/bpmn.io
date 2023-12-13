@@ -63,7 +63,7 @@ The toolkit will offer an extensible plug-in API, too. Via that API you may enha
 An initial version of our toolkit is already in the making. We plan to publish it in the next weeks.
 It will be available as a running demo (i.e. _clickable_) on [bpmn.io](http://bpmn.io), downloadable and embeddable into web applications and [open source on GitHub](https://github.com/bpmn-io).
 
-Give us feedback and make sure to follow us on [Twitter](https://twitter.com/bpmn_io) to stay in touch.
+Give us feedback and make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) to stay in touch.
 
 <br/>
 

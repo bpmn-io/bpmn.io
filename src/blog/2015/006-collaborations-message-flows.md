@@ -70,7 +70,7 @@ Check out the [change log](https://github.com/bpmn-io/bpmn-js/compare/v0.9.2...v
 
 ## Wrapping up
 
-Please give us feedback on the latest modeler updates [our forums](https://forum.bpmn.io) or [Twitter](https://twitter.com/bpmn_io)! We have a number of interesting topics on [our roadmap](http://bpmn.io/roadmap). These topics include enhancing our [offline modeler](https://github.com/bpmn-io/bpmn-io-chrome), boundary events and lane support. Stay tuned for exciting updates in the near future.
+Please give us feedback on the latest modeler updates [our forums](https://forum.bpmn.io) or [Mastodon](https://fosstodon.org/@bpmn_io)! We have a number of interesting topics on [our roadmap](http://bpmn.io/roadmap). These topics include enhancing our [offline modeler](https://github.com/bpmn-io/bpmn-io-chrome), boundary events and lane support. Stay tuned for exciting updates in the near future.
 
 As always, fetch the latest version of bpmn-js via [npm](http://npmjs.org/bpmn-js) or [bower](https://github.com/bpmn-io/bower-bpmn-js).
 

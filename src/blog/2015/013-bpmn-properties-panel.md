@@ -38,6 +38,6 @@ If you would like to checkout the properties panel in action, have a look at the
 
 The panel is built with plugability and extensibility in mind. Depending on your requirements it is a few lines of code to add it to an existing [bpmn.io](http://bpmn.io)-powered BPMN 2.0 modeler. If you are a developer and would like to provide your own custom extensions, look into the [Camunda properties provider](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/master/lib/provider/camunda) for inspiration.
 
-Do you have feedback or questions on the new project? Don't hesitate sure to reach out to us via [Twitter](https://twitter.com/bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
+Do you have feedback or questions on the new project? Don't hesitate sure to reach out to us via [Mastodon](https://fosstodon.org/@bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
 
 We plan to extend the panel with more editing support and usability improvements in the months to come. Stay tuned for updates!
