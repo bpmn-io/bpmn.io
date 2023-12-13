@@ -110,6 +110,6 @@ __Other Improvements__
 
 This release of the properties panel is also part of the brand new release of the [Camunda Modeler](https://camunda.org/bpmn/tool/). If you still miss a feature or can't configure a property let us know! Get in touch with us via our [forums](https://forum.bpmn.io) and tell us what you think.
 
-Make sure to follow us on [Twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
 
 Get the latest release of our properties panel via [npm](https://www.npmjs.com/package/bpmn-js-properties-panel).

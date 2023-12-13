@@ -51,6 +51,6 @@ On top of connections we added a number of other features:
 
 With the next release we are going to look into modeling convenience such as snapping and auto-expand.
 
-If you have feedback or questions regarding cmmn-js let us know! Get in touch with us via our [forums](https://forum.bpmn.io) and tell us what you think. Make sure to follow us on [Twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
+If you have feedback or questions regarding cmmn-js let us know! Get in touch with us via our [forums](https://forum.bpmn.io) and tell us what you think. Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
 
 Get the latest cmmn-js release via [npm](https://www.npmjs.com/package/cmmn-js) or [bower](https://github.com/bpmn-io/bower-cmmn-js).

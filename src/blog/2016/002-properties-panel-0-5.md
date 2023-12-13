@@ -46,6 +46,6 @@ Besides new features and several bug fixes we further improved our code quality 
 
 This release of the properties panel will be part of the next version of our [Camunda Modeler](https://camunda.org/bpmn/tool/) and is already included in the [nightly builds](https://camunda.org/release/camunda-modeler/nightly/). We are interested in your feedback on our latest properties panel improvements! Get in touch with us via our [forums](https://forum.bpmn.io) and tell us what you think.
 
-Make sure to follow us on [Twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening in the bpmn-io sphere.
 
 Get the latest release of our properteis panel via [npm](https://www.npmjs.com/package/bpmn-js-properties-panel).

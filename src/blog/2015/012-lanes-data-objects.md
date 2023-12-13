@@ -136,7 +136,7 @@ Make sure to [follow us on twitter](https://twitter.com/bpmn_io) to stay up to d
 
 We started working on a desktop modeler based on [bpmn-js](https://github.com/bpmn-io/bpmn-js). Look forward for a great offline ready BPMN editor with native operating system integration in the next month(s).
 
-Do you like our latest modeling changes? Don't hesitate sure to reach out to us via [Twitter](https://twitter.com/bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
+Do you like our latest modeling changes? Don't hesitate sure to reach out to us via [Mastodon](https://fosstodon.org/@bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
 
 
 As always: Get the latest release of our BPMN toolkit via [npm](https://www.npmjs.com/package/bpmn-js) and [bower](https://github.com/bpmn-io/bower-bpmn-js).
