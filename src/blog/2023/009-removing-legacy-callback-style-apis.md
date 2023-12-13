@@ -7,7 +7,7 @@ slug: 2023-dropping-legacy-callback-style-apis
 url: https://bpmn.io/blog/posts/2023-dropping-legacy-callback-style-apis.html
 author:
 - Nico Rehwaldt <https://github.com/nikku>
-published: 2023-01-05 12:00
+published: 2023-08-16 12:00
 
 releases:
   - 'bpmn-js@14.0.0'
