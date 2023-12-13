@@ -12,7 +12,7 @@ published: 2023-02-10 12:00
 
 releases:
   - 'bpmn-js@11.3.0'
-  - 'bpmn-js@12'
+  - 'bpmn-js@12.0.0'
 
 ---
 
