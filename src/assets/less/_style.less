@@ -443,8 +443,30 @@ blockquote {
 
 .shariff {
 
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
+
+  .orientation-horizontal {
+    flex-wrap: nowrap !important;
+  }
+
+  .orientation-horizontal li {
+    margin-bottom: 0 !important;
+  }
+
+  li,
+  li a {
+    height: 25px !important;
+    width: 25px !important;
+  }
+
+  li .fab,
+  li .far,
+  li .fas {
+    line-height: 25px !important;
+    width: 25px !important;
+    font-size: 15px !important;
+  }
 
   .theme-white {
 
@@ -454,13 +476,6 @@ blockquote {
     }
 
     .shariff-button {
-      /* hide share text */
-      .share_text {
-        width: 0px;
-        overflow: hidden;
-        display: inline-block;
-      }
-
       border: none !important;
     }
   }
