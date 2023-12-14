@@ -18,12 +18,12 @@ releases:
 ---
 
 <p class="introduction">
-  The latest releases ship of our [BPMN](https://github.com/bpmn-io/bpmn-js) and [DMN](https://github.com/bpmn-io/bpmn-js) toolkits ship with a reworked selection UI. That improved UI makes diagram element selection more ergonomic and less verbose.
+  The latest releases ship of our [BPMN](https://github.com/bpmn-io/bpmn-js) and [DMN](https://github.com/bpmn-io/dmn-js) toolkits ship with a reworked selection UI. The improved UI makes diagram element selection more ergonomic and less verbose.
 </p>
 
 <!-- continue -->
 
-Selection is an integral part of the core modeling UX. It has to work; you come across it immediately, and it leaves a lasting impression. Recent releases of our modeling toolkit simplify selection following the selected element's shape. We think the change results in a less verbose look and feel and clearly distinguishes single-element selections and multi-selection:
+Selection is an integral part of the core modeling UX. It has to work; you come across it immediately, and it leaves a lasting impression. Recent releases of our modeling toolkit simplify selection following the selected element's shape. The change results in a less verbose look and feel and clearly distinguishes single-element selections and multi-selection:
 
 <div class="figure full-size">
   <a href="https://demo.bpmn.io/s/start">
@@ -40,7 +40,7 @@ Try it on [demo.bpmn.io](https://demo.bpmn.io/s/start).
 
 ## Wrapping up
 
-As users of our [demo](https://demo.bpmn.io) may have noticed, the reworked popup menu is only the first step on our journey to incorporate [create/append anything](https://bpmn-io.github.io/bpmn-js-connectors-extension/?aa=1) into our core. Stay tuned for future exciting updates in core modeling.
+The latest update is another important step towards an overhauled core modeling experience. Stay tuned for future exciting updates in the near future.
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement?
 
