@@ -18,7 +18,7 @@ releases:
 ---
 
 <p class="introduction">
-  Our latest [BPMN](https://github.com/bpmn-io/bpmn-js) and [DMN](https://github.com/bpmn-io/dmn-js) toolkits releases ship with a reworked selection UI. The improved UI makes diagram element selection more ergonomic and less verbose.
+  Our latest [BPMN](https://github.com/bpmn-io/bpmn-js) and [DMN](https://github.com/bpmn-io/dmn-js) toolkit releases ship with a reworked selection UI. The improved UI makes diagram element selection more ergonomic and less verbose.
 </p>
 
 <!-- continue -->
