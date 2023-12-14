@@ -37,4 +37,4 @@ try {
 }
 ```
 
-Reach out to us via [our forums](https://forum.bpmn.io/), follow our updates via [@bpmn_io@fosstodon.org](https://fosstodon.org/@bpmn_io), and file any issue you found in the respective toolkit issue trackers.
+Reach out to us via [our forums](https://forum.bpmn.io/), follow our updates via [Mastodon](https://fosstodon.org/@bpmn_io), and file any issue you found in the respective toolkit issue trackers.
