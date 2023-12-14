@@ -40,7 +40,7 @@ Try it on [demo.bpmn.io](https://demo.bpmn.io/s/start).
 
 ## Wrapping up
 
-The latest update is another important step towards an overhauled core modeling experience. Stay tuned for future exciting updates in the near future.
+The latest updates are another important step towards an overhauled core modeling experience. Stay tuned for future exciting updates.
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement?
 
