@@ -60,7 +60,7 @@ We cut more than 120 releases (more than 50 being actual feature releases) in [o
 
 ## The Year in Numbers
 
-Similar to [previous](./2020-year-in-review.html) [years](./2021-year-in-review.html), interest in our projects and toolkits increased substantially.
+Similar to [previous](./2019-year-in-review.html) [years](./2021-year-in-review.html), interest in our projects and toolkits increased substantially.
 More people visited [our project website](https://bpmn.io/) and starred our projects on [GitHub](https://github.com/bpmn-io). Interestingly, we saw a little drop in [forum questions](https://forum.bpmn.io/).
 
 <div class="figure no-border condensed-size" style="margin: 50px 0 40px 0; text-align: center">
