@@ -95,7 +95,7 @@ __Bug Fixes__
 * Retry time-cycles fixed
 * Event definition properties (for signals, messages  and receive tasks) clear properly
 * Escalation and error references fixed
-* [...](https://github.com/bpmn-io/bpmn-js-properties-panel/commits/master)
+* [...](https://github.com/bpmn-io/bpmn-js-properties-panel/commits/main)
 
 
 __Other Improvements__

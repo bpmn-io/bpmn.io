@@ -41,7 +41,7 @@ In addition, we have ported our [CMMN toolkit](https://github.com/bpmn-io/cmmn-j
 
 ## Consuming ES Modules
 
-If you use our [pre-packaged distributions](https://github.com/bpmn-io/bpmn-js-examples/tree/master/pre-packaged), nothing changes for you. Otherwise, consider migrating to our latest toolkit versions a breaking change that requires a number of adjustments to your code base.
+If you use our [pre-packaged distributions](https://github.com/bpmn-io/bpmn-js-examples/tree/main/pre-packaged), nothing changes for you. Otherwise, consider migrating to our latest toolkit versions a breaking change that requires a number of adjustments to your code base.
 
 ### Usage from ES6
 
@@ -74,7 +74,7 @@ Checkout [this commit](https://github.com/bpmn-io/cmmn-js/commit/f1cf3c4a60df59e
 
 ## Bundling ES Modules
 
-Since most browsers do not support ES modules yet you must bundle your application and our libraries with an ES module aware bundler such as Rollup, Webpack or Browserify + babelify. Learn more about it in our reworked [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/bundling).
+Since most browsers do not support ES modules yet you must bundle your application and our libraries with an ES module aware bundler such as Rollup, Webpack or Browserify + babelify. Learn more about it in our reworked [bundling example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/bundling).
 
 If you are using Browserify as your build tool, take a look at [how we integrated babelify](https://github.com/bpmn-io/cmmn-js/commit/dadb110bc80ebfffedb5b7be55a31a875fc2480d) into the cmmn-js build pipeline in order to migrate the library to `diagram-js@1`.
 
@@ -83,4 +83,4 @@ If you are using Browserify as your build tool, take a look at [how we integrate
 
 We celebrate the ES module transition with a number of major releases. Along with these releases we introduced changelogs to all of our projects. Read through the individual toolkit changelogs to understand the important changes that landed into certain library versions. As we use [semantic versioning](https://semver.org/) you'll be able to learn about potential breaking changes, too.
 
-As an example, read about all changes since `bpmn-js@0.31`, the last ES5 version of bpmn-js in the [libraries' changelog](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md).
+As an example, read about all changes since `bpmn-js@0.31`, the last ES5 version of bpmn-js in the [libraries' changelog](https://github.com/bpmn-io/bpmn-js/blob/main/CHANGELOG.md).

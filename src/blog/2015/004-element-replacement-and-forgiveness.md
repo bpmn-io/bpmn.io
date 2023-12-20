@@ -76,7 +76,7 @@ Try out the font if your style of writing is BPMN.
 
 It is now possible to extend bpmn-js with type information about your BPMN 2.0 XML vendor extensions. Once extended, bpmn-js will read and validate your extension while importing process diagrams. Tooling can pick up the information later to display tooltips or attach additional vendor specific data to BPMN diagrams during modeling.
 
-Have a look into our [examples repository](https://github.com/bpmn-io/bpmn-js-examples) for a [detailed example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-meta-model) that showcases this feature in action.
+Have a look into our [examples repository](https://github.com/bpmn-io/bpmn-js-examples) for a [detailed example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/custom-meta-model) that showcases this feature in action.
 
 
 ## Wrapping up

@@ -42,7 +42,7 @@ It may check your BPMN diagrams from the command line or run integrated into our
 Rules to detect certain patterns in BPMN diagrams are at the core of the library.
 Each rule is defined by a piece of code that may detect and report anything from label missing to the fact that a specific error prone modeling pattern got detected.
 
-To give you a better taste of what a rule may be, here is the [list of rules](https://github.com/bpmn-io/bpmnlint/tree/master/rules) built into the library as of today:
+To give you a better taste of what a rule may be, here is the [list of rules](https://github.com/bpmn-io/bpmnlint/tree/main/rules) built into the library as of today:
 
 <style>
   table {
@@ -104,7 +104,7 @@ Executing `npm start` opens a browser window with the playground app that has li
 
 ## Configure Available Rules
 
-A `.bpmnlintrc` file placed in your current working directory defines which rules to apply and whether to treat them as errors or warnings. The playground holds a [`.bpmnlintrc`](https://github.com/bpmn-io/bpmnlint-playground/blob/master/.bpmnlintrc) that looks like this:
+A `.bpmnlintrc` file placed in your current working directory defines which rules to apply and whether to treat them as errors or warnings. The playground holds a [`.bpmnlintrc`](https://github.com/bpmn-io/bpmnlint-playground/blob/main/.bpmnlintrc) that looks like this:
 
 ```json
 {
@@ -122,7 +122,7 @@ The `extends` block tells bpmnlint to inherit the configuration from two pre-def
 
 The `rules` block overrides reporting for a specific rule.
 The example configures the `playground/no-manual-task` as a warning (rather than an error).
-We could pick any rule, e.g. a [built-in one](https://github.com/bpmn-io/bpmnlint/tree/master/rules), and turn it off entirely, too:
+We could pick any rule, e.g. a [built-in one](https://github.com/bpmn-io/bpmnlint/tree/main/rules), and turn it off entirely, too:
 
 ```json
 {
@@ -144,7 +144,7 @@ Sometimes, a user or an organization wants to identify domain specific patterns,
 bpmnlint solves this issue by allowing you to contribute custom rules and rule sets.
 
 For instance, what if we want to have a rule that enforces having an emoji in the label of every flow node?
-Let us jump into the playgrounds [`plugin` folder](https://github.com/bpmn-io/bpmnlint-playground/tree/master/plugin) and create the `emoji-label-required` rule in the `rules/emoji-label-required.js` file:
+Let us jump into the playgrounds [`plugin` folder](https://github.com/bpmn-io/bpmnlint-playground/tree/main/plugin) and create the `emoji-label-required` rule in the `rules/emoji-label-required.js` file:
 
 ```js
 const {

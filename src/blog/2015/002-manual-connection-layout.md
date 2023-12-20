@@ -71,7 +71,7 @@ The other way allows adding individual elements to the selection.
 
 ## More keyboard control
 
-With this release we added a consistent way of handling keyboard events. Developers should have a look at the documentation of this new [keyboard service](https://github.com/bpmn-io/diagram-js/blob/master/lib/features/keyboard/Keyboard.js). For Mac users the system specific shortcuts were added.
+With this release we added a consistent way of handling keyboard events. Developers should have a look at the documentation of this new [keyboard service](https://github.com/bpmn-io/diagram-js/blob/main/lib/features/keyboard/Keyboard.js). For Mac users the system specific shortcuts were added.
 
 For users of the bpmn-js modeler, a number of keyboard shortcuts are available:
 

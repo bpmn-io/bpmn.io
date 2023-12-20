@@ -36,7 +36,7 @@ Adding more and more properties to the panel is great but it also makes it harde
   <img src="{{ assets }}/attachments/blog/2016/002-tabs.gif">
 </div>
 
-For a full list of changes, check out the project on [Github](https://github.com/bpmn-io/bpmn-js-properties-panel/commits/master).
+For a full list of changes, check out the project on [Github](https://github.com/bpmn-io/bpmn-js-properties-panel/commits/main).
 
 ## Improvements under the hood
 

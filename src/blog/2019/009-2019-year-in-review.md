@@ -40,7 +40,7 @@ Equipped with a plan, we reworked substantial parts of the core modeling experie
 * [Released in December](./2019-bpmn-js-6-dmn-js-7-2.html), `bpmn-js@6` adds connect from/to anywhere and horizontal/vertical resize handles
 * [Also released in December](./2019-bpmn-js-6-dmn-js-7-2.html), `dmn-js@7.2` incorporates substantial bits of the reworked core modeling experience
 
-Outside the feature department, we reworked our [existing examples](https://github.com/bpmn-io/bpmn-js-examples) to answer common usage related questions better. Customizing is one of the most frequently asked for use cases for our BPMN editing toolkit. So we went the extra mile and reworked our existing customization examples. Now, a [series of reworked customization examples](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements) showcase the capabilities of our tools.
+Outside the feature department, we reworked our [existing examples](https://github.com/bpmn-io/bpmn-js-examples) to answer common usage related questions better. Customizing is one of the most frequently asked for use cases for our BPMN editing toolkit. So we went the extra mile and reworked our existing customization examples. Now, a [series of reworked customization examples](https://github.com/bpmn-io/bpmn-js-examples/tree/main/custom-elements) showcase the capabilities of our tools.
 
 Significant work happened in one of the many underlying libraries that support our editing ecosystem. As an example, we [published 35 releases](https://www.npmjs.com/package/diagram-js?activeTab=versions) of [diagram-js](https://github.com/bpmn-io/diagram-js/blob/develop/CHANGELOG.md), each improving the way our core modeling UX works.
 

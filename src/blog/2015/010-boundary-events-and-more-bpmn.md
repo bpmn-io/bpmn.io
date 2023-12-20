@@ -72,7 +72,7 @@ Using our BPMN modeler you can now insert elements onto existing flows. This is 
 
 There are a few other things going on in the bpmn.io sphere which are worth noting:
 
-* We added a new example, [how to implement custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-modeling-rules).
+* We added a new example, [how to implement custom modeling rules](https://github.com/bpmn-io/bpmn-js-examples/tree/main/custom-modeling-rules).
 * Tim from Sparta Systems did an impressive job [customizing bpmn-js to his needs](http://bpmn.io/blog/posts/2015-locking-down-bpmn-js.html).
 * Sebastian from the [CamundaBPM team](http://camunda.org/) published a first version of our [web-based table editor for DMN](http://blog.camunda.org/2015/08/first-version-of-dmnio-released.html).
 

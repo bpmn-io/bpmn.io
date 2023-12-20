@@ -57,7 +57,7 @@ The decision requirements diagram (DRD) editor shipped with [dmn-js](https://git
 
 ## Looking Forward To Feedback
 
-Read through the full changelogs ([bpmn-js](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md#600), [dmn-js](https://github.com/bpmn-io/dmn-js/blob/master/packages/dmn-js/CHANGELOG.md#720)) to learn about all issues that were addressed as well as potential breaking changes that may require your action during the upgrade.
+Read through the full changelogs ([bpmn-js](https://github.com/bpmn-io/bpmn-js/blob/main/CHANGELOG.md#600), [dmn-js](https://github.com/bpmn-io/dmn-js/blob/main/packages/dmn-js/CHANGELOG.md#720)) to learn about all issues that were addressed as well as potential breaking changes that may require your action during the upgrade.
 
 Did we miss anything? Did you spot a bug or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io), tweet us [@bpmn_io](https://twitter.com/bpmn_io) or file an issue you found in [the bpmn-js issue tracker](https://github.com/bpmn-io/bpmn-js/issues).
 
