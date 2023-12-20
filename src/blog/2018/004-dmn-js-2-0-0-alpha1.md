@@ -31,7 +31,7 @@ One of the improvements we wanted to tackle is to allow inspection into and navi
 The new version of our toolkit exposes the viewable contents and allows you to build rich navigation interactions around these views:
 
 <div class="figure full-size">
-  <a href="https://cdn.staticaly.com/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html">
+  <a href="https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html">
     <img src="{{ assets }}/attachments/blog/2018/004-cast.gif">
   </a>
   <p class="caption">
@@ -39,7 +39,7 @@ The new version of our toolkit exposes the viewable contents and allows you to b
   </p>
 </div>
 
-Refer to the updated [modeler example](https://cdn.staticaly.com/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html) for details on how to build tabbing on top of [dmn-js](https://github.com/bpmn-io/dmn-js).
+Refer to the updated [modeler example](https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html) for details on how to build tabbing on top of [dmn-js](https://github.com/bpmn-io/dmn-js).
 
 
 ## Bye Bye Simple Mode
