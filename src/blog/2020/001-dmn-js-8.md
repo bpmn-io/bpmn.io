@@ -77,7 +77,7 @@ dmnJS.saveXML((err, xml) => {
 
 We will update the `@bpmn-io/dmn-migrate` utility to support upcoming DMN standards, as they get supported by the DMN toolkit.
 
-To learn more about how to retain DMN 1.1 and DMN 1.2 file opening compatibility, checkout the [DMN compatibility example](https://github.com/bpmn-io/dmn-js-examples/tree/master/dmn-compatibility).
+To learn more about how to retain DMN 1.1 and DMN 1.2 file opening compatibility, checkout the [DMN compatibility example](https://github.com/bpmn-io/dmn-js-examples/tree/main/dmn-compatibility).
 
 
 ## Batch Migrating Diagrams to DMN 1.3

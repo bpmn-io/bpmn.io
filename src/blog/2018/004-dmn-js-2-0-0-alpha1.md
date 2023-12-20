@@ -31,7 +31,7 @@ One of the improvements we wanted to tackle is to allow inspection into and navi
 The new version of our toolkit exposes the viewable contents and allows you to build rich navigation interactions around these views:
 
 <div class="figure full-size">
-  <a href="https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html">
+  <a href="https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/main/modeler/modeler.html">
     <img src="{{ assets }}/attachments/blog/2018/004-cast.gif">
   </a>
   <p class="caption">
@@ -39,7 +39,7 @@ The new version of our toolkit exposes the viewable contents and allows you to b
   </p>
 </div>
 
-Refer to the updated [modeler example](https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/master/modeler/modeler.html) for details on how to build tabbing on top of [dmn-js](https://github.com/bpmn-io/dmn-js).
+Refer to the updated [modeler example](https://cdn.statically.io/gh/bpmn-io/dmn-js-examples/main/modeler/modeler.html) for details on how to build tabbing on top of [dmn-js](https://github.com/bpmn-io/dmn-js).
 
 
 ## Bye Bye Simple Mode
@@ -101,12 +101,12 @@ You may reference individual assets [directly from unpkg](https://unpkg.com/dmn-
 <script src="https://unpkg.com/dmn-js@2.0.0-alpha1/dist/dmn-viewer.development.js"></script>
 ```
 
-Checkout the new [pre-packaged example](https://github.com/bpmn-io/dmn-js-examples/tree/master/pre-packaged) to learn how to embed the toolkit without prior setup or download.
+Checkout the new [pre-packaged example](https://github.com/bpmn-io/dmn-js-examples/tree/main/pre-packaged) to learn how to embed the toolkit without prior setup or download.
 
 
 ## Road Ahead
 
-We encourage you to try out the latest toolkit version via [demo.bpmn.io](https://demo.bpmn.io/dmn) or our brand new [starter example](https://github.com/bpmn-io/dmn-js-examples/tree/master/starter). You got feedback regarding our recent DMN toolkit changes? Tell us about it in [our forums](https://forum.bpmn.io/).
+We encourage you to try out the latest toolkit version via [demo.bpmn.io](https://demo.bpmn.io/dmn) or our brand new [starter example](https://github.com/bpmn-io/dmn-js-examples/tree/main/starter). You got feedback regarding our recent DMN toolkit changes? Tell us about it in [our forums](https://forum.bpmn.io/).
 
 On the road to `dmn-js@2.0.0` we still got a number of things to look into, including but not limited to:
 

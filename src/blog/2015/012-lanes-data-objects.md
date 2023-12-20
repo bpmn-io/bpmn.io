@@ -113,12 +113,12 @@ This opens areas for a lot of advanced use-cases such as displaying and editing 
   <img src="{{ assets }}/attachments/blog/2015/012-custom-elements.png">
 </div>
 
-We created an [example for this](https://github.com/bpmn-io/bpmn-js-examples/tree/master/custom-elements). Check it out if you also love custom elements.
+We created an [example for this](https://github.com/bpmn-io/bpmn-js-examples/tree/main/custom-elements). Check it out if you also love custom elements.
 
 
 ## Breaking Changes
 
-This release introduced a few breaking changes related to the introduction of custom elements. If you implemented your own renderers, make sure to update to the [new rendering infrastructure](https://github.com/bpmn-io/bpmn-js/blob/master/lib/draw/BpmnRenderer.js#L32).
+This release introduced a few breaking changes related to the introduction of custom elements. If you implemented your own renderers, make sure to update to the [new rendering infrastructure](https://github.com/bpmn-io/bpmn-js/blob/main/lib/draw/BpmnRenderer.js#L32).
 
 
 

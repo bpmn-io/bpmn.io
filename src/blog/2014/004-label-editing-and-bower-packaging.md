@@ -76,7 +76,7 @@ var viewer = new BpmnViewer({ container: '#canvas' });
 viewer.importXML(...);
 ```
 
-Make sure to check out the [documentation](https://github.com/bpmn-io/bower-bpmn-js) as well as the [example project](https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-bower) we have put up for you.
+Make sure to check out the [documentation](https://github.com/bpmn-io/bower-bpmn-js) as well as the [example project](https://github.com/bpmn-io/bpmn-js-examples/tree/main/simple-bower) we have put up for you.
 
 
 ## Learn bpmn-js by example
@@ -85,12 +85,12 @@ We worked on a number of examples that showcase bpmn-js in different usage/integ
 To begin with we created two integration quick starts and two example applications.
 All examples live in their very own [bpmn-js-examples](https://github.com/bpmn-io/bpmn-js-examples) and will be actively maintained.
 
-The [Bower](https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-bower) and [npm/browserify](https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-commonjs) quickstart show how to integrate the library into a web application.
+The [Bower](https://github.com/bpmn-io/bpmn-js-examples/tree/main/simple-bower) and [npm/browserify](https://github.com/bpmn-io/bpmn-js-examples/tree/main/simple-commonjs) quickstart show how to integrate the library into a web application.
 They may help you integrating bpmn-js into your web application.
-If you are not sure what to choose or if you are interested in quick results, the [Bower quickstart](https://github.com/bpmn-io/bpmn-js-examples/tree/master/simple-bower) is probably exactly right for you.
+If you are not sure what to choose or if you are interested in quick results, the [Bower quickstart](https://github.com/bpmn-io/bpmn-js-examples/tree/main/simple-bower) is probably exactly right for you.
 
-The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/modeler) shows how to use our toolkit to build a [demo.bpmn.io](http://demo.bpmn.io)-like web modeler.
-It gets accompained by a [simple BPMN 2.0 viewer](https://github.com/bpmn-io/bpmn-js-examples/tree/master/url-viewer) that can open BPMN 2.0 files from URLs.
+The [modeler example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/modeler) shows how to use our toolkit to build a [demo.bpmn.io](http://demo.bpmn.io)-like web modeler.
+It gets accompained by a [simple BPMN 2.0 viewer](https://github.com/bpmn-io/bpmn-js-examples/tree/main/url-viewer) that can open BPMN 2.0 files from URLs.
 
 
 Try out the examples and make sure to report issues in the [bpmn-js-examples issue tracker](https://github.com/bpmn-io/bpmn-js-examples/issues).
@@ -103,7 +103,7 @@ In the end, we decided to [change it](https://github.com/bpmn-io/diagram-js/issu
 As a result we ended up [rewriting](https://github.com/bpmn-io/diagram-js/commit/72a2d45a166ac33efa7f3064266856a72e4f9bb2) and [cleaning up](https://github.com/bpmn-io/bpmn-js/commit/4e0011440992a239e5489307ebca20d322de01b4) most of the code.
 
 With the new infrastructure in place we are now able to build features as clearly separated modules.
-The general label editing capability for instance is such an [encapsulated feature](https://github.com/bpmn-io/diagram-js-direct-editing), its [implementation for BPMN 2.0](https://github.com/bpmn-io/bpmn-js/tree/master/lib/features/label-editing), too.
+The general label editing capability for instance is such an [encapsulated feature](https://github.com/bpmn-io/diagram-js-direct-editing), its [implementation for BPMN 2.0](https://github.com/bpmn-io/bpmn-js/tree/main/lib/features/label-editing), too.
 
 
 ## Wrap up

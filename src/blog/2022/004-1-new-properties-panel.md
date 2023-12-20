@@ -61,7 +61,7 @@ Always know what you're doing. The reworked header shows a preview along with th
 
 ### Stateful components
 
-The new architecture allows components to be stateful, thus supporting [async data loading](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel-async-extension) and improving the integration with external, custom-made components.
+The new architecture allows components to be stateful, thus supporting [async data loading](https://github.com/bpmn-io/bpmn-js-examples/tree/main/properties-panel-async-extension) and improving the integration with external, custom-made components.
 
 
 ## A Shared Foundation
@@ -78,7 +78,7 @@ The new properties panels are composed around a shared core, [`@bpmn-io/properti
   </p>
 </div>
 
-Follow along with the reworked [extension example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel-extension) to learn how to build your extensions upon the shared infrastructure.
+Follow along with the reworked [extension example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/properties-panel-extension) to learn how to build your extensions upon the shared infrastructure.
 
 
 ## Migration
@@ -89,7 +89,7 @@ Adapting your properties panel extensions to the new infrastructure, you have to
 * Previously exported entry factory functions are no longer available. Use components exported from
   [`@bpmn-io/properties-panel`](https://github.com/bpmn-io/properties-panel) instead.
 
-Look at the reworked [BPMN properties panel extension example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel-extension) or check out [the example migration](https://github.com/bpmn-io/bpmn-js-examples/pull/142) and [this pull request](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/590) for guidance. Inspect individual property panel changelogs for further hints.
+Look at the reworked [BPMN properties panel extension example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/properties-panel-extension) or check out [the example migration](https://github.com/bpmn-io/bpmn-js-examples/pull/142) and [this pull request](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/590) for guidance. Inspect individual property panel changelogs for further hints.
 
 
 ## Wrapping Up

@@ -78,7 +78,7 @@ This release ships with a small number of improvements that improve our compatib
 * `FEAT`: allow movement of `DataInput` and `DataOutput` within their original containers
 * `FIX`: don't crash when moving `DataInput` and `DataOutput`
 
-Check out the [changelog](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md#330) for all details on the current release.
+Check out the [changelog](https://github.com/bpmn-io/bpmn-js/blob/main/CHANGELOG.md#330) for all details on the current release.
 
 
 ## Wrapping Up

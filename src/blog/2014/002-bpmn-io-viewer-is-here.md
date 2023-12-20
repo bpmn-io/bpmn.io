@@ -58,7 +58,7 @@ viewer.importXML(xml, function(err) {
 });
 ```
 
-Checkout some [usage examples](https://github.com/bpmn-io/bpmn-js/tree/master/example) we have put together.
+Checkout some [usage examples](https://github.com/bpmn-io/bpmn-js/tree/main/example) we have put together.
 We plan to provide a downloadable distribution of the library soon.
 
 

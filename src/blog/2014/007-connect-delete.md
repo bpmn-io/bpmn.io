@@ -110,7 +110,7 @@ The tool uses our BPMN 2.0 viewer, the [overlay](http://bpmn.io/blog/posts/2014-
 
 ### Commenting
 
-A new example application available on [GitHub](https://github.com/bpmn-io/bpmn-js-examples/tree/master/commenting).
+A new example application available on [GitHub](https://github.com/bpmn-io/bpmn-js-examples/tree/main/commenting).
 It shows how commenting on process diagrams may be integrated into bpmn-js.
 
 <div class="figure">

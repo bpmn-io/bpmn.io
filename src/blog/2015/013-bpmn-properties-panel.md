@@ -20,7 +20,7 @@ releases:
 
 <!-- continue -->
 
-The [bpmn-js-properties-panel](https://github.com/bpmn-js-properties-panel) released today comes with two varieties: The [first one](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/master/lib/provider/bpmn) provides basic support for BPMN related properties. The [second one](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/master/lib/provider/camunda) allows you to edit a large subset of execution related [Camunda](https://camunda.org) extensions.
+The [bpmn-js-properties-panel](https://github.com/bpmn-js-properties-panel) released today comes with two varieties: The [first one](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/main/lib/provider/bpmn) provides basic support for BPMN related properties. The [second one](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/main/lib/provider/camunda) allows you to edit a large subset of execution related [Camunda](https://camunda.org) extensions.
 
 <div class="figure no-border">
   <a href="https://github.com/bpmn-io/bpmn-js-properties-panel">
@@ -36,7 +36,7 @@ If you would like to checkout the properties panel in action, have a look at the
 
 ## Project Scope and Outlook
 
-The panel is built with plugability and extensibility in mind. Depending on your requirements it is a few lines of code to add it to an existing [bpmn.io](http://bpmn.io)-powered BPMN 2.0 modeler. If you are a developer and would like to provide your own custom extensions, look into the [Camunda properties provider](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/master/lib/provider/camunda) for inspiration.
+The panel is built with plugability and extensibility in mind. Depending on your requirements it is a few lines of code to add it to an existing [bpmn.io](http://bpmn.io)-powered BPMN 2.0 modeler. If you are a developer and would like to provide your own custom extensions, look into the [Camunda properties provider](https://github.com/bpmn-io/bpmn-js-properties-panel/tree/main/lib/provider/camunda) for inspiration.
 
 Do you have feedback or questions on the new project? Don't hesitate sure to reach out to us via [Mastodon](https://fosstodon.org/@bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
 

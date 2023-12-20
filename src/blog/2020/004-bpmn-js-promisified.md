@@ -104,7 +104,7 @@ Following our [project rebranding](https://bpmn.io/) this library release ships 
 
 ## Wrapping Up
 
-Read through the [full changelog](https://github.com/bpmn-io/bpmn-js/blob/master/CHANGELOG.md) to learn about all issues that we addressed with `bpmn-js@7.0`.
+Read through the [full changelog](https://github.com/bpmn-io/bpmn-js/blob/main/CHANGELOG.md) to learn about all issues that we addressed with `bpmn-js@7.0`.
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io) or file an issue you found in [the bpmn-js issue tracker](https://github.com/bpmn-io/bpmn-js/issues).
 

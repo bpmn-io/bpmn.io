@@ -64,7 +64,7 @@ Today [token-simulation@0.32.0](https://github.com/bpmn-io/bpmn-js-token-simulat
   </p>
 </div>
 
-[Try it out](https://bpmn-io.github.io/bpmn-js-token-simulation/modeler.html?pp=1&diagram=https%3A%2F%2Fraw.githubusercontent.com%2Fbpmn-io%2Fbpmn-js-token-simulation%2Fmaster%2Fexample%2Fresources%2Finclusive-gateway.bpmn&e=1) or explore the [full capability demo](https://bpmn-io.github.io/bpmn-js-token-simulation/modeler.html?e=1&pp=1&diagram=https%3A%2F%2Fraw.githubusercontent.com%2Fbpmn-io%2Fbpmn-js-token-simulation%2Fmaster%2Fexample%2Fresources%2Fall.bpmn).
+[Try it out](https://bpmn-io.github.io/bpmn-js-token-simulation/modeler.html?pp=1&diagram=https%3A%2F%2Fraw.githubusercontent.com%2Fbpmn-io%2Fbpmn-js-token-simulation%2Fmain%2Fexample%2Fresources%2Finclusive-gateway.bpmn&e=1) or explore the [full capability demo](https://bpmn-io.github.io/bpmn-js-token-simulation/modeler.html?e=1&pp=1&diagram=https%3A%2F%2Fraw.githubusercontent.com%2Fbpmn-io%2Fbpmn-js-token-simulation%2Fmain%2Fexample%2Fresources%2Fall.bpmn).
 
 
 ## Outlook
