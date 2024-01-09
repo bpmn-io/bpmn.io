@@ -64,7 +64,7 @@ console.log(element.id); // MY_TASK
 Check out the [full types example](https://github.com/bpmn-io/bpmn-js-examples/blob/main/types) to learn more about bpmn-js type declarations and their use cases.
 
 
-## Providing the Declarations
+## Under the Hood
 
 Our code base has already had comprehensive [JSDoc](https://jsdoc.app/) hints for years. Those annotations captured loads of crucial information on how things work. They were never accessible to library consumers, though.
 
