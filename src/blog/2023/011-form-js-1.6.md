@@ -15,17 +15,17 @@ releases:
 ---
 
 <p class="introduction">
-  The release of [form-js@1.6](https://github.com/bpmn-io/form-js) didn't take long, but its impact on handling array data is a game changer. In this update, we introduce two powerful components: tables for elegant tabular data display and dynamic lists for crafting flexible, repeatable, and editable form sections. These components are designed to enable working with complex data arrangements, without altering the familiar workflow of the form builder.
+  The release of [form-js@1.6](https://github.com/bpmn-io/form-js) didn't take long, but its impact on handling array data is a game changer. This update introduces two powerful components: tables for elegant tabular data display and dynamic lists for crafting flexible, repeatable, and editable form sections. We designed these components to allow working with complex data arrangements without altering the familiar workflow of the form builder.
 </p>
 
 <!-- continue -->
 
-In our continuous effort over recent months, we wanted to build a powerful way you deal with arrays of data. Our goal was to enable handling of arrays of any data structures, giving you complete control over your data outputs. We settled on a very flexible solution while maintaining the ease and familiarity of the current form builder interactions.
+In our continuous effort over recent months, we wanted to build a powerful way to deal with arrays of data. Our goal was to enable the handling of arrays of any data structures, giving you complete control over your data outputs. We settled on a very flexible solution while maintaining the ease and familiarity of the current form builder interactions.
 
 
 ## Dynamic Lists, the Flexible Solution to Array Data
 
-Our new dynamic list component brings flexibility to form-js, enabling users to dynamically add or remove repetitions of a form section, while handling all the data mapping for you out of the box.
+Our new dynamic list component brings flexibility to form-js, enabling users to dynamically add or remove repetitions of a form section while handling all the data mapping for you out of the box.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-dynamic-list.gif">
@@ -34,36 +34,36 @@ Our new dynamic list component brings flexibility to form-js, enabling users to 
   </p>
 </div>
 
-Customize the behavior of your dynamic list. The ability to add/remove components, how many default items are rendered, how many items show uncollapsed, and more. We give you quite a lot of control in configuring this component.
+Customize the behavior of your dynamic list. Decide whether adding and removing items should be possible, how many default items to render, how many items to show uncollapsed, and more. We give you quite a lot of control in configuring this component.
 
-As an example, if wanted to use dynamic lists as a read-only array data renderer, simply disable the ability to add/remove entries on the dynamic list, make all the child fields read-only and voilà.
+For example, if you want to use dynamic lists as a read-only array data renderer, simply disable the ability to add/remove entries on the dynamic list, make all the child fields read-only, and voilà.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-dynamic-list-readonly.png">
   <p class="caption">
-    Use the component however you like, it opens up many avenues for creative use cases.
+    Use the component however you like. It opens up many avenues for creative use cases.
   </p>
 </div>
 
-And the best part, you still get all the features you expect out of simple elements in your dynamic list repetitions. You may now make use of the `this` variable within FEEL expressions to refer to the local 'scope' of a dynamic list's rendered element. 
+The best part is that you still get all the features you expect from simple elements in your dynamic list repetitions. You may now use the `this` variable within FEEL expressions to refer to the local 'scope' of a dynamic list's rendered element.
 
-As small heads up however, we are planning to make some changes to how these scopes work in the future, so keep this in mind.
+As a small heads-up, we plan to change how these scopes work, so keep this in mind.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-dynamic-list-simple-scope.gif">
   <p class="caption">
-    Conditionally hide or show on a row by row basis within a dynamic list. 
+    Conditionally hide or show on a row-by-row basis within a dynamic list.
   </p>
 </div>
 
-So, while simple on the surface, the dynamic list really was the final piece of the puzzle for a great deal of applications. The ability to flexibly handle data arrays combined with binding paths and keys leads to make quick configuration and clean data outputs the default experience in form-js.
+So, while simple on the surface, the dynamic list was the final piece of the puzzle for many elaborate form use cases. The ability to flexibly handle data arrays combined with binding paths and keys leads to making quick configuration and clean data outputs the default experience in form-js.
 
-Now, what if you're dealing with much larger data sets that you want to render in the application, browse through, maybe use as a reference within your form?
+What if you're dealing with much larger data sets that you want to render in the application, browse through, and use as a reference within your form?
 
 
 ## Tables Displaying Structured Data at Scale
 
-The new table component in `form-js@1.6.0` brings an improved approach data displaying within forms, allowing you to work with massive datasources in a clean and structured environment, with sorting and pagination giving you plenty of control.
+The new table component in `form-js@1.6.0` brings an improved approach to data displaying within forms, allowing you to work with large amounts of data in a clean and structured environment. They support sorting and pagination, giving you plenty of control.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-tables.gif">
@@ -72,21 +72,21 @@ The new table component in `form-js@1.6.0` brings an improved approach data disp
   </p>
 </div>
 
-To top it off, you can use both static and dynamic definition of headers which means you have the ability to render your tables entirely from input data definitions, giving you a great deal of programatic control over the final appearance.
+Using dynamic bindings for table headers, you can render your tables entirely from input data definitions, giving you much programmatic control over the final appearance.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-tables-more.png">
   <p class="caption">
-    Tables are there. What else you need?
+    The tables component is there. What else do you need?
   </p>
 </div>
 
 
 ## Our Focus for 1.7
 
-As you've probably noticed, form-js has grown a lot in the last year or two. We've made a lot of experimental calls, and built a lot of new things from scratch. But we haven't had dedicated time to step off the gas yet, which has caused some performance slowdowns and some of the usual problems in growing projects. 
+Form-js has grown a lot in the last year or two. We've made a lot of experimental calls and built a lot of new things from scratch. Adding many features quickly, we introduced some performance slowdowns, among other things. It's time to take a step off the gas and clean things up.
 
-So, we're not going to focus on any major features for 1.7, but instead to polish, fix any issues we're aware of, get rid of architectural pains in the code base and work on form rendering performance.
+With the upcoming 1.7 version, we plan to focus on polishing existing features, fixing any issues we're aware of, eliminating architectural pains in the code base, and working on form rendering performance.
 
 
 # Wrapping Up
