@@ -1,8 +1,8 @@
 ---
 
-title: Working with array data in form-js@1.6
-description: "Discover how form-js 1.6 changes the game with the Dynamic List and Table components, enhancing complexity and usability in your forms."
-preview_image: http://bpmn.io/assets/attachments/blog/2023/008-form-js-1-6-update.png
+title: Working with Array Data in form-js@1.6
+description: "Discover the new dynamic list and table components. Learn how they allow you to handle array data with ease."
+preview_image: http://bpmn.io/assets/attachments/blog/2023/011-dynamic-list-readonly.png
 layout: blogpost.hbs
 slug: 2023-form-js-1-6-dynamic-list-and-table
 author:
