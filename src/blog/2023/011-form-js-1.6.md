@@ -23,7 +23,7 @@ releases:
 In our continuous effort over recent months, we wanted to build a powerful way you deal with arrays of data. Our goal was to enable handling of arrays of any data structures, giving you complete control over your data outputs. We settled on a very flexible solution while maintaining the ease and familiarity of the current form builder interactions.
 
 
-## Dynamic lists, the flexible solution to array data entry
+## Dynamic Lists, the Flexible Solution to Array Data
 
 Our new dynamic list component brings flexibility to form-js, enabling users to dynamically add or remove repetitions of a form section, while handling all the data mapping for you out of the box.
 
@@ -61,7 +61,7 @@ So, while simple on the surface, the dynamic list really was the final piece of 
 Now, what if you're dealing with much larger data sets that you want to render in the application, browse through, maybe use as a reference within your form?
 
 
-## Tables, displaying structured data at scale
+## Tables Displaying Structured Data at Scale
 
 The new table component in `form-js@1.6.0` brings an improved approach data displaying within forms, allowing you to work with massive datasources in a clean and structured environment, with sorting and pagination giving you plenty of control.
 
@@ -82,7 +82,7 @@ To top it off, you can use both static and dynamic definition of headers which m
 </div>
 
 
-## Our focus for 1.7
+## Our Focus for 1.7
 
 As you've probably noticed, form-js has grown a lot in the last year or two. We've made a lot of experimental calls, and built a lot of new things from scratch. But we haven't had dedicated time to step off the gas yet, which has caused some performance slowdowns and some of the usual problems in growing projects. 
 
