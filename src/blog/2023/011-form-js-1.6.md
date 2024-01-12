@@ -63,7 +63,7 @@ What if you're dealing with much larger data sets that you want to render in the
 
 ## Tables Displaying Structured Data at Scale
 
-The new table component in `form-js@1.6.0` brings an improved approach to data displaying within forms, allowing you to work with large amounts of data in a clean and structured environment. They support sorting and pagination, giving you plenty of control.
+The new table component allows you to work with large amounts of data in a clean and structured manner. It supports sorting and pagination, giving you plenty of control.
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2023/011-tables.gif">
