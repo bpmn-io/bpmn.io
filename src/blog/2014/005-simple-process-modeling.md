@@ -106,6 +106,6 @@ After exporting the diagram again, the task got removed from the XML file:
 The release ships with many more under the hood improvements and bug fixes.
 To learn about everything that is inside have a look at the issues closed for [bpmn-js](https://github.com/bpmn-io/bpmn-js/issues?milestone=6&state=closed), [diagram-js](https://github.com/bpmn-io/diagram-js/issues?milestone=1&state=closed) as well as [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle/issues?milestone=2&state=closed).
 
-In the next milestone we plan to ship drag and drop of process elements along with [other goodies](https://github.com/bpmn-io/bpmn-js/issues?milestone=3&state=open). Stay updated on what we do via [twitter](https://twitter.com/bpmn_io).
+In the next milestone we plan to ship drag and drop of process elements along with [other goodies](https://github.com/bpmn-io/bpmn-js/issues?milestone=3&state=open). Stay updated on what we do [via Mastodon](https://fosstodon.org/@bpmn_io).
 
 For now, happy modeling on [demo.bpmn.io](http://demo.bpmn.io/new).

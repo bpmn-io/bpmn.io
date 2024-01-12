@@ -83,4 +83,4 @@ As users of our [demo](https://demo.bpmn.io) may have noticed, the reworked popu
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement?
 
-Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io), or file any issue you found in the respective issue trackers for [bpmn-js](https://github.com/bpmn-io/bpmn-js/issues) or [diagram-js](https://github.com/bpmn-io/diagram-js/issues).
+Reach out to us via [our forums](https://forum.bpmn.io/), toot us on [Mastodon](https://fosstodon.org/@bpmn_io), or file any issue you found in the respective issue trackers for [bpmn-js](https://github.com/bpmn-io/bpmn-js/issues) or [diagram-js](https://github.com/bpmn-io/diagram-js/issues).

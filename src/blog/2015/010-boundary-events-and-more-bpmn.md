@@ -76,14 +76,14 @@ There are a few other things going on in the bpmn.io sphere which are worth noti
 * Tim from Sparta Systems did an impressive job [customizing bpmn-js to his needs](http://bpmn.io/blog/posts/2015-locking-down-bpmn-js.html).
 * Sebastian from the [CamundaBPM team](http://camunda.org/) published a first version of our [web-based table editor for DMN](http://blog.camunda.org/2015/08/first-version-of-dmnio-released.html).
 
-Make sure to [follow us on twitter](https://twitter.com/bpmn_io) if you would like to keep track on what is happening around our project.
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) if you would like to keep track on what is happening around our project.
 
 
 ## Looking Forward
 
 In the next milestone we will focus on modeling lanes. Event-based sub-processes are right around the block, too and a number of modeling convenience features wait to be implemented.
 
-We are interested in feedback on our latest modeling improvements! Make sure to reach out to us via [twitter](https://twitter.com/bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
+We are interested in feedback on our latest modeling improvements! Make sure to reach out to us [via Mastodon](https://fosstodon.org/@bpmn_io) or [our forums](https://forum.bpmn.io) and tell us what you think.
 
 
 As always: Get the latest release of our BPMN toolkit via [npm](https://www.npmjs.com/package/bpmn-js) and [bower](https://github.com/bpmn-io/bower-bpmn-js).

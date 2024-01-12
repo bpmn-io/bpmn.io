@@ -129,7 +129,7 @@ In the mean time, make sure to try out our new modeling features. A lot of thing
   </a>
 </div>
 
-Please report the bugs and problems you have with the latest release. If you would like to stay up to date with the things to come follow us on twitter [@bpmn_io](https://twitter.com/bpmn_io).
+Please report the bugs and problems you have with the latest release. If you would like to stay up to date with the things to come [follow us on Mastodon](https://fosstodon.org/@bpmn_io).
 
 
 PS: The new version of bpmn-js is available via [npm](http://npmjs.org/bpmn-js) and [bower](https://github.com/bpmn-io/bower-bpmn-js).

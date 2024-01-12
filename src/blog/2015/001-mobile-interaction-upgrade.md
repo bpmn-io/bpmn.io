@@ -57,6 +57,6 @@ The [fat-finger](http://dictionary.reference.com/browse/fat-finger) problem appl
 
 ## Wrapping up
 
-Please give us feedback on the interaction improvements shipped with this release. Make sure to follow us [@bpmn_io](https://twitter.com/bpmn_io) to stay up-to-date, too.
+Please give us feedback on the interaction improvements shipped with this release. Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) to stay up-to-date, too.
 
 Fetch the latest version of bpmn-js via [npm](http://npmjs.org/bpmn-js) or [bower](https://github.com/bpmn-io/bower-bpmn-js) and embed it into your applications.

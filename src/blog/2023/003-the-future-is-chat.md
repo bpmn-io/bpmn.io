@@ -92,7 +92,7 @@ Of course, this is just the beginning of our conversation. In the future, we wil
 
 Furthermore, we'll explore the ability to summarize/snapshot your processes in non-human languages, such as BPEL for processes and CSV/checklists for decisions.
 
-We hope you join us as we evolve the future of modeling tooling. Reach out to us via [our forums](https://forum.bpmn.io/) or tweet us [@bpmn_io](https://twitter.com/bpmn_io). Let's have a chat!
+We hope you join us as we evolve the future of modeling tooling. Reach out to us via [our forums](https://forum.bpmn.io/) or toot us on [Mastodon](https://fosstodon.org/@bpmn_io). Let's have a chat!
 
 <p style="border-top: dotted 1px #CCC; margin-top: 40px; padding-top: 20px; margin-bottom: -20px">
 _ChatGPT co-authored and approved this announcement._

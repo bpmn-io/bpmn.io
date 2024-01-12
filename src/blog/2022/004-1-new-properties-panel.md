@@ -96,6 +96,6 @@ Look at the reworked [BPMN properties panel extension example](https://github.co
 
 The new properties panel is a major improvement over our `0.x` properties in infrastructure and UI framework terms. We are excited about what you'll build using it.
 
-Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io), or file your issues in the [properties panel core](https://github.com/bpmn-io/properties-panel/issues) or the respective implementation repository.
+Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), toot us on [Mastodon](https://fosstodon.org/@bpmn_io), or file your issues in the [properties panel core](https://github.com/bpmn-io/properties-panel/issues) or the respective implementation repository.
 
 Get the latest releases via [npm](https://www.npmjs.com/org/bpmn-io).

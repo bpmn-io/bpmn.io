@@ -43,6 +43,6 @@ In BPMN it is now possible to set one or more fields to use field injection. Thi
 
 See a list of all changes in the milestones of [bpmn-js-properties-panel](https://github.com/bpmn-io/bpmn-js-properties-panel/milestone/12?closed=1) and [cmmn-js-properties-panel](https://github.com/bpmn-io/cmmn-js-properties-panel/milestone/2?closed=1).
 
-Give us your feedback on this release [via our forums](https://forum.bpmn.io). Make sure to [follow us](https://twitter.com/bpmn_io) to stay up to date, too.
+Give us your feedback on this release [via our forums](https://forum.bpmn.io). Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) to stay up to date, too.
 
 Get the latest bpmn-js-properties-panel release via [npm](https://www.npmjs.com/package/bpmn-js-properties-panel). The cmmn-js-properties-panel release is also available via [npm](https://www.npmjs.com/package/cmmn-js-properties-panel).

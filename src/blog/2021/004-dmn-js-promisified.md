@@ -89,6 +89,6 @@ Please approach us [via our forums](https://forum.bpmn.io) to share your feedbac
 
 Read through the [full changelog](https://github.com/bpmn-io/dmn-js/blob/develop/packages/dmn-js/CHANGELOG.md#1101) to learn about all issues that we addressed with `dmn-js@11.0`.
 
-Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io) or file an issue you found in [the dmn-js issue tracker](https://github.com/bpmn-io/dmn-js/issues).
+Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), toot us on [Mastodon](https://fosstodon.org/@bpmn_io) or file an issue you found in [the dmn-js issue tracker](https://github.com/bpmn-io/dmn-js/issues).
 
 Get the latest DMN modeling toolkit pre-packaged or as source code via [npm](https://www.npmjs.com/package/dmn-js) or [unpkg](https://unpkg.com/dmn-js/).

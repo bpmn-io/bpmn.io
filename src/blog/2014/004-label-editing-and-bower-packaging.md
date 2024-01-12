@@ -112,7 +112,7 @@ Thanks to a number of bug reports from the community a some crucial fixes made i
 We will continue to maintain the current feature set while working on [simple process creation](https://github.com/bpmn-io/bpmn-js/issues?milestone=6&state=open) during our next milestone.
 
 Your feedback is important!
-Try out our toolkit at [demo.bpmn.io](http://demo.bpmn.io) and tell us about it via [twitter](https://twitter.com/bpmn_io) or directly from inside the app.
+Try out our toolkit at [demo.bpmn.io](http://demo.bpmn.io) and tell us about it [via Mastodon](https://fosstodon.org/@bpmn_io) or directly from inside the app.
 
 If you would like to dive deeper into the project, check out its [repository on GitHub](https://github.com/bpmn-io/bpmn-js) and start to reporting issues or [fixing bugs](https://github.com/bpmn-io/bpmn-js/issues?labels=easy-pick&state=open) right away.
 

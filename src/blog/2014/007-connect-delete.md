@@ -125,7 +125,7 @@ It shows how commenting on process diagrams may be integrated into bpmn-js.
 
 With all new features, demos and updates this was quite a crazy release. Still we are not even half way through on the road to a complete BPMN 2.0 modeler. Palette, connection selection, pools, lanes, bendpoints and advanced modeling interaction are only a few things we have on our menu for the next months.
 
-Check out our [issue tracker](https://github.com/bpmn-io/bpmn-js/issues) for a more complete list of things that lie ahead of us. Make sure to try out our new modeling features, too and report the bugs and problems you have. If you would like to stay up to date with the things to come follow us on twitter [@bpmn_io](https://twitter.com/bpmn_io).
+Check out our [issue tracker](https://github.com/bpmn-io/bpmn-js/issues) for a more complete list of things that lie ahead of us. Make sure to try out our new modeling features, too and report the bugs and problems you have. If you would like to stay up to date with the things to come [follow us on Mastodon](https://fosstodon.org/@bpmn_io).
 
 
 PS: The new version of bpmn-js is available via [npm](http://npmjs.org/bpmn-js) and [bower](https://github.com/bpmn-io/bower-bpmn-js).

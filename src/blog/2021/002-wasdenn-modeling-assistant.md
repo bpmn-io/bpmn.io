@@ -140,4 +140,4 @@ With WASDENN's first iteration, we deliberately chose to ship a simple in-app ch
 
 Give WASDENN a try and let it [support you on your BPMN journey](https://demo.bpmn.io/s/start) today!
 
-As always, please share your feedback [@bpmn_io](https://twitter.com/bpmn_io) or [via our forum](https://forum.bpmn.io/).
+As always, please share your feedback on [Mastodon](https://fosstodon.org/@bpmn_io) or [via our forum](https://forum.bpmn.io/).

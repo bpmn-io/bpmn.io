@@ -83,7 +83,7 @@ Check out the [changelog](https://github.com/bpmn-io/bpmn-js/blob/main/CHANGELOG
 
 ## Wrapping Up
 
-This release makes [sketchy](https://github.com/bpmn-io/bpmn-js-sketchy) the default renderer for your BPMN 2.0 diagrams. Got you own opinion on that substantial improvement? Share your feedback [in our forum](https://forum.bpmn.io/) or tweet to us [@bpmn_io](https://twitter.com/bpmn_io).
+This release makes [sketchy](https://github.com/bpmn-io/bpmn-js-sketchy) the default renderer for your BPMN 2.0 diagrams. Got you own opinion on that substantial improvement? Share your feedback [in our forum](https://forum.bpmn.io/) or toot us on [Mastodon](https://fosstodon.org/@bpmn_io).
 
 Next up, we focus on many small usability improvements to make it even more intuitive to build process prototypes. [Supporting groups](https://github.com/bpmn-io/bpmn-js/issues/343) and [more intuitive](https://github.com/bpmn-io/bpmn-js/issues/478) modeling of intermediate/boundary events are two topics that remain on our short-term roadmap, too.
 

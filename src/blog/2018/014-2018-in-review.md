@@ -83,6 +83,6 @@ So what is up in 2019? For the first quarter we set out to carry out the followi
 
 * Better understand the developer journey and give you improved guidance on how to integrate and extend our libraries.
 
-Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [@bpmn_io](https://twitter.com/bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2019.
+Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [Mastodon](https://fosstodon.org/@bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2019.
 
 May a peaceful holiday season be with you! <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f334.svg" alt="palm tree" title="Yo!">

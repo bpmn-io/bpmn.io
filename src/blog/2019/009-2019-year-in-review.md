@@ -79,6 +79,6 @@ So what is up next? In the first quarter of 2020, we focus on [dmn-js](https://g
 
 Look forward to more, substantial updates of our BPMN as well as DMN (all editors) toolkits.
 
-Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [@bpmn_io](https://twitter.com/bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2020.
+Share your thoughts and feedback [in our forum](https://forum.bpmn.io/) or [Mastodon](https://fosstodon.org/@bpmn_io) and stick with us for updates on our _just great_ modeling mission in 2020.
 
 May a peaceful holiday season be with you! <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f334.svg" alt="palm tree" title="Yo!">

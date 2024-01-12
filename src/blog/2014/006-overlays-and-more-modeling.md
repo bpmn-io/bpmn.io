@@ -87,7 +87,7 @@ Did we tell you, we got a new [getting started section](http://bpmn.io/getting-s
 
 ## Wrap up
 
-We are curious to learn about different use cases for our new overlay API. If you created something, tell us about it on [twitter](https://twitter.com/bpmn_io). Make sure to report bugs and other issues in our [bug tracker](https://github.com/bpmn-io/bpmn-js/issues), too.
+We are curious to learn about different use cases for our new overlay API. If you created something, tell us about it on [mastodon](https://fosstodon.org/@bpmn_io). Make sure to report bugs and other issues in our [bug tracker](https://github.com/bpmn-io/bpmn-js/issues), too.
 
 For now, happy modeling on [demo.bpmn.io](http://demo.bpmn.io/new).
 

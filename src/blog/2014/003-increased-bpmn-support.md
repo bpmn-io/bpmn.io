@@ -40,5 +40,5 @@ After completing the basic rendering work, we will now focus more and more on th
 
 ## Final words
 
-Anything not rendering correctly? Give us feedback via the [bpmn-js github project](https://github.com/bpmn-io/bpmn-js), directly on [demo.bpmn.io](http://demo.bpmn.io) or via [twitter](https://twitter.com/@bpmn_io).
+Anything not rendering correctly? Give us feedback via the [bpmn-js github project](https://github.com/bpmn-io/bpmn-js), directly on [demo.bpmn.io](http://demo.bpmn.io) or [via Mastodon](https://fosstodon.org/@bpmn_io).
 

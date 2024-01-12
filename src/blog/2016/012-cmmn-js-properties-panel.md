@@ -89,6 +89,6 @@ For OnPart connections you can define a standard event and decide if it should b
 
 ## What else?
 
-Give us your feedback on this release [in our forums](https://forum.bpmn.io). Make sure to [follow us](https://twitter.com/bpmn_io) to stay up to date.
+Give us your feedback on this release [in our forums](https://forum.bpmn.io). Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) to stay up to date.
 
 Get the latest [cmmn-js-properties-panel](https://github.com/bpmn-io/cmmn-js-properties-panel) release via [npm](https://www.npmjs.com/package/cmmn-js-properties-panel).

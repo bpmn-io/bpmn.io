@@ -129,7 +129,7 @@ A few other notable things that happened around our project:
 * We attended the [Camunda community day](http://blog.camunda.org/2015/09/impressions-from-camunda-community-day.html) and the [BPMCon](http://bpmcon.de) in September with talks about extensibility, roadmap and [nyan cats](https://github.com/nikku/bpmn-js-nyan).
 * [Phillip](https://github.com/PHILIPPFROMME) joined our project to work on a [bpmn.io powered bpmn questionaire toolkit](http://bpmn.io/blog/posts/2015-bpmn-questionnaire.html) as part of his thesis.
 
-Make sure to [follow us on twitter](https://twitter.com/bpmn_io) to stay up to date with what happens in the bpmn.io sphere.
+Make sure to [follow us on Mastodon](https://fosstodon.org/@bpmn_io) to stay up to date with what happens in the bpmn.io sphere.
 
 
 ## Looking Forward

@@ -107,4 +107,4 @@ We've made a case for forms being a vital building block in any user-centric doc
 
 In the following months, we will continue to improve form-js both feature and documentation-wise.
 
-Are you excited about form-js the way we are? Check out the documentation [on GitHub](https://github.com/bpmn-io/form-js) and don't forget to share your feedback [@bpmn_io](https://twitter.com/bpmn_io) or [on our forums](https://forum.bpmn.io/). Stay tuned for further updates!
+Are you excited about form-js the way we are? Check out the documentation [on GitHub](https://github.com/bpmn-io/form-js) and don't forget to share your feedback on [Mastodon](https://fosstodon.org/@bpmn_io) or [on our forums](https://forum.bpmn.io/). Stay tuned for further updates!

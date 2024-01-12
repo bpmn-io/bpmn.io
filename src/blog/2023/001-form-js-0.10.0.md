@@ -135,6 +135,6 @@ Try out the new features [on our demo](https://demo.bpmn.io/form) or using the [
 
 Read through the [full changelog](https://github.com/bpmn-io/form-js/blob/master/packages/form-js/CHANGELOG.md#0100) to learn about all issues that we addressed with `form-js@0.10.0`.
 
-Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), tweet us [@bpmn_io](https://twitter.com/bpmn_io) or file an issue you found in [the form-js issue tracker](https://github.com/bpmn-io/form-js/issues).
+Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.bpmn.io/), toot us on [Mastodon](https://fosstodon.org/@bpmn_io) or file an issue you found in [the form-js issue tracker](https://github.com/bpmn-io/form-js/issues).
 
 Get the latest Forms modeling toolkit pre-packaged or as source code via [npm](https://www.npmjs.com/package/@bpmn-io/form-js) or [unpkg](https://unpkg.com/@bpmn-io/form-js).
