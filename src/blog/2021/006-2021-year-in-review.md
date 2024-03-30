@@ -82,10 +82,10 @@ With two more folks on board in 2021, we are now a good team of seven developers
 
 Making great BPM tooling available _everywhere, for everyone_ is a mission, not a task on a checklist. Our future could not be more exciting. So what is up next?
 
-In 2022 we will ship a complete rework of our [properties panel infrastructure](https://github.com/bpmn-io/properties-panel), and new properties panels for BPMN, DMN, and forms. Async data loading will be easily possible. Promised <img class="emoji" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f91e-1f3fc.svg" alt="crossed fingers">.
+In 2022 we will ship a complete rework of our [properties panel infrastructure](https://github.com/bpmn-io/properties-panel), and new properties panels for BPMN, DMN, and forms. Async data loading will be easily possible. Promised <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f91e-1f3fc.svg" alt="crossed fingers">.
 
 Further, an entire rework of our BPMN collapsed sub-process handling is in the works. You can look forward to powerful drill-down functionality coming for you in 2022.
 
 Do you want to follow along for the ride? [Follow us on Mastodon](https://fosstodon.org/@bpmn_io). Share your thoughts and feedback [in our forum](https://forum.bpmn.ion).
 
-May a peaceful holiday season be with you! <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f334.svg" alt="palm tree" title="Yo!">
+May a peaceful holiday season be with you! <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f334.svg" alt="palm tree" title="Yo!">

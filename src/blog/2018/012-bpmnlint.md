@@ -222,4 +222,4 @@ bpmnlint is a BPMN diagram validator that can be used as command line tool or in
 
 Try out the tool and help us to improve it by [reporting](https://github.com/bpmn-io/bpmnlint/issues/new?template=NEW_RULE.md) rules you'd like to see supported.
 
-Go ahead and start validating your diagrams today <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f916.svg" />!
+Go ahead and start validating your diagrams today <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f916.svg" />!

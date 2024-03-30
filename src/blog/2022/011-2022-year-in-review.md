@@ -84,10 +84,10 @@ With a stable group of seven developers split across two teams, we are set up to
 
 Making great BPM tooling available _everywhere, for everyone_ is a mission, not a task on a checklist. Our future could not be more exciting. So what is up next?
 
-Deep editor tooling, especially around data and FEEL language support, remains one of our core investment topics. API documentation and improved type support are two aspects that we'll tackle, too. Promised <img class="emoji" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f91e-1f3fc.svg" alt="crossed fingers">.
+Deep editor tooling, especially around data and FEEL language support, remains one of our core investment topics. API documentation and improved type support are two aspects that we'll tackle, too. Promised <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f91e-1f3fc.svg" alt="crossed fingers">.
 
 Further, incorporating [create/append anything](https://github.com/bpmn-io/bpmn-js-connectors-extension) into the core and strengthening modeling in [domain-specific, reusable building blocks](https://github.com/bpmn-io/element-templates) are two exciting investment topics we will tackle in 2023.
 
 Do you want to follow along for the ride? [Follow us on Mastodon](https://fosstodon.org/@bpmn_io). Share your thoughts and feedback [in our forum](https://forum.bpmn.ion).
 
-May a peaceful holiday season be with you! <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://twemoji.maxcdn.com/2/svg/1f334.svg" alt="palm tree" title="Yo!">
+May a peaceful holiday season be with you! <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f385-1f3fe.svg" alt="santa" title="Ho!"> <img class="emoji" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f334.svg" alt="palm tree" title="Yo!">
