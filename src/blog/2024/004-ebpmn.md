@@ -1,7 +1,7 @@
 ---
 
 title: Introducing EBPMN
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 
 slug: 2024-ebpmn
 author: Nico Rehwaldt <https://github.com/nikku>
