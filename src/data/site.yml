@@ -4,8 +4,8 @@ bpmnjs:
   published: 2024-04-30 09:05
   changelog: https://github.com/bpmn-io/bpmn-js/blob/develop/CHANGELOG.md
 dmnjs:
-  version: v16.2.1
-  published: 2024-05-06 13:10
+  version: v16.2.2
+  published: 2024-05-06 13:29
   changelog: https://github.com/bpmn-io/dmn-js/blob/develop/packages/dmn-js/CHANGELOG.md
 cmmnjs:
   version: v0.19.2
