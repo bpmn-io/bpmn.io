@@ -69,7 +69,7 @@ Of course, there are always places where correctness matters. In such places, we
 
 Current developments in [large language models](https://en.wikipedia.org/wiki/Large_language_model) show how to carefully balance creativity and correctness when handling ambiguous human input and (own) knowledge gaps. BPMN 2.0 on image tooling must embrace similar techniques to handle human input in relevant ways.
 
-For our project specifically, there is the question of embeddability: Can image recognition features and interpretation be efficiently packed within a client-side library? This should not be a blocking issue. In fact, [we already showed in the past](/blog/posts/2023-the-future-is-chat.html#is-it-still-embeddable-) how such tools can be efficiently packed for front-end applications. Supported by these technological advances, a 90 MB neural network hides just fine in today's applications and websites.
+For our project specifically, there is the question of embeddability: Can image recognition features and interpretation be efficiently packed within a client-side library? This should not be a blocking issue. In fact, [we already showed in the past](/blog/posts/2023-the-future-is-chat.html#is-it-still-embeddable-) how such tools can be efficiently packed for front-end applications. Supported by these technological advances and industry trends, a 90 MB neural network hides just fine in today's applications and websites.
 
 ### Wrapping up
 
