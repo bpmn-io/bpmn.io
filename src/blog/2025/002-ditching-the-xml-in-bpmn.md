@@ -19,18 +19,18 @@ releases:
 
 
 <p class="introduction">
-  Observing the tooling market in recent months, we've seen more and more vendors adopt BPMN in what we call low-code domains, places where less technical personas develop processes. It's time to reflect on whether the foundations of our beloved standard are fit for such applications. Shall we make BPMN 2.0 diagrams accessible to a broader range of audiences?
+  Observing the tooling market in recent months, we've seen more and more vendors adopt BPMN in low-code domains, places where less technical personas develop processes. It's time to reflect on whether our beloved standard's foundations fit such applications. How can we make BPMN 2.0 diagrams accessible to a broader range of audiences?
 </p>
 
 <!-- continue -->
 
 For over 20 years, XML has been the backbone of [the BPMN 2.0 standard](https://www.omg.org/spec/BPMN). It defines how a diagram is structured, down to [the nitty gritty details](https://www.omg.org/spec/BPMN/20100501/Semantic.xsd). While doing wonders for interchange (tool vendors can open each other's diagrams), it left out those without a good BPMN editor.
 
-Today, we'd like to rethink the foundations of BPMN 2.0 and make [the image](https://en.wikipedia.org/wiki/Image) the only true interchangeable asset on the internet, BPMN 2.0's next interchange format. We herewith propose **BPMN 2.0 on image** as the new iteration of the standard, freeing BPMN 2.0 from the requirements of good tooling and enabling everyone to speak the language of process.
+Today, we'd like to rethink the foundations of BPMN 2.0 and make [the image](https://en.wikipedia.org/wiki/Image)—the only true interchangeable asset on the internet—BPMN 2.0's next interchange format. We propose **BPMN 2.0 on image** as the new iteration of the standard, freeing BPMN 2.0 from the requirements of good tooling and enabling everyone to speak the language of process.
 
 ## Embracing Multi-modality for Diagram Editing
 
-In the world of images, all you need to do to view your BPMN diagram is any tool, any device. Images can be embedded everywhere and can be edited anywhere:
+In the world of images, all you need to do to view your BPMN diagram is any tool, any device. You can embed images everywhere, edit them  anywhere:
 
 <div class="figure full-size">
   <img src="{{ assets }}/attachments/blog/2025/002-multi-modal.png">
@@ -39,12 +39,12 @@ In the world of images, all you need to do to view your BPMN diagram is any tool
   </p>
 </div>
 
-Sharing your BPMN 2.0 diagram in the imagined world is just one "share" button press away, embeds into your favorite tools, to super-power your favorite workflows.
+Sharing your BPMN 2.0 diagram in the imagined world is just one "share" button press away, embeds into your favorite tools, and super-powers your favorite workflows.
 
 <div class="figure">
   <img src="{{ assets }}/attachments/blog/2025/002-whatsup-based-development.png">
   <p class="caption">
-    Images can be embedded everywhere and can freely be interchanged.
+    Embed your BPMN 2.0 on image diagrams everywhere.
   </p>
 </div>
 
@@ -69,7 +69,7 @@ Of course, there are always places where correctness matters. In such places, we
 
 Current developments in [large language models](https://en.wikipedia.org/wiki/Large_language_model) show how to carefully balance creativity and correctness when handling ambiguous human input and (own) knowledge gaps. BPMN 2.0 on image tooling must embrace similar techniques to handle human input in relevant ways.
 
-For our project specifically, there is the question of embeddability: Can image recognition features and interpretation be efficiently packed within a client-side library? This should not be a blocking issue. In fact, [we already showed in the past](/blog/posts/2023-the-future-is-chat.html#is-it-still-embeddable-) how such tools can be efficiently packed for front-end applications. Supported by these technological advances and industry trends, a 90 MB neural network hides just fine in today's applications and websites.
+For our project specifically, there is the question of embeddability: Can image recognition features and interpretation be efficiently packed within a client-side library? This should not be a blocking issue. In fact, [we already showed in the past](/blog/posts/2023-the-future-is-chat.html#is-it-still-embeddable-) how such tools can be efficiently packed for front-end applications. Today—supported by technological advances and industry trends—a 90 MB neural network hides just fine in applications and websites.
 
 ### Wrapping up
 
