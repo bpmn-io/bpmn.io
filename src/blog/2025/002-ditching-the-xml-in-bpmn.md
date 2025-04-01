@@ -71,7 +71,7 @@ Current developments in [large language models](https://en.wikipedia.org/wiki/La
 
 For our project specifically, there is the question of embeddability: Can image recognition features and interpretation be efficiently packed within a client-side library? This should not be a blocking issue. In fact, [we already showed in the past](/blog/posts/2023-the-future-is-chat.html#is-it-still-embeddable-) how such tools can be efficiently packed for front-end applications. Today—supported by technological advances and industry trends—a 90 MB neural network hides just fine in applications and websites.
 
-### Wrapping up
+## Wrapping up
 
 In this post, we shared BPMN 2.0 on image, the next evolution of the BPMN standard purposely built for true interchange. We showed how images, as the backbone of BPMN 2.0 interchange, will super-power anyone's work with BPMN diagrams in their context and workflows.
 

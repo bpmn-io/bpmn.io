@@ -85,7 +85,7 @@ if (!canvas.isFocused()) {
 ```
 
 
-### Wrapping up
+## Wrapping up
 
 The latest bpmn-js and diagram-js releases turn the canvas into a browser-focusable element. This improves accessibility and allows us to offer a safe-per-default integration with other parts of the document tree. One improvement that builds on that change is implicit keyboard binding: By only reacting to keyboard shortcuts once the canvas is focused, diagrams play nicely with whatever other components you host on your website or application.
 
