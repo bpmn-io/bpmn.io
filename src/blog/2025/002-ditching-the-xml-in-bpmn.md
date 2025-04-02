@@ -1,7 +1,7 @@
 ---
 
 title: Ditching the XML in BPMN 2.0
-layout: blogpost.hbs
+layout: blogpost_fooled.hbs
 
 slug: 2025-ditching-the-xml-in-bpmn-2-0
 author: Nico Rehwaldt <https://github.com/nikku>
