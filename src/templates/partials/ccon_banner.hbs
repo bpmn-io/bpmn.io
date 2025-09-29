@@ -10,6 +10,9 @@
 
   --cc-banner-color-button-hover: white;
   --cc-banner-color-button-hover-bg: #434343;
+
+  --cc-banner-opacity-close: .5;
+  --cc-banner-opacity-close-hover: .9;
 }
 
 .cc-banner {
@@ -62,7 +65,11 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  fill: white;
+  opacity: var(--cc-banner-opacity-close);
+}
+
+.cc-banner .close:hover {
+  opacity: var(--cc-banner-opacity-close-hover);
 }
 
 @media screen and (max-width: 768px) {
