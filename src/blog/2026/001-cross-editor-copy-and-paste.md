@@ -44,7 +44,7 @@ Building on top of core library improvements, [bpmn-js-native-copy-paste](https:
 Adding system clipboard support to your BPMN editor is straightforward; plug it in as an additional module:
 
 ```javascript
-import NativeCopyPaste from 'bpmn-js-native-copy-paste';
+import NativeCopyPasteModule from 'bpmn-js-native-copy-paste';
 
 const modeler = new BpmnModeler({
   additionalModules: [
