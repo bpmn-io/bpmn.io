@@ -12,6 +12,6 @@ cmmnjs:
   published: 2019-08-11 14:30
   changelog: https://github.com/bpmn-io/cmmn-js/blob/develop/CHANGELOG.md
 formjs:
-  version: v2.0.0
-  published: 2026-09-18 11:21
+  version: v2.0.1
+  published: 2026-09-25 10:54
   changelog: https://github.com/bpmn-io/form-js/blob/master/packages/form-js/CHANGELOG.md
