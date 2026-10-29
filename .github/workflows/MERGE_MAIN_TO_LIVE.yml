@@ -1,0 +1,35 @@
+name: MERGE_MAIN_TO_LIVE
+on:
+  push:
+    branches:
+    - "main"
+
+jobs:
+  merge_main_to_live:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - name: Read pull request template
+      id: template
+      env:
+        GH_TOKEN: ${{ github.token }}
+        SOURCE: main
+        TARGET: live
+      run: |
+        if ! template=$(gh api -H "Accept: application/vnd.github.raw" "repos/$GITHUB_REPOSITORY/contents/.github/PULL_REQUEST_TEMPLATE.md?ref=$TARGET" 2>/dev/null); then
+          template=$(gh api -H "Accept: application/vnd.github.raw" "repos/bpmn-io/.github/contents/.github/PULL_REQUEST_TEMPLATE.md" 2>/dev/null) || template="Merges changes from \`$SOURCE\` into \`$TARGET\`."
+        fi
+        {
+          echo "body<<PULL_REQUEST_BODY"
+          printf '%s\n' "$template"
+          echo "PULL_REQUEST_BODY"
+        } >> "$GITHUB_OUTPUT"
+    - name: Open sync pull request
+      uses: bpmn-io/actions/sync-branches@latest
+      with:
+        source: main
+        target: live
+        body: ${{ steps.template.outputs.body }}
