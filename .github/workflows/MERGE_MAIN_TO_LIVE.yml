@@ -1,0 +1,20 @@
+name: MERGE_MAIN_TO_LIVE
+on:
+  push:
+    branches:
+    - "main"
+
+jobs:
+  merge_main_to_live:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - name: Open sync pull request
+      uses: bpmn-io/actions/sync-branches@latest
+      with:
+        token: ${{ secrets.BPMN_IO_TOKEN }}
+        source: main
+        target: live
